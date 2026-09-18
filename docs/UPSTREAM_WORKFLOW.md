@@ -33,3 +33,7 @@ git merge upstream/main
 另从当时的 `upstream/main` 新建PR分支，按功能挑选、整理并测试代码改动，然后推到现有公开fork，由fork向上游提PR。私有备份分支不能直接跨GitHub仓库网络提交PR；代码经审阅后推至原fork即可恢复原有PR路径。
 
 不要将 `main`中的内部报告、个人路径注册表、迁移诊断、全部历史探索直接合并进上游。框架修改与方法新增分开审阅。当前代码分支保留原README和原文件；相对于P1 seed2，本次没有删除原文件，已有文件的修改单列在 `registry/code_branch_changes.json`，包括仿真入口的必要适配。相对于学长的纯上游，此前已存在的DiffusionDrive集成仍需纳入最终PR审阅，不能误称“完全没改上游”。
+
+## 0918 完整操作指南
+
+后续执行以 [20260918_GITHUB_UPSTREAM_PR_GUIDE.md](20260918_GITHUB_UPSTREAM_PR_GUIDE.md) 为详细指南，涵盖最新代码核对、独立整理目录、同步上游、贡献拆分、推回原 fork、创建 PR 及验收记录。

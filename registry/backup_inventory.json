@@ -4,8 +4,8 @@
     "registry/backup_inventory.json",
     ".git/"
   ],
-  "file_count": 1216,
-  "total_bytes": 76469900,
+  "file_count": 1217,
+  "total_bytes": 76478727,
   "files": [
     {
       "path": ".gitignore",
@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1743,
-      "sha256": "1287b165afcedf760f3f16af00241277ff8f1961eff97394c8ecd578605cea52"
+      "bytes": 1944,
+      "sha256": "9d09bccae9dea0db31f3a93811b3f1323b9364f43d2330d443aad2966f190a32"
     },
     {
       "path": "code/.gitignore",
@@ -4733,6 +4733,11 @@
       "sha256": "6105dea94b4fd34d9580d3232a4ed824db985b6c85fb748f1002cc852dc04943"
     },
     {
+      "path": "docs/20260918_GITHUB_UPSTREAM_PR_GUIDE.md",
+      "bytes": 8362,
+      "sha256": "c37219365e97b65d2bba22f55772758b1a8df23cbe9fa12a0d3db11aceeffd40"
+    },
+    {
       "path": "docs/RECOVERY.md",
       "bytes": 3286,
       "sha256": "2ae994b6e910d922456cc1a23d35e4e84d287f3e4ab453cec34b7fec4214c099"
@@ -4744,8 +4749,8 @@
     },
     {
       "path": "docs/UPSTREAM_WORKFLOW.md",
-      "bytes": 2210,
-      "sha256": "2da3b5dfe76ed57fde3220dde453938e496adab0c117c993122b8b16705eb690"
+      "bytes": 2474,
+      "sha256": "adba5c4842e1216d224f80489681f37491ffd95c376212107e7cecc849f40cfd"
     },
     {
       "path": "docs/history/20260915_SELECTOR_PAPER_ROUTE_AND_EXPERIMENT_PLAN.md",
@@ -6087,5 +6092,6 @@
       "bytes": 81940,
       "sha256": "bd9fa9b1c3f7a6ea937e478fb0b6882e83ebc7c36c1b74f78c7afcb8efdafaaf"
     }
-  ]
+  ],
+  "updated_utc": "2026-09-18T13:03:25.303451+00:00"
 }

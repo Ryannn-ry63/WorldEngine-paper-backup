@@ -19,3 +19,7 @@
 本仓库 `main` 保留上述干净工作区结构；`research/paper-code-20260918` 保留 WorldEngine 原目录结构和 P1 之前的 Git 祖先，用于比较代码、同步上游和准备未来PR。现有公开 fork `Ryannn-ry63/WorldEngine` 及其上游关系未改变。
 
 这份 Git 备份**不包含**数据集、图像、仿真资产、模型权重、优化器张量、训练cache、Conda环境、CUDA二进制和完整实验输出。仅凭clone无法立即恢复训练。对应文件仍需完成共享存储迁移/备份；路径和哈希用于定位及核验，不是文件本体。私有仓库中的研究备份也不等于已经向学长或公开仓库发出PR。
+
+## 后续同步与贡献
+
+以后可直接让 Codex 阅读 [0918 GitHub / 上游 PR 操作指南](docs/20260918_GITHUB_UPSTREAM_PR_GUIDE.md)，按最新实现整理贡献并通过原 fork 提交 PR。
