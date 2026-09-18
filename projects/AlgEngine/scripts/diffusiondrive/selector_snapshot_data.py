@@ -10,13 +10,21 @@ import selector_snapshot_common as s
 from materialize_grpo_selector_v3 import state_dict
 
 
-def export_model(scalar_path, selector_path, output, provenance):
+def export_model(scalar_path, selector_path, output, provenance, expected_policy='P1_seed2', method=s.METHOD):
     checkpoint = torch.load(scalar_path, map_location='cpu')
     original = state_dict(checkpoint)
     payload = torch.load(selector_path, map_location='cpu')
     if payload.get('score_mode') != 'residual' or payload.get('inference_uses_reward_or_q') is not False:
         raise RuntimeError('Only native residual selector export is authorized')
-    if payload['provenance']['policy'] != 'P1_seed2':
+    if method not in (s.METHOD, 'selector_p1_balance_v1', 'selector_mid_followup_v1'):
+        raise RuntimeError('Unregistered native export method')
+    if method == s.METHOD and expected_policy != 'P1_seed2':
+        raise RuntimeError('Legacy snapshot remains seed2-only')
+    if method == 'selector_p1_balance_v1' and expected_policy not in ('P1_seed0', 'P1_seed1', 'CL_NLL_seed0', 'CL_NLL_seed1', 'CL_NLL_seed2'):
+        raise RuntimeError('Unregistered balance endpoint export')
+    if method == 'selector_mid_followup_v1' and expected_policy not in ('MID_seed0', 'MID_seed1', 'MID_seed2'):
+        raise RuntimeError('Only fixed MID endpoints can be exported')
+    if payload['provenance']['policy'] != expected_policy:
         raise RuntimeError('Wrong release policy')
     weights = payload['scene_selector_state']
     old_keys = {k for k in original if k.startswith(s.PREFIX)}
@@ -28,7 +36,7 @@ def export_model(scalar_path, selector_path, output, provenance):
         original[s.PREFIX+key] = value.detach().cpu().clone()
     # Replace obsolete model-specific metadata, not the frozen reference weights.
     checkpoint.setdefault('meta', {}).pop('diffusiondrive_grpo_selector_v3', None)
-    checkpoint['meta']['selector_snapshot'] = dict(method=s.METHOD, **provenance,
+    checkpoint['meta']['selector_snapshot'] = dict(method=method, **provenance,
         scene_selector_config=payload['scene_selector_config'], source_training=payload['provenance'])
     output = Path(output)
     if output.exists():

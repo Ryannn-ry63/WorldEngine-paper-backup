@@ -134,7 +134,9 @@ def checked(root, full=False):
     run=Path(root).parents[1]
     inputs=d.verified_read(co['inputs'])
     if (co['contract']!=d.artifact(run/'run_contract.json') or co['inputs']!=d.artifact(run/'inputs.json')
-            or co['method']!=s.METHOD or co['checkpoint']!=inputs['models'][co['policy']]
+            or co['method'] not in (s.METHOD, 'selector_p1_balance_v1', 'selector_mid_followup_v1')
+            or co['method']!=inputs.get('method',s.METHOD)
+            or co['checkpoint']!=inputs['models'][co['policy']]
             or co['rows']!=inputs['cohorts'][co['cohort']]
             or co['noise']!=(c.NOISE_NAMESPACE if co['cohort']=='bridge' else s.FORMAL_NOISE)):
         raise RuntimeError('Audited native condition identity drift')

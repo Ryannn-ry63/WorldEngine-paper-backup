@@ -358,9 +358,9 @@ class BaseEnv:
                 )
             if self.config.get('diffusiondrive_cfpi_deployment', False):
                 from worldengine.manager.diffusiondrive_cfpi_deployment_manager import (
-                    DiffusionDriveCFPIDeploymentManager,
+                    deployment_manager,
                 )
-                reward_manager = DiffusionDriveCFPIDeploymentManager()
+                reward_manager = deployment_manager()
             elif self.config.get('diffusiondrive_cfpi_causal_cache', False):
                 from worldengine.manager.diffusiondrive_cfpi_cache_manager import (
                     DiffusionDriveCFPICausalCacheManager,

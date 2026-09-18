@@ -244,7 +244,7 @@ class Runner(PilotRunner):
                    DIFFUSIONDRIVE_CFPI_DEPLOYMENT_COLLECTION_ID=collection_id,
                    DIFFUSIONDRIVE_CFPI_DEPLOYMENT_ROUTING=contract["routing"]["path"],
                    DIFFUSIONDRIVE_CFPI_DEPLOYMENT_ROUTING_SHA256=contract["routing"]["sha256"])
-        decision_feedback = contract.get('research_method') == 'selector_decision_feedback_v1'
+        decision_feedback = contract.get('research_method') in ('selector_decision_feedback_v1', 'selector_p1_attribution_v1', 'selector_p1_balance_v1', 'selector_mid_followup_v1')
         worker_count = contract['worker_count'] if decision_feedback else self.args.gpus
         if not 1 <= worker_count <= self.args.gpus:
             raise RuntimeError('Invalid collection worker count')
@@ -253,7 +253,7 @@ class Runner(PilotRunner):
             env.update(CUDA_VISIBLE_DEVICES=','.join(worker_devices),
                        WORLDENGINE_FEEDBACK_CUDA_DEVICE_MAP=','.join(worker_devices),
                        DIFFUSIONDRIVE_FEEDBACK_RESEARCH_METHOD=contract['research_method'])
-        if contract.get('research_method') in ('selector_feedback_repair_v2', 'selector_decision_feedback_v1'):
+        if contract.get('research_method') in ('selector_feedback_repair_v2', 'selector_decision_feedback_v1', 'selector_p1_attribution_v1', 'selector_p1_balance_v1', 'selector_mid_followup_v1'):
             if d.verified_read(contract['run_contract'])['gpu_count'] != self.args.gpus:
                 raise RuntimeError('Feedback collection GPU count differs from frozen run')
             env.update(DIFFUSIONDRIVE_FEEDBACK_REACT_TYPE=contract['react_type'],

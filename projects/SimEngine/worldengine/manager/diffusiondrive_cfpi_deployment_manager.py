@@ -13,6 +13,15 @@ from worldengine.manager.diffusiondrive_dynamic_reward_manager import (
 from worldengine.manager.diffusiondrive_sidecar_contract import scene_sidecar_prefixes
 
 
+def deployment_manager():
+    observer = DiffusionDriveCFPIDeploymentManager()
+    if (observer.collection.get('research_method') == 'selector_p1_attribution_v1'
+            and observer.collection.get('role') == 'local_observation'):
+        from worldengine.manager.selector_attribution_local_manager import AttributionLocalManager
+        return AttributionLocalManager(observer)
+    return observer
+
+
 class DiffusionDriveCFPIDeploymentManager(BaseManager):
     PRIORITY = 20
     _load_sidecar = DiffusionDriveDynamicRewardManager._load_sidecar
@@ -25,7 +34,7 @@ class DiffusionDriveCFPIDeploymentManager(BaseManager):
                                                sha256=self.collection_sha))
         self.routing = d.verified_read(self.collection['routing'])
         self.code_sha = d.verified_read(self.collection['run_contract'])['code_sha']
-        if self.collection.get('research_method') in ('selector_feedback_repair_v2', 'selector_decision_feedback_v1'):
+        if self.collection.get('research_method') in ('selector_feedback_repair_v2', 'selector_decision_feedback_v1', 'selector_p1_attribution_v1'):
             mode = self.collection['react_type']
             policy,navigation = ('idm_policy','idm_navigation') if mode=='R' else ('trajectory_policy','trajectory_navigation')
             if (mode not in ('NR','R') or cfg['agent_policy']!=policy or cfg['agent_navigation']!=navigation

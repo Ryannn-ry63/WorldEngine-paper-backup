@@ -99,7 +99,10 @@ def validate_native(sidecar, collection, code_sha, terminal=False):
             or sidecar.get('cfpi_deployment') is not None):
         raise RuntimeError('Native inference provenance/router mismatch')
     contract = sidecar.get('selector_rollout_contract', {})
-    if (contract.get('experiment') != METHOD or contract.get('condition') != collection['id']
+    method = collection.get('method', METHOD)
+    if method not in (METHOD, 'selector_p1_balance_v1', 'selector_mid_followup_v1'):
+        raise RuntimeError('Unregistered native protocol')
+    if (contract.get('experiment') != method or contract.get('condition') != collection['id']
             or contract.get('react_type') != collection['mode']
             or contract.get('inference_uses_reward_or_q') is not False):
         raise RuntimeError('Native observer contract mismatch')

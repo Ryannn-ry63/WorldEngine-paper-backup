@@ -63,6 +63,8 @@ def validate_feedback(sidecar, collection, route):
     if any(contract.get(k)!=v for k,v in expected.items()):
         raise RuntimeError('Feedback mode/exposure contract drift')
     target = route.get('feedback_target')
+    if method in ('selector_p1_balance_v1', 'selector_mid_followup_v1') and (target or cohort not in ('development', 'common') or collection.get('role') != 'evaluation'):
+        raise RuntimeError('Balance transport is evaluation-only; no interventions')
     if target and target.get('no_intervention') and method != 'selector_decision_feedback_v1':
         raise RuntimeError('Hybrid reference is not part of the legacy protocol')
     if target and cohort!='train':
