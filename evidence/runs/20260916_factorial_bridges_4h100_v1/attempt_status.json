@@ -1,0 +1,29 @@
+{
+  "completed_conditions": 26,
+  "cpu_capacity": 80.0,
+  "devices": [
+    {
+      "device": "0",
+      "name": "NVIDIA H100 80GB HBM3"
+    },
+    {
+      "device": "1",
+      "name": "NVIDIA H100 80GB HBM3"
+    },
+    {
+      "device": "2",
+      "name": "NVIDIA H100 80GB HBM3"
+    },
+    {
+      "device": "3",
+      "name": "NVIDIA H100 80GB HBM3"
+    }
+  ],
+  "finished": 1789573703.6204174,
+  "resources": {
+    "ray_cpu_threads": 32,
+    "simulation_cpu_threads": 8
+  },
+  "started": 1789569631.1784842,
+  "status": "PASS_BRIDGES_26_OF_26"
+}

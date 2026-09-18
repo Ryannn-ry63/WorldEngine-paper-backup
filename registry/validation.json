@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-18",
+  "snapshot_source_files_verified": 1206,
+  "owned_runner_tests": {
+    "passed": 8
+  },
+  "full_eval_resume_tests": {
+    "passed": 5
+  },
+  "paper_study_tests": {
+    "total": 25,
+    "passed": 24,
+    "failed": 1,
+    "failed_subtests": 6,
+    "reason": "test_all_six_queues_without_python_in_path depends on original checkout depth for implicit shared interpreter"
+  },
+  "original_workspace_launcher_tests": {
+    "passed": 3
+  },
+  "python_syntax": "PASS",
+  "shell_syntax": {
+    "status": "PASS",
+    "scripts": 93
+  },
+  "credential_pattern_scan_findings": 0,
+  "symlinks": 0,
+  "code_history_branch": "research/paper-code-20260918",
+  "code_history_head": "238176dd44c3f192c697805e31224e2ab197cf71",
+  "prior_p1_is_ancestor": true,
+  "formal_training_or_gpu_validation_performed_by_backup": false
+}

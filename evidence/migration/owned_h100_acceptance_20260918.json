@@ -1,0 +1,45 @@
+{
+  "status": "PASS_SINGLE_H100_NONDATA_RUNTIME",
+  "verified": 1789710766.1154737,
+  "hostname": "h100-wcj-dsw--433069e398ef-orgvfaeazf",
+  "elapsed_seconds": 224.50116562843323,
+  "evidence": [
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/checks/20260918_054710_27876/summary.json",
+      "sha256": "d4bac71839af92f0e1068160489b25e7172a5ad429cbdc922112ef7ae87a3d6f"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/checks/20260918_054710_27876/algengine.json",
+      "sha256": "8b83fdf23646d73b9f1026e2198253503342285adf802c1bcbce1d0cb0133a8a"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/checks/20260918_054710_27876/simengine.json",
+      "sha256": "2a0f122c1c7385e46ab3c6aac36b47684be58bbda8db7a7e2491f9b95e985bfe"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/checks/20260918_054710_27876/mmcv_cuda.log",
+      "sha256": "3fd38d9f63c24a86d758a5e8cba5ff7d58562159804043ea47b7a67722b81217"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/checks/20260918_054710_27876/gsplat_cuda.log",
+      "sha256": "5feddb6021229280903ee6b41d7b8d43c20ddb30ea574c6b5a7c9614ae6281fd"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/checks/20260918_054710_27876/ray_gpu.log",
+      "sha256": "97b1b574ee56a3d38456b83b4c2f3ac0b674bf29942719d3882c4f8a8a383d05"
+    }
+  ],
+  "scope": [
+    "imports and module backing in global_user",
+    "epoch100 sha256",
+    "MMCV CUDA sm90",
+    "gsplat CUDA sm90",
+    "single Ray GPU worker",
+    "simengine restored files compare"
+  ],
+  "data_verified": false,
+  "old_results_resume_verified": false,
+  "multi_gpu_ddp_verified": false,
+  "new_project_verified": false,
+  "requires_owned_launcher": true
+}

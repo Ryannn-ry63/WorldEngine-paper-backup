@@ -1,0 +1,30 @@
+{
+  "current_cross_source_methods": [
+    "P1",
+    "CL_NLL",
+    "MID"
+  ],
+  "training_regimes": [
+    {
+      "V3": "historical; compatibility/compute audit required",
+      "matched_dense_continuation": "NOT_RUN",
+      "matched_feedback_continuation": "NOT_RUN",
+      "paper_main_table_complete": false,
+      "regime": "common"
+    },
+    {
+      "V3": "historical; compatibility/compute audit required",
+      "matched_dense_continuation": "NOT_RUN",
+      "matched_feedback_continuation": "NOT_RUN",
+      "paper_main_table_complete": false,
+      "regime": "rarelog"
+    },
+    {
+      "V3": "historical; compatibility/compute audit required",
+      "matched_dense_continuation": "NOT_RUN",
+      "matched_feedback_continuation": "NOT_RUN",
+      "paper_main_table_complete": false,
+      "regime": "rarerollout"
+    }
+  ]
+}

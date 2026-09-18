@@ -1,0 +1,71 @@
+{
+  "argmax_mismatches": 0,
+  "cached_max_abs": 0.0,
+  "cached_states": 256,
+  "checkpoint": {
+    "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_C_v3/native/unary_matched_seed2/checkpoint.pth",
+    "sha256": "c544e79b883a077e69ae99e564491ab6286c9193b63f1d601b35afe82494fc90"
+  },
+  "config": {
+    "context_dim": 256,
+    "feature_dim": 256,
+    "feedforward_dim": 512,
+    "geometry_dim": 58,
+    "geometry_hidden_dim": 128,
+    "model_dim": 256,
+    "num_heads": 4,
+    "num_route_steps": 8,
+    "num_set_layers": 1,
+    "paper_unary_matched": true,
+    "route_bev_dim": 256,
+    "use_route_bev": true,
+    "use_scene_context": true,
+    "use_set_attention": false,
+    "use_trajectory_geometry": true
+  },
+  "physical_simulator_bridge_completed": false,
+  "policy": "unary_matched_seed2",
+  "provenance": {
+    "base": {
+      "path": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/WorldEngine/experiments/diffusiondrive/e2e_diffusiondrive/epoch_100.pth",
+      "sha256": "1c450bad0cf62ab9110a8101d2ff6c96984541bd975ddea598ddb2add086a514"
+    },
+    "code": {
+      "paper_study/__init__.py": "909f4aae22f3ea874450feba2eb8d6203fa4f2987a04543adb0502038aaa8411",
+      "paper_study/__main__.py": "ff51cb436fdbee71bfca30f45c0f1dce40b78ec20244df244f7c560058adcfb5",
+      "paper_study/audit.py": "6bc406a84c0ba1517105945ef0fbc2be0b2d19ad3e0d1d78b98d08143a4d81a6",
+      "paper_study/common.py": "e9e6ab4013ea7bc99780604416def1f5d5402d8a23ad3d836373b9d85921195a",
+      "paper_study/data.py": "e39cc00892573837c0454b7d90f1ea335a066cdc00967efd0e710770bab4c285",
+      "paper_study/debug.py": "dd249890177fe0ac5a921f62d771609847da04c0c887c48220928d0566719e18",
+      "paper_study/evaluation.py": "5d41c28796492a9c4a5905b69b587c3d48070729b2fd972558a3d52b859747de",
+      "paper_study/export.py": "9017fcc9ff77fab50abe2648229a11038cac7bb063c4c7ef833737766fed7ac4",
+      "paper_study/hardware.py": "7ccc99583fb3646bb3c3145ea2f3e66d25f6c6d0a3aa7db18bce0b4a4709af2e",
+      "paper_study/mechanism.py": "b457d40325acf04477de657dd492d9527f90c3fd6979419e8f191889ac9a6f6d",
+      "paper_study/models.py": "ee84219255205b39090f4d5291c578344a27bed0b379ccae8bb15955309e81b4",
+      "paper_study/objectives.py": "4b6626d50da4dcde8d508ec7274fd1382f97819309c30eb420c33eb60bce52c9",
+      "paper_study/oracle.py": "e300bc7ce4a76b5dba10eb74aef65ce3a270af33fb10414435fe4d3788b1f311",
+      "paper_study/queue.py": "e78118ac6b4f35123e3cf3b339188d31525278b3d9d5414b85971f07989f21c0",
+      "paper_study/report.py": "d48830bef7806d977bf9dd586c05a304b1ae23f72ca4020e1c50a30a53bf00e5",
+      "paper_study/runtime_plugin.py": "da91fdeb1cc9504ba2515a9734a610194ca92458db2d1b32e3f8944793814bff",
+      "paper_study/sources.py": "7fc05b8334d52e9465788ae7cfa5b348d02ec9cfd44f07de72d177995eff43a9",
+      "paper_study/specs.py": "c7dae2fe558ff461b573359dbe70e477dc9d8ddba7af289f9453aba9699f39fc",
+      "paper_study/statistics.py": "1b9a7c93e3b2ccead3b99d5be4e228bb53f97285a2ae8f874b4066f2ec31e4bb",
+      "paper_study/storage.py": "f46e4aed9bb912fc18b2b203fa29c17324d6e60fb27858163bf7e95177bb1863",
+      "paper_study/supervised.py": "25eb37c07f6166ab81254bc5a5a34c273eaf482600ead1cd11892ac980e25860",
+      "paper_study/supervised_plugin.py": "9697b4a3d42916220895851e4a6849eba317925722ce6e6bfbd72acb5e560dae",
+      "paper_study/supervised_worker.py": "aa63cb06b150429400a8b504627518b1c17838c5d306f974d0acd5d55681263e",
+      "paper_study/train.py": "e896763a044b163ccc8e46a0e77efcbd3f7ee69f5004c00e6490df32c312e131",
+      "run_paper_study.sh": "3ca22166ae44348f49540d74a15eb7194d2e8abb7a295f7fbb79eb3d0ec0b7f8"
+    },
+    "selector": {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_C_v3/checkpoints/unary_matched_seed2/selector.pt",
+      "sha256": "23ba70bccf5a5d3d9dc7ae6bdecd7f67ffbb1150616efabbe38f70109c3d8c83"
+    },
+    "training": {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_C_v3/checkpoints/unary_matched_seed2/report.json",
+      "sha256": "e3a8c92776b6bcc1ba20511b54310d4b57cfe7d18fce0d249865f28e85251c95"
+    }
+  },
+  "status": "PASS",
+  "unchanged_tensors": 963
+}

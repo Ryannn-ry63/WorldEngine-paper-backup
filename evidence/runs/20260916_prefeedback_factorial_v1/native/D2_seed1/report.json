@@ -1,0 +1,37 @@
+{
+  "argmax_mismatches": 0,
+  "cached_max_abs": 0.0,
+  "cached_states": 256,
+  "checkpoint": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed1/checkpoint.pth",
+    "sha256": "66a7ad0e626203d86af7a694ef8931a2d5a1d39da663e92e179489db5992ae75"
+  },
+  "evaluation_complete": false,
+  "physical_simulator_bridge_completed": false,
+  "policy": "D2_seed1",
+  "provenance": {
+    "base": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/grpo_selector_v3_rare_original_v1/models/rare_tuned/seed0/checkpoint.pth",
+      "sha256": "bd35f0293c878c6cddb985ac0b8aaae91d4f7f8e0bf2c3bf70ba49ba329c02a3"
+    },
+    "exporter": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/scripts/materialize_study.py",
+      "sha256": "573834738a5b9dbf30d90222dc43b2ac0e7e7e43afc99de567fcbb72cdb47c86"
+    },
+    "manifest": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/manifest.json",
+      "sha256": "86138523fe1a8072283fae2cb4769be85f04fd454236b3652f8dd39efc39d03d"
+    },
+    "selector": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed1/selector.pt",
+      "sha256": "0c13e36e2e0c25ef9590a1d02065e26adf07ef64a392cbc0d49d8df961a80f2e"
+    },
+    "training": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed1/report.json",
+      "sha256": "506e2311a64db819197665ff8106fed834712864f96c6461b211a219495773d8"
+    }
+  },
+  "selector_tensors": 54,
+  "status": "PASS",
+  "unchanged_nonselector_tensors": 963
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+/data/
+/models/
+/outputs/
+/experiments/
+/local_paths.json
+*.pth
+*.pt
+*.pkl
+*.log

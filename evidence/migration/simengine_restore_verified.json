@@ -1,0 +1,10 @@
+{
+  "status": "PASS_RESTORED_ENVIRONMENT_FILES",
+  "exit_code": 0,
+  "finished": 1789710478.1701267,
+  "excludes": [
+    "*.pyc",
+    "*/__pycache__/*"
+  ],
+  "note": "Compare extracted environment with previously hash-verified archive; no GPU or data check implied"
+}

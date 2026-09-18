@@ -1,0 +1,103 @@
+{
+  "code_archive": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/archive/code_manifest.json",
+    "sha256": "93e19daeefce48cba4d3fe9b8c2e56330c98efe94bc26bd2e5f06ad497f209a9"
+  },
+  "code_sha": "9ad7059b4d360a271488c1fe4e9e5f1d408cac3e2f8e65b286cfb592832ffe15",
+  "forecast": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/budget_forecast.json",
+    "sha256": "bccb9f683e0d2ca881dac81888efb093271058369d4090d2b6e6fce63c2481c5"
+  },
+  "forecast_summary": {
+    "available_bytes_at_audit": 337708580864,
+    "contract": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/run_contract.json",
+      "sha256": "8f622b14a3409876bf00290626dbab2195aec4073f6d43aeaee690defaf55d50"
+    },
+    "estimated_additional_bytes": 68442415185,
+    "fits_budget": true,
+    "fits_storage": true,
+    "gpu_hours_limit": 72.0,
+    "measured_component_wall_hours": 9.401197282500002,
+    "note": "Source measured timings; 35% plus 4 GPUh allowance, not a guarantee. Audit/export overhead is separate; retries consume budget.",
+    "planning_gpu_hours": 54.766465325500015,
+    "planning_wall_hours": 13.691616331375004,
+    "status": "PASS",
+    "storage_allowance_bytes": 88975139740,
+    "task": "mid-formal",
+    "tasks": [
+      {
+        "bytes": 320453780,
+        "copies": 3,
+        "kind": "formal",
+        "reference": "open_cbd6898e5c9b",
+        "seconds": 2729.776841
+      },
+      {
+        "bytes": 308125617,
+        "copies": 3,
+        "kind": "formal",
+        "reference": "open_05fd7763da76",
+        "seconds": 161.422286
+      },
+      {
+        "bytes": 8814470533,
+        "copies": 3,
+        "kind": "formal",
+        "reference": "full_NR_P1_seed2",
+        "seconds": 2995.541318
+      },
+      {
+        "bytes": 8815196224,
+        "copies": 3,
+        "kind": "formal",
+        "reference": "full_R_P1_seed2",
+        "seconds": 3345.587672
+      },
+      {
+        "bytes": 2017914165,
+        "copies": 3,
+        "kind": "formal",
+        "reference": "common_NR_P1_seed2",
+        "seconds": 747.331123
+      },
+      {
+        "bytes": 2018922118,
+        "copies": 3,
+        "kind": "formal",
+        "reference": "common_R_P1_seed2",
+        "seconds": 1007.498013
+      },
+      {
+        "bytes": 259074917,
+        "copies": 3,
+        "kind": "bridge",
+        "reference": "bridge_NR_P1_seed2",
+        "seconds": 123.585764
+      },
+      {
+        "bytes": 259981041,
+        "copies": 3,
+        "kind": "bridge",
+        "reference": "bridge_R_P1_seed2",
+        "seconds": 170.693722
+      }
+    ]
+  },
+  "formal_gpu_experiments_started": false,
+  "inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/followup_inputs.json",
+    "sha256": "97ac402ee6b300a281e3e914f95b6f49b5194ac14fe39bf3def20cafbe8ee077"
+  },
+  "native_inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/inputs.json",
+    "sha256": "cbfc414ec43d167ecdc1b964858ba9346ec944501753db4a2490c72a8d738634"
+  },
+  "new_rollouts": 0,
+  "optimizer_steps": 0,
+  "parity": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/cached_parity_cpu.json",
+    "sha256": "991782b6fb2e38a7c2d73fec79edbcc155ce12f97f46316dd310877f0f1ba5a2"
+  },
+  "status": "PASS"
+}

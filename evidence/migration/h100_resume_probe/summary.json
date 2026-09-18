@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ISOLATED_RESUME_PROBE",
+  "scope": "run",
+  "hostname": "h100-wcj-dsw--433069e398ef-mgpgubu4vy",
+  "started": 1789725523.5537357,
+  "diagnostic_only": true,
+  "formal_resume_authorized": false,
+  "stages": [
+    "OWNED_GPU_RUNTIME",
+    "REUSE_MIGRATED_OPEN_RARE",
+    "FROZEN_INPUTS_AND_CPU_PREFLIGHT",
+    "NEW_BRIDGE_NR_HISTORICAL_PARITY",
+    "REUSE_NEW_BRIDGE_NR",
+    "NEW_BRIDGE_R_HISTORICAL_PARITY",
+    "REUSE_NEW_BRIDGE_R"
+  ],
+  "current_stage": "REUSE_NEW_BRIDGE_R",
+  "reused_open_scenes": 288,
+  "single_gpu_closed_loop_verified": true,
+  "four_gpu_verified": false,
+  "training_optimizer_resume_verified": false,
+  "finished": 1789727518.598108
+}

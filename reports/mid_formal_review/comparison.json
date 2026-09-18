@@ -1,0 +1,4712 @@
+{
+  "status": "PASS",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260916,
+    "method": "Seed-average first; multinomial resampling of logs; scene-weighted and equal-log intervals",
+    "conditional_on_fixed_acquisition_and_eval_noise": true,
+    "exploratory_unadjusted": true
+  },
+  "blocks": {
+    "open_navtest": {
+      "scenes": 12146,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.8591164012582969,
+            "success": 0.9468686536033811,
+            "no_at_fault_collisions": 0.9737910972062133,
+            "drivable_area_compliance": 0.972967780888084,
+            "ego_progress": 0.7815621971312292,
+            "time_to_collision_within_bound": 0.9289203578681596,
+            "comfort": 0.9977221581865087,
+            "driving_direction_compliance": 0.9663812503430483
+          },
+          "seed_means": [
+            {
+              "score": 0.8590981750822102,
+              "success": 0.9517536637576157,
+              "no_at_fault_collisions": 0.9757945002469949,
+              "drivable_area_compliance": 0.9757945002469949,
+              "ego_progress": 0.7730221492282114,
+              "time_to_collision_within_bound": 0.9331467149678907,
+              "comfort": 0.9969537296229212,
+              "driving_direction_compliance": 0.9713897579450025
+            },
+            {
+              "score": 0.8586883874238328,
+              "success": 0.9396509138811131,
+              "no_at_fault_collisions": 0.9713074263131896,
+              "drivable_area_compliance": 0.9681376584883913,
+              "ego_progress": 0.791332753230877,
+              "time_to_collision_within_bound": 0.9256545364729128,
+              "comfort": 0.9978593775728635,
+              "driving_direction_compliance": 0.9602749876502552
+            },
+            {
+              "score": 0.8595626412688477,
+              "success": 0.9492013831714144,
+              "no_at_fault_collisions": 0.9742713650584555,
+              "drivable_area_compliance": 0.9749711839288655,
+              "ego_progress": 0.7803316889345989,
+              "time_to_collision_within_bound": 0.9279598221636752,
+              "comfort": 0.9983533673637411,
+              "driving_direction_compliance": 0.9674790054338877
+            }
+          ],
+          "seed_std": {
+            "score": 0.0004374118099707744,
+            "success": 0.006379683304951653,
+            "no_at_fault_collisions": 0.0022817648935159296,
+            "drivable_area_compliance": 0.004203215939841029,
+            "ego_progress": 0.009217112755743469,
+            "time_to_collision_within_bound": 0.0038373371339829013,
+            "comfort": 0.00070983682728893,
+            "driving_direction_compliance": 0.005638113989256218
+          }
+        },
+        "P1": {
+          "mean": {
+            "score": 0.8615610654125011,
+            "success": 0.9508205719304024,
+            "no_at_fault_collisions": 0.9773862451287118,
+            "drivable_area_compliance": 0.9732422196607938,
+            "ego_progress": 0.7784094482601399,
+            "time_to_collision_within_bound": 0.9356166639222789,
+            "comfort": 0.9986826938909928,
+            "driving_direction_compliance": 0.9660793676930677
+          },
+          "seed_means": [
+            {
+              "score": 0.8614552020437951,
+              "success": 0.9514243372303639,
+              "no_at_fault_collisions": 0.9785937757286349,
+              "drivable_area_compliance": 0.972748229869916,
+              "ego_progress": 0.7758234483730261,
+              "time_to_collision_within_bound": 0.9392392557220484,
+              "comfort": 0.998518030627367,
+              "driving_direction_compliance": 0.9662851967726
+            },
+            {
+              "score": 0.8549824118832887,
+              "success": 0.9499423678577309,
+              "no_at_fault_collisions": 0.9755886711674625,
+              "drivable_area_compliance": 0.974147867610736,
+              "ego_progress": 0.7635221494449138,
+              "time_to_collision_within_bound": 0.9338053680223942,
+              "comfort": 0.9989296887864317,
+              "driving_direction_compliance": 0.9667791865634777
+            },
+            {
+              "score": 0.8682455823104193,
+              "success": 0.9510950107031121,
+              "no_at_fault_collisions": 0.9779762884900379,
+              "drivable_area_compliance": 0.972830561501729,
+              "ego_progress": 0.7958827469624795,
+              "time_to_collision_within_bound": 0.9338053680223942,
+              "comfort": 0.99860036225918,
+              "driving_direction_compliance": 0.9651737197431253
+            }
+          ],
+          "seed_std": {
+            "score": 0.006632218914843122,
+            "success": 0.0007781682243129758,
+            "no_at_fault_collisions": 0.0015870654466904038,
+            "drivable_area_compliance": 0.0007853937110298976,
+            "ego_progress": 0.01633455277886677,
+            "time_to_collision_within_bound": 0.0031372565261415133,
+            "comfort": 0.000217829022811179,
+            "driving_direction_compliance": 0.0008222865287106501
+          }
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.8586019379450933,
+            "success": 0.9516438882485317,
+            "no_at_fault_collisions": 0.9766452604423953,
+            "drivable_area_compliance": 0.9747516329106976,
+            "ego_progress": 0.7697766644937861,
+            "time_to_collision_within_bound": 0.9363576486085954,
+            "comfort": 0.9987924694000769,
+            "driving_direction_compliance": 0.9657225972885449
+          },
+          "seed_means": [
+            {
+              "score": 0.8587784833388232,
+              "success": 0.9611394697842911,
+              "no_at_fault_collisions": 0.9816400461057139,
+              "drivable_area_compliance": 0.9795817553103903,
+              "ego_progress": 0.7510735165061044,
+              "time_to_collision_within_bound": 0.9488720566441627,
+              "comfort": 0.9988473571546188,
+              "driving_direction_compliance": 0.9720895768154125
+            },
+            {
+              "score": 0.8586546702800228,
+              "success": 0.9439321587353862,
+              "no_at_fault_collisions": 0.9734892145562325,
+              "drivable_area_compliance": 0.9695372962292113,
+              "ego_progress": 0.7837885090436602,
+              "time_to_collision_within_bound": 0.928289148690927,
+              "comfort": 0.998682693890993,
+              "driving_direction_compliance": 0.9631977605796147
+            },
+            {
+              "score": 0.8583726602164338,
+              "success": 0.949860036225918,
+              "no_at_fault_collisions": 0.9748065206652395,
+              "drivable_area_compliance": 0.9751358471924914,
+              "ego_progress": 0.7744679679315941,
+              "time_to_collision_within_bound": 0.9319117404906965,
+              "comfort": 0.9988473571546188,
+              "driving_direction_compliance": 0.9618804544706077
+            }
+          ],
+          "seed_std": {
+            "score": 0.00020798708139407459,
+            "success": 0.008741251879014752,
+            "no_at_fault_collisions": 0.004375469884832525,
+            "drivable_area_compliance": 0.005033240012071806,
+            "ego_progress": 0.016854492877042392,
+            "time_to_collision_within_bound": 0.0109881117211941,
+            "comfort": 9.506837958002838e-05,
+            "driving_direction_compliance": 0.005553165319695592
+          }
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.875426246722833,
+            "success": 0.955540918821011,
+            "no_at_fault_collisions": 0.979911081837642,
+            "drivable_area_compliance": 0.9760414951424338,
+            "ego_progress": 0.7987108012837904,
+            "time_to_collision_within_bound": 0.9436851638399473,
+            "comfort": 0.9988473571546188,
+            "driving_direction_compliance": 0.9660382018771612
+          },
+          "seed_means": [
+            {
+              "score": 0.875426246722833,
+              "success": 0.955540918821011,
+              "no_at_fault_collisions": 0.979911081837642,
+              "drivable_area_compliance": 0.9760414951424338,
+              "ego_progress": 0.7987108012837904,
+              "time_to_collision_within_bound": 0.9436851638399473,
+              "comfort": 0.9988473571546188,
+              "driving_direction_compliance": 0.9660382018771612
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {}
+    },
+    "open_rare": {
+      "scenes": 288,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.6732575573946281,
+            "success": 0.8101851851851851,
+            "no_at_fault_collisions": 0.9253472222222222,
+            "drivable_area_compliance": 0.8854166666666666,
+            "ego_progress": 0.5685624930197448,
+            "time_to_collision_within_bound": 0.8344907407407408,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9490740740740741
+          },
+          "seed_means": [
+            {
+              "score": 0.6777315584524976,
+              "success": 0.8194444444444444,
+              "no_at_fault_collisions": 0.9201388888888888,
+              "drivable_area_compliance": 0.9027777777777778,
+              "ego_progress": 0.5595337072707752,
+              "time_to_collision_within_bound": 0.8368055555555556,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9722222222222222
+            },
+            {
+              "score": 0.6742233187202512,
+              "success": 0.7986111111111112,
+              "no_at_fault_collisions": 0.9322916666666666,
+              "drivable_area_compliance": 0.8611111111111112,
+              "ego_progress": 0.5902742078880635,
+              "time_to_collision_within_bound": 0.8402777777777778,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9270833333333334
+            },
+            {
+              "score": 0.6678177950111356,
+              "success": 0.8125,
+              "no_at_fault_collisions": 0.9236111111111112,
+              "drivable_area_compliance": 0.8923611111111112,
+              "ego_progress": 0.5558795639003957,
+              "time_to_collision_within_bound": 0.8263888888888888,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9479166666666666
+            }
+          ],
+          "seed_std": {
+            "score": 0.005026947144776164,
+            "success": 0.010607814108694037,
+            "no_at_fault_collisions": 0.006259637631013863,
+            "drivable_area_compliance": 0.0216840208277722,
+            "ego_progress": 0.01889145608033431,
+            "time_to_collision_within_bound": 0.007228006942590775,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.022591691314748977
+          }
+        },
+        "P1": {
+          "mean": {
+            "score": 0.6823076720716271,
+            "success": 0.8194444444444445,
+            "no_at_fault_collisions": 0.9340277777777777,
+            "drivable_area_compliance": 0.8854166666666666,
+            "ego_progress": 0.5660676750509183,
+            "time_to_collision_within_bound": 0.8564814814814815,
+            "comfort": 0.9988425925925926,
+            "driving_direction_compliance": 0.9583333333333334
+          },
+          "seed_means": [
+            {
+              "score": 0.6821575772200424,
+              "success": 0.8194444444444444,
+              "no_at_fault_collisions": 0.9357638888888888,
+              "drivable_area_compliance": 0.8854166666666666,
+              "ego_progress": 0.5593164282875639,
+              "time_to_collision_within_bound": 0.8645833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.953125
+            },
+            {
+              "score": 0.6803047166107763,
+              "success": 0.8229166666666666,
+              "no_at_fault_collisions": 0.9340277777777778,
+              "drivable_area_compliance": 0.8854166666666666,
+              "ego_progress": 0.5469592868506455,
+              "time_to_collision_within_bound": 0.8645833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9652777777777778
+            },
+            {
+              "score": 0.684460722384063,
+              "success": 0.8159722222222222,
+              "no_at_fault_collisions": 0.9322916666666666,
+              "drivable_area_compliance": 0.8854166666666666,
+              "ego_progress": 0.5919273100145453,
+              "time_to_collision_within_bound": 0.8402777777777778,
+              "comfort": 0.9965277777777778,
+              "driving_direction_compliance": 0.9565972222222222
+            }
+          ],
+          "seed_std": {
+            "score": 0.002082064443107427,
+            "success": 0.00347222222222221,
+            "no_at_fault_collisions": 0.001736111111111105,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.02323177299437205,
+            "time_to_collision_within_bound": 0.014032819042803419,
+            "comfort": 0.0020046884346861934,
+            "driving_direction_compliance": 0.0062596376310138785
+          }
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.6725388592868203,
+            "success": 0.8125,
+            "no_at_fault_collisions": 0.9322916666666666,
+            "drivable_area_compliance": 0.8796296296296298,
+            "ego_progress": 0.5536431731165617,
+            "time_to_collision_within_bound": 0.8506944444444443,
+            "comfort": 0.9988425925925926,
+            "driving_direction_compliance": 0.9502314814814815
+          },
+          "seed_means": [
+            {
+              "score": 0.6938218823720623,
+              "success": 0.84375,
+              "no_at_fault_collisions": 0.9375,
+              "drivable_area_compliance": 0.9097222222222222,
+              "ego_progress": 0.5571782624555085,
+              "time_to_collision_within_bound": 0.8611111111111112,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9565972222222222
+            },
+            {
+              "score": 0.6648781064831808,
+              "success": 0.7951388888888888,
+              "no_at_fault_collisions": 0.9288194444444444,
+              "drivable_area_compliance": 0.8611111111111112,
+              "ego_progress": 0.5657623651857608,
+              "time_to_collision_within_bound": 0.8402777777777778,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9409722222222222
+            },
+            {
+              "score": 0.658916589005218,
+              "success": 0.7986111111111112,
+              "no_at_fault_collisions": 0.9305555555555556,
+              "drivable_area_compliance": 0.8680555555555556,
+              "ego_progress": 0.537988891708416,
+              "time_to_collision_within_bound": 0.8506944444444444,
+              "comfort": 0.9965277777777778,
+              "driving_direction_compliance": 0.953125
+            }
+          ],
+          "seed_std": {
+            "score": 0.018671106726576774,
+            "success": 0.027118922485786998,
+            "no_at_fault_collisions": 0.00459331824837603,
+            "drivable_area_compliance": 0.026291242341667905,
+            "ego_progress": 0.014220200410857264,
+            "time_to_collision_within_bound": 0.010416666666666685,
+            "comfort": 0.0020046884346861934,
+            "driving_direction_compliance": 0.00820454101779967
+          }
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.6801700115750426,
+            "success": 0.8125,
+            "no_at_fault_collisions": 0.9201388888888888,
+            "drivable_area_compliance": 0.8923611111111112,
+            "ego_progress": 0.5751082169871056,
+            "time_to_collision_within_bound": 0.8368055555555556,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9513888888888888
+          },
+          "seed_means": [
+            {
+              "score": 0.6801700115750426,
+              "success": 0.8125,
+              "no_at_fault_collisions": 0.9201388888888888,
+              "drivable_area_compliance": 0.8923611111111112,
+              "ego_progress": 0.5751082169871056,
+              "time_to_collision_within_bound": 0.8368055555555556,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9513888888888888
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {}
+    },
+    "full_NR": {
+      "scenes": 288,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.7811554745370372,
+            "success": 0.9131944444444443,
+            "no_at_fault_collisions": 0.9583333333333334,
+            "drivable_area_compliance": 0.9537037037037037,
+            "ego_progress": 0.6287083333333334,
+            "time_to_collision_within_bound": 0.9317129629629629,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9907407407407408
+          },
+          "seed_means": [
+            {
+              "score": 0.7682553819444444,
+              "success": 0.9131944444444444,
+              "no_at_fault_collisions": 0.9444444444444444,
+              "drivable_area_compliance": 0.9652777777777778,
+              "ego_progress": 0.5931182291666666,
+              "time_to_collision_within_bound": 0.9270833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9895833333333334
+            },
+            {
+              "score": 0.7891436111111111,
+              "success": 0.90625,
+              "no_at_fault_collisions": 0.9618055555555556,
+              "drivable_area_compliance": 0.9444444444444444,
+              "ego_progress": 0.6633894444444448,
+              "time_to_collision_within_bound": 0.9270833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9895833333333334
+            },
+            {
+              "score": 0.7860674305555556,
+              "success": 0.9201388888888888,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 0.9513888888888888,
+              "ego_progress": 0.6296173263888888,
+              "time_to_collision_within_bound": 0.9409722222222222,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9930555555555556
+            }
+          ],
+          "seed_std": {
+            "score": 0.011277189959191589,
+            "success": 0.00694444444444442,
+            "no_at_fault_collisions": 0.012519275262027757,
+            "drivable_area_compliance": 0.010607814108694097,
+            "ego_progress": 0.035144425239790875,
+            "time_to_collision_within_bound": 0.008018753738744774,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0020046884346861934
+          },
+          "rescued": [
+            8,
+            8,
+            9
+          ],
+          "broken": [
+            14,
+            16,
+            13
+          ],
+          "broken_dac_involved": [
+            7,
+            12,
+            9
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.7908410532407407,
+            "success": 0.9247685185185185,
+            "no_at_fault_collisions": 0.9652777777777777,
+            "drivable_area_compliance": 0.9571759259259259,
+            "ego_progress": 0.6311204976851852,
+            "time_to_collision_within_bound": 0.9409722222222222,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9918981481481483
+          },
+          "seed_means": [
+            {
+              "score": 0.7930033680555555,
+              "success": 0.9201388888888888,
+              "no_at_fault_collisions": 0.9652777777777778,
+              "drivable_area_compliance": 0.9513888888888888,
+              "ego_progress": 0.632374756944444,
+              "time_to_collision_within_bound": 0.9513888888888888,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913194444444444
+            },
+            {
+              "score": 0.7843473611111114,
+              "success": 0.9340277777777778,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 0.9618055555555556,
+              "ego_progress": 0.5956283680555557,
+              "time_to_collision_within_bound": 0.9548611111111112,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9947916666666666
+            },
+            {
+              "score": 0.7951724305555554,
+              "success": 0.9201388888888888,
+              "no_at_fault_collisions": 0.9618055555555556,
+              "drivable_area_compliance": 0.9583333333333334,
+              "ego_progress": 0.6653583680555558,
+              "time_to_collision_within_bound": 0.9166666666666666,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9895833333333334
+            }
+          ],
+          "seed_std": {
+            "score": 0.005727323645301926,
+            "success": 0.008018753738744838,
+            "no_at_fault_collisions": 0.00347222222222221,
+            "drivable_area_compliance": 0.005303907054347079,
+            "ego_progress": 0.03488191651439295,
+            "time_to_collision_within_bound": 0.021120703230202178,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.002651953527173485
+          },
+          "rescued": [
+            8,
+            10,
+            6
+          ],
+          "broken": [
+            12,
+            10,
+            10
+          ],
+          "broken_dac_involved": [
+            10,
+            7,
+            8
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.782609780092593,
+            "success": 0.9363425925925926,
+            "no_at_fault_collisions": 0.96875,
+            "drivable_area_compliance": 0.9652777777777778,
+            "ego_progress": 0.6055784606481486,
+            "time_to_collision_within_bound": 0.9340277777777778,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9930555555555555
+          },
+          "seed_means": [
+            {
+              "score": 0.7892786111111115,
+              "success": 0.9513888888888888,
+              "no_at_fault_collisions": 0.9826388888888888,
+              "drivable_area_compliance": 0.96875,
+              "ego_progress": 0.5935740277777779,
+              "time_to_collision_within_bound": 0.9548611111111112,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9930555555555556
+            },
+            {
+              "score": 0.7822673263888893,
+              "success": 0.9201388888888888,
+              "no_at_fault_collisions": 0.9583333333333334,
+              "drivable_area_compliance": 0.9583333333333334,
+              "ego_progress": 0.6309141666666671,
+              "time_to_collision_within_bound": 0.9201388888888888,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913194444444444
+            },
+            {
+              "score": 0.7762834027777781,
+              "success": 0.9375,
+              "no_at_fault_collisions": 0.9652777777777778,
+              "drivable_area_compliance": 0.96875,
+              "ego_progress": 0.5922471875000006,
+              "time_to_collision_within_bound": 0.9270833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9947916666666666
+            }
+          ],
+          "seed_std": {
+            "score": 0.00650436897869963,
+            "success": 0.01565711719730172,
+            "no_at_fault_collisions": 0.012519275262027696,
+            "drivable_area_compliance": 0.006014065304058581,
+            "ego_progress": 0.02195139234475302,
+            "time_to_collision_within_bound": 0.01837327299350414,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.001736111111111105
+          },
+          "rescued": [
+            10,
+            7,
+            11
+          ],
+          "broken": [
+            5,
+            11,
+            10
+          ],
+          "broken_dac_involved": [
+            5,
+            7,
+            7
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.7763978125000004,
+            "success": 0.9340277777777778,
+            "no_at_fault_collisions": 0.9548611111111112,
+            "drivable_area_compliance": 0.9756944444444444,
+            "ego_progress": 0.5904387500000002,
+            "time_to_collision_within_bound": 0.9236111111111112,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9913194444444444
+          },
+          "seed_means": [
+            {
+              "score": 0.7763978125000004,
+              "success": 0.9340277777777778,
+              "no_at_fault_collisions": 0.9548611111111112,
+              "drivable_area_compliance": 0.9756944444444444,
+              "ego_progress": 0.5904387500000002,
+              "time_to_collision_within_bound": 0.9236111111111112,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913194444444444
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": 0.004757662037037038,
+            "scene_weighted_log_cluster_95": [
+              -0.017490813531004304,
+              0.028622249223874626
+            ],
+            "equal_log_delta": -0.001377335430694982,
+            "equal_log_cluster_95": [
+              -0.04486429410017781,
+              0.04183325768956903
+            ]
+          },
+          "success": {
+            "delta": -0.020833333333333336,
+            "scene_weighted_log_cluster_95": [
+              -0.04420580059980982,
+              0.004274193548387079
+            ],
+            "equal_log_delta": -0.02704442872982199,
+            "equal_log_cluster_95": [
+              -0.07638270853158494,
+              0.023509344380130873
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.003472222222222219,
+            "scene_weighted_log_cluster_95": [
+              -0.013717806445646647,
+              0.022224409448818868
+            ],
+            "equal_log_delta": -0.003141905950894717,
+            "equal_log_cluster_95": [
+              -0.018227215980024972,
+              0.011569392426133989
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.021990740740740745,
+            "scene_weighted_log_cluster_95": [
+              -0.040441176470588244,
+              -0.0035584033719492252
+            ],
+            "equal_log_delta": -0.022404395438103308,
+            "equal_log_cluster_95": [
+              -0.06958063783906479,
+              0.025875879218575842
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.03826958333333333,
+            "scene_weighted_log_cluster_95": [
+              0.014275698340548341,
+              0.0641681505051059
+            ],
+            "equal_log_delta": 0.027642169203039985,
+            "equal_log_cluster_95": [
+              -0.012329356462887927,
+              0.06605789906756268
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.008101851851851848,
+            "scene_weighted_log_cluster_95": [
+              -0.010563846039198159,
+              0.029446525796945136
+            ],
+            "equal_log_delta": 0.00659430041452513,
+            "equal_log_cluster_95": [
+              -0.012722611346206855,
+              0.029399418205597983
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.0005787037037037036,
+            "scene_weighted_log_cluster_95": [
+              -0.006410256410256409,
+              0.004559270516717325
+            ],
+            "equal_log_delta": 0.00017242432972770113,
+            "equal_log_cluster_95": [
+              -0.007774973154186637,
+              0.009732152990579956
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": -0.009685578703703701,
+            "scene_weighted_log_cluster_95": [
+              -0.022821039276724284,
+              0.004225458446894297
+            ],
+            "equal_log_delta": 0.0012212892731488286,
+            "equal_log_cluster_95": [
+              -0.021013438963335875,
+              0.026614804628210947
+            ]
+          },
+          "success": {
+            "delta": -0.011574074074074077,
+            "scene_weighted_log_cluster_95": [
+              -0.02536255658260109,
+              0.0028129395218002805
+            ],
+            "equal_log_delta": -0.0007874771919715737,
+            "equal_log_cluster_95": [
+              -0.026133999167707034,
+              0.028593504913729625
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.006944444444444444,
+            "scene_weighted_log_cluster_95": [
+              -0.015587529976019187,
+              0.0012254901960784311
+            ],
+            "equal_log_delta": -0.0074490220557636285,
+            "equal_log_cluster_95": [
+              -0.01793591344153142,
+              0.0008739076154806492
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.003472222222222222,
+            "scene_weighted_log_cluster_95": [
+              -0.015046644912985277,
+              0.008906420392584505
+            ],
+            "equal_log_delta": 0.007036076698998047,
+            "equal_log_cluster_95": [
+              -0.01610582925189667,
+              0.03491573033707864
+            ]
+          },
+          "ego_progress": {
+            "delta": -0.0024121643518518537,
+            "scene_weighted_log_cluster_95": [
+              -0.014943598207885302,
+              0.010937773740114067
+            ],
+            "equal_log_delta": 0.004925124626933615,
+            "equal_log_cluster_95": [
+              -0.01552401843875538,
+              0.02725757074062536
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.009259259259259257,
+            "scene_weighted_log_cluster_95": [
+              -0.02447588126159555,
+              0.005188067444876784
+            ],
+            "equal_log_delta": -0.00680102253135961,
+            "equal_log_cluster_95": [
+              -0.02061708578562511,
+              0.006517151180072507
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.0011574074074074071,
+            "scene_weighted_log_cluster_95": [
+              -0.004539559014267185,
+              0.0019841269841269836
+            ],
+            "equal_log_delta": -0.001128979218866859,
+            "equal_log_cluster_95": [
+              -0.00666198501872659,
+              0.004381273117228171
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": -0.0014543055555555522,
+            "scene_weighted_log_cluster_95": [
+              -0.016884971514136104,
+              0.01363565364468791
+            ],
+            "equal_log_delta": -0.0052522517644652475,
+            "equal_log_cluster_95": [
+              -0.027820251371864727,
+              0.019767600565414604
+            ]
+          },
+          "success": {
+            "delta": -0.02314814814814815,
+            "scene_weighted_log_cluster_95": [
+              -0.03809523809523809,
+              -0.009079118028534372
+            ],
+            "equal_log_delta": -0.026016139499285572,
+            "equal_log_cluster_95": [
+              -0.0497411234208987,
+              8.071932229234397e-05
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.010416666666666666,
+            "scene_weighted_log_cluster_95": [
+              -0.02109704641350211,
+              -0.0012674271229404315
+            ],
+            "equal_log_delta": -0.013524760715771954,
+            "equal_log_cluster_95": [
+              -0.026133999167707034,
+              -0.003454015813566376
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.011574074074074073,
+            "scene_weighted_log_cluster_95": [
+              -0.02390998593530239,
+              1.500945843986239e-18
+            ],
+            "equal_log_delta": -0.011742315113101634,
+            "equal_log_cluster_95": [
+              -0.0328839897098324,
+              0.01223237124922517
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.023129872685185186,
+            "scene_weighted_log_cluster_95": [
+              0.00573193356041477,
+              0.040439808936403504
+            ],
+            "equal_log_delta": 0.01988806372549632,
+            "equal_log_cluster_95": [
+              -0.002601650752051732,
+              0.044785677025793606
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.0023148148148148134,
+            "scene_weighted_log_cluster_95": [
+              -0.015401540154015405,
+              0.010753478810879182
+            ],
+            "equal_log_delta": -0.007851657289859539,
+            "equal_log_cluster_95": [
+              -0.025244999486572526,
+              0.00879462090136247
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.002314814814814815,
+            "scene_weighted_log_cluster_95": [
+              -0.008361204013377926,
+              0.002965599051008303
+            ],
+            "equal_log_delta": -0.002111579639669528,
+            "equal_log_cluster_95": [
+              -0.008676796050391556,
+              0.004078282828282827
+            ]
+          }
+        }
+      },
+      "logs": 89
+    },
+    "development58_NR": {
+      "scenes": 58,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.7940119540229883,
+            "success": 0.9252873563218391,
+            "no_at_fault_collisions": 0.9712643678160919,
+            "drivable_area_compliance": 0.9482758620689656,
+            "ego_progress": 0.6504556896551723,
+            "time_to_collision_within_bound": 0.9367816091954023,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9827586206896551
+          },
+          "seed_means": [
+            {
+              "score": 0.8050701724137928,
+              "success": 0.9482758620689655,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9655172413793104,
+              "ego_progress": 0.6390639655172413,
+              "time_to_collision_within_bound": 0.9482758620689655,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9741379310344828
+            },
+            {
+              "score": 0.7663005172413793,
+              "success": 0.896551724137931,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.652913448275862,
+              "time_to_collision_within_bound": 0.896551724137931,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9827586206896551
+            },
+            {
+              "score": 0.810665172413793,
+              "success": 0.9310344827586207,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.6593896551724137,
+              "time_to_collision_within_bound": 0.9655172413793104,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            }
+          ],
+          "seed_std": {
+            "score": 0.024161307965957425,
+            "success": 0.026336641925033554,
+            "no_at_fault_collisions": 0.009954314986027987,
+            "drivable_area_compliance": 0.017241379310344862,
+            "ego_progress": 0.01038334474376035,
+            "time_to_collision_within_bound": 0.03589079309424368,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.008620689655172431
+          },
+          "rescued": [
+            3,
+            2,
+            2
+          ],
+          "broken": [
+            1,
+            3,
+            1
+          ],
+          "broken_dac_involved": [
+            1,
+            2,
+            1
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.7919424712643678,
+            "success": 0.9252873563218391,
+            "no_at_fault_collisions": 0.9770114942528735,
+            "drivable_area_compliance": 0.9367816091954023,
+            "ego_progress": 0.633994827586207,
+            "time_to_collision_within_bound": 0.9540229885057471,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.985632183908046
+          },
+          "seed_means": [
+            {
+              "score": 0.8003189655172417,
+              "success": 0.9310344827586207,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.6345577586206897,
+              "time_to_collision_within_bound": 0.9827586206896551,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9741379310344828
+            },
+            {
+              "score": 0.7731537931034481,
+              "success": 0.9137931034482759,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.5935003448275864,
+              "time_to_collision_within_bound": 0.9482758620689655,
+              "comfort": 1.0,
+              "driving_direction_compliance": 1.0
+            },
+            {
+              "score": 0.8023546551724137,
+              "success": 0.9310344827586207,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.6739263793103447,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9827586206896551
+            }
+          ],
+          "seed_std": {
+            "score": 0.016303276614503277,
+            "success": 0.009954314986027987,
+            "no_at_fault_collisions": 0.009954314986027987,
+            "drivable_area_compliance": 0.00995431498602805,
+            "ego_progress": 0.040215972251925546,
+            "time_to_collision_within_bound": 0.026336641925033558,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.013168320962516782
+          },
+          "rescued": [
+            3,
+            2,
+            2
+          ],
+          "broken": [
+            2,
+            2,
+            1
+          ],
+          "broken_dac_involved": [
+            2,
+            2,
+            1
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.7542866666666668,
+            "success": 0.9022988505747126,
+            "no_at_fault_collisions": 0.9597701149425287,
+            "drivable_area_compliance": 0.9310344827586207,
+            "ego_progress": 0.5758048275862069,
+            "time_to_collision_within_bound": 0.9310344827586207,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9913793103448277
+          },
+          "seed_means": [
+            {
+              "score": 0.768566379310345,
+              "success": 0.9310344827586207,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.5583508620689653,
+              "time_to_collision_within_bound": 0.9655172413793104,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            },
+            {
+              "score": 0.7496065517241381,
+              "success": 0.8793103448275862,
+              "no_at_fault_collisions": 0.9482758620689655,
+              "drivable_area_compliance": 0.9137931034482759,
+              "ego_progress": 0.6025037931034484,
+              "time_to_collision_within_bound": 0.9137931034482759,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            },
+            {
+              "score": 0.7446870689655172,
+              "success": 0.896551724137931,
+              "no_at_fault_collisions": 0.9482758620689655,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.5665598275862069,
+              "time_to_collision_within_bound": 0.9137931034482759,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            }
+          ],
+          "seed_std": {
+            "score": 0.012608845012236847,
+            "success": 0.026336641925033554,
+            "no_at_fault_collisions": 0.019908629972056037,
+            "drivable_area_compliance": 0.017241379310344807,
+            "ego_progress": 0.023483459040012675,
+            "time_to_collision_within_bound": 0.029862944958084087,
+            "comfort": 0.0,
+            "driving_direction_compliance": 1.3597399555105182e-16
+          },
+          "rescued": [
+            2,
+            1,
+            2
+          ],
+          "broken": [
+            1,
+            3,
+            3
+          ],
+          "broken_dac_involved": [
+            1,
+            2,
+            2
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.7519424137931032,
+            "success": 0.9137931034482759,
+            "no_at_fault_collisions": 0.9655172413793104,
+            "drivable_area_compliance": 0.9310344827586207,
+            "ego_progress": 0.5770758620689658,
+            "time_to_collision_within_bound": 0.9137931034482759,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9913793103448276
+          },
+          "seed_means": [
+            {
+              "score": 0.7519424137931032,
+              "success": 0.9137931034482759,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.5770758620689658,
+              "time_to_collision_within_bound": 0.9137931034482759,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": 0.04206954022988505,
+            "scene_weighted_log_cluster_95": [
+              -0.019289249435550087,
+              0.1070818611111111
+            ],
+            "equal_log_delta": 0.06411562457912458,
+            "equal_log_cluster_95": [
+              -0.07622967074915823,
+              0.19673156881313128
+            ]
+          },
+          "success": {
+            "delta": 0.011494252873563218,
+            "scene_weighted_log_cluster_95": [
+              -0.04878319783197832,
+              0.0880503144654088
+            ],
+            "equal_log_delta": 0.055050505050505044,
+            "equal_log_cluster_95": [
+              -0.09646464646464646,
+              0.20959595959595959
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.005747126436781608,
+            "scene_weighted_log_cluster_95": [
+              -0.015873015873015872,
+              0.03508771929824561
+            ],
+            "equal_log_delta": 0.0035353535353535356,
+            "equal_log_cluster_95": [
+              -0.007575757575757577,
+              0.018181818181818184
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.017241379310344827,
+            "scene_weighted_log_cluster_95": [
+              -0.043478260869565216,
+              0.09302325581395349
+            ],
+            "equal_log_delta": 0.05757575757575757,
+            "equal_log_cluster_95": [
+              -0.09393939393939395,
+              0.2121212121212121
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.07337982758620688,
+            "scene_weighted_log_cluster_95": [
+              0.009175870785270619,
+              0.1288749919807538
+            ],
+            "equal_log_delta": 0.07343911784511784,
+            "equal_log_cluster_95": [
+              -0.05822232499999999,
+              0.18323376515151507
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.022988505747126436,
+            "scene_weighted_log_cluster_95": [
+              -0.012820512820512822,
+              0.06250754830917864
+            ],
+            "equal_log_delta": 0.009932659932659932,
+            "equal_log_cluster_95": [
+              -0.005050505050505052,
+              0.031481481481481485
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.008620689655172414,
+            "scene_weighted_log_cluster_95": [
+              -0.03031076066790352,
+              0.0
+            ],
+            "equal_log_delta": -0.007575757575757575,
+            "equal_log_cluster_95": [
+              -0.022727272727272728,
+              0.0
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": 0.002069482758620688,
+            "scene_weighted_log_cluster_95": [
+              -0.023478483581894305,
+              0.033919035866261396
+            ],
+            "equal_log_delta": 0.02107318855218856,
+            "equal_log_cluster_95": [
+              -0.018399040656565665,
+              0.07888934330808078
+            ]
+          },
+          "success": {
+            "delta": 1.914177628664063e-18,
+            "scene_weighted_log_cluster_95": [
+              -0.022988505747126436,
+              0.03571428571428571
+            ],
+            "equal_log_delta": 0.02474747474747475,
+            "equal_log_cluster_95": [
+              -0.011616161616161615,
+              0.08838383838383838
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.005747126436781609,
+            "scene_weighted_log_cluster_95": [
+              -0.017857142857142856,
+              2.3129646346357427e-18
+            ],
+            "equal_log_delta": -0.002525252525252525,
+            "equal_log_cluster_95": [
+              -0.007575757575757577,
+              7.569702440626069e-19
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.01149425287356322,
+            "scene_weighted_log_cluster_95": [
+              -0.013071895424836598,
+              0.04487179487179487
+            ],
+            "equal_log_delta": 0.028787878787878793,
+            "equal_log_cluster_95": [
+              -0.006060606060606061,
+              0.09242424242424242
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.016460862068965514,
+            "scene_weighted_log_cluster_95": [
+              -0.005747627600430414,
+              0.04207532384910485
+            ],
+            "equal_log_delta": 0.031080897306397296,
+            "equal_log_cluster_95": [
+              0.0011820704966329898,
+              0.07235169057239056
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.01724137931034483,
+            "scene_weighted_log_cluster_95": [
+              -0.05000786163522013,
+              0.009259259259259259
+            ],
+            "equal_log_delta": -0.016161616161616165,
+            "equal_log_cluster_95": [
+              -0.050505050505050504,
+              0.005063131313131131
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.002873563218390804,
+            "scene_weighted_log_cluster_95": [
+              -0.012820512820512818,
+              0.008130081300813006
+            ],
+            "equal_log_delta": 0.0035353535353535343,
+            "equal_log_cluster_95": [
+              -0.008585858585858584,
+              0.02272727272727272
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": 0.03972528735632184,
+            "scene_weighted_log_cluster_95": [
+              0.006714700000000018,
+              0.07668935706327985
+            ],
+            "equal_log_delta": 0.05818188215488215,
+            "equal_log_cluster_95": [
+              0.0073695232744108,
+              0.1269895541245791
+            ]
+          },
+          "success": {
+            "delta": 0.02298850574712644,
+            "scene_weighted_log_cluster_95": [
+              -0.006060606060606059,
+              0.06140350877192983
+            ],
+            "equal_log_delta": 0.04646464646464647,
+            "equal_log_cluster_95": [
+              -0.0030303030303030294,
+              0.1212121212121212
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.01149425287356322,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.024509803921568624
+            ],
+            "equal_log_delta": 0.004545454545454546,
+            "equal_log_cluster_95": [
+              0.0,
+              0.012121212121212123
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.017241379310344827,
+            "scene_weighted_log_cluster_95": [
+              -0.008771929824561403,
+              0.056741913163812434
+            ],
+            "equal_log_delta": 0.044949494949494954,
+            "equal_log_cluster_95": [
+              -0.0035353535353535356,
+              0.12070707070707071
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.07465086206896551,
+            "scene_weighted_log_cluster_95": [
+              0.039305107843137226,
+              0.10961603299189072
+            ],
+            "equal_log_delta": 0.08637092255892252,
+            "equal_log_cluster_95": [
+              0.04001410896464643,
+              0.14548071637205384
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.005747126436781608,
+            "scene_weighted_log_cluster_95": [
+              -0.03508771929824561,
+              0.041666666666666664
+            ],
+            "equal_log_delta": -0.0042087542087542095,
+            "equal_log_cluster_95": [
+              -0.04209175084175085,
+              0.024242424242424246
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.008620689655172414,
+            "scene_weighted_log_cluster_95": [
+              -0.029239766081871343,
+              0.007407407407407406
+            ],
+            "equal_log_delta": 0.0005050505050505032,
+            "equal_log_cluster_95": [
+              -0.01616161616161616,
+              0.020202020202020197
+            ]
+          }
+        }
+      },
+      "logs": 22
+    },
+    "remainder230_NR": {
+      "scenes": 230,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.7779134057971014,
+            "success": 0.910144927536232,
+            "no_at_fault_collisions": 0.9550724637681158,
+            "drivable_area_compliance": 0.9550724637681159,
+            "ego_progress": 0.6232242173913045,
+            "time_to_collision_within_bound": 0.9304347826086957,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9927536231884058
+          },
+          "seed_means": [
+            {
+              "score": 0.7589716521739129,
+              "success": 0.9043478260869565,
+              "no_at_fault_collisions": 0.9391304347826087,
+              "drivable_area_compliance": 0.9652173913043478,
+              "ego_progress": 0.5815319130434784,
+              "time_to_collision_within_bound": 0.9217391304347826,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.7949040434782607,
+              "success": 0.908695652173913,
+              "no_at_fault_collisions": 0.9608695652173913,
+              "drivable_area_compliance": 0.9478260869565217,
+              "ego_progress": 0.6660312173913046,
+              "time_to_collision_within_bound": 0.9347826086956522,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.991304347826087
+            },
+            {
+              "score": 0.7798645217391306,
+              "success": 0.9173913043478261,
+              "no_at_fault_collisions": 0.9652173913043478,
+              "drivable_area_compliance": 0.9521739130434783,
+              "ego_progress": 0.6221095217391306,
+              "time_to_collision_within_bound": 0.9347826086956522,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            }
+          ],
+          "seed_std": {
+            "score": 0.01804547938616822,
+            "success": 0.0066414140506606606,
+            "no_at_fault_collisions": 0.01397630545071441,
+            "drivable_area_compliance": 0.009050721736809266,
+            "ego_progress": 0.042260679343976114,
+            "time_to_collision_within_bound": 0.007530655685082096,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0012551092808470053
+          },
+          "rescued": [
+            5,
+            6,
+            7
+          ],
+          "broken": [
+            13,
+            13,
+            12
+          ],
+          "broken_dac_involved": [
+            6,
+            10,
+            8
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.7905633043478263,
+            "success": 0.9246376811594205,
+            "no_at_fault_collisions": 0.9623188405797102,
+            "drivable_area_compliance": 0.9623188405797102,
+            "ego_progress": 0.6303956666666667,
+            "time_to_collision_within_bound": 0.9376811594202898,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9934782608695653
+          },
+          "seed_means": [
+            {
+              "score": 0.7911585652173914,
+              "success": 0.9173913043478261,
+              "no_at_fault_collisions": 0.9608695652173913,
+              "drivable_area_compliance": 0.9565217391304348,
+              "ego_progress": 0.6318242608695649,
+              "time_to_collision_within_bound": 0.9434782608695652,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9956521739130435
+            },
+            {
+              "score": 0.7871700869565221,
+              "success": 0.9391304347826087,
+              "no_at_fault_collisions": 0.9695652173913043,
+              "drivable_area_compliance": 0.9695652173913043,
+              "ego_progress": 0.5961650000000002,
+              "time_to_collision_within_bound": 0.9565217391304348,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.7933612608695654,
+              "success": 0.9173913043478261,
+              "no_at_fault_collisions": 0.9565217391304348,
+              "drivable_area_compliance": 0.9608695652173913,
+              "ego_progress": 0.663197739130435,
+              "time_to_collision_within_bound": 0.9130434782608695,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.991304347826087
+            }
+          ],
+          "seed_std": {
+            "score": 0.0031382176840546497,
+            "success": 0.012551092808470119,
+            "no_at_fault_collisions": 0.006641414050660599,
+            "drivable_area_compliance": 0.0066414140506606,
+            "ego_progress": 0.03353919632131409,
+            "time_to_collision_within_bound": 0.02231131060629084,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0021739130434782483
+          },
+          "rescued": [
+            5,
+            8,
+            4
+          ],
+          "broken": [
+            10,
+            8,
+            9
+          ],
+          "broken_dac_involved": [
+            8,
+            5,
+            7
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.789752130434783,
+            "success": 0.9449275362318841,
+            "no_at_fault_collisions": 0.9710144927536232,
+            "drivable_area_compliance": 0.9739130434782609,
+            "ego_progress": 0.6130865942028986,
+            "time_to_collision_within_bound": 0.9347826086956522,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9934782608695653
+          },
+          "seed_means": [
+            {
+              "score": 0.7945016956521741,
+              "success": 0.9565217391304348,
+              "no_at_fault_collisions": 0.9826086956521739,
+              "drivable_area_compliance": 0.9739130434782609,
+              "ego_progress": 0.6024563913043477,
+              "time_to_collision_within_bound": 0.9521739130434783,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.7905035217391312,
+              "success": 0.9304347826086956,
+              "no_at_fault_collisions": 0.9608695652173913,
+              "drivable_area_compliance": 0.9695652173913043,
+              "ego_progress": 0.6380785217391305,
+              "time_to_collision_within_bound": 0.9217391304347826,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.991304347826087
+            },
+            {
+              "score": 0.7842511739130436,
+              "success": 0.9478260869565217,
+              "no_at_fault_collisions": 0.9695652173913043,
+              "drivable_area_compliance": 0.9782608695652174,
+              "ego_progress": 0.5987248695652174,
+              "time_to_collision_within_bound": 0.9304347826086956,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9956521739130435
+            }
+          ],
+          "seed_std": {
+            "score": 0.00516640500254138,
+            "success": 0.013282828101321309,
+            "no_at_fault_collisions": 0.010941789036624272,
+            "drivable_area_compliance": 0.004347826086956552,
+            "ego_progress": 0.021723912978664828,
+            "time_to_collision_within_bound": 0.015676309893321725,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0021739130434782483
+          },
+          "rescued": [
+            8,
+            6,
+            9
+          ],
+          "broken": [
+            4,
+            8,
+            7
+          ],
+          "broken_dac_involved": [
+            4,
+            5,
+            5
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.7825648260869568,
+            "success": 0.9391304347826087,
+            "no_at_fault_collisions": 0.9521739130434783,
+            "drivable_area_compliance": 0.9869565217391304,
+            "ego_progress": 0.5938085217391302,
+            "time_to_collision_within_bound": 0.9260869565217391,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.991304347826087
+          },
+          "seed_means": [
+            {
+              "score": 0.7825648260869568,
+              "success": 0.9391304347826087,
+              "no_at_fault_collisions": 0.9521739130434783,
+              "drivable_area_compliance": 0.9869565217391304,
+              "ego_progress": 0.5938085217391302,
+              "time_to_collision_within_bound": 0.9260869565217391,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.991304347826087
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": -0.00465142028985507,
+            "scene_weighted_log_cluster_95": [
+              -0.02899216033231475,
+              0.021069259279431894
+            ],
+            "equal_log_delta": -0.02288248647869543,
+            "equal_log_cluster_95": [
+              -0.05979639316602416,
+              0.008069354706356361
+            ]
+          },
+          "success": {
+            "delta": -0.028985507246376815,
+            "scene_weighted_log_cluster_95": [
+              -0.05681818181818183,
+              -0.0023296100941152392
+            ],
+            "equal_log_delta": -0.0540009741502279,
+            "equal_log_cluster_95": [
+              -0.09829220737802827,
+              -0.017218955726418433
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.002898550724637678,
+            "scene_weighted_log_cluster_95": [
+              -0.017636684303350973,
+              0.02564102564102564
+            ],
+            "equal_log_delta": -0.005334438916528471,
+            "equal_log_cluster_95": [
+              -0.024765754560530682,
+              0.01376451077943615
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.0318840579710145,
+            "scene_weighted_log_cluster_95": [
+              -0.05092728758169934,
+              -0.01686121919584955
+            ],
+            "equal_log_delta": -0.04866653523369941,
+            "equal_log_cluster_95": [
+              -0.08944419317553644,
+              -0.017713578571787538
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.029415695652173914,
+            "scene_weighted_log_cluster_95": [
+              0.003716870181940704,
+              0.05773278845509598
+            ],
+            "equal_log_delta": 0.012604365171312934,
+            "equal_log_cluster_95": [
+              -0.020171320755384754,
+              0.04241179032166005
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.004347826086956516,
+            "scene_weighted_log_cluster_95": [
+              -0.01611013761743336,
+              0.02905198776758409
+            ],
+            "equal_log_delta": 0.005498122662301763,
+            "equal_log_cluster_95": [
+              -0.019790881451329213,
+              0.03582747338344352
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.0014492753623188408,
+            "scene_weighted_log_cluster_95": [
+              -0.0039494470774091624,
+              0.006880733944954129
+            ],
+            "equal_log_delta": 0.0027166034628721197,
+            "equal_log_cluster_95": [
+              -0.006889793456957636,
+              0.015415347504899745
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": -0.012649898550724637,
+            "scene_weighted_log_cluster_95": [
+              -0.02786364358133089,
+              0.003178255444290965
+            ],
+            "equal_log_delta": -0.005297244818476158,
+            "equal_log_cluster_95": [
+              -0.030390873118982992,
+              0.021900438924066536
+            ]
+          },
+          "success": {
+            "delta": -0.014492753623188404,
+            "scene_weighted_log_cluster_95": [
+              -0.030596683640161906,
+              0.0015723270440251558
+            ],
+            "equal_log_delta": -0.009172088276565888,
+            "equal_log_cluster_95": [
+              -0.03847004294765489,
+              0.021840796019900483
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.007246376811594203,
+            "scene_weighted_log_cluster_95": [
+              -0.017730833535582347,
+              0.0030165912518853692
+            ],
+            "equal_log_delta": -0.009065782200110558,
+            "equal_log_cluster_95": [
+              -0.022609176340519625,
+              0.0019900497512437814
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.007246376811594204,
+            "scene_weighted_log_cluster_95": [
+              -0.02030508439602163,
+              0.0057230773025504335
+            ],
+            "equal_log_delta": -0.00010630607645533091,
+            "equal_log_cluster_95": [
+              -0.026257600884466558,
+              0.029194306246545013
+            ]
+          },
+          "ego_progress": {
+            "delta": -0.007171449275362322,
+            "scene_weighted_log_cluster_95": [
+              -0.021931836035888483,
+              0.00853503460066953
+            ],
+            "equal_log_delta": -0.0036633380439350595,
+            "equal_log_cluster_95": [
+              -0.028100111330253492,
+              0.021428216335799364
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.007246376811594202,
+            "scene_weighted_log_cluster_95": [
+              -0.025039123630672924,
+              0.009058499689843789
+            ],
+            "equal_log_delta": -0.0037273947721708917,
+            "equal_log_cluster_95": [
+              -0.018297401879491432,
+              0.01105583195135434
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.0007246376811594201,
+            "scene_weighted_log_cluster_95": [
+              -0.004125412541254124,
+              0.0023255813953488367
+            ],
+            "equal_log_delta": -0.002660551168013854,
+            "equal_log_cluster_95": [
+              -0.008518015980702546,
+              0.000627205851086448
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": -0.011838724637681156,
+            "scene_weighted_log_cluster_95": [
+              -0.030149063188925917,
+              0.004570135574229693
+            ],
+            "equal_log_delta": -0.026081370364847974,
+            "equal_log_cluster_95": [
+              -0.04981304471922494,
+              -0.0028439342441348276
+            ]
+          },
+          "success": {
+            "delta": -0.034782608695652174,
+            "scene_weighted_log_cluster_95": [
+              -0.05280557105006276,
+              -0.019744292132770954
+            ],
+            "equal_log_delta": -0.04981580056206922,
+            "equal_log_cluster_95": [
+              -0.07506922458414997,
+              -0.02753704283555032
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.01594202898550725,
+            "scene_weighted_log_cluster_95": [
+              -0.028758912655971476,
+              -0.005555555555555556
+            ],
+            "equal_log_delta": -0.019458264234383644,
+            "equal_log_cluster_95": [
+              -0.036263128800442225,
+              -0.00652294085129906
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.01884057971014493,
+            "scene_weighted_log_cluster_95": [
+              -0.03350083752093802,
+              -0.006410256410256411
+            ],
+            "equal_log_delta": -0.03035753632768558,
+            "equal_log_cluster_95": [
+              -0.05168635261918845,
+              -0.011671150850255345
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.010137623188405803,
+            "scene_weighted_log_cluster_95": [
+              -0.009393359103042261,
+              0.02859799392092516
+            ],
+            "equal_log_delta": -0.0019421287272705058,
+            "equal_log_cluster_95": [
+              -0.026755548676516947,
+              0.022469560975370683
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.004347826086956523,
+            "scene_weighted_log_cluster_95": [
+              -0.018242122719734657,
+              0.008547925608011434
+            ],
+            "equal_log_delta": -0.009047834420968749,
+            "equal_log_cluster_95": [
+              -0.029353826107557456,
+              0.010234936428966272
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.0007246376811594206,
+            "scene_weighted_log_cluster_95": [
+              -0.005892255892255892,
+              0.004347826086956521
+            ],
+            "equal_log_delta": -0.0029707716274880456,
+            "equal_log_cluster_95": [
+              -0.009674626092536541,
+              0.0019038451874272765
+            ]
+          }
+        }
+      },
+      "logs": 67
+    },
+    "full_R": {
+      "scenes": 288,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.7766235069444444,
+            "success": 0.90625,
+            "no_at_fault_collisions": 0.9490740740740741,
+            "drivable_area_compliance": 0.9548611111111112,
+            "ego_progress": 0.626396203703704,
+            "time_to_collision_within_bound": 0.9270833333333334,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9930555555555555
+          },
+          "seed_means": [
+            {
+              "score": 0.7685983333333329,
+              "success": 0.9131944444444444,
+              "no_at_fault_collisions": 0.9479166666666666,
+              "drivable_area_compliance": 0.9652777777777778,
+              "ego_progress": 0.597413368055556,
+              "time_to_collision_within_bound": 0.9270833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913194444444444
+            },
+            {
+              "score": 0.7784003125,
+              "success": 0.8854166666666666,
+              "no_at_fault_collisions": 0.9375,
+              "drivable_area_compliance": 0.9444444444444444,
+              "ego_progress": 0.6598275694444447,
+              "time_to_collision_within_bound": 0.9166666666666666,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9930555555555556
+            },
+            {
+              "score": 0.7828718750000001,
+              "success": 0.9201388888888888,
+              "no_at_fault_collisions": 0.9618055555555556,
+              "drivable_area_compliance": 0.9548611111111112,
+              "ego_progress": 0.6219476736111113,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9947916666666666
+            }
+          ],
+          "seed_std": {
+            "score": 0.007300772316283459,
+            "success": 0.018373272993504098,
+            "no_at_fault_collisions": 0.012194043695431426,
+            "drivable_area_compliance": 0.010416666666666685,
+            "ego_progress": 0.03144400099767385,
+            "time_to_collision_within_bound": 0.010416666666666685,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.001736111111111105
+          },
+          "rescued": [
+            6,
+            5,
+            10
+          ],
+          "broken": [
+            9,
+            16,
+            11
+          ],
+          "broken_dac_involved": [
+            6,
+            11,
+            9
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.784374849537037,
+            "success": 0.9178240740740741,
+            "no_at_fault_collisions": 0.9583333333333334,
+            "drivable_area_compliance": 0.9583333333333334,
+            "ego_progress": 0.6276386805555555,
+            "time_to_collision_within_bound": 0.9328703703703703,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.992476851851852
+          },
+          "seed_means": [
+            {
+              "score": 0.7766416319444446,
+              "success": 0.90625,
+              "no_at_fault_collisions": 0.9583333333333334,
+              "drivable_area_compliance": 0.9444444444444444,
+              "ego_progress": 0.6264403472222217,
+              "time_to_collision_within_bound": 0.9305555555555556,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9947916666666666
+            },
+            {
+              "score": 0.773724375,
+              "success": 0.9236111111111112,
+              "no_at_fault_collisions": 0.9583333333333334,
+              "drivable_area_compliance": 0.9652777777777778,
+              "ego_progress": 0.5881888888888891,
+              "time_to_collision_within_bound": 0.9409722222222222,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9930555555555556
+            },
+            {
+              "score": 0.8027585416666666,
+              "success": 0.9236111111111112,
+              "no_at_fault_collisions": 0.9583333333333334,
+              "drivable_area_compliance": 0.9652777777777778,
+              "ego_progress": 0.6682868055555555,
+              "time_to_collision_within_bound": 0.9270833333333334,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9895833333333334
+            }
+          ],
+          "seed_std": {
+            "score": 0.015987423158774827,
+            "success": 0.010023442173431032,
+            "no_at_fault_collisions": 0.0,
+            "drivable_area_compliance": 0.012028130608117226,
+            "ego_progress": 0.040062402145507874,
+            "time_to_collision_within_bound": 0.007228006942590713,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.002651953527173485
+          },
+          "rescued": [
+            7,
+            8,
+            5
+          ],
+          "broken": [
+            12,
+            8,
+            5
+          ],
+          "broken_dac_involved": [
+            10,
+            6,
+            4
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.7792387731481485,
+            "success": 0.9236111111111112,
+            "no_at_fault_collisions": 0.9618055555555557,
+            "drivable_area_compliance": 0.9594907407407408,
+            "ego_progress": 0.6014229861111112,
+            "time_to_collision_within_bound": 0.9409722222222222,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9924768518518517
+          },
+          "seed_means": [
+            {
+              "score": 0.7846778125000007,
+              "success": 0.9340277777777778,
+              "no_at_fault_collisions": 0.9722222222222222,
+              "drivable_area_compliance": 0.9618055555555556,
+              "ego_progress": 0.596421111111111,
+              "time_to_collision_within_bound": 0.9513888888888888,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913194444444444
+            },
+            {
+              "score": 0.7693699305555556,
+              "success": 0.8993055555555556,
+              "no_at_fault_collisions": 0.9513888888888888,
+              "drivable_area_compliance": 0.9444444444444444,
+              "ego_progress": 0.615237638888889,
+              "time_to_collision_within_bound": 0.9305555555555556,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9895833333333334
+            },
+            {
+              "score": 0.7836685763888889,
+              "success": 0.9375,
+              "no_at_fault_collisions": 0.9618055555555556,
+              "drivable_area_compliance": 0.9722222222222222,
+              "ego_progress": 0.5926102083333336,
+              "time_to_collision_within_bound": 0.9409722222222222,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9965277777777778
+            }
+          ],
+          "seed_std": {
+            "score": 0.008561552427569624,
+            "success": 0.021120703230202143,
+            "no_at_fault_collisions": 0.010416666666666685,
+            "drivable_area_compliance": 0.014032819042803412,
+            "ego_progress": 0.012114628286635214,
+            "time_to_collision_within_bound": 0.01041666666666663,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0036140034712953653
+          },
+          "rescued": [
+            10,
+            7,
+            10
+          ],
+          "broken": [
+            7,
+            14,
+            6
+          ],
+          "broken_dac_involved": [
+            6,
+            11,
+            4
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.767741875,
+            "success": 0.9236111111111112,
+            "no_at_fault_collisions": 0.9444444444444444,
+            "drivable_area_compliance": 0.9756944444444444,
+            "ego_progress": 0.5703585763888888,
+            "time_to_collision_within_bound": 0.9305555555555556,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9947916666666666
+          },
+          "seed_means": [
+            {
+              "score": 0.767741875,
+              "success": 0.9236111111111112,
+              "no_at_fault_collisions": 0.9444444444444444,
+              "drivable_area_compliance": 0.9756944444444444,
+              "ego_progress": 0.5703585763888888,
+              "time_to_collision_within_bound": 0.9305555555555556,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9947916666666666
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": 0.008881631944444445,
+            "scene_weighted_log_cluster_95": [
+              -0.0156460019604633,
+              0.03415684855201855
+            ],
+            "equal_log_delta": 0.0021292171715093042,
+            "equal_log_cluster_95": [
+              -0.0365620146632186,
+              0.039422189967060615
+            ]
+          },
+          "success": {
+            "delta": -0.017361111111111115,
+            "scene_weighted_log_cluster_95": [
+              -0.042146375791695986,
+              0.007194244604316545
+            ],
+            "equal_log_delta": -0.025459288942435012,
+            "equal_log_cluster_95": [
+              -0.06935773028469656,
+              0.016782809367079026
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.0046296296296296285,
+            "scene_weighted_log_cluster_95": [
+              -0.012910798122065728,
+              0.022067729915694823
+            ],
+            "equal_log_delta": -0.0014432716679907696,
+            "equal_log_cluster_95": [
+              -0.014442647448265426,
+              0.01033419399992433
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.020833333333333332,
+            "scene_weighted_log_cluster_95": [
+              -0.03861023479925919,
+              -0.0040641195686881475
+            ],
+            "equal_log_delta": -0.023675533787893336,
+            "equal_log_cluster_95": [
+              -0.06562648961525366,
+              0.017061882146151786
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.05603762731481481,
+            "scene_weighted_log_cluster_95": [
+              0.0271453994532403,
+              0.08773207104329186
+            ],
+            "equal_log_delta": 0.04540626373543227,
+            "equal_log_cluster_95": [
+              0.010451592466329965,
+              0.08046384296222393
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.0034722222222222246,
+            "scene_weighted_log_cluster_95": [
+              -0.01741315200998492,
+              0.011673255016646424
+            ],
+            "equal_log_delta": -0.008531002913025387,
+            "equal_log_cluster_95": [
+              -0.02913800930654863,
+              0.006964778874891232
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.001736111111111111,
+            "scene_weighted_log_cluster_95": [
+              -0.0065105226995114006,
+              0.0017545404002965133
+            ],
+            "equal_log_delta": -0.00131246198661929,
+            "equal_log_cluster_95": [
+              -0.00605913281475079,
+              0.002304811293575338
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": -0.00775134259259259,
+            "scene_weighted_log_cluster_95": [
+              -0.021190092928621198,
+              0.006489033524904211
+            ],
+            "equal_log_delta": 0.0017758391541874694,
+            "equal_log_cluster_95": [
+              -0.02640543941845711,
+              0.03156658914493747
+            ]
+          },
+          "success": {
+            "delta": -0.011574074074074073,
+            "scene_weighted_log_cluster_95": [
+              -0.025375405063986382,
+              0.0026146364057433986
+            ],
+            "equal_log_delta": -0.000923670586591933,
+            "equal_log_cluster_95": [
+              -0.031056539174516694,
+              0.030814039269095442
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.009259259259259259,
+            "scene_weighted_log_cluster_95": [
+              -0.019354838709677424,
+              -4.221380321768656e-19
+            ],
+            "equal_log_delta": -0.007048008171603679,
+            "equal_log_cluster_95": [
+              -0.0155377747512579,
+              0.0005409904286308776
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.0034722222222222216,
+            "scene_weighted_log_cluster_95": [
+              -0.015194836530341415,
+              0.009164366696430979
+            ],
+            "equal_log_delta": 0.0057838540984608425,
+            "equal_log_cluster_95": [
+              -0.023970699504407368,
+              0.03694952259559001
+            ]
+          },
+          "ego_progress": {
+            "delta": -0.0012424768518518583,
+            "scene_weighted_log_cluster_95": [
+              -0.015976992457205512,
+              0.013929160318583118
+            ],
+            "equal_log_delta": 0.008387723778510292,
+            "equal_log_cluster_95": [
+              -0.018411207279003763,
+              0.03615192047115389
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.005787037037037038,
+            "scene_weighted_log_cluster_95": [
+              -0.015444015444015443,
+              0.0031548237032304406
+            ],
+            "equal_log_delta": -0.006295161351341127,
+            "equal_log_cluster_95": [
+              -0.018416657208792042,
+              0.0036204744069912613
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.0005787037037037032,
+            "scene_weighted_log_cluster_95": [
+              -0.0025348542458808626,
+              0.003634522798074199
+            ],
+            "equal_log_delta": 0.0011428022663977713,
+            "equal_log_cluster_95": [
+              -0.002602516085662154,
+              0.0059497743205608284
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": -0.002615266203703707,
+            "scene_weighted_log_cluster_95": [
+              -0.020040070555555557,
+              0.014516610192159773
+            ],
+            "equal_log_delta": 0.0014394268251515443,
+            "equal_log_cluster_95": [
+              -0.02825710732628794,
+              0.031753075463908736
+            ]
+          },
+          "success": {
+            "delta": -0.017361111111111115,
+            "scene_weighted_log_cluster_95": [
+              -0.034810520183890664,
+              -1.5561370458813476e-18
+            ],
+            "equal_log_delta": -0.010730322528075337,
+            "equal_log_cluster_95": [
+              -0.04157700601520826,
+              0.020497720652215036
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.012731481481481483,
+            "scene_weighted_log_cluster_95": [
+              -0.025362318840579712,
+              -0.0021786492374727675
+            ],
+            "equal_log_delta": -0.013269398100858776,
+            "equal_log_cluster_95": [
+              -0.03476951159535429,
+              0.0038134150493701053
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.00462962962962963,
+            "scene_weighted_log_cluster_95": [
+              -0.018050541516245487,
+              0.0091324200913242
+            ],
+            "equal_log_delta": 0.002539075572783438,
+            "equal_log_cluster_95": [
+              -0.02064044361797171,
+              0.02817937368499165
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.024973217592592592,
+            "scene_weighted_log_cluster_95": [
+              0.006734188999713992,
+              0.04346129782220053
+            ],
+            "equal_log_delta": 0.032758244751503164,
+            "equal_log_cluster_95": [
+              0.005107523133976922,
+              0.06159840610235581
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.013888888888888888,
+            "scene_weighted_log_cluster_95": [
+              -0.028736091219565933,
+              -0.002178649237472767
+            ],
+            "equal_log_delta": -0.02115537396436273,
+            "equal_log_cluster_95": [
+              -0.050758805281277186,
+              0.0004996595165134466
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.0005787037037037036,
+            "scene_weighted_log_cluster_95": [
+              -0.004578964613368284,
+              0.006127553446127613
+            ],
+            "equal_log_delta": 0.0036444828579660043,
+            "equal_log_cluster_95": [
+              -0.002757850763468741,
+              0.012858926342072408
+            ]
+          }
+        }
+      },
+      "logs": 89
+    },
+    "development58_R": {
+      "scenes": 58,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.8027275862068964,
+            "success": 0.9310344827586207,
+            "no_at_fault_collisions": 0.9712643678160919,
+            "drivable_area_compliance": 0.9597701149425287,
+            "ego_progress": 0.6575808620689654,
+            "time_to_collision_within_bound": 0.9425287356321839,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9885057471264368
+          },
+          "seed_means": [
+            {
+              "score": 0.8105918965517241,
+              "success": 0.9482758620689655,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9655172413793104,
+              "ego_progress": 0.6523165517241377,
+              "time_to_collision_within_bound": 0.9482758620689655,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9827586206896551
+            },
+            {
+              "score": 0.8150962068965515,
+              "success": 0.9137931034482759,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.6941625862068965,
+              "time_to_collision_within_bound": 0.9482758620689655,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            },
+            {
+              "score": 0.7824946551724139,
+              "success": 0.9310344827586207,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9655172413793104,
+              "ego_progress": 0.626263448275862,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            }
+          ],
+          "seed_std": {
+            "score": 0.017666375593347574,
+            "success": 0.017241379310344807,
+            "no_at_fault_collisions": 0.009954314986027987,
+            "drivable_area_compliance": 0.00995431498602805,
+            "ego_progress": 0.03425431294741449,
+            "time_to_collision_within_bound": 0.00995431498602805,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.004977157493014057
+          },
+          "rescued": [
+            4,
+            2,
+            4
+          ],
+          "broken": [
+            1,
+            1,
+            2
+          ],
+          "broken_dac_involved": [
+            1,
+            1,
+            1
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.7780818965517241,
+            "success": 0.9080459770114944,
+            "no_at_fault_collisions": 0.9655172413793104,
+            "drivable_area_compliance": 0.9425287356321839,
+            "ego_progress": 0.6248686781609196,
+            "time_to_collision_within_bound": 0.9367816091954023,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9885057471264368
+          },
+          "seed_means": [
+            {
+              "score": 0.7817360344827586,
+              "success": 0.9137931034482759,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.6313405172413794,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            },
+            {
+              "score": 0.7641977586206896,
+              "success": 0.9137931034482759,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.5892477586206898,
+              "time_to_collision_within_bound": 0.9482758620689655,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            },
+            {
+              "score": 0.7883118965517241,
+              "success": 0.896551724137931,
+              "no_at_fault_collisions": 0.9482758620689655,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.6540177586206898,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9827586206896551
+            }
+          ],
+          "seed_std": {
+            "score": 0.012465450455298743,
+            "success": 0.00995431498602805,
+            "no_at_fault_collisions": 0.017241379310344807,
+            "drivable_area_compliance": 0.00995431498602805,
+            "ego_progress": 0.03286642284783247,
+            "time_to_collision_within_bound": 0.00995431498602805,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.004977157493014057
+          },
+          "rescued": [
+            2,
+            2,
+            0
+          ],
+          "broken": [
+            1,
+            1,
+            0
+          ],
+          "broken_dac_involved": [
+            1,
+            1,
+            0
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.7599875287356322,
+            "success": 0.9080459770114943,
+            "no_at_fault_collisions": 0.9712643678160919,
+            "drivable_area_compliance": 0.9367816091954023,
+            "ego_progress": 0.5929361494252873,
+            "time_to_collision_within_bound": 0.9310344827586207,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.985632183908046
+          },
+          "seed_means": [
+            {
+              "score": 0.7264506896551726,
+              "success": 0.8793103448275862,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9137931034482759,
+              "ego_progress": 0.5469303448275863,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9827586206896551
+            },
+            {
+              "score": 0.7772693103448276,
+              "success": 0.9137931034482759,
+              "no_at_fault_collisions": 0.9827586206896551,
+              "drivable_area_compliance": 0.9310344827586207,
+              "ego_progress": 0.63786,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9827586206896551
+            },
+            {
+              "score": 0.7762425862068965,
+              "success": 0.9310344827586207,
+              "no_at_fault_collisions": 0.9655172413793104,
+              "drivable_area_compliance": 0.9655172413793104,
+              "ego_progress": 0.5940181034482758,
+              "time_to_collision_within_bound": 0.9310344827586207,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9913793103448276
+            }
+          ],
+          "seed_std": {
+            "score": 0.02904829121041953,
+            "success": 0.026336641925033568,
+            "no_at_fault_collisions": 0.009954314986027987,
+            "drivable_area_compliance": 0.026336641925033565,
+            "ego_progress": 0.04547448202920414,
+            "time_to_collision_within_bound": 0.0,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.004977157493014057
+          },
+          "rescued": [
+            2,
+            2,
+            2
+          ],
+          "broken": [
+            3,
+            1,
+            0
+          ],
+          "broken_dac_involved": [
+            3,
+            1,
+            0
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.7436606896551722,
+            "success": 0.896551724137931,
+            "no_at_fault_collisions": 0.9482758620689655,
+            "drivable_area_compliance": 0.9482758620689655,
+            "ego_progress": 0.5296137931034481,
+            "time_to_collision_within_bound": 0.9482758620689655,
+            "comfort": 1.0,
+            "driving_direction_compliance": 1.0
+          },
+          "seed_means": [
+            {
+              "score": 0.7436606896551722,
+              "success": 0.896551724137931,
+              "no_at_fault_collisions": 0.9482758620689655,
+              "drivable_area_compliance": 0.9482758620689655,
+              "ego_progress": 0.5296137931034481,
+              "time_to_collision_within_bound": 0.9482758620689655,
+              "comfort": 1.0,
+              "driving_direction_compliance": 1.0
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": 0.05906689655172414,
+            "scene_weighted_log_cluster_95": [
+              0.009369902113237637,
+              0.11730543082881051
+            ],
+            "equal_log_delta": 0.09430346632996632,
+            "equal_log_cluster_95": [
+              0.02685874393939393,
+              0.1878543425925925
+            ]
+          },
+          "success": {
+            "delta": 0.034482758620689655,
+            "scene_weighted_log_cluster_95": [
+              -0.030303030303030307,
+              0.1
+            ],
+            "equal_log_delta": 0.07222222222222222,
+            "equal_log_cluster_95": [
+              -0.006060606060606064,
+              0.1828282828282828
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.022988505747126436,
+            "scene_weighted_log_cluster_95": [
+              -0.014184397163120569,
+              0.05333333333333334
+            ],
+            "equal_log_delta": 0.005555555555555555,
+            "equal_log_cluster_95": [
+              -0.005050505050505051,
+              0.018686868686868686
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.011494252873563216,
+            "scene_weighted_log_cluster_95": [
+              -0.03763440860215054,
+              0.07638888888888888
+            ],
+            "equal_log_delta": 0.06666666666666667,
+            "equal_log_cluster_95": [
+              -0.012121212121212126,
+              0.17878787878787877
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.12796706896551724,
+            "scene_weighted_log_cluster_95": [
+              0.06604212555022008,
+              0.1997470162037037
+            ],
+            "equal_log_delta": 0.13481347138047137,
+            "equal_log_cluster_95": [
+              0.06932449065656567,
+              0.2128303074494949
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.005747126436781611,
+            "scene_weighted_log_cluster_95": [
+              -0.015384615384615387,
+              0.0
+            ],
+            "equal_log_delta": -0.0015151515151515154,
+            "equal_log_cluster_95": [
+              -0.004545454545454546,
+              0.0
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.011494252873563218,
+            "scene_weighted_log_cluster_95": [
+              -0.0326797385620915,
+              0.0
+            ],
+            "equal_log_delta": -0.008417508417508417,
+            "equal_log_cluster_95": [
+              -0.024410774410774407,
+              0.0
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": 0.024645689655172408,
+            "scene_weighted_log_cluster_95": [
+              -0.010442279695900548,
+              0.06664012564102564
+            ],
+            "equal_log_delta": 0.06203180303030303,
+            "equal_log_cluster_95": [
+              0.010293645580808107,
+              0.12751644696969694
+            ]
+          },
+          "success": {
+            "delta": 0.02298850574712644,
+            "scene_weighted_log_cluster_95": [
+              -0.010416666666666663,
+              0.06666666666666667
+            ],
+            "equal_log_delta": 0.058249158249158245,
+            "equal_log_cluster_95": [
+              -0.0015151515151515152,
+              0.13653198653198653
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.005747126436781609,
+            "scene_weighted_log_cluster_95": [
+              -0.015151515151515152,
+              0.020202020202020204
+            ],
+            "equal_log_delta": 0.0006734006734006734,
+            "equal_log_cluster_95": [
+              -0.0060606060606060615,
+              0.006565656565656566
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.017241379310344827,
+            "scene_weighted_log_cluster_95": [
+              -0.008547008547008546,
+              0.061224489795918366
+            ],
+            "equal_log_delta": 0.05757575757575757,
+            "equal_log_cluster_95": [
+              -0.0030303030303030303,
+              0.13636363636363635
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.03271218390804598,
+            "scene_weighted_log_cluster_95": [
+              -0.01033116472868216,
+              0.07600087416666666
+            ],
+            "equal_log_delta": 0.0690089393939394,
+            "equal_log_cluster_95": [
+              0.020913344065656578,
+              0.12254104027777779
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.005747126436781609,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.015384615384615385
+            ],
+            "equal_log_delta": 0.0015151515151515152,
+            "equal_log_cluster_95": [
+              0.0,
+              0.004545454545454546
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              -0.0068493150684931494,
+              0.010416666666666664
+            ],
+            "equal_log_delta": 0.006734006734006732,
+            "equal_log_cluster_95": [
+              -0.0025252525252525246,
+              0.02272727272727272
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": 0.04274005747126436,
+            "scene_weighted_log_cluster_95": [
+              0.013037466762314683,
+              0.08212747419028335
+            ],
+            "equal_log_delta": 0.07754021885521886,
+            "equal_log_cluster_95": [
+              0.023265082070707068,
+              0.14582323674242423
+            ]
+          },
+          "success": {
+            "delta": 0.02298850574712644,
+            "scene_weighted_log_cluster_95": [
+              -0.005649717514124293,
+              0.06482046070460698
+            ],
+            "equal_log_delta": 0.05909090909090909,
+            "equal_log_cluster_95": [
+              0.0,
+              0.13484848484848486
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -9.570888143320315e-19,
+            "scene_weighted_log_cluster_95": [
+              -0.01666666666666667,
+              0.014084507042253521
+            ],
+            "equal_log_delta": -0.0010101010101010103,
+            "equal_log_cluster_95": [
+              -0.007575757575757577,
+              0.004545454545454546
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.02298850574712644,
+            "scene_weighted_log_cluster_95": [
+              -0.005128205128205127,
+              0.06666666666666667
+            ],
+            "equal_log_delta": 0.060101010101010106,
+            "equal_log_cluster_95": [
+              0.0020202020202020206,
+              0.13585858585858587
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.06464471264367816,
+            "scene_weighted_log_cluster_95": [
+              0.031220529166666636,
+              0.10648380278980278
+            ],
+            "equal_log_delta": 0.10168544949494947,
+            "equal_log_cluster_95": [
+              0.048941030050505006,
+              0.16451761477272722
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.01149425287356322,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.021098720782265063
+            ],
+            "equal_log_delta": 0.003198653198653199,
+            "equal_log_cluster_95": [
+              0.0,
+              0.008080808080808083
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.002873563218390806,
+            "scene_weighted_log_cluster_95": [
+              -0.01695059379684077,
+              0.0272108843537415
+            ],
+            "equal_log_delta": 0.012289562289562295,
+            "equal_log_cluster_95": [
+              -0.012121212121212123,
+              0.048484848484848485
+            ]
+          }
+        }
+      },
+      "logs": 22
+    },
+    "remainder230_R": {
+      "scenes": 230,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.7700407391304349,
+            "success": 0.9,
+            "no_at_fault_collisions": 0.9434782608695652,
+            "drivable_area_compliance": 0.9536231884057971,
+            "ego_progress": 0.6185322463768114,
+            "time_to_collision_within_bound": 0.9231884057971014,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9942028985507246
+          },
+          "seed_means": [
+            {
+              "score": 0.7580086521739132,
+              "success": 0.9043478260869565,
+              "no_at_fault_collisions": 0.9391304347826087,
+              "drivable_area_compliance": 0.9652173913043478,
+              "ego_progress": 0.5835682173913043,
+              "time_to_collision_within_bound": 0.9217391304347826,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.7691465652173916,
+              "success": 0.8782608695652174,
+              "no_at_fault_collisions": 0.9304347826086956,
+              "drivable_area_compliance": 0.9434782608695652,
+              "ego_progress": 0.6511691739130434,
+              "time_to_collision_within_bound": 0.908695652173913,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.7829670000000002,
+              "success": 0.9173913043478261,
+              "no_at_fault_collisions": 0.9608695652173913,
+              "drivable_area_compliance": 0.9521739130434783,
+              "ego_progress": 0.6208593478260866,
+              "time_to_collision_within_bound": 0.9391304347826087,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9956521739130435
+            }
+          ],
+          "seed_std": {
+            "score": 0.012503177267881176,
+            "success": 0.019924242151981908,
+            "no_at_fault_collisions": 0.015676309893321708,
+            "drivable_area_compliance": 0.010941789036624263,
+            "ego_progress": 0.03386050622081617,
+            "time_to_collision_within_bound": 0.015269063409931529,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0012551092808470053
+          },
+          "rescued": [
+            2,
+            3,
+            6
+          ],
+          "broken": [
+            8,
+            15,
+            9
+          ],
+          "broken_dac_involved": [
+            5,
+            10,
+            8
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.7859617681159422,
+            "success": 0.9202898550724637,
+            "no_at_fault_collisions": 0.9565217391304349,
+            "drivable_area_compliance": 0.9623188405797102,
+            "ego_progress": 0.6283372028985507,
+            "time_to_collision_within_bound": 0.9318840579710145,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9934782608695653
+          },
+          "seed_means": [
+            {
+              "score": 0.7753569565217391,
+              "success": 0.9043478260869565,
+              "no_at_fault_collisions": 0.9565217391304348,
+              "drivable_area_compliance": 0.9434782608695652,
+              "ego_progress": 0.6252046521739131,
+              "time_to_collision_within_bound": 0.9304347826086956,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9956521739130435
+            },
+            {
+              "score": 0.7761267391304351,
+              "success": 0.9260869565217391,
+              "no_at_fault_collisions": 0.9521739130434783,
+              "drivable_area_compliance": 0.9739130434782609,
+              "ego_progress": 0.5879218695652173,
+              "time_to_collision_within_bound": 0.9391304347826087,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.8064016086956522,
+              "success": 0.9304347826086956,
+              "no_at_fault_collisions": 0.9608695652173913,
+              "drivable_area_compliance": 0.9695652173913043,
+              "ego_progress": 0.6718850869565216,
+              "time_to_collision_within_bound": 0.9260869565217391,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.991304347826087
+            }
+          ],
+          "seed_std": {
+            "score": 0.017705605143827647,
+            "success": 0.01397630545071441,
+            "no_at_fault_collisions": 0.004347826086956497,
+            "drivable_area_compliance": 0.016460603900870365,
+            "ego_progress": 0.042069170709757006,
+            "time_to_collision_within_bound": 0.00664141405066066,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0021739130434782483
+          },
+          "rescued": [
+            5,
+            6,
+            5
+          ],
+          "broken": [
+            11,
+            7,
+            5
+          ],
+          "broken_dac_involved": [
+            9,
+            5,
+            4
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.7840934347826088,
+            "success": 0.927536231884058,
+            "no_at_fault_collisions": 0.9594202898550724,
+            "drivable_area_compliance": 0.9652173913043479,
+            "ego_progress": 0.6035631449275362,
+            "time_to_collision_within_bound": 0.9434782608695652,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9942028985507246
+          },
+          "seed_means": [
+            {
+              "score": 0.7993611739130438,
+              "success": 0.9478260869565217,
+              "no_at_fault_collisions": 0.9739130434782609,
+              "drivable_area_compliance": 0.9739130434782609,
+              "ego_progress": 0.6089013913043478,
+              "time_to_collision_within_bound": 0.9565217391304348,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            },
+            {
+              "score": 0.7673779130434786,
+              "success": 0.8956521739130435,
+              "no_at_fault_collisions": 0.9434782608695652,
+              "drivable_area_compliance": 0.9478260869565217,
+              "ego_progress": 0.6095328695652171,
+              "time_to_collision_within_bound": 0.9304347826086956,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.991304347826087
+            },
+            {
+              "score": 0.785541217391304,
+              "success": 0.9391304347826087,
+              "no_at_fault_collisions": 0.9608695652173913,
+              "drivable_area_compliance": 0.9739130434782609,
+              "ego_progress": 0.5922551739130436,
+              "time_to_collision_within_bound": 0.9434782608695652,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9978260869565218
+            }
+          ],
+          "seed_std": {
+            "score": 0.016040707584897756,
+            "success": 0.02795261090142882,
+            "no_at_fault_collisions": 0.015269063409931527,
+            "drivable_area_compliance": 0.015061311370164192,
+            "ego_progress": 0.009798078768153527,
+            "time_to_collision_within_bound": 0.013043478260869601,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0033207070253302995
+          },
+          "rescued": [
+            8,
+            5,
+            8
+          ],
+          "broken": [
+            4,
+            13,
+            6
+          ],
+          "broken_dac_involved": [
+            3,
+            10,
+            4
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.7738145217391305,
+            "success": 0.9304347826086956,
+            "no_at_fault_collisions": 0.9434782608695652,
+            "drivable_area_compliance": 0.9826086956521739,
+            "ego_progress": 0.5806333478260866,
+            "time_to_collision_within_bound": 0.9260869565217391,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9934782608695653
+          },
+          "seed_means": [
+            {
+              "score": 0.7738145217391305,
+              "success": 0.9304347826086956,
+              "no_at_fault_collisions": 0.9434782608695652,
+              "drivable_area_compliance": 0.9826086956521739,
+              "ego_progress": 0.5806333478260866,
+              "time_to_collision_within_bound": 0.9260869565217391,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9934782608695653
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": -0.0037737826086956484,
+            "scene_weighted_log_cluster_95": [
+              -0.03197859198966408,
+              0.02279606698868892
+            ],
+            "equal_log_delta": -0.028136954193954188,
+            "equal_log_cluster_95": [
+              -0.07264711762464318,
+              0.009159764450385154
+            ]
+          },
+          "success": {
+            "delta": -0.030434782608695653,
+            "scene_weighted_log_cluster_95": [
+              -0.058422726850561914,
+              -0.005507402181459868
+            ],
+            "equal_log_delta": -0.05753381499650157,
+            "equal_log_cluster_95": [
+              -0.10886223022417052,
+              -0.016163056125742696
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -9.654113257610057e-19,
+            "scene_weighted_log_cluster_95": [
+              -0.019432569663764374,
+              0.01923076923076923
+            ],
+            "equal_log_delta": -0.003741394039901503,
+            "equal_log_cluster_95": [
+              -0.02035303281571938,
+              0.011240137695361562
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.028985507246376815,
+            "scene_weighted_log_cluster_95": [
+              -0.049095895625692124,
+              -0.01293075603671033
+            ],
+            "equal_log_delta": -0.05334013692222648,
+            "equal_log_cluster_95": [
+              -0.10248054598800868,
+              -0.015754309261771952
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.03789889855072463,
+            "scene_weighted_log_cluster_95": [
+              0.007331542583454835,
+              0.06858351263531594
+            ],
+            "equal_log_delta": 0.01604867316541943,
+            "equal_log_cluster_95": [
+              -0.023390264959025225,
+              0.05206088125694786
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.002898550724637684,
+            "scene_weighted_log_cluster_95": [
+              -0.020926936880339107,
+              0.01581184515967122
+            ],
+            "equal_log_delta": -0.01083471531232725,
+            "equal_log_cluster_95": [
+              -0.03750590481933765,
+              0.009619076335494237
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.0007246376811594201,
+            "scene_weighted_log_cluster_95": [
+              -0.0016835016835016832,
+              0.0032682955071792444
+            ],
+            "equal_log_delta": 0.0010205383339711694,
+            "equal_log_cluster_95": [
+              -0.0008610792192881744,
+              0.003922694221201683
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": -0.015921028985507242,
+            "scene_weighted_log_cluster_95": [
+              -0.030137792670088166,
+              -0.001796214373566811
+            ],
+            "equal_log_delta": -0.018009701223044506,
+            "equal_log_cluster_95": [
+              -0.050800285007771374,
+              0.014795832883216824
+            ]
+          },
+          "success": {
+            "delta": -0.020289855072463767,
+            "scene_weighted_log_cluster_95": [
+              -0.03518518518518518,
+              -0.00631911532385466
+            ],
+            "equal_log_delta": -0.02035355468191289,
+            "equal_log_cluster_95": [
+              -0.054349609760057524,
+              0.013019372832805664
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.013043478260869565,
+            "scene_weighted_log_cluster_95": [
+              -0.023990151515151516,
+              -0.003366580376630631
+            ],
+            "equal_log_delta": -0.009583396150560333,
+            "equal_log_cluster_95": [
+              -0.019995979697472237,
+              0.0003869541182974016
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.008695652173913044,
+            "scene_weighted_log_cluster_95": [
+              -0.022322052075019954,
+              0.00460882829834442
+            ],
+            "equal_log_delta": -0.01122244256572615,
+            "equal_log_cluster_95": [
+              -0.04522155152752167,
+              0.021781332266406883
+            ]
+          },
+          "ego_progress": {
+            "delta": -0.009804956521739136,
+            "scene_weighted_log_cluster_95": [
+              -0.025049664116590036,
+              0.005035298957538766
+            ],
+            "equal_log_delta": -0.011517750005660458,
+            "equal_log_cluster_95": [
+              -0.043436270622723046,
+              0.02084013536259894
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.008695652173913042,
+            "scene_weighted_log_cluster_95": [
+              -0.020203042571463624,
+              0.001736111111111111
+            ],
+            "equal_log_delta": -0.008859741695562593,
+            "equal_log_cluster_95": [
+              -0.024604879642193073,
+              0.004578370772400618
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.0007246376811594196,
+            "scene_weighted_log_cluster_95": [
+              -0.0025252525252525268,
+              0.0038252936373343355
+            ],
+            "equal_log_delta": -0.0006931156184887535,
+            "equal_log_cluster_95": [
+              -0.0039035591274397263,
+              0.0016860143725815364
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": -0.014052695652173914,
+            "scene_weighted_log_cluster_95": [
+              -0.034864100847868215,
+              0.004829768560606061
+            ],
+            "equal_log_delta": -0.023548892945915327,
+            "equal_log_cluster_95": [
+              -0.05709326838273667,
+              0.007795041471015164
+            ]
+          },
+          "success": {
+            "delta": -0.027536231884057974,
+            "scene_weighted_log_cluster_95": [
+              -0.04783969076732234,
+              -0.009089880707527781
+            ],
+            "equal_log_delta": -0.03365669708953291,
+            "equal_log_cluster_95": [
+              -0.06872026812325321,
+              -0.0014720395690545013
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.01594202898550725,
+            "scene_weighted_log_cluster_95": [
+              -0.031073812242030388,
+              -0.0031152647975077885
+            ],
+            "equal_log_delta": -0.017294838936629982,
+            "equal_log_cluster_95": [
+              -0.04479672345343987,
+              0.005156352077993865
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": -0.011594202898550727,
+            "scene_weighted_log_cluster_95": [
+              -0.027273380355276905,
+              0.0027100271002710036
+            ],
+            "equal_log_delta": -0.01636185815290293,
+            "equal_log_cluster_95": [
+              -0.04017814965576161,
+              0.005237613409255194
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.014969101449275357,
+            "scene_weighted_log_cluster_95": [
+              -0.006712029683732633,
+              0.03537160202445719
+            ],
+            "equal_log_delta": 0.01012543125365513,
+            "equal_log_cluster_95": [
+              -0.021142474249313436,
+              0.040569209799121535
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.020289855072463774,
+            "scene_weighted_log_cluster_95": [
+              -0.03827842856880969,
+              -0.006666666666666667
+            ],
+            "equal_log_delta": -0.02915221870445751,
+            "equal_log_cluster_95": [
+              -0.06764837429016535,
+              -0.000552791597567716
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -4.8270566288050285e-19,
+            "scene_weighted_log_cluster_95": [
+              -0.004006651606425703,
+              0.003949447077409162
+            ],
+            "equal_log_delta": 0.0008058000595314026,
+            "equal_log_cluster_95": [
+              -0.001211889271590764,
+              0.0033210018284645145
+            ]
+          }
+        }
+      },
+      "logs": 67
+    },
+    "common_NR": {
+      "scenes": 64,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.9007971354166667,
+            "success": 0.9791666666666666,
+            "no_at_fault_collisions": 0.9791666666666666,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.8171220833333331,
+            "time_to_collision_within_bound": 0.953125,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9739583333333334
+          },
+          "seed_means": [
+            {
+              "score": 0.89056203125,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7967235937499998,
+              "time_to_collision_within_bound": 0.953125,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.96875
+            },
+            {
+              "score": 0.9114737500000003,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.84066296875,
+              "time_to_collision_within_bound": 0.953125,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.96875
+            },
+            {
+              "score": 0.9003556250000002,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.8139796875,
+              "time_to_collision_within_bound": 0.953125,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            }
+          ],
+          "seed_std": {
+            "score": 0.010462848266882086,
+            "success": 0.009021097956087904,
+            "no_at_fault_collisions": 0.009021097956087904,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.022137596019614996,
+            "time_to_collision_within_bound": 0.0,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.009021097956087904
+          },
+          "rescued": [
+            1,
+            1,
+            2
+          ],
+          "broken": [
+            1,
+            0,
+            1
+          ],
+          "broken_dac_involved": [
+            0,
+            0,
+            0
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.8961723437499997,
+            "success": 0.9791666666666666,
+            "no_at_fault_collisions": 0.9791666666666666,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.8060218229166666,
+            "time_to_collision_within_bound": 0.953125,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.984375
+          },
+          "seed_means": [
+            {
+              "score": 0.9149337499999997,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.83334109375,
+              "time_to_collision_within_bound": 0.96875,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.8978498437499999,
+              "success": 1.0,
+              "no_at_fault_collisions": 1.0,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7860895312499999,
+              "time_to_collision_within_bound": 0.96875,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.8757334374999997,
+              "success": 0.953125,
+              "no_at_fault_collisions": 0.953125,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7986348437499998,
+              "time_to_collision_within_bound": 0.921875,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            }
+          ],
+          "seed_std": {
+            "score": 0.019653921484322524,
+            "success": 0.023867581744561665,
+            "no_at_fault_collisions": 0.023867581744561665,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.024476583413120173,
+            "time_to_collision_within_bound": 0.027063293868263706,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0
+          },
+          "rescued": [
+            2,
+            2,
+            0
+          ],
+          "broken": [
+            1,
+            0,
+            1
+          ],
+          "broken_dac_involved": [
+            0,
+            0,
+            0
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.8922077604166668,
+            "success": 0.984375,
+            "no_at_fault_collisions": 0.984375,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.7787990104166665,
+            "time_to_collision_within_bound": 0.96875,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9791666666666666
+          },
+          "seed_means": [
+            {
+              "score": 0.8955912500000002,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7712943749999999,
+              "time_to_collision_within_bound": 0.984375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.89534265625,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.8019484375000001,
+              "time_to_collision_within_bound": 0.953125,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9765625
+            },
+            {
+              "score": 0.8856893749999999,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7631542187499999,
+              "time_to_collision_within_bound": 0.96875,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9765625
+            }
+          ],
+          "seed_std": {
+            "score": 0.005646455617756639,
+            "success": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.020456967435534865,
+            "time_to_collision_within_bound": 0.015625,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.004510548978043951
+          },
+          "rescued": [
+            1,
+            2,
+            1
+          ],
+          "broken": [
+            0,
+            1,
+            0
+          ],
+          "broken_dac_involved": [
+            0,
+            0,
+            0
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.8531931249999999,
+            "success": 0.96875,
+            "no_at_fault_collisions": 0.96875,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.7382885937499998,
+            "time_to_collision_within_bound": 0.9375,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.984375
+          },
+          "seed_means": [
+            {
+              "score": 0.8531931249999999,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7382885937499998,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": 0.047604010416666676,
+            "scene_weighted_log_cluster_95": [
+              0.012433794270833345,
+              0.08780436718750004
+            ],
+            "equal_log_delta": 0.047604010416666676,
+            "equal_log_cluster_95": [
+              0.012433794270833345,
+              0.08780436718750004
+            ]
+          },
+          "success": {
+            "delta": 0.010416666666666664,
+            "scene_weighted_log_cluster_95": [
+              -0.020833333333333336,
+              0.05208333333333333
+            ],
+            "equal_log_delta": 0.010416666666666664,
+            "equal_log_cluster_95": [
+              -0.020833333333333336,
+              0.05208333333333333
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 0.010416666666666664,
+            "scene_weighted_log_cluster_95": [
+              -0.020833333333333336,
+              0.05208333333333333
+            ],
+            "equal_log_delta": 0.010416666666666664,
+            "equal_log_cluster_95": [
+              -0.020833333333333336,
+              0.05208333333333333
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.07883348958333333,
+            "scene_weighted_log_cluster_95": [
+              0.03036929296875,
+              0.13058770963541663
+            ],
+            "equal_log_delta": 0.07883348958333333,
+            "equal_log_cluster_95": [
+              0.03036929296875,
+              0.13058770963541663
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.015624999999999997,
+            "scene_weighted_log_cluster_95": [
+              -0.03125000000000001,
+              0.07291666666666666
+            ],
+            "equal_log_delta": 0.015624999999999997,
+            "equal_log_cluster_95": [
+              -0.03125000000000001,
+              0.07291666666666666
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.010416666666666666,
+            "scene_weighted_log_cluster_95": [
+              -0.0234375,
+              0.0
+            ],
+            "equal_log_delta": -0.010416666666666666,
+            "equal_log_cluster_95": [
+              -0.0234375,
+              0.0
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": 0.004624791666666684,
+            "scene_weighted_log_cluster_95": [
+              -0.01617844270833332,
+              0.024574786458333345
+            ],
+            "equal_log_delta": 0.004624791666666684,
+            "equal_log_cluster_95": [
+              -0.01617844270833332,
+              0.024574786458333345
+            ]
+          },
+          "success": {
+            "delta": 8.673617379884035e-19,
+            "scene_weighted_log_cluster_95": [
+              -0.020833333333333336,
+              0.020833333333333336
+            ],
+            "equal_log_delta": 8.673617379884035e-19,
+            "equal_log_cluster_95": [
+              -0.020833333333333336,
+              0.020833333333333336
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": 8.673617379884035e-19,
+            "scene_weighted_log_cluster_95": [
+              -0.020833333333333336,
+              0.020833333333333336
+            ],
+            "equal_log_delta": 8.673617379884035e-19,
+            "equal_log_cluster_95": [
+              -0.020833333333333336,
+              0.020833333333333336
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.01110026041666666,
+            "scene_weighted_log_cluster_95": [
+              -0.01556841145833333,
+              0.03744336848958332
+            ],
+            "equal_log_delta": 0.01110026041666666,
+            "equal_log_cluster_95": [
+              -0.01556841145833333,
+              0.03744336848958332
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              -0.026041666666666664,
+              0.026041666666666668
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              -0.026041666666666664,
+              0.026041666666666668
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.010416666666666666,
+            "scene_weighted_log_cluster_95": [
+              -0.0234375,
+              0.0
+            ],
+            "equal_log_delta": -0.010416666666666666,
+            "equal_log_cluster_95": [
+              -0.0234375,
+              0.0
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": 0.008589375000000024,
+            "scene_weighted_log_cluster_95": [
+              -0.010803445312499972,
+              0.025071195312500037
+            ],
+            "equal_log_delta": 0.008589375000000024,
+            "equal_log_cluster_95": [
+              -0.010803445312499972,
+              0.025071195312500037
+            ]
+          },
+          "success": {
+            "delta": -0.005208333333333334,
+            "scene_weighted_log_cluster_95": [
+              -0.020833333333333336,
+              0.010416666666666668
+            ],
+            "equal_log_delta": -0.005208333333333334,
+            "equal_log_cluster_95": [
+              -0.020833333333333336,
+              0.010416666666666668
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.005208333333333334,
+            "scene_weighted_log_cluster_95": [
+              -0.020833333333333336,
+              0.010416666666666668
+            ],
+            "equal_log_delta": -0.005208333333333334,
+            "equal_log_cluster_95": [
+              -0.020833333333333336,
+              0.010416666666666668
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.03832307291666667,
+            "scene_weighted_log_cluster_95": [
+              0.009655796874999997,
+              0.06711982291666664
+            ],
+            "equal_log_delta": 0.03832307291666667,
+            "equal_log_cluster_95": [
+              0.009655796874999997,
+              0.06711982291666664
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.015625,
+            "scene_weighted_log_cluster_95": [
+              -0.03645833333333334,
+              0.005208333333333332
+            ],
+            "equal_log_delta": -0.015625,
+            "equal_log_cluster_95": [
+              -0.03645833333333334,
+              0.005208333333333332
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.005208333333333332,
+            "scene_weighted_log_cluster_95": [
+              -0.018229166666666664,
+              0.005208333333333337
+            ],
+            "equal_log_delta": -0.005208333333333332,
+            "equal_log_cluster_95": [
+              -0.018229166666666664,
+              0.005208333333333337
+            ]
+          }
+        }
+      },
+      "logs": 64
+    },
+    "common_R": {
+      "scenes": 64,
+      "arms": {
+        "MID": {
+          "mean": {
+            "score": 0.8893813541666667,
+            "success": 0.9635416666666666,
+            "no_at_fault_collisions": 0.9635416666666666,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.81159859375,
+            "time_to_collision_within_bound": 0.9375,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9791666666666666
+          },
+          "seed_means": [
+            {
+              "score": 0.8852878125,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7996898437499997,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.8992785937500001,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.83326875,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.96875
+            },
+            {
+              "score": 0.88357765625,
+              "success": 0.953125,
+              "no_at_fault_collisions": 0.953125,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.8018371875000001,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            }
+          ],
+          "seed_std": {
+            "score": 0.008613807063504482,
+            "success": 0.009021097956087904,
+            "no_at_fault_collisions": 0.009021097956087904,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.018797593601834483,
+            "time_to_collision_within_bound": 0.0,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.009021097956087904
+          },
+          "rescued": [
+            0,
+            0,
+            0
+          ],
+          "broken": [
+            1,
+            1,
+            2
+          ],
+          "broken_dac_involved": [
+            0,
+            0,
+            0
+          ]
+        },
+        "P1": {
+          "mean": {
+            "score": 0.8883829166666665,
+            "success": 0.9791666666666666,
+            "no_at_fault_collisions": 0.9791666666666666,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.8081605729166667,
+            "time_to_collision_within_bound": 0.9322916666666666,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.984375
+          },
+          "seed_means": [
+            {
+              "score": 0.8723881249999996,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.79998078125,
+              "time_to_collision_within_bound": 0.90625,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.8753182812499999,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7695142187500003,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.9174423437499997,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.85498671875,
+              "time_to_collision_within_bound": 0.953125,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            }
+          ],
+          "seed_std": {
+            "score": 0.025208811568993617,
+            "success": 0.009021097956087904,
+            "no_at_fault_collisions": 0.009021097956087904,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.04331938143423843,
+            "time_to_collision_within_bound": 0.023867581744561665,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.0
+          },
+          "rescued": [
+            0,
+            0,
+            0
+          ],
+          "broken": [
+            1,
+            0,
+            0
+          ],
+          "broken_dac_involved": [
+            0,
+            0,
+            0
+          ]
+        },
+        "CL_NLL": {
+          "mean": {
+            "score": 0.8775410416666666,
+            "success": 0.9739583333333334,
+            "no_at_fault_collisions": 0.9739583333333334,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.7685994791666667,
+            "time_to_collision_within_bound": 0.9479166666666666,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9791666666666666
+          },
+          "seed_means": [
+            {
+              "score": 0.86551578125,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7522396874999998,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.984375
+            },
+            {
+              "score": 0.8876431250000001,
+              "success": 0.96875,
+              "no_at_fault_collisions": 0.96875,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.8053432812500001,
+              "time_to_collision_within_bound": 0.9375,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9765625
+            },
+            {
+              "score": 0.8794642187499998,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.74821546875,
+              "time_to_collision_within_bound": 0.96875,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9765625
+            }
+          ],
+          "seed_std": {
+            "score": 0.011188332893155307,
+            "success": 0.009021097956087904,
+            "no_at_fault_collisions": 0.009021097956087904,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.03188461741641803,
+            "time_to_collision_within_bound": 0.018042195912175808,
+            "comfort": 0.0,
+            "driving_direction_compliance": 0.004510548978043951
+          },
+          "rescued": [
+            0,
+            0,
+            0
+          ],
+          "broken": [
+            1,
+            1,
+            0
+          ],
+          "broken_dac_involved": [
+            0,
+            0,
+            0
+          ]
+        },
+        "scalar_v3": {
+          "mean": {
+            "score": 0.87698140625,
+            "success": 0.984375,
+            "no_at_fault_collisions": 0.984375,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.7578807812500001,
+            "time_to_collision_within_bound": 0.953125,
+            "comfort": 1.0,
+            "driving_direction_compliance": 0.9765625
+          },
+          "seed_means": [
+            {
+              "score": 0.87698140625,
+              "success": 0.984375,
+              "no_at_fault_collisions": 0.984375,
+              "drivable_area_compliance": 1.0,
+              "ego_progress": 0.7578807812500001,
+              "time_to_collision_within_bound": 0.953125,
+              "comfort": 1.0,
+              "driving_direction_compliance": 0.9765625
+            }
+          ],
+          "seed_std": null
+        }
+      },
+      "comparisons": {
+        "MID_minus_scalar_v3": {
+          "score": {
+            "delta": 0.012399947916666664,
+            "scene_weighted_log_cluster_95": [
+              -0.021274835937499993,
+              0.04331031901041664
+            ],
+            "equal_log_delta": 0.012399947916666664,
+            "equal_log_cluster_95": [
+              -0.021274835937499993,
+              0.04331031901041664
+            ]
+          },
+          "success": {
+            "delta": -0.020833333333333336,
+            "scene_weighted_log_cluster_95": [
+              -0.04166666666666667,
+              -0.005208333333333334
+            ],
+            "equal_log_delta": -0.020833333333333336,
+            "equal_log_cluster_95": [
+              -0.04166666666666667,
+              -0.005208333333333334
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.020833333333333336,
+            "scene_weighted_log_cluster_95": [
+              -0.04166666666666667,
+              -0.005208333333333334
+            ],
+            "equal_log_delta": -0.020833333333333336,
+            "equal_log_cluster_95": [
+              -0.04166666666666667,
+              -0.005208333333333334
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.053717812499999996,
+            "scene_weighted_log_cluster_95": [
+              0.006595884114583329,
+              0.10192347786458336
+            ],
+            "equal_log_delta": 0.053717812499999996,
+            "equal_log_cluster_95": [
+              0.006595884114583329,
+              0.10192347786458336
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.015625000000000007,
+            "scene_weighted_log_cluster_95": [
+              -0.0625,
+              0.03125
+            ],
+            "equal_log_delta": -0.015625000000000007,
+            "equal_log_cluster_95": [
+              -0.0625,
+              0.03125
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 0.002604166666666668,
+            "scene_weighted_log_cluster_95": [
+              -0.007812499999999998,
+              0.015625
+            ],
+            "equal_log_delta": 0.002604166666666668,
+            "equal_log_cluster_95": [
+              -0.007812499999999998,
+              0.015625
+            ]
+          }
+        },
+        "MID_minus_P1": {
+          "score": {
+            "delta": 0.0009984374999999915,
+            "scene_weighted_log_cluster_95": [
+              -0.014765299479166678,
+              0.014221190104166647
+            ],
+            "equal_log_delta": 0.0009984374999999915,
+            "equal_log_cluster_95": [
+              -0.014765299479166678,
+              0.014221190104166647
+            ]
+          },
+          "success": {
+            "delta": -0.015625,
+            "scene_weighted_log_cluster_95": [
+              -0.036458333333333336,
+              0.0
+            ],
+            "equal_log_delta": -0.015625,
+            "equal_log_cluster_95": [
+              -0.036458333333333336,
+              0.0
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.015625,
+            "scene_weighted_log_cluster_95": [
+              -0.036458333333333336,
+              0.0
+            ],
+            "equal_log_delta": -0.015625,
+            "equal_log_cluster_95": [
+              -0.036458333333333336,
+              0.0
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.00343802083333334,
+            "scene_weighted_log_cluster_95": [
+              -0.020248723958333315,
+              0.025214769531249997
+            ],
+            "equal_log_delta": 0.00343802083333334,
+            "equal_log_cluster_95": [
+              -0.020248723958333315,
+              0.025214769531249997
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": 0.005208333333333333,
+            "scene_weighted_log_cluster_95": [
+              -0.010416666666666668,
+              0.026041666666666664
+            ],
+            "equal_log_delta": 0.005208333333333333,
+            "equal_log_cluster_95": [
+              -0.010416666666666668,
+              0.026041666666666664
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": -0.005208333333333332,
+            "scene_weighted_log_cluster_95": [
+              -0.01302083333333333,
+              0.0
+            ],
+            "equal_log_delta": -0.005208333333333332,
+            "equal_log_cluster_95": [
+              -0.01302083333333333,
+              0.0
+            ]
+          }
+        },
+        "MID_minus_CL_NLL": {
+          "score": {
+            "delta": 0.011840312500000002,
+            "scene_weighted_log_cluster_95": [
+              -0.009191154947916664,
+              0.03096474348958332
+            ],
+            "equal_log_delta": 0.011840312500000002,
+            "equal_log_cluster_95": [
+              -0.009191154947916664,
+              0.03096474348958332
+            ]
+          },
+          "success": {
+            "delta": -0.010416666666666668,
+            "scene_weighted_log_cluster_95": [
+              -0.03125,
+              0.010416666666666666
+            ],
+            "equal_log_delta": -0.010416666666666668,
+            "equal_log_cluster_95": [
+              -0.03125,
+              0.010416666666666666
+            ]
+          },
+          "no_at_fault_collisions": {
+            "delta": -0.010416666666666668,
+            "scene_weighted_log_cluster_95": [
+              -0.03125,
+              0.010416666666666666
+            ],
+            "equal_log_delta": -0.010416666666666668,
+            "equal_log_cluster_95": [
+              -0.03125,
+              0.010416666666666666
+            ]
+          },
+          "drivable_area_compliance": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "ego_progress": {
+            "delta": 0.04299911458333333,
+            "scene_weighted_log_cluster_95": [
+              0.013135579427083332,
+              0.07413751432291667
+            ],
+            "equal_log_delta": 0.04299911458333333,
+            "equal_log_cluster_95": [
+              0.013135579427083332,
+              0.07413751432291667
+            ]
+          },
+          "time_to_collision_within_bound": {
+            "delta": -0.010416666666666668,
+            "scene_weighted_log_cluster_95": [
+              -0.03125,
+              0.010416666666666666
+            ],
+            "equal_log_delta": -0.010416666666666668,
+            "equal_log_cluster_95": [
+              -0.03125,
+              0.010416666666666666
+            ]
+          },
+          "comfort": {
+            "delta": 0.0,
+            "scene_weighted_log_cluster_95": [
+              0.0,
+              0.0
+            ],
+            "equal_log_delta": 0.0,
+            "equal_log_cluster_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "driving_direction_compliance": {
+            "delta": 1.734723475976807e-18,
+            "scene_weighted_log_cluster_95": [
+              -0.007812499999999998,
+              0.007812500000000003
+            ],
+            "equal_log_delta": 1.734723475976807e-18,
+            "equal_log_cluster_95": [
+              -0.007812499999999998,
+              0.007812500000000003
+            ]
+          }
+        }
+      },
+      "logs": 64
+    }
+  },
+  "ade_fde": {
+    "scalar_v3": {
+      "ade_4s": 1.5900802438001833,
+      "fde_4s": 3.8856484745307855
+    },
+    "MID_seed0": {
+      "ade_4s": 1.8111783858494783,
+      "fde_4s": 4.448432363699168
+    },
+    "MID_seed1": {
+      "ade_4s": 1.791877959184588,
+      "fde_4s": 4.3823024419888705
+    },
+    "MID_seed2": {
+      "ade_4s": 1.8228170918762345,
+      "fde_4s": 4.462739687903405
+    },
+    "P1_seed0": {
+      "ade_4s": 1.731745039989901,
+      "fde_4s": 4.249414450160269
+    },
+    "P1_seed1": {
+      "ade_4s": 1.8562331976837982,
+      "fde_4s": 4.538095713712376
+    },
+    "P1_seed2": {
+      "ade_4s": 1.6105477859764659,
+      "fde_4s": 3.9575619807761457
+    },
+    "CL_NLL_seed0": {
+      "ade_4s": 1.94118878523815,
+      "fde_4s": 4.754255617919512
+    },
+    "CL_NLL_seed1": {
+      "ade_4s": 1.774170142487268,
+      "fde_4s": 4.34676328512438
+    },
+    "CL_NLL_seed2": {
+      "ade_4s": 1.7675546998682263,
+      "fde_4s": 4.31722229181056
+    }
+  }
+}

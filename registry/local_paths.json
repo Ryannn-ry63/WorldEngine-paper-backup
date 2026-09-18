@@ -1,0 +1,6 @@
+{
+  "legacy_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine",
+  "attribution_run": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-attribution-v1/experiments/diffusiondrive/selector_p1_attribution_v1/runs/p1_attribution_20260913_v1",
+  "review_dir": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/selector_mid_formal_review_20260916",
+  "training_python": "/inspire/hdd/global_user/wangcaojun-240208020180/miniconda3/envs/algengine/bin/python"
+}

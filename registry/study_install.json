@@ -1,0 +1,48 @@
+{
+  "files": [
+    {
+      "path": "docs/20260916_EXECUTION.md",
+      "sha256": "ebdf58ad330e0426c051a21257cb7f7ec15c2d369c926d2c7c582c262fc42be9"
+    },
+    {
+      "path": "run_study.sh",
+      "sha256": "47e5beff4064af736b7041e599a52518925ffb870362dca6d8d63020e2e0fe8b"
+    },
+    {
+      "path": "scripts/with_gpu_holder.py",
+      "sha256": "56e1d7e32b0d7baa1237c92c41382324cbb970b13f3846b4ba69c61f4949b8cc"
+    },
+    {
+      "path": "selector_study/__init__.py",
+      "sha256": "221ab4fa1858c8c98faa0ca9d6d7ee937914afbf6af37514ec7ef2d466c421fc"
+    },
+    {
+      "path": "selector_study/__main__.py",
+      "sha256": "af75b18d8a9c5f9ac4fd028f9eda1360fbbdf211aef1db305a557ff8109e8501"
+    },
+    {
+      "path": "selector_study/common.py",
+      "sha256": "123f3d8df8ebba0c1f44de60e64743d89a36ac42bfbf4a5cc9e78e0c66aebebe"
+    },
+    {
+      "path": "selector_study/data.py",
+      "sha256": "1e1a3f198e0ea0e147af98560f36bb468f57d92b9c778ed1928dbdf04beec552"
+    },
+    {
+      "path": "selector_study/results.py",
+      "sha256": "95ab39c9c207dc6f75d0d17dd3842e57d8462040840c5dc1d120b29d09164063"
+    },
+    {
+      "path": "selector_study/train.py",
+      "sha256": "68baa95491001c42636d2a8e773a042ae81d8596b86d1b53d55b1a53cf2a30f1"
+    },
+    {
+      "path": "selector_study/validate.py",
+      "sha256": "8d7ab3bf2f65d179ca184a079209c2df294dfcd1bc5c1d9211544b9865f2d685"
+    },
+    {
+      "path": "tests/test_selector_study.py",
+      "sha256": "6105dea94b4fd34d9580d3232a4ed824db985b6c85fb748f1002cc852dc04943"
+    }
+  ]
+}

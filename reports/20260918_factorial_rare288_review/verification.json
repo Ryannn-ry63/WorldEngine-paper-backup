@@ -1,0 +1,222 @@
+{
+  "checked_at": 1789697791.0145633,
+  "source": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1",
+  "status": "RARE288_COMPLETE_COMMON_INCOMPLETE",
+  "accepted": {
+    "bridge": 26,
+    "full": 26,
+    "common": 6
+  },
+  "evidence": [
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D1_seed0/accepted.json",
+      "sha256": "71f8492057ee2e968c4be36fa92520ccf8706ef374b64909502e25ddd490888a"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D1_seed0/audit.json",
+      "sha256": "dd28321a2ff40ab6e9df064840f8bc4971b12fc9ba4641ef04ae8ef2a03e93d5"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D1_seed1/accepted.json",
+      "sha256": "48dff6719a5475f86cea65c5c86a93f2cc3b6147a8194c149ea2d0b272af47fa"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D1_seed1/audit.json",
+      "sha256": "9f8b9e82cce86efc8518eb9a3e510fec0c3944f870fe81faea6e88ca90a41047"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D1_seed2/accepted.json",
+      "sha256": "5f35602a42e0799c97f66abe8bf2885062cd81d33c7acb4fbf219c2ea6c50f31"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D1_seed2/audit.json",
+      "sha256": "2930302e67803649d13c0b154c52a9d27c99ff5e927b2bc517580a085e633bec"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D2_seed0/accepted.json",
+      "sha256": "03cef991999c87da703709604e7eb4d2c263d2abb4578b60d0e3a044db4e1a13"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D2_seed0/audit.json",
+      "sha256": "d2c85fbed09d902b8b7efb0cb93ca57742dd4b9d03ec7286aa7f5925b1c1983b"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D2_seed1/accepted.json",
+      "sha256": "2ac389911c0886db57b65ee49483951db78d96f68101c740d5843e23818bf7fc"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D2_seed1/audit.json",
+      "sha256": "7f6a7f1a3d13f3e15fbb3f87d02588d22111fe30f7cd4db5af35b30f80171a06"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D2_seed2/accepted.json",
+      "sha256": "509ae064c97d7f3c469953fb74337ea06c4cc9932329a5883e216d151266c2e7"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_D2_seed2/audit.json",
+      "sha256": "c2b5b3b7fdfbe0a00a2e739d793dfc57e348fba224e6eac5ba4105c71630e804"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D3_seed0/accepted.json",
+      "sha256": "2f29834b6b74183cab58cc031abec371ecbda4dd306e5c4659086fc1bafc8ad0"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D3_seed0/audit.json",
+      "sha256": "e7db938a535ae61cb54a12880f7d745e2ec02f0abd3d6b79168b3f059c31a7e2"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D3_seed1/accepted.json",
+      "sha256": "76c79956d00431f9b93968360dedb678f4b79fb5adc0bfcff58c72492d8d9a07"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D3_seed1/audit.json",
+      "sha256": "c5eb8fe65baa4b96feea7fad08672dc5ebbad529343ec410900b732e9c889627"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D3_seed2/accepted.json",
+      "sha256": "3c2a19c29d04e773ab4af957d15aa0af77177c8b3a467dadafdec98f8198857b"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D3_seed2/audit.json",
+      "sha256": "e25a5bf4ab63c89fbda38ce24bd0d8038908d2388eb84069f78951314166c321"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D4_seed0/accepted.json",
+      "sha256": "59380f99a70a77ceab642c964f1655f52ccc0c3463e7cf5427890df811773e34"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D4_seed0/audit.json",
+      "sha256": "2064724549a583e698e2ba3ef8d844b7a2c96c33da8267d538c459319b9c3bce"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D4_seed1/accepted.json",
+      "sha256": "995d0c55b36c71e7e717149385e0b5b1e53bd0593a898b9008858e49a5f597a8"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D4_seed1/audit.json",
+      "sha256": "e1b2198f60d73eb661f350b3c0d987d7f7d317a720f23f3883a9fa95d56c44c7"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D4_seed2/accepted.json",
+      "sha256": "7f6514612a3a15f1080b3219039db04357fef5ab58016d95efb6d84ccee9fcfa"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_NR_D4_seed2/audit.json",
+      "sha256": "1de415be8a99f4120de3660fa853510ea1547c9fed5e1d6f07d80f3b13c3fe99"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_scalar_v3/accepted.json",
+      "sha256": "5f9094dcef92296ce777bb2628efbec63d0072a67f980fa9cf9dcaa5ee998dde"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_NR_scalar_v3/audit.json",
+      "sha256": "4d6170ef00ebfa2ec7b8153f2801e6ac70c7dad9ae4d9d4092dcfc40eaeae6be"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D1_seed0/accepted.json",
+      "sha256": "e13bfca7d892216ccfedb3459afee28bf419362326521657f2dd1c3e9dff891f"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D1_seed0/audit.json",
+      "sha256": "837a670a1d91b4706bb687e8f9c59b3657ad6691c79fe82fda72b1c5c551c2e2"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D1_seed1/accepted.json",
+      "sha256": "0d213a1e3446768958b3bc97382782a58fd1c9d88088be7443a3360dcd0551ec"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D1_seed1/audit.json",
+      "sha256": "4fe1588b32ed47319540a7fcd293587e1e21f302c1659ba815c51bc81b4e2e71"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D1_seed2/accepted.json",
+      "sha256": "f116efe5693b37c64bac7d9f3cda987ee44991a578850d5854855ffbe47fcbdf"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D1_seed2/audit.json",
+      "sha256": "2726f26b02bf4ba32a49059bd2fc707b6ef42fcdaa98d71f09871a22df96b395"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D2_seed0/accepted.json",
+      "sha256": "93ca9e5b66b7446aaf8e937e3c705f6ac7d91b6ab34cfe71825eef62bd2b8dad"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D2_seed0/audit.json",
+      "sha256": "ac751431f66c44c083d88041ff70b356a74b6a182af5ce94c970be651644a3ea"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D2_seed1/accepted.json",
+      "sha256": "bc73d9865c23bdacdd5de05fb63103e9734baa4724ac795b1276d83abacd2892"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_D2_seed1/audit.json",
+      "sha256": "ff51b6b9bf15f184b0773f5a053a092290927d0bed86c5fa071c0588232a7694"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D2_seed2/accepted.json",
+      "sha256": "e8a5e1f8e5dcae8eb49876537e216eda9584befa687088908f8d6d0803d6ae89"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D2_seed2/audit.json",
+      "sha256": "a084c6b3af27edb00688c9914a0a13009c940eb2cb643c17ebc93273f6df196f"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D3_seed0/accepted.json",
+      "sha256": "35eb0f49490bec47ce8c049d19f8aee5f5ebd05ee9fe61ea6acc61a9a903cccf"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D3_seed0/audit.json",
+      "sha256": "cefa99975376cb1d6c23d898f486c13a93ece422e73116501964a6cd931037a1"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D3_seed1/accepted.json",
+      "sha256": "1e629cca0204fb044f88114fc8e8f217e760c6a48f9e9351a6d98efeb8d388ac"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D3_seed1/audit.json",
+      "sha256": "def3c32b8c0d570bf928c83e39873f8a8f86bc47d2c43957d1a74f2e1e7b0667"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D3_seed2/accepted.json",
+      "sha256": "ee6bb2eb87ed3779040d3427421697757e252c9d64489e5552391c8b4f691733"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D3_seed2/audit.json",
+      "sha256": "8a9f38fea131fd415fccede8ee45b771848f544ee8d6f56d6886b2640443c5fa"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D4_seed0/accepted.json",
+      "sha256": "cf2a9f9170ac0145437b96f0283eee09da3376d2a4dc3465a0361cac2a6e8548"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D4_seed0/audit.json",
+      "sha256": "14ea5163368d21cf990be273a2859d08528d874004e59cd7614aacd90a3d25ed"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D4_seed1/accepted.json",
+      "sha256": "baa73a8881eecb48e188ce669c30939a246b59f4df2a774c2d46765ec3d200ea"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D4_seed1/audit.json",
+      "sha256": "0f1c025d1d83783d4d0ddf94b8e724a113412c858a562f4b3070d449e96e531e"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D4_seed2/accepted.json",
+      "sha256": "05bb266f3226b6b8d7758827ab6483a8e0164b90af36c09972c39ef15d9acec8"
+    },
+    {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1/collections/full_R_D4_seed2/audit.json",
+      "sha256": "7de826a7786497a2b198f6fdcbd70de09ca468282562e68dfa99b4e95c7c231f"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_scalar_v3/accepted.json",
+      "sha256": "d02a8f668d4d78cc11e6dcaf4fe5f18282404b0dcc35b3230e52fcffe9a2a776"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/collections/full_R_scalar_v3/audit.json",
+      "sha256": "38f3b589a0c792322cb551708418359732075edf32412502744ffe4d2926d674"
+    }
+  ],
+  "formal_table_complete": false,
+  "independent_blind_test": false
+}

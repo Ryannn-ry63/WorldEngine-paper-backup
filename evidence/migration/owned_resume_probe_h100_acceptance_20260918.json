@@ -1,0 +1,31 @@
+{
+  "status": "PASS_ISOLATED_RESUME_PROBE",
+  "summary": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/resume_probes/owned_resume_probe_20260918T095803Z_133040/summary.json",
+  "summary_sha256": "4b592a072d4ceeee6920de311e597609772961bcdfa704a45cdffa594720238b",
+  "hostname": "h100-wcj-dsw--433069e398ef-mgpgubu4vy",
+  "elapsed_seconds": 1995.0443723201752,
+  "verified": 1789729666.519792,
+  "collections": {
+    "NR": {
+      "accepted": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/resume_probes/owned_resume_probe_20260918T095803Z_133040/run/collections/bridge_NR_D4_seed0/accepted.json",
+      "audit_sha256": "26003cf884d45ee90f0b9c81de642ab58e72e6ca4db716ef17f9ff2bbf1632af",
+      "scenes": 8
+    },
+    "R": {
+      "accepted": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/resume_probes/owned_resume_probe_20260918T095803Z_133040/run/collections/bridge_R_D4_seed0/accepted.json",
+      "audit_sha256": "e834b38b593365b82bb56e29c92639e88024496a2de896e193975b97becc9dff",
+      "scenes": 8
+    }
+  },
+  "formal_metadata_unchanged": true,
+  "scope": {
+    "owned_gpu_runtime": true,
+    "old_openloop_288_reuse": true,
+    "new_NR_R_historical_parity": true,
+    "new_collection_reuse": true,
+    "four_gpu": false,
+    "optimizer_resume": false,
+    "new_project_data": false,
+    "full_migration": false
+  }
+}

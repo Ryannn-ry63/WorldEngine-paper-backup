@@ -1,0 +1,7 @@
+{
+  "status": "PASS_ENVIRONMENT_FILES",
+  "created": 1789710107.146979,
+  "algengine": "/inspire/hdd/global_user/wangcaojun-240208020180/miniconda3/envs/algengine",
+  "simengine": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/environments/simengine",
+  "scope": "Existing personal algengine retained; restored simengine compared to archived files; copied source dependencies already checksum-verified"
+}

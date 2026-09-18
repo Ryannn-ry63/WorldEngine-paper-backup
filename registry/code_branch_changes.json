@@ -1,0 +1,675 @@
+{
+  "base": "077fbcab15b27efea779cbf0598f21f23987456b",
+  "deleted_files": [],
+  "preserved_root_readme": true,
+  "changes": [
+    {
+      "path": "RESUME_AFTER_MIGRATION.md",
+      "kind": "added"
+    },
+    {
+      "path": "check_paper_project_mounts.sh",
+      "kind": "added"
+    },
+    {
+      "path": "debug_paper_tasks_4h100.sh",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260915_SELECTOR_PAPER_ROUTE_AND_EXPERIMENT_PLAN.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260916_EVALUATION.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260916_EXECUTION.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260916_H100_MIGRATION_REVIEW.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260917_FULL_EVAL_RESUME.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260917_IMPLEMENTATION_VALIDATION.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260917_MANUAL_H100_DEBUG.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260917_PARALLEL_EXPERIMENTS.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/20260918_PROJECT_SWITCH_RESUME.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/DIFFUSIONDRIVE_RESIDUAL_SELECTOR_POSTTRAINING_PAPER_STORY.md",
+      "kind": "added"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/DATA_REQUIREMENTS_FOR_SENIOR_20260918.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/NONDATA_DEPENDENCIES_20260918.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/OWNED_RESUME_PROBE_20260918.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/OWNED_RUNTIME_RUNBOOK_20260918.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/OWNED_TASKS_ADAPTATION_20260918.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/PRIORITY_MIGRATION_20260918.md",
+      "kind": "added"
+    },
+    {
+      "path": "migration/backup_runtime_sources.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/backup_simengine_environment.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/check_owned_ray.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/check_owned_runtime.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/owned_resume_probe.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/owned_runtime.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/owned_task_runner.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/priority_results_copy.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/test_owned_task_runner.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/test_priority_results_copy.py",
+      "kind": "added"
+    },
+    {
+      "path": "migration/verify_restored_environment.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/__init__.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/__main__.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/audit.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/common.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/data.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/debug.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/evaluation.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/export.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/hardware.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/mechanism.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/models.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/objectives.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/oracle.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/queue.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/report.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/runtime_plugin.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/sources.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/specs.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/statistics.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/storage.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/supervised.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/supervised_plugin.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/supervised_worker.py",
+      "kind": "added"
+    },
+    {
+      "path": "paper_study/train.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/configs/diffusiondrive/e2e_diffusiondrive_selector_attribution.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/configs/diffusiondrive/e2e_diffusiondrive_selector_balance.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/configs/diffusiondrive/e2e_diffusiondrive_selector_balance_native.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/configs/diffusiondrive/e2e_diffusiondrive_selector_mid_followup.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/configs/diffusiondrive/e2e_diffusiondrive_selector_mid_followup_native.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/analyze_selector_dual_domain.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/analyze_selector_mid_followup.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/audit_selector_cfpi_deployment.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/finalize_selector_dual_domain.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/report_selector_attribution.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/report_selector_balance.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/report_selector_mid_followup.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/run_selector_attribution.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/run_selector_balance.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/run_selector_cfpi_deployment.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/run_selector_mid_followup.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_attribution_collections.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_attribution_common.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_attribution_data.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_attribution_tasks.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_balance_collections.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_balance_common.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_balance_data.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_balance_forecast.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_balance_native.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_balance_tasks.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_cfpi_deployment_router.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_dual_domain_analysis.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_dual_domain_cases.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_dual_domain_io.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_dual_domain_probes.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_dual_domain_review.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_dual_domain_state.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_feedback_common.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_feedback_transport.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_analysis.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_cases.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_collections.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_common.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_data.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_forecast.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_hashes.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_native.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_probes.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_mid_followup_tasks.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_snapshot_audit.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_snapshot_common.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/selector_snapshot_data.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/train_selector_attribution.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/train_selector_balance.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/AlgEngine/scripts/diffusiondrive/train_selector_mid_followup.py",
+      "kind": "added"
+    },
+    {
+      "path": "projects/SimEngine/worldengine/envs/base_env.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/SimEngine/worldengine/manager/diffusiondrive_cfpi_deployment_manager.py",
+      "kind": "modified"
+    },
+    {
+      "path": "projects/SimEngine/worldengine/manager/selector_attribution_local_manager.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/README.md",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/source_snapshot.json",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/tests/test_contract.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/tests/test_hashes.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/tests/test_pipeline.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/tests/test_report.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/mid_followup/tests/test_task_isolation.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_attribution/README.md",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_attribution/tests/test_attribution.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_attribution/tests/test_attribution_integration.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_balance/README.md",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_balance/tests/test_balance.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_balance/tests/test_balance_pipeline.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_balance/tests/test_balance_report.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_balance/tests/test_balance_split.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_dual_domain/FINAL_REVIEW.md",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_dual_domain/README.md",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_dual_domain/tests/test_dual_domain.py",
+      "kind": "added"
+    },
+    {
+      "path": "research/p1_dual_domain/tests/test_physical_review.py",
+      "kind": "added"
+    },
+    {
+      "path": "run_evaluation.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_h100_bridges_4gpu.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_h100_full_eval.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_h100_full_eval_resume.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_h100_migration.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_native_export.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_owned_resume_probe.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_owned_runtime.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_owned_tasks.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_paper_study.sh",
+      "kind": "added"
+    },
+    {
+      "path": "run_study.sh",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/audit_study.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/check_paper_project_mounts.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/compare_native_repeats.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/evaluation_status.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/materialize_study.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/prepare_study_evaluation.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/resume_h100_full_eval.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/run_study_bridges_4h100.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/run_study_evaluation.py",
+      "kind": "added"
+    },
+    {
+      "path": "scripts/with_gpu_holder.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/__init__.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/__main__.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/common.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/data.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/results.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/train.py",
+      "kind": "added"
+    },
+    {
+      "path": "selector_study/validate.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/full_eval_resume/test_resume.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_contracts.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_debug.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_hardware.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_launcher.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_objectives.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_paths.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_reporting_resume.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/paper_study/test_storage.py",
+      "kind": "added"
+    },
+    {
+      "path": "tests/test_selector_study.py",
+      "kind": "added"
+    }
+  ],
+  "counts": {
+    "added": 156,
+    "modified": 10
+  }
+}

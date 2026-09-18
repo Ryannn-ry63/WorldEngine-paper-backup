@@ -1,0 +1,17 @@
+{
+  "name": "owned_resume_probe_20260918T095803Z_133040",
+  "bundle": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/resume_probes/owned_resume_probe_20260918T095803Z_133040",
+  "run": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/resume_probes/owned_resume_probe_20260918T095803Z_133040/run",
+  "logical_run": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/owned_resume_probe_20260918T095803Z_133040",
+  "source_run": "20260917_paper_A_v3",
+  "policy": "D4_seed0",
+  "source_contract_sha256": "de92680bc68a4774e1c67674d50c09829e5cf84fa49f286c8a7615f55534b6eb",
+  "source_inputs_sha256": "fa35845b741d3fe2e2e9bc5d3254230445db852f85efb8cd333ffd377d282cb6",
+  "probe_contract_sha256": "d42282002594b76d6a19698580834cf468eff228bc9eb34dfdb6570041e8207e",
+  "copied_runtime_files": 871,
+  "certificate": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/migration/priority_copy_20260918/20260917_paper_A_v3.accepted.json",
+  "certificate_sha256": "57c1294391400a87bcca95126e87032a2b8f54799b5237f3af47fd04bb228cde",
+  "diagnostic_only": true,
+  "formal_resume_authorized": false,
+  "created": 1789725495.0285203
+}

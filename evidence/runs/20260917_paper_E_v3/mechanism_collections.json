@@ -1,0 +1,190 @@
+{
+  "bundles": [
+    {
+      "continuation": "shared_seed0",
+      "reference": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-feedback-v2/experiments/diffusiondrive/selector_feedback_v2/runs/rare_feedback_20260907_4gpu_v1/collections/visit_NR/deployment_collection.json",
+        "sha256": "dead3735017795d642fce791509ffe5927c354855187b6362c99bf7f1e8b7035"
+      },
+      "sentinel": {
+        "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/sentinel_0_NR/deployment_collection.json",
+        "sha256": "c13df945b15b1a9b1df32f2ddea71b681c55d99d82ae674265518524b438ec4c"
+      },
+      "treatments": [
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a00/deployment_collection.json",
+          "sha256": "5132be67ca0e23808415640194ca400f26dffc6fd1bbea326dac77a812b75d75"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a01/deployment_collection.json",
+          "sha256": "2dfb0c255be0e9c8f67934ecbf64783e6fa2f2dd58de2b8f246accff6f4fa69b"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a02/deployment_collection.json",
+          "sha256": "821e3f1f33b732d51a75a8bd651e6b46296898f66a6b6250c43abc2b498902f2"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a03/deployment_collection.json",
+          "sha256": "8fca376f6c310dffcc872349e18ad351c152cddd8d1ec40cadef3ad0b19eb727"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a04/deployment_collection.json",
+          "sha256": "5f9bc6d98573bb478f7d00615631ee561197efacf6ce52be763e3a8726ac38fd"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a05/deployment_collection.json",
+          "sha256": "9490d370c28c6c5f1e141d981e8b283cfa3c23b651d73ee7e7e177dd32f94328"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a06/deployment_collection.json",
+          "sha256": "26ca1c6110cd75cffe77bd6fb99e9e96715c59e9680677d68d2e5d29514f0924"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a07/deployment_collection.json",
+          "sha256": "e40a3d5aef40600b75df77a110b0e573795a1b349ef18a45d9c1d05731d1da0b"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a08/deployment_collection.json",
+          "sha256": "d3c9477aa2e9cdc6f03fffe31fc9a88552dc0bd2a0e0995067605eaceb16b833"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a09/deployment_collection.json",
+          "sha256": "ab0adc9719d1b3dd23e50a58ae6de85730b8958e1b56eb0e031089e010800c31"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a10/deployment_collection.json",
+          "sha256": "1f1743d38c6dd39dc349fab86387afc4293c75060e0b8137094f2c25f7fa2fab"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a11/deployment_collection.json",
+          "sha256": "3e995fe317f31c185be0920acaeabf2a43c51324475d7a0608cb4d0d55ea19b6"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a12/deployment_collection.json",
+          "sha256": "fe467dfd8fcd342b783cdee5d18c2796171108603d083c0d1c3b7e4f9b0fb667"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a13/deployment_collection.json",
+          "sha256": "c9bd14c0eb0e0122bc9cf763f7848a7f86e025ab1e39bd6542ffaaf5d2f8fa24"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a14/deployment_collection.json",
+          "sha256": "0b3434d535e7c8ba96df5c98e71e95472a68197b5d1f7a3a29b71ecec6364058"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a15/deployment_collection.json",
+          "sha256": "cf652876a3f172442b5586ca8f7a2701beaf5bf8cae3d81bea77a458f3c1f973"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a16/deployment_collection.json",
+          "sha256": "04474e85c57d19ffe653b9fd2b8357393742ccfe97c723a91e275bd224055317"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a17/deployment_collection.json",
+          "sha256": "c1b85a09bcaa972a0b1ed2a177a5c524712d386901ccd54d0969bdaa756e0d61"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a18/deployment_collection.json",
+          "sha256": "c346f32076d97825c979d762f1e01724b856075c72870efff977c102425cae82"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_0_NR_a19/deployment_collection.json",
+          "sha256": "fa9bcdde9913a9162a10f0fb989eb01ad51661f50f268ba4d8f14cddc8155007"
+        }
+      ]
+    },
+    {
+      "continuation": "shared_seed0",
+      "reference": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-feedback-v2/experiments/diffusiondrive/selector_feedback_v2/runs/rare_feedback_20260907_4gpu_v1/collections/visit_R/deployment_collection.json",
+        "sha256": "d20464a86c6f1c20ad8db118e31a7eb07451c6c6ee4cd2693e31e6738afed25d"
+      },
+      "sentinel": {
+        "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/sentinel_1_R/deployment_collection.json",
+        "sha256": "cb97f7af4a03c8efbcbbcbf01550ffe54b3da5bbca1add8d95fafbcaf3ae4e9f"
+      },
+      "treatments": [
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a00/deployment_collection.json",
+          "sha256": "2f267ba1cd8c891c3c4e78d55e7e743896deb9ae7505323677fb12ab29eb7fba"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a01/deployment_collection.json",
+          "sha256": "1a711b647f685e00173519ba270c087d9934bf5b9869994ca09d89dc7f09cd51"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a02/deployment_collection.json",
+          "sha256": "b4867496962e7b9d8d034c766e74c373c845d71523d457b59d72147d8dca8b84"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a03/deployment_collection.json",
+          "sha256": "e8bddb6de481143e48694bd919d891737219cf356aef09a49437841edfc9d833"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a04/deployment_collection.json",
+          "sha256": "5afcbd9def10c57d978e55f3cbb545bb582ecf91195029bef4ecc7a627e984ed"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a05/deployment_collection.json",
+          "sha256": "f21ee738c7971e45a54d4e0b78a203c6dc6d9d8248f08732b5b2988d554216e4"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a06/deployment_collection.json",
+          "sha256": "384092d7150857b6225b9c23017b4434f74cd579e04359c9a53ca97e14c28d2e"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a07/deployment_collection.json",
+          "sha256": "0b60df6446070c4a4ce0e35bd5f6656b6d64552e7e6dc3c344ddd4388fa0e80c"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a08/deployment_collection.json",
+          "sha256": "f34d5dad5a8ef9bb48fa6e1610839525f0b29931f53b72bde1854fb2349a11f0"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a09/deployment_collection.json",
+          "sha256": "af099d9ca2ac2c838348212ca2c8f3675423e0e083aab2d5b533c2f58204c88d"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a10/deployment_collection.json",
+          "sha256": "a7e545277495ef8266b3e3e0c0b1471fb1baf4fcf0efe3455b3b85c19859668a"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a11/deployment_collection.json",
+          "sha256": "c1dfb9d8c6d670250b9e24c8e548917e60f388a6418e4e57736010481192e342"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a12/deployment_collection.json",
+          "sha256": "f5cb44dee86ef522afcf7b4853aa21bfe2c56b0e72990a78c47a7701a2200c04"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a13/deployment_collection.json",
+          "sha256": "8d1b966c49cd1b7d6bc69f0dcbae82b686781d63d735aba635d9ddb2d15b51c9"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a14/deployment_collection.json",
+          "sha256": "6bed70960dc8f27272ce24e3faebabcba8b298a5fded1729d7ff4b1994a5a8c2"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a15/deployment_collection.json",
+          "sha256": "04de69fad3e8739b727914a8741ea6ec5cc3353ebaeddb31f5aebd79623c2965"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a16/deployment_collection.json",
+          "sha256": "bd0f3e7c1ad2e56fa899647ffb9ee7e47c485e0465691f8882053ea4ba0033de"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a17/deployment_collection.json",
+          "sha256": "4def6c6611ebb74e24e14317eb5e2f31e2c7b949e0743e4768b5a171fcdefcc5"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a18/deployment_collection.json",
+          "sha256": "1dded4873b8a177cc0cbe26f46eb7868c62a4e731dd7ebfec325e1a74431259a"
+        },
+        {
+          "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_E_v3/collections/full20_1_R_a19/deployment_collection.json",
+          "sha256": "6366419bb8b6592fa433e9dafdd89aa5855fb02347ce28277d1411d2c7cc59d6"
+        }
+      ]
+    }
+  ]
+}

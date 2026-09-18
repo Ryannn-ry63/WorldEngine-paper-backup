@@ -1,0 +1,104 @@
+{
+  "code_archive": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/archive/code_manifest.json",
+    "sha256": "9836d1c20a21960b81693d83393e90460a33af768658cd471de47af5e8ca91be"
+  },
+  "code_sha": "f51ce324bc4ba30576b77a59c1c0d93152f745044dfe67a0bc1ed48ad7211846",
+  "forecast": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/budget_forecast.json",
+    "sha256": "28f5ee46ce9d50b13a669adc6bee79d10002aec6856a791b150ea09adaec98f0"
+  },
+  "forecast_summary": {
+    "available_bytes_at_audit": 548245864448,
+    "contract": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/run_contract.json",
+      "sha256": "0f32b8c6d84ac26a5c8c41ceb645563b34d49656484aa971d2b7a10ef9d1723b"
+    },
+    "estimated_additional_bytes": 114070691975,
+    "fits_budget": true,
+    "fits_storage": true,
+    "gpu_hours_limit": 128.0,
+    "measured_component_gpu_hours": 62.67464855000001,
+    "measured_component_wall_hours": 15.668662137500002,
+    "note": "Historical condition timings plus 35% and 4 GPUh allowance. Not a guarantee; retries cost extra. Native exports already exist at audit time.",
+    "planning_gpu_hours": 88.61077554250002,
+    "planning_wall_hours": 22.152693885625006,
+    "status": "PASS",
+    "storage_allowance_bytes": 148291899567,
+    "task": "formal",
+    "tasks": [
+      {
+        "bytes": 320453780,
+        "copies": 5,
+        "kind": "formal",
+        "reference": "open_cbd6898e5c9b",
+        "seconds": 2729.776841
+      },
+      {
+        "bytes": 308125617,
+        "copies": 5,
+        "kind": "formal",
+        "reference": "open_05fd7763da76",
+        "seconds": 161.422286
+      },
+      {
+        "bytes": 8814470533,
+        "copies": 5,
+        "kind": "formal",
+        "reference": "full_NR_P1_seed2",
+        "seconds": 2995.541318
+      },
+      {
+        "bytes": 8815196224,
+        "copies": 5,
+        "kind": "formal",
+        "reference": "full_R_P1_seed2",
+        "seconds": 3345.587672
+      },
+      {
+        "bytes": 2017914165,
+        "copies": 5,
+        "kind": "formal",
+        "reference": "common_NR_P1_seed2",
+        "seconds": 747.331123
+      },
+      {
+        "bytes": 2018922118,
+        "copies": 5,
+        "kind": "formal",
+        "reference": "common_R_P1_seed2",
+        "seconds": 1007.498013
+      },
+      {
+        "bytes": 259074917,
+        "copies": 5,
+        "kind": "bridge",
+        "reference": "bridge_NR_P1_seed2",
+        "seconds": 123.585764
+      },
+      {
+        "bytes": 259981041,
+        "copies": 5,
+        "kind": "bridge",
+        "reference": "bridge_R_P1_seed2",
+        "seconds": 170.693722
+      }
+    ]
+  },
+  "formal_gpu_experiments_started": false,
+  "inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/balance_inputs.json",
+    "sha256": "92533d8ed38296aa59b3adf968ca59b98b81a6b9a817f0e44cbd8d45b633ba11"
+  },
+  "native_inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/inputs.json",
+    "sha256": "24ef1cd4a0122bdb84b7d9484634b6c7dbca4a698f83c267d85f390d72863614"
+  },
+  "new_rollouts": 0,
+  "optimizer_steps": 0,
+  "parity": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/cached_parity_cpu.json",
+    "sha256": "3af4cbfb854b4e27f997749012d3513510289c939d54187752b6c7d99649c7ad"
+  },
+  "status": "PASS"
+}

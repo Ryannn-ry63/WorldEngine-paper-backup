@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ADAPTER_VALIDATION_PENDING_MIGRATION_AND_NEW_DATA",
+  "created": 1789733004.8875875,
+  "task_path_audit": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/task_checks/20260918T120017Z_2628969",
+  "strict_cpu_check": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/runtime/task_checks/20260918T115418Z_2516639/cpu_check.json",
+  "tests": 13,
+  "frozen_scientific_code_unchanged": true,
+  "formal_jobs_started": false,
+  "data_symlink_modified": false,
+  "public_data_copied": false,
+  "pending_E_artifacts": 42,
+  "pending_E_sources_exist": true,
+  "files": {
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/migration/owned_task_runner.py": "13562c9bb902ee66f28110c52e9cfe040943ffa4b909896de1bf44adec0252ae",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/run_owned_tasks.sh": "57bd89151a58d182555af32a0fcf2a43ad437d7ccd80c66a5bdb85145e678ae4",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/migration/test_owned_task_runner.py": "95d673688ebcb734681a9a51632ca5edf46eca2cd0ba701ff52ce5e19bfaaf4e",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/RESUME_AFTER_MIGRATION.md": "60475f5d4fb9af3d51205fb95e6283f20d0bbfbac82afb5f3c3c2c0f05023b2f"
+  },
+  "limitations": [
+    "Result copy/checksum not complete",
+    "New data not yet available",
+    "New strict entrypoint not yet tested on four GPUs",
+    "Metadata audit is bounded, production input hashes remain mandatory"
+  ]
+}

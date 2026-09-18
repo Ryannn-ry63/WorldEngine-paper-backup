@@ -1,0 +1,28 @@
+{
+  "completed_this_attempt": 19,
+  "cpu_capacity": 80.0,
+  "hardware": [
+    {
+      "device": "0",
+      "name": "NVIDIA H200"
+    },
+    {
+      "device": "1",
+      "name": "NVIDIA H200"
+    },
+    {
+      "device": "2",
+      "name": "NVIDIA H200"
+    },
+    {
+      "device": "3",
+      "name": "NVIDIA H200"
+    }
+  ],
+  "hostname": "h100-wcj-dsw--433069e398ef-wu46fgms73",
+  "last_accepted": "common_R_D1_seed2",
+  "pid": 1628529,
+  "remaining_at_start": 39,
+  "started": 1789635408.7623112,
+  "status": "RUNNING"
+}

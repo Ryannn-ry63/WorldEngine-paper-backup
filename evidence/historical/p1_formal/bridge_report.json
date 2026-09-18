@@ -1,0 +1,52 @@
+{
+  "conditions": [
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_NR_P1_seed0/audit.json",
+      "sha256": "c8bde83ae25f1c19cdffca87b03589242431a07fde3c89a9ed05e94eead8e84e"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_R_P1_seed0/audit.json",
+      "sha256": "63ab7e568075f8cbcb6c6bce49f992e7609b0844c9ec37a633a252bfe19f0324"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_NR_P1_seed1/audit.json",
+      "sha256": "1bf0358c4775f4a2a132023a2e7fde5dc51b643bc2de080f4fc06e625545398d"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_R_P1_seed1/audit.json",
+      "sha256": "933b6c6a1bc4cddacfe1196ed84c2dc578959803f640db0aeac438d35799d4dc"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_NR_CL_NLL_seed0/audit.json",
+      "sha256": "dac8e2d3eca3e33bb8c2d09a2771a6240777b8d2d7a26712d0a479702c9da4fe"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_R_CL_NLL_seed0/audit.json",
+      "sha256": "cade348071310044ddf2814b1e62f15b10b4fa545d58245dcf10e033f05e8e87"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_NR_CL_NLL_seed1/audit.json",
+      "sha256": "db019db1b852f68bead877b00a4af22228cf4fae8d2bb997dd37adb903c0ba46"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_R_CL_NLL_seed1/audit.json",
+      "sha256": "69da5a417b05e6f90d0f011a45421fbe5345ab1bd6dabd78960adcbf779ae4f7"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_NR_CL_NLL_seed2/audit.json",
+      "sha256": "292ab505e83f88698f26c52a6de40a88ebcf87196eae0eec5d2fb1f8fb9557b1"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/collections/bridge_R_CL_NLL_seed2/audit.json",
+      "sha256": "0496a25e0f281b7cecdf0fc194e4daa415820ff11be3faa3c6b3fb94f03290e9"
+    }
+  ],
+  "expected_conditions": 10,
+  "inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-p1-balance-v1/experiments/diffusiondrive/selector_p1_balance_v1/runs/p1_3seed_formal_20260914_split_v1/inputs.json",
+    "sha256": "24ef1cd4a0122bdb84b7d9484634b6c7dbca4a698f83c267d85f390d72863614"
+  },
+  "noise": "selector_cfpi_v1_noise0",
+  "scenes_per_condition": 8,
+  "status": "PASS"
+}

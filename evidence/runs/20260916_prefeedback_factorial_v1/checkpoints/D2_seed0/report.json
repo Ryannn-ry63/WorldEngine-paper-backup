@@ -1,0 +1,399 @@
+{
+  "evaluation_complete": false,
+  "export_max_abs": 0.0,
+  "history": [
+    {
+      "dense": -1.2855297327041626,
+      "gradient_norm": 9.702344310388273,
+      "loss": -1.2625670433044434,
+      "pair": -0.0,
+      "step": 25,
+      "teacher_kl": 2.296274423599243,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.465735912322998,
+      "gradient_norm": 11.499184801861139,
+      "loss": -1.4504330158233643,
+      "pair": -0.0,
+      "step": 50,
+      "teacher_kl": 1.5302867889404297,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.144547939300537,
+      "gradient_norm": 3.822186646584907,
+      "loss": -1.1266647577285767,
+      "pair": -0.0,
+      "step": 75,
+      "teacher_kl": 1.7883154153823853,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.248197317123413,
+      "gradient_norm": 20.946191469408266,
+      "loss": -1.243581771850586,
+      "pair": -0.0,
+      "step": 100,
+      "teacher_kl": 0.46155446767807007,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.0525407791137695,
+      "gradient_norm": 9.058750368126507,
+      "loss": -1.0285435914993286,
+      "pair": -0.0,
+      "step": 125,
+      "teacher_kl": 2.399716854095459,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.4189906120300293,
+      "gradient_norm": 1.9006915997588087,
+      "loss": -1.3928484916687012,
+      "pair": -0.0,
+      "step": 150,
+      "teacher_kl": 2.61421537399292,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.9184334874153137,
+      "gradient_norm": 0.6840989859252451,
+      "loss": -0.8997354507446289,
+      "pair": -0.0,
+      "step": 175,
+      "teacher_kl": 1.8698039054870605,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.3294693231582642,
+      "gradient_norm": 1.0085041813933155,
+      "loss": -1.291992425918579,
+      "pair": -0.0,
+      "step": 200,
+      "teacher_kl": 3.747694730758667,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.770121455192566,
+      "gradient_norm": 0.7511630808275711,
+      "loss": -1.7429107427597046,
+      "pair": -0.0,
+      "step": 225,
+      "teacher_kl": 2.7210769653320312,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.443790316581726,
+      "gradient_norm": 13.316839989013477,
+      "loss": -1.4366226196289062,
+      "pair": -0.0,
+      "step": 250,
+      "teacher_kl": 0.7167650461196899,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.122041940689087,
+      "gradient_norm": 4.243423275410593,
+      "loss": -1.1038447618484497,
+      "pair": -0.0,
+      "step": 275,
+      "teacher_kl": 1.8197131156921387,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.2718136310577393,
+      "gradient_norm": 2.4127045995015894,
+      "loss": -1.2558655738830566,
+      "pair": -0.0,
+      "step": 300,
+      "teacher_kl": 1.5948095321655273,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.4896504878997803,
+      "gradient_norm": 1.8986339983506615,
+      "loss": -1.4740639925003052,
+      "pair": -0.0,
+      "step": 325,
+      "teacher_kl": 1.5586453676223755,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.9922161102294922,
+      "gradient_norm": 3.3812793694970313,
+      "loss": -1.9490578174591064,
+      "pair": -0.0,
+      "step": 350,
+      "teacher_kl": 4.315825939178467,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.1275548934936523,
+      "gradient_norm": 12.634236591973671,
+      "loss": -1.1074084043502808,
+      "pair": -0.0,
+      "step": 375,
+      "teacher_kl": 2.014645576477051,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.1876118183135986,
+      "gradient_norm": 3.9063908675617602,
+      "loss": -1.1498099565505981,
+      "pair": -0.0,
+      "step": 400,
+      "teacher_kl": 3.780184507369995,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.8940342664718628,
+      "gradient_norm": 0.37356257532142695,
+      "loss": -0.8659847974777222,
+      "pair": -0.0,
+      "step": 425,
+      "teacher_kl": 2.8049473762512207,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.6846355199813843,
+      "gradient_norm": 13.110237077267755,
+      "loss": -0.6388212442398071,
+      "pair": -0.0,
+      "step": 450,
+      "teacher_kl": 4.581427097320557,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.4529531002044678,
+      "gradient_norm": 0.5203912357413543,
+      "loss": -1.4320690631866455,
+      "pair": -0.0,
+      "step": 475,
+      "teacher_kl": 2.0883991718292236,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.8901581764221191,
+      "gradient_norm": 20.879639812028895,
+      "loss": -0.8800064325332642,
+      "pair": -0.0,
+      "step": 500,
+      "teacher_kl": 1.0151747465133667,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.659124493598938,
+      "gradient_norm": 12.957489095735426,
+      "loss": -1.6408326625823975,
+      "pair": -0.0,
+      "step": 525,
+      "teacher_kl": 1.8291877508163452,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.0466599464416504,
+      "gradient_norm": 1.746363922567927,
+      "loss": -1.0343769788742065,
+      "pair": -0.0,
+      "step": 550,
+      "teacher_kl": 1.2282921075820923,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.3082091808319092,
+      "gradient_norm": 3.8959803697287367,
+      "loss": -1.282385230064392,
+      "pair": -0.0,
+      "step": 575,
+      "teacher_kl": 2.58239483833313,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.3623749017715454,
+      "gradient_norm": 0.2477813006495785,
+      "loss": -1.3413742780685425,
+      "pair": -0.0,
+      "step": 600,
+      "teacher_kl": 2.1000618934631348,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.2130045890808105,
+      "gradient_norm": 6.70616820076864,
+      "loss": -1.1919013261795044,
+      "pair": -0.0,
+      "step": 625,
+      "teacher_kl": 2.110325813293457,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.7663688063621521,
+      "gradient_norm": 2.71414708589647,
+      "loss": -0.7346469759941101,
+      "pair": -0.0,
+      "step": 650,
+      "teacher_kl": 3.172180414199829,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.0789380073547363,
+      "gradient_norm": 1.189954802326916,
+      "loss": -1.0465261936187744,
+      "pair": -0.0,
+      "step": 675,
+      "teacher_kl": 3.241180896759033,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.8681867718696594,
+      "gradient_norm": 2.2620209796242365,
+      "loss": -0.8471568822860718,
+      "pair": -0.0,
+      "step": 700,
+      "teacher_kl": 2.102987289428711,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -2.0073678493499756,
+      "gradient_norm": 2.752769668649963,
+      "loss": -1.9853168725967407,
+      "pair": -0.0,
+      "step": 725,
+      "teacher_kl": 2.205094575881958,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.9689431190490723,
+      "gradient_norm": 1.9925837319930708,
+      "loss": -0.9391237497329712,
+      "pair": -0.0,
+      "step": 750,
+      "teacher_kl": 2.9819374084472656,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.7942776679992676,
+      "gradient_norm": 3.3560879578453777,
+      "loss": -1.7900123596191406,
+      "pair": -0.0,
+      "step": 775,
+      "teacher_kl": 0.42653656005859375,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.2116514444351196,
+      "gradient_norm": 0.8373772971583202,
+      "loss": -1.1863552331924438,
+      "pair": -0.0,
+      "step": 800,
+      "teacher_kl": 2.5296239852905273,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.8299233317375183,
+      "gradient_norm": 1.6069169490180686,
+      "loss": -0.8130677938461304,
+      "pair": -0.0,
+      "step": 825,
+      "teacher_kl": 1.6855562925338745,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.8879022598266602,
+      "gradient_norm": 5.955835040930099,
+      "loss": -0.8747732639312744,
+      "pair": -0.0,
+      "step": 850,
+      "teacher_kl": 1.3129005432128906,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.2592371702194214,
+      "gradient_norm": 1.1454135587253926,
+      "loss": -1.2466363906860352,
+      "pair": -0.0,
+      "step": 875,
+      "teacher_kl": 1.2600789070129395,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -0.8970243334770203,
+      "gradient_norm": 5.813471792985032,
+      "loss": -0.8785022497177124,
+      "pair": -0.0,
+      "step": 900,
+      "teacher_kl": 1.8522090911865234,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.4016501903533936,
+      "gradient_norm": 0.3983338978398369,
+      "loss": -1.3759814500808716,
+      "pair": -0.0,
+      "step": 925,
+      "teacher_kl": 2.566877603530884,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.6119377613067627,
+      "gradient_norm": 0.8963788155821258,
+      "loss": -1.5735758543014526,
+      "pair": -0.0,
+      "step": 950,
+      "teacher_kl": 3.836193323135376,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.3814659118652344,
+      "gradient_norm": 4.238431463650508,
+      "loss": -1.3610877990722656,
+      "pair": -0.0,
+      "step": 975,
+      "teacher_kl": 2.0378053188323975,
+      "winner_nll": -0.0
+    },
+    {
+      "dense": -1.6544771194458008,
+      "gradient_norm": 2.2608998434902112,
+      "loss": -1.6410528421401978,
+      "pair": -0.0,
+      "step": 1000,
+      "teacher_kl": 1.3424303531646729,
+      "winner_nll": -0.0
+    }
+  ],
+  "provenance": {
+    "arm": "D2",
+    "cuda_version": "11.8",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "device_type": "cuda",
+    "initial_optimizer_state": "empty",
+    "manifest": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/manifest.json",
+      "sha256": "86138523fe1a8072283fae2cb4769be85f04fd454236b3652f8dd39efc39d03d"
+    },
+    "parent": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/grpo_selector_v3_rare_original_v1/models/rare_tuned/seed0/train/epoch_64_scene_selector.pt",
+      "sha256": "aed5e36f1ccb0df96b703a901b54f48c41dcf1967cc86d63519eb4da37519eb2"
+    },
+    "seed": 0,
+    "smoke": false,
+    "steps": 1000,
+    "torch_version": "2.0.1+cu118"
+  },
+  "resume": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed0/resume.pt",
+    "sha256": "3aeaa9cad0ff9ffc7a2bd39bf9374234f25ddbcb38178d8b225b42c41ed205cf"
+  },
+  "seconds": 48.12792228162289,
+  "selector": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed0/selector.pt",
+    "sha256": "9da0338fb9dd79de6b7448e4c72aa59bbe2484069e3dff191475b16f53630d14"
+  },
+  "stage": "TRAINED_NOT_EVALUATED",
+  "status": "PASS",
+  "steps": 1000,
+  "trainable_parameters": 1364213,
+  "trainable_tensors": 54
+}

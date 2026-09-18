@@ -1,0 +1,42 @@
+{
+  "accumulation": 8,
+  "base": {
+    "path": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/WorldEngine/experiments/diffusiondrive/e2e_diffusiondrive/epoch_100.pth",
+    "sha256": "1c450bad0cf62ab9110a8101d2ff6c96984541bd975ddea598ddb2add086a514"
+  },
+  "configs": {
+    "planner_bc": {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_D_v3/configs/planner_bc.py",
+      "sha256": "7d12983ccdf2c1338b4855df22ea952974d12fe8cf9f81b2de0512b96184f4c9"
+    },
+    "planner_l2": {
+      "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_D_v3/configs/planner_l2.py",
+      "sha256": "64792ab24087b06208fbae878486364dacef09ee9e7946929dcc643292e1e33c"
+    }
+  },
+  "excluded_missing_expert": [
+    "4e9cf1e3272a5e4e",
+    "9b9ef8e62693568a",
+    "9dc04094cfcb5b04",
+    "9f28d7b781955f38",
+    "e8a77b19868354a7"
+  ],
+  "expert_cache": {
+    "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_D_v3/data/expert.pt",
+    "sha256": "236173d756ae3ddbfd908bc55fabe09db79ab550320d2f8a12481483f7589c72"
+  },
+  "exposure_note": "Same source tokens, effective batch and optimizer update count; planner trains generator and scorer, not compute-matched",
+  "manifest": {
+    "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_D_v3/manifest.json",
+    "sha256": "fe65a9e59642582c7570192b27ab12de11f295a00458a13f1c0a91d0b60e840f"
+  },
+  "planner_effective_batch": 64,
+  "planner_microbatch": 8,
+  "selector_batch": 64,
+  "status": "PREPARED_NOT_TRAINED",
+  "valid_expert_tokens": 6334,
+  "valid_filter": {
+    "path": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_paper_D_v3/data/valid_expert_navtrain.yaml",
+    "sha256": "acbdfc3b33e27e27b0578abf8385fc3753d7d85db30db6e2dde311dde42cce1f"
+  }
+}

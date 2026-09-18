@@ -1,0 +1,42 @@
+{
+  "recorded": 1789708852.7754014,
+  "code_dependencies": [
+    {
+      "path": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/nuplan-devkit",
+      "resolved": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/nuplan-devkit",
+      "exists": true,
+      "git_head": "e9241677997dd86bfc0bcd44817ab04fe631405b"
+    },
+    {
+      "path": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/E2E/navsim_v1",
+      "resolved": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/E2E/navsim_v1",
+      "exists": true,
+      "git_head": null
+    },
+    {
+      "path": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/mmcv",
+      "resolved": "/inspire/hdd/project/roboticsystem2/wangcaojun-240208020180/repo-wcj/mmcv",
+      "exists": true,
+      "git_head": "847612dfffbcd917b6c267fe9decd4f8afed676e"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/DiffusionDrive",
+      "resolved": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/DiffusionDrive",
+      "exists": true,
+      "git_head": "d4082c2c15f212f394f21ba07d2336fcd5103e82"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/mmcv",
+      "resolved": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/mmcv",
+      "exists": true,
+      "git_head": "847612dfffbcd917b6c267fe9decd4f8afed676e"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/gsplat",
+      "resolved": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/gsplat",
+      "exists": true,
+      "git_head": "4d3a3b69db4de0326f983ccf7b7b255271a17b01"
+    }
+  ],
+  "note": "Historical source provenance. Owned copies and runtime mappings documented under code/migration; large environment/model files are not included."
+}

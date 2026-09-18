@@ -1,0 +1,82 @@
+{
+  "code_archive": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_sensitivity_20260915_v1/archive/code_manifest.json",
+    "sha256": "36208d81fddfc4ff48fb9f641e0ef73f6c48a8eb2890fdae82c18f6c91447fed"
+  },
+  "code_sha": "9ad7059b4d360a271488c1fe4e9e5f1d408cac3e2f8e65b286cfb592832ffe15",
+  "forecast": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_sensitivity_20260915_v1/budget_forecast.json",
+    "sha256": "f9b08600ae9c0f4638c2a6a7ed7247a298087015c96bfbbb41363f828e12f265"
+  },
+  "forecast_summary": {
+    "available_bytes_at_audit": 340460044288,
+    "contract": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_sensitivity_20260915_v1/run_contract.json",
+      "sha256": "4e7c00f5d5d9707f2613097684c534210fd64c029d6d7819c1bf9809c256264f"
+    },
+    "estimated_additional_bytes": 45893320192,
+    "fits_budget": true,
+    "fits_storage": true,
+    "gpu_hours_limit": 48.0,
+    "measured_component_wall_hours": 5.462401147222222,
+    "note": "Source measured timings; 35% plus 4 GPUh allowance, not a guarantee. Audit/export overhead is separate; retries consume budget.",
+    "planning_gpu_hours": 33.496966195,
+    "planning_wall_hours": 8.37424154875,
+    "status": "PASS",
+    "storage_allowance_bytes": 59661316249,
+    "task": "sensitivity",
+    "tasks": [
+      {
+        "bytes": 1792426162,
+        "copies": 6,
+        "kind": "development",
+        "measured_stage": "eval_development_NR_MID_seed0",
+        "reference": "eval_development_NR_CL_NLL_seed0",
+        "seconds": 689.220126
+      },
+      {
+        "bytes": 1790606051,
+        "copies": 6,
+        "kind": "development",
+        "measured_stage": "eval_development_R_MID_seed0",
+        "reference": "eval_development_R_CL_NLL_seed0",
+        "seconds": 778.6464
+      },
+      {
+        "bytes": 2017811137,
+        "copies": 6,
+        "kind": "development",
+        "measured_stage": "eval_common_NR_MID_seed0",
+        "reference": "eval_common_NR_CL_NLL_seed0",
+        "seconds": 772.913761
+      },
+      {
+        "bytes": 2018780298,
+        "copies": 6,
+        "kind": "development",
+        "measured_stage": "eval_common_R_MID_seed0",
+        "reference": "eval_common_R_CL_NLL_seed0",
+        "seconds": 1024.603345
+      },
+      {
+        "bytes": 87789152,
+        "copies": 2,
+        "kind": "training",
+        "reference": "two batches of up to four jobs",
+        "seconds": 36.171169
+      }
+    ]
+  },
+  "formal_gpu_experiments_started": false,
+  "inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_sensitivity_20260915_v1/followup_inputs.json",
+    "sha256": "06df3df74f01476821c6b62d7dec7af53631cfb8462623f96a491f3e5da9e176"
+  },
+  "native_inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_sensitivity_20260915_v1/inputs.json",
+    "sha256": "6f56b2cb5cf733d3ae6591a4cf9fb91bf577d23ccc018fb6486a3e8e271bf28e"
+  },
+  "new_rollouts": 0,
+  "optimizer_steps": 0,
+  "status": "PASS"
+}

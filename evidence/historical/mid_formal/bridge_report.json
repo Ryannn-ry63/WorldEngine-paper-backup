@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/collections/bridge_NR_MID_seed0/audit.json",
+      "sha256": "01e2680c4f46ea656ba65b41dae070259e799e849d1d9487880016c1dd30eff7"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/collections/bridge_R_MID_seed0/audit.json",
+      "sha256": "3a03a53cd68627552111e3bbaf501a22e2dac7e29febbb09236d03f43f9ade56"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/collections/bridge_NR_MID_seed1/audit.json",
+      "sha256": "db6d15b2bd04462dfe3295d62d96ebbdb15dfaed81c880364e24ba2827ab28dc"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/collections/bridge_R_MID_seed1/audit.json",
+      "sha256": "b832da2bc475d6a9072ebbeaae6bf4eb7c1b592369b4288e6fbce35ceadebfeb"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/collections/bridge_NR_MID_seed2/audit.json",
+      "sha256": "70208ae8d690594bf618fa745cda92c118c12454ffe7b5bb967db68154173fc6"
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/collections/bridge_R_MID_seed2/audit.json",
+      "sha256": "c67ef32cb7c3bb28bb11c1c5762ecd5281f2bb829afafe1e949b3ca1cc10abae"
+    }
+  ],
+  "expected_conditions": 6,
+  "inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/worktrees/WorldEngine-selector-mid-followup-v1/experiments/diffusiondrive/selector_mid_followup_v1/runs/mid_formal_20260915_v1/inputs.json",
+    "sha256": "cbfc414ec43d167ecdc1b964858ba9346ec944501753db4a2490c72a8d738634"
+  },
+  "noise": "selector_cfpi_v1_noise0",
+  "scenes_per_condition": 8,
+  "status": "PASS"
+}

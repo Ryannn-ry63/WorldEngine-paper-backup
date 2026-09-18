@@ -1,0 +1,21 @@
+{
+  "accepted_results_stay_in_original_locations": true,
+  "implementation": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/scripts/resume_h100_full_eval.py",
+    "sha256": "dd6ada7fbd7c86736facc5c1e65e1c40477aa8ebb18b8a70deb975ced30684d5"
+  },
+  "inputs": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/inputs.json",
+    "sha256": "fa35845b741d3fe2e2e9bc5d3254230445db852f85efb8cd333ffd377d282cb6"
+  },
+  "launcher": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/run_h100_full_eval_resume.sh",
+    "sha256": "e8eb5cb73784ba4723c31480c1145ab82f1127b31085c208c8b0de8faf68c50e"
+  },
+  "output": "/inspire/hdd2/project/roboticsystem2/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260917_factorial_full_resume_v1",
+  "protocol_unchanged": true,
+  "source": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_factorial_bridges_4h100_v1/run_contract.json",
+    "sha256": "47ff789c229c9fa6d0b4086d8e6a2da4e3bad02c1c255af3ee789266aee24e3d"
+  }
+}

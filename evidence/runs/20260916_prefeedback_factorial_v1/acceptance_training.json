@@ -1,0 +1,251 @@
+{
+  "acceptance_implementation": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/code/scripts/audit_study.py",
+    "sha256": "39af1cc56e4d8ec01c049ec56d44efbdd4663fcdf522198a50ceff2bda62d703"
+  },
+  "completed_models": 12,
+  "evaluation_complete": false,
+  "independent_pipeline_replicates": false,
+  "manifest": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/manifest.json",
+    "sha256": "86138523fe1a8072283fae2cb4769be85f04fd454236b3652f8dd39efc39d03d"
+  },
+  "models": {
+    "D1_seed0": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D1_seed0/checkpoint.pth",
+        "sha256": "4172a5b6b036eee78af4678c8633b260e3f8c84872df3cc1e21806b08429b934"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D1_seed0/report.json",
+        "sha256": "e2f98b3e23e606849fcbeaf64d6537292ae3a0e1b988512db4197268eebc9ac6"
+      },
+      "seconds": 50.856103805825114,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D1_seed0/selector.pt",
+        "sha256": "df693ba5e687da84fb6578b86577aefde4fd5177691204bf0835f020cd0fd460"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D1_seed0/report.json",
+        "sha256": "f210044a5414301df4c0cb7e0930a22888670808840ac753685d5b62da5bb09c"
+      }
+    },
+    "D1_seed1": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D1_seed1/checkpoint.pth",
+        "sha256": "ea871852c539f88c4af46642275e9afec791ed263b9d1ea52ec45e891bfc86bd"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D1_seed1/report.json",
+        "sha256": "c5b28ee07de020f802584b30da4cc4e1b6e004edc5e5c2887db1c4af884bb3fe"
+      },
+      "seconds": 45.80901685543358,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D1_seed1/selector.pt",
+        "sha256": "cdf87e33ddc6c266828929593fdb412570a1dd1b4fc9bf6d1f11a00349c76cde"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D1_seed1/report.json",
+        "sha256": "f21dee17b7b648d04f9451ef522df082a38c2953d3f375464447fbb700faeeca"
+      }
+    },
+    "D1_seed2": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D1_seed2/checkpoint.pth",
+        "sha256": "c4a02af714c83a2184973d234f4d4b1c0304a349fd201165702b45bf9ef4cafd"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D1_seed2/report.json",
+        "sha256": "3ae0a2b937a8871f1654f6dabcc1086065d2822bd226e7a6e5fe153795f727ad"
+      },
+      "seconds": 44.90195485390723,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D1_seed2/selector.pt",
+        "sha256": "c42f8f07d179621d09d84cf2aba0a2da20f2740d560c4bf8c0ba1019b3cf4eed"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D1_seed2/report.json",
+        "sha256": "41fdff1fa8c89fd429764210ed9eb535a0cb67d64d7ff28b7e043f920df3301d"
+      }
+    },
+    "D2_seed0": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed0/checkpoint.pth",
+        "sha256": "bc4f8141493234d3d9a6ebf23db79dc948a5a68ef7b18b6915b560f9bdf4377d"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed0/report.json",
+        "sha256": "87b0fdc57886fb8361d04f99ecdbf0150e18ef8062ed21697c53f13b071fc06d"
+      },
+      "seconds": 48.12792228162289,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed0/selector.pt",
+        "sha256": "9da0338fb9dd79de6b7448e4c72aa59bbe2484069e3dff191475b16f53630d14"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed0/report.json",
+        "sha256": "55df22bc24f01daac0be3154a15c377a3af23363544760cb4b05c5c4dc079e76"
+      }
+    },
+    "D2_seed1": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed1/checkpoint.pth",
+        "sha256": "66a7ad0e626203d86af7a694ef8931a2d5a1d39da663e92e179489db5992ae75"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed1/report.json",
+        "sha256": "1882f9501f31d0d4dfe41828f665bdca4cf618a7abcbd286fd1ae0cf7e0efe5c"
+      },
+      "seconds": 45.55676669627428,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed1/selector.pt",
+        "sha256": "0c13e36e2e0c25ef9590a1d02065e26adf07ef64a392cbc0d49d8df961a80f2e"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed1/report.json",
+        "sha256": "506e2311a64db819197665ff8106fed834712864f96c6461b211a219495773d8"
+      }
+    },
+    "D2_seed2": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed2/checkpoint.pth",
+        "sha256": "ab268ab08a3bea4b5b2c744404b262c59a0681b9f57ec006d615dfde26b50563"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D2_seed2/report.json",
+        "sha256": "363e2e0f241e0d49bdeedd77daf03db570548502a1930095d242a5a805741284"
+      },
+      "seconds": 43.74756858870387,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed2/selector.pt",
+        "sha256": "96192ab6d6b3353c6eb904f566cb9dc4fca01dbbbfe7b0a1b7cb8ed81851ed4e"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D2_seed2/report.json",
+        "sha256": "a6b392653f30bfbc34336be5df96e8f06306c8172d9d6190003cb65746cf9be2"
+      }
+    },
+    "D3_seed0": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D3_seed0/checkpoint.pth",
+        "sha256": "771e6878aed50e96df35bdef7a3e7aefd43695efbb729790526e8fc3a8598a9b"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D3_seed0/report.json",
+        "sha256": "66eca72940981d8a0f5abce3c906352837629add267c3252353b717119b09bf1"
+      },
+      "seconds": 46.739479675889015,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D3_seed0/selector.pt",
+        "sha256": "f7566a5024978e1d8ab5189c7b5478d763b8369ed3081f583ef1965a27935092"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D3_seed0/report.json",
+        "sha256": "33b2351dde058a03f09aec84e6de0332aa44035424869c87cfb4b12bb724d2fa"
+      }
+    },
+    "D3_seed1": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D3_seed1/checkpoint.pth",
+        "sha256": "141f286c8368e5b4c3aa0ef3b374e1059ebfb4a1027e853b4af47da6207666a4"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D3_seed1/report.json",
+        "sha256": "44b418cc4bfd60b03be504d6dd5e66d4c4e06c5c1993150a80f221dcac63a16c"
+      },
+      "seconds": 47.061264205724,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D3_seed1/selector.pt",
+        "sha256": "c888c1275fe2ba072b6689cfaf920e13ddfb8143eb199815d54c07d19ad2d082"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D3_seed1/report.json",
+        "sha256": "709f2cd5a713a1f09c5a9cc044efb2f69cfdf542c2817261a4eac31100f6b24d"
+      }
+    },
+    "D3_seed2": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D3_seed2/checkpoint.pth",
+        "sha256": "a837acbe2b205066b0bb1939d61a1ec6330472b8577b8f73b25fd61e28a7d895"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D3_seed2/report.json",
+        "sha256": "b572f20aa94023bea88466473f980037cabefb78081de6efcc179d91ae008b19"
+      },
+      "seconds": 45.32747898623347,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D3_seed2/selector.pt",
+        "sha256": "d16226c9b6ae42aa805304615478d26e032f419c360cdfbce7beef256043a120"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D3_seed2/report.json",
+        "sha256": "b519e7bebae31a4c7c10e575c606a469e34aa900ebd9e4edc5af7e5553488777"
+      }
+    },
+    "D4_seed0": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D4_seed0/checkpoint.pth",
+        "sha256": "20a4c2aee0a1a696838b9520dcaefd4760fdd0f0bfdd96d0054ffeb44c72ee8e"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D4_seed0/report.json",
+        "sha256": "18d86c70d1d404aef19e4264a36608162edfa8eb40cef7cff7b06b046b09f9cc"
+      },
+      "seconds": 45.1698790974915,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D4_seed0/selector.pt",
+        "sha256": "879e5134594b02450a4c8db5b178541ccccc48ac49ac35b9063f6587406a9394"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D4_seed0/report.json",
+        "sha256": "b767e85d8093dd40e4be0fd857a2e289080aae4a9b542d40f44d7bf4874d3bc8"
+      }
+    },
+    "D4_seed1": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D4_seed1/checkpoint.pth",
+        "sha256": "1ef8881ddaa83d75ab5a7a97af454cad4e172e935c6f5a61c7e7eaf490bb80be"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D4_seed1/report.json",
+        "sha256": "e46e200409ddf0f9f753ff193184a15de684c7f2968eb9def9d19d16ec9c4795"
+      },
+      "seconds": 47.82673680782318,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D4_seed1/selector.pt",
+        "sha256": "cc15af2459491cb8c738b8433d9ceb34c5f9b52ff4665633746e5fe612f7108e"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D4_seed1/report.json",
+        "sha256": "7f01210e6776de2f5adb589ae89f3cdb75b22ea18b0ed0ce4731392c85fb5b03"
+      }
+    },
+    "D4_seed2": {
+      "checkpoint": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D4_seed2/checkpoint.pth",
+        "sha256": "c919b017fabf7875fe0e4fecd4d24fedfa1bc7f470bf893995ae34f005b11ec0"
+      },
+      "native": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/native/D4_seed2/report.json",
+        "sha256": "2ed07bc27f67458e12c874ac8ab005e32a9445ce608d125f031712d00fe33d1d"
+      },
+      "seconds": 53.8893054202199,
+      "selector": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D4_seed2/selector.pt",
+        "sha256": "111388a9fd6a6e405d4fca1855dcae64bf65b5ec378b4385ded92fe1b4879c63"
+      },
+      "training": {
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/checkpoints/D4_seed2/report.json",
+        "sha256": "a22501151b619abb1ece90e7e430a451a79c268054a1d0924ca04cdb94564769"
+      }
+    }
+  },
+  "next_required": "Physical simulator bridge, then separately audited closed/open evaluation; no driving-score conclusion yet.",
+  "physical_simulator_bridge_completed": false,
+  "status": "PASS_TRAINING_AND_NATIVE_CACHE",
+  "total_optimizer_steps": 12000,
+  "validation": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-paper/runs/20260916_prefeedback_factorial_v1/validation.json",
+    "sha256": "9d8b327cb9705777a407fb108826b3d089b58508d0de3b0e5bdc8d1bbb2e15db"
+  }
+}
