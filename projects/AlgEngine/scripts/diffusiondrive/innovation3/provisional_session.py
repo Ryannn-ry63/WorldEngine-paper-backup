@@ -148,13 +148,21 @@ def execute(run_dir, settings, spec, resume=False, stop_after=None, probe=None):
                      used_for_formal_training=False, resumed_segments=0)
         atomic_json(run_dir/'progress.json', state)
     if state['next_episode'] == spec['episodes']:
+        # A prior interrupted attempt may have left diagnostic fields behind.
+        # Once the boundary ledger is complete, expose a clean terminal state.
+        state.update(status='COMPLETE_PROVISIONAL', active_episode=None,
+                     active_report=None)
+        state.pop('error', None)
+        atomic_json(run_dir/'progress.json', state)
         print('All requested episodes already completed.', flush=True); return 0
     if resume: state['resumed_segments'] += 1
     # Resume always starts a new parent. Refuse accidental reuse from another run.
     if online_probe._RESIDENT_LEARNER is not None or online_probe._RESIDENT_MODEL is not None:
         raise RuntimeError('Provisional run requires a fresh parent process')
     start_index = state['next_episode']
-    state.update(status='RUNNING', active_episode=start_index)
+    state.update(status='RUNNING', active_episode=start_index,
+                 active_report=None)
+    state.pop('error', None)
     atomic_json(run_dir/'progress.json', state)
     try:
         for i in range(start_index, spec['episodes']):
@@ -190,6 +198,9 @@ def execute(run_dir, settings, spec, resume=False, stop_after=None, probe=None):
             state['completed'].append(record)
             state['next_episode'] = i+1
             state['status'] = 'COMPLETE_PROVISIONAL' if i+1==spec['episodes'] else 'RUNNING'
+            state.pop('error', None)
+            if state['status'] == 'COMPLETE_PROVISIONAL':
+                state.update(active_episode=None, active_report=None)
             atomic_json(run_dir/'progress.json', state)
             print(json.dumps(dict(event='episode_committed', episode=i+1, attempts=record['attempts'],
                                   optimizer_steps=record['policy_version'], checkpoint=record['checkpoint']['path'])), flush=True)
