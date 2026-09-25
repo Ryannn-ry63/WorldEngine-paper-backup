@@ -49,6 +49,24 @@ class HeadlessSnapshotTest(unittest.TestCase):
     def tearDown(self):
         self.sim.close()
 
+    def test_component_diagnostics_preserve_full_hash_and_detect_clock(self):
+        before = self.sim.snapshot()
+        first = self.sim.codec.describe(before)
+        self.assertEqual(self.sim.codec.describe(self.sim.snapshot())['state_hash'], first['state_hash'])
+        self.sim.engine._episode_start_time += 1.0
+        after = self.sim.snapshot()
+        second = self.sim.codec.describe(after)
+        self.assertNotEqual(first['state_hash'], second['state_hash'])
+        differing = {k for k in first['components']
+                     if first['components'][k] != second['components'][k]}
+        self.assertEqual(differing, {'engine', 'engine._episode_start_time'})
+        self.sim.restore(before)
+        self.assertEqual(self.sim.codec.describe(self.sim.snapshot())['state_hash'], first['state_hash'])
+        with self.assertRaisesRegex(ValueError, 'checksum'):
+            self.sim.codec.describe(replace(before, payload=before.payload + b'bad'))
+        with self.assertRaisesRegex(ValueError, 'structural hash'):
+            self.sim.codec.describe(replace(before, state_hash='0'*64))
+
     def test_hidden_state_and_rng_restored_with_aliases(self):
         before = self.sim.snapshot()
         agent = self.sim.engine.agents['follower']

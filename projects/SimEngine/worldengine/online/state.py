@@ -262,6 +262,32 @@ class SnapshotCodec:
         np.random.set_state(payload['numpy_rng'])
         random.setstate(payload['python_rng'])
 
+    def describe(self, snapshot):
+        """Read-only diagnostic hashes; never replace the full snapshot gate.
+
+        Components are deliberately NOT a new equality criterion: independent
+        hashes omit cross-component aliases. Wall-clock fields stay included.
+        """
+        if snapshot.schema != 1 or snapshot.static_sha256 != self.static_sha256:
+            raise ValueError('Snapshot schema/static bundle mismatch')
+        if hashlib.sha256(snapshot.payload).hexdigest() != snapshot.payload_sha256:
+            raise ValueError('Snapshot payload checksum mismatch')
+        payload = self._load(snapshot.payload)
+        if structural_hash((self.static_sha256, payload), self.refs) != snapshot.state_hash:
+            raise ValueError('Snapshot structural hash mismatch')
+        components = {key: structural_hash(value, self.refs)
+                      for key, value in payload.items()}
+        for key, value in payload['engine'].items():
+            components['engine.' + key] = structural_hash(value, self.refs)
+        for name, manager in payload['managers'].items():
+            for key, value in vars(manager).items():
+                components['managers.' + name + '.' + key] = structural_hash(value, self.refs)
+        return dict(state_hash=snapshot.state_hash, payload_sha256=snapshot.payload_sha256,
+                    static_sha256=snapshot.static_sha256, static_structural_hash=self.static_hash,
+                    config_hash=snapshot.config_hash, components=components,
+                    episode_start_time=payload['engine']['_episode_start_time'],
+                    diagnostic_only=True)
+
     def mismatch(self, message, before, expected, actual, action):
         """Diagnose a mismatch without tolerances or altering the acceptance gate."""
         left, right = self._load(expected.payload), self._load(actual.payload)
