@@ -6,6 +6,24 @@ from nuplan.common.actor_state.state_representation import StateSE2, StateVector
 from worldengine.common.dataclasses import Trajectory
 
 
+def centered_pose_action(waypoints, headings, interval=.5):
+    """Complete map/diagnostic requests on their 0.5 s centered-pose grid.
+
+    Generated candidates use to_world_actions instead, preserving the upstream
+    0.1 s finite differences BEFORE downsampling. Do not replace that conversion.
+    """
+    points = np.asarray(waypoints, dtype=np.float64)
+    angles = np.asarray(headings, dtype=np.float64)
+    if (points.ndim != 2 or points.shape[1] != 2 or len(points) < 2 or
+            angles.shape != (len(points),) or not np.isfinite(points).all() or
+            not np.isfinite(angles).all() or not np.isfinite(interval) or interval <= 0):
+        raise ValueError('Expected finite centered poses and a positive interval')
+    velocity = np.diff(points, axis=0) / interval
+    angular = np.diff(np.unwrap(angles)) / interval
+    return Trajectory(points.copy(), np.vstack([velocity, velocity[-1]]),
+                      angles.copy(), np.append(angular, angular[-1]))
+
+
 def expand_future_poses(candidates):
     values = np.asarray(candidates, dtype=np.float64)
     if values.shape != (20, 8, 3) or not np.isfinite(values).all():
@@ -23,7 +41,7 @@ def expand_future_poses(candidates):
 
 def to_world_actions(candidates, ego_agent):
     # Preserve the legacy 10 Hz rear->center conversion and 2 Hz downsampling.
-    # This only converts an action request; real dynamics remain in SimEngine.
+    # This only converts a request; SimEngine applies the configured controller.
     expanded = expand_future_poses(candidates)
     heading = float(ego_agent.current_heading)
     rotation = np.array([[np.cos(heading), -np.sin(heading)], [np.sin(heading), np.cos(heading)]])

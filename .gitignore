@@ -110,3 +110,13 @@ ckpts/
 /data
 __pycache__/
 *.pyc
+
+# Runtime data and crash dumps are outside the source release
+**/core.*
+**/__pycache__/
+*.pyc
+projects/AlgEngine/tmp/
+runs/
+releases/
+*.pt
+*.pth

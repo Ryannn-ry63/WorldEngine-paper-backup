@@ -19,18 +19,34 @@ from .scene_manifest import load_assignments
 from .session_lifecycle import SessionLedger
 
 
-def _episode_settings(base, row, path, episode):
+def _episode_settings(base, row, path, episode, seed=0):
     cfg = dict(base)
     # Keep the manifest's audited assignment while deriving a deterministic,
     # disjoint RNG namespace for each repeated episode.
+    # ``episode`` is the global episode cursor. Formal seeds add a fixed
+    # namespace offset so repeated runs cannot silently reuse RNG streams;
+    # seed=0 retains the engineering contract.
     stride = 1000003
+    namespace = episode + seed * stride
     cfg.update(
         visual_scene_id=row['scene_id'],
         visual_scene_path=row['scene_path'],
-        online_candidate_seed=(row['candidate_seed'] + episode * stride) % (2**31),
-        online_scene_seed=(row['scene_seed'] + episode * stride) % (2**31),
-        online_action_seed=(row['candidate_seed'] + episode * stride + 17) % (2**31),
+        visual_scene_sha256=row['scene_sha256'],
+        online_candidate_seed=(row['candidate_seed'] + namespace * stride) % (2**31),
+        online_scene_seed=(row['scene_seed'] + namespace * stride) % (2**31),
+        online_action_seed=(row['candidate_seed'] + namespace * stride + 17) % (2**31),
     )
+    # Formal manifests carry the exact public checkpoint selected during scene
+    # audit. Preserve that path so the worker does not fall back to the
+    # initialized settings' owned-only asset_root. Engineering manifests keep
+    # the legacy asset_root lookup, even if a caller reused a base settings
+    # object that happened to contain formal-only fields.
+    if row.get('asset_path'):
+        cfg.update(visual_asset_path=row['asset_path'],
+                   visual_asset_sha256=row['asset_sha256'])
+    else:
+        cfg.pop('visual_asset_path', None)
+        cfg.pop('visual_asset_sha256', None)
     with path.open('x') as stream:
         stream.write(json.dumps(cfg, indent=2) + '\n')
 

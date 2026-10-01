@@ -14,6 +14,7 @@ from grpo_selector_v3_cached_common import SceneConditionedTrajectorySetSelector
 from .learner import (FROZEN_V3_PLUS_ZERO_RESIDUAL, PARAMETERIZATIONS,
                       OnlineV3Learner)
 from .paths import checked_path, sha256_file
+from .v3_checkpoint_contract import is_registered_v3_selector_payload
 
 
 def run(settings, device):
@@ -23,7 +24,7 @@ def run(settings, device):
     if digest != cfg['expected_sha256']['selector_state']:
         raise ValueError('Registered V3 selector SHA256 mismatch')
     payload = torch.load(path, map_location='cpu')
-    if payload.get('method') != 'scene_conditioned_exact_group_grpo' or payload.get('schema_version') != 3:
+    if not is_registered_v3_selector_payload(payload):
         raise ValueError('Expected standard V3 selector schema/method')
     model = SceneConditionedTrajectorySetSelector(**payload['scene_selector_config']).to(device)
     model.load_state_dict(payload['scene_selector_state'], strict=True)

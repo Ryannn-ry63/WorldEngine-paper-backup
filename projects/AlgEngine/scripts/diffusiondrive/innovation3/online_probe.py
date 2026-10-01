@@ -1,7 +1,8 @@
-"""Bounded single-GPU live full20/H1 learning acceptance, never formal training."""
+"""Bounded single-GPU live full20/H1 episode used by pilots or formal runs."""
 import argparse
 import json
 import os
+import signal
 from pathlib import Path
 import socket
 import subprocess
@@ -15,10 +16,13 @@ from .candidate_inputs import from_export
 from .image_transport import ImageBuffer, metadata_from_wire
 from .learner import (FROZEN_V3_PLUS_ZERO_RESIDUAL, OnlineV3Learner,
                       PARAMETERIZATIONS)
+from .v3_checkpoint_contract import is_registered_v3_selector_payload
 from .live_audit import LiveWindow
 from .live_learning import LiveLearning, learning_evidence, state_digest
 from .paths import checked_path, sha256_file
 from .transport import Channel
+from worldengine.online.execution import (DEFAULT_EGO_CONTROLLER, execution_contract,
+                                          validate_resume_execution)
 
 
 _RESIDENT_MODEL = None
@@ -26,14 +30,35 @@ _RESIDENT_LEARNER = None
 _RESIDENT_PARAMETERIZATION = None
 _RESIDENT_SOURCE_SHA256 = None
 _RESIDENT_CONFIG = None
+_RESIDENT_FIXED_CLIENT = None
+
+
+def close_fixed_runtime(abort=False):
+    global _RESIDENT_FIXED_CLIENT
+    if _RESIDENT_FIXED_CLIENT is not None:
+        client, _RESIDENT_FIXED_CLIENT = _RESIDENT_FIXED_CLIENT, None
+        client.close(abort=abort)
 
 
 def source_hashes():
     code = Path(__file__).resolve().parents[5]
     paths = list(Path(__file__).parent.glob('*.py'))
     paths += list((code/'projects/SimEngine/worldengine/online').glob('*.py'))
+    paths += list((code/'projects/SimEngine/worldengine/components/agents/policy/pdm_planner').rglob('*.py'))
     paths += [code/name for name in (
         'projects/SimEngine/worldengine/manager/data_manager.py',
+        'projects/SimEngine/worldengine/manager/metric_manager.py',
+        'projects/SimEngine/worldengine/utils/math_utils.py',
+        'projects/SimEngine/worldengine/components/agents/navigation/trajectory_navigation.py',
+        'projects/SimEngine/worldengine/components/maps/road_networks/edge_road_network.py',
+        'projects/SimEngine/worldengine/components/maps/lanes/base_center_lane.py',
+        'projects/SimEngine/worldengine/components/agents/policy/idm_policy.py',
+        'projects/SimEngine/worldengine/components/agents/navigation/idm_navigation.py',
+        'projects/SimEngine/worldengine/manager/agent_manager.py',
+        'projects/SimEngine/worldengine/components/agents/controller/log_play_controller.py',
+        'projects/SimEngine/worldengine/components/agents/ego_agent.py',
+        'projects/SimEngine/worldengine/components/agents/client/navformer_client.py',
+        'projects/SimEngine/worldengine/components/agents/vehicle_model/vehicle_utils.py',
         'projects/SimEngine/worldengine/components/agents/controller/tracker/lqr_tracker.py',
         'projects/SimEngine/worldengine/components/agents/controller/two_stage_controller.py',
         'projects/SimEngine/worldengine/components/agents/controller/motion_model/kinematic_bicycle.py',
@@ -60,7 +85,10 @@ def main():
                         help='keep model and learner alive for the caller\'s next episode')
     parser.add_argument('--branch-workers', type=int, default=0,
                         help='experimental persistent CPU SimEngine branch workers (0 keeps serial H1)')
+    parser.add_argument('--fixed-segment', action='store_true')
     args = parser.parse_args()
+    def interrupted(signum, frame): raise InterruptedError('Signal '+str(signum))
+    signal.signal(signal.SIGTERM, interrupted)
     if not 0 <= args.branch_workers <= 20:
         parser.error('--branch-workers must be in [0, 20]')
     if not 1 <= args.steps <= 8 or args.seed < 0 or args.policy_version < 0:
@@ -72,6 +100,16 @@ def main():
     if any(output.with_suffix(s).exists() for s in ('.json', '.worker.log', '.online.pt', '.failure')):
         raise FileExistsError('Use a fresh output basename: ' + str(output))
     cfg = json.loads(checked_path(args.settings).read_text())
+    update_timing = cfg.get('online_update_timing', 'per_step')
+    if update_timing not in ('per_step', 'after_rollout8') or (update_timing == 'after_rollout8' and
+            (not args.fixed_segment or args.steps != 8)):
+        raise ValueError('Delayed updates require a full fixed eight-step rollout')
+    warmup_steps = 3 if args.fixed_segment else 13
+    from .fixed_protocol import configured_contract
+    reward_name = configured_contract(cfg) if args.fixed_segment else 'causal_h1_pdm_components_v1'
+    formal_training = bool(cfg.get('formal_training', False))
+    ego_controller = cfg.get('online_ego_controller', DEFAULT_EGO_CONTROLLER)
+    dynamics_contract = execution_contract(ego_controller)
     parameterization = cfg.get('online_parameterization', FROZEN_V3_PLUS_ZERO_RESIDUAL)
     if parameterization not in PARAMETERIZATIONS:
         raise ValueError('Unknown online_parameterization: ' + str(parameterization))
@@ -82,7 +120,7 @@ def main():
         if expected_selector_sha and sha256_file(selector_path) != expected_selector_sha:
             raise ValueError('Registered V3 selector SHA256 mismatch before learner construction')
         payload = torch.load(selector_path, map_location='cpu')
-        if payload.get('schema_version') != 3 or payload.get('method') != 'scene_conditioned_exact_group_grpo':
+        if not is_registered_v3_selector_payload(payload):
             raise ValueError('Unexpected offline V3 selector provenance')
         initialization_source = dict(kind='offline_selector_file', path=str(selector_path),
             sha256=expected_selector_sha, payload_schema=payload.get('schema_version'),
@@ -96,12 +134,16 @@ def main():
                                            else 'STRICT_ONLINE_SELECTOR_ONLY'),
         steps=args.steps, seed=args.seed, seed_namespaces=dict(training_seed=args.seed,
             candidate_seed=candidate_seed, scene_seed=scene_seed, action_seed=action_seed), events=[], source_sha256=source_hashes(),
-        code_head=subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=code, text=True).strip(),
+        code_head=(None if args.fixed_segment else subprocess.check_output(
+            ['git', 'rev-parse', 'HEAD'], cwd=code, text=True).strip()),
         real_generator=False, live_render_verified=False, real_generated_reward=False,
-        causal_reward_contract='causal_h1_pdm_components_v1',
+        causal_reward_contract=reward_name,
         official_pdm_reward=False, online_update=False, real_closed_loop=False,
         formal_ready=False, full_resume_verified=False, ddp_verified=False,
-        parameterization=parameterization, used_for_formal_training=False,
+        parameterization=parameterization, formal_training=formal_training,
+        used_for_formal_training=formal_training,
+        ego_controller=ego_controller, dynamics_contract=dynamics_contract,
+        online_update_timing=update_timing,
         selection='categorical_T1_private_learner_rng',
         branch_execution=(('parallel_persistent_full20_workers_%d' % args.branch_workers)
                            if args.branch_workers else
@@ -111,7 +153,8 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open('x') as stream:
         json.dump(report, stream, indent=2)
-    child = live = images = channel = left = right = None
+    child = live = images = channel = left = right = fixed_client = None
+    episode_complete = False
     started = time.monotonic()
     worker_log = output.with_suffix('.worker.log')
     try:
@@ -119,10 +162,11 @@ def main():
         from .live_inputs import LiveInputs
         from .visual_model import configuration, load_frozen, reset_temporal_state
         from .visual_parity import assert_same, file_oracle, result_parity
-        global _RESIDENT_MODEL, _RESIDENT_LEARNER, _RESIDENT_PARAMETERIZATION, _RESIDENT_SOURCE_SHA256, _RESIDENT_CONFIG
+        global _RESIDENT_MODEL, _RESIDENT_LEARNER, _RESIDENT_PARAMETERIZATION, _RESIDENT_SOURCE_SHA256, _RESIDENT_CONFIG, _RESIDENT_FIXED_CLIENT
         # Episode-specific inputs may change; model/input contracts may not.
         resident_config = {k: v for k, v in cfg.items() if k not in (
-            'visual_scene_id', 'visual_scene_path', 'online_candidate_seed',
+            'visual_scene_id', 'visual_scene_path', 'visual_asset_path',
+            'visual_asset_sha256', 'visual_scene_sha256', 'online_candidate_seed',
             'online_scene_seed', 'online_action_seed')}
         resident_reuse = bool(args.resident and _RESIDENT_MODEL is not None)
         if resident_reuse and (_RESIDENT_PARAMETERIZATION != parameterization or
@@ -157,12 +201,26 @@ def main():
         if args.resume:
             resume = checked_path(args.resume)
             payload = torch.load(resume, map_location='cpu')
-            if payload.get('kind') != 'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING':
+            expected_kinds = {'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING',
+                              'FORMAL_ONLINE_TRAINING_CHECKPOINT'}
+            if payload.get('kind') not in expected_kinds or \
+                    bool(payload.get('formal_training', False)) != formal_training:
                 raise ValueError('Unexpected online learner checkpoint kind')
             if payload.get('parameterization', payload.get('learner', {}).get('parameterization')) != parameterization:
                 raise ValueError('Resume checkpoint parameterization mismatch')
+            validate_resume_execution(payload, dynamics_contract)
+            if payload.get('source_sha256') != report['source_sha256']:
+                reference = cfg.get('legacy_continuation')
+                if not reference:
+                    raise ValueError('Resume source changed; use an explicit audited import')
+                from .continuation import validate_legacy_checkpoint
+                validate_legacy_checkpoint(payload, resume, reference, report['source_sha256'])
+            if args.fixed_segment and payload.get('reward_contract', {}).get('name') != reward_name:
+                raise ValueError('Cannot resume a checkpoint from a different reward contract')
             if payload['learner'].get('version') != args.policy_version:
                 raise ValueError('Resume checkpoint/version mismatch')
+            if payload.get('online_update_timing', 'per_step') != update_timing:
+                raise ValueError('Cannot resume a different update timing')
             learner.load_state_dict(payload['learner'])
             if learner.version != args.policy_version:
                 raise ValueError('Resume checkpoint/version mismatch')
@@ -171,12 +229,13 @@ def main():
         initial_policy_version = learner.version
         initial_attempts = learner.attempts
         initial_learner_hash = state_digest(learner.state_dict())
-        online = LiveLearning(learner)
+        if args.fixed_segment:
+            from .fixed_learning import FixedLiveLearning
+            online = FixedLiveLearning(learner, reward_contract=reward_name, update_timing=update_timing)
+        else:
+            online = LiveLearning(learner)
         initial_selector_hash = online.last_selector_hash
         live = LiveInputs(config.data.test)
-        left, right = socket.socketpair(socket.AF_UNIX, socket.SOCK_STREAM)
-        channel = Channel(left, timeout=1800)
-        images = ImageBuffer()
         worker_env = dict(os.environ)
         worker_env.update(OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
                           MKL_NUM_THREADS='1', OPENBLAS_CORETYPE='Prescott', PYTHONDONTWRITEBYTECODE='1')
@@ -185,21 +244,43 @@ def main():
         # process, so pin only that child to its rank's physical GPU.
         if worker_gpu := worker_env.get('WORLDENGINE_DDP_LOCAL_GPU'):
             worker_env['CUDA_VISIBLE_DEVICES'] = worker_gpu
-        command = [cfg['simengine_python'], '-u', '-m', 'innovation3.visual_worker',
-            '--fd', str(right.fileno()), '--images-fd', str(images.fd),
-            '--settings', str(args.settings.resolve()), '--output', str(output),
-            '--steps', str(args.steps), '--seed', str(scene_seed),
-            '--reward-adapter', '--online-updates', '--policy-version', str(learner.version)]
-        if args.branch_workers:
-            command += ['--branch-workers', str(args.branch_workers)]
+        if not args.fixed_segment:
+            left, right = socket.socketpair(socket.AF_UNIX, socket.SOCK_STREAM)
+            channel = Channel(left, timeout=1800)
+            images = ImageBuffer()
+            command = [cfg['simengine_python'], '-u', '-m', 'innovation3.visual_worker',
+                '--fd', str(right.fileno()), '--images-fd', str(images.fd),
+                '--settings', str(args.settings.resolve()), '--output', str(output),
+                '--steps', str(args.steps), '--seed', str(scene_seed),
+                '--reward-adapter', '--online-updates', '--policy-version', str(learner.version)]
+            if args.branch_workers:
+                command += ['--branch-workers', str(args.branch_workers)]
         with worker_log.open('x') as log:
-            child = subprocess.Popen(command, env=worker_env, pass_fds=(right.fileno(), images.fd),
-                                     stdout=log, stderr=subprocess.STDOUT)
-            right.close()
-            ready = channel.receive()
+            if args.fixed_segment:
+                from .fixed_client import FixedWorkerClient
+                fixed_client = _RESIDENT_FIXED_CLIENT if args.resident else None
+                backend = cfg.get('fixed_backend', 'cached')
+                if fixed_client is None:
+                    fixed_client = FixedWorkerClient(cfg, args.branch_workers, backend,
+                                                    output.with_suffix('.resident-worker.log'), worker_env)
+                    if args.resident:
+                        _RESIDENT_FIXED_CLIENT = fixed_client
+                if fixed_client.backend != backend or fixed_client.workers != args.branch_workers:
+                    raise ValueError('Resident simulator contract changed')
+                child, channel, images = fixed_client.child, fixed_client.channel, fixed_client.images
+                ready = fixed_client.begin(cfg, output.with_suffix('.traces'), args.steps,
+                    learner.version, learner.attempts, cfg.get('fixed_full_audit_every', 32))
+                log.write('Resident worker PID %d; pool reused=%s\n' % (child.pid, ready.get('branch_pool_reused')))
+            else:
+                child = subprocess.Popen(command, env=worker_env, pass_fds=(right.fileno(), images.fd),
+                                         stdout=log, stderr=subprocess.STDOUT)
+                right.close()
+                ready = channel.receive()
             if (ready.get('kind') != 'ready' or not ready.get('reward_adapter') or
-                    not ready.get('online_updates') or ready.get('warmup_transitions') != 13 or
-                    ready.get('reward_contract', {}).get('name') != report['causal_reward_contract']):
+                    not ready.get('online_updates') or ready.get('warmup_transitions') != warmup_steps or
+                    ready.get('reward_contract', {}).get('name') != report['causal_reward_contract'] or
+                    ready.get('dynamics_contract') != dynamics_contract or
+                    ready.get('ego_controller') != ego_controller):
                 raise RuntimeError('Worker online/reward/warmup contract mismatch')
             if cfg.get('visual_scene_id') and ready.get('scene') != cfg['visual_scene_id']:
                 raise RuntimeError('Worker did not use the explicitly assigned scene')
@@ -208,7 +289,7 @@ def main():
                                  total_bytes=torch.cuda.get_device_properties(0).total_memory)
             window = LiveWindow()
             previous_update_time = None
-            for index in range(13 + args.steps):
+            for index in range(warmup_steps + args.steps):
                 step_started_ns = time.monotonic_ns()
                 message = channel.receive()
                 if message.get('kind') != 'observation':
@@ -223,7 +304,7 @@ def main():
                 # four-frame window. Release it before the next render.
                 images.release(identity)
                 observation_copied_ns = time.monotonic_ns()
-                if index < 13:
+                if index < warmup_steps:
                     if identity.get('policy_version') != learner.version:
                         raise RuntimeError('Warmup changed policy version')
                     channel.send(dict(kind='warmup', identity=identity))
@@ -266,13 +347,13 @@ def main():
                 update_complete_ns = time.monotonic_ns()
                 if any(p.requires_grad or p.grad is not None for p in model.parameters()):
                     raise RuntimeError('Frozen generator or input V3 received gradients')
-                record = dict(kind='online_update', step=index-13, **audit,
+                record = dict(kind='online_update', step=index-warmup_steps, **audit,
                     selected=request['selected'], candidate_hash=request['candidate_hash'],
                     observation_identity=identity, input_frame_indices=[f['frame_idx'] for f in window.frames],
                     file_input_parity=True, forward_errors=forward_errors,
                     frozen_v3_export_max_abs_error=export_error,
                     main_receipt=main_receipt, branch_feedback=branches,
-                    next_observation_parity=(index > 13))
+                    next_observation_parity=(index > warmup_steps))
                 report['events'].append(record)
                 if not args.throughput:
                     output.write_text(json.dumps(report, indent=2, allow_nan=False)+'\n')
@@ -294,7 +375,7 @@ def main():
                     learner_update_seconds=(update_complete_ns-feedback_received_ns)/1e9,
                     update_ack_seconds=(worker_ack_received_ns-update_complete_ns)/1e9)
                 report['profile_events'].append(record['profile'])
-                print(json.dumps(dict(decision=index-13, selected=request['selected'],
+                print(json.dumps(dict(decision=index-warmup_steps, selected=request['selected'],
                     policy_version=learner.version, optimized=audit['optimized'],
                     reward_std=audit['update']['reward_std'],
                     logit_change=audit['same_context_logit_change_after_update'])), flush=True)
@@ -302,12 +383,17 @@ def main():
             closed = channel.receive()
             if closed.get('kind') != 'closed' or closed.get('idm_fallbacks') != 0:
                 raise RuntimeError('Worker close/fallback check failed')
-            if child.wait(timeout=30) != 0:
+            if not args.fixed_segment and child.wait(timeout=30) != 0:
                 raise RuntimeError('Worker exited unsuccessfully')
+            if args.fixed_segment and (closed.get('episode_closed') is not True or
+                    closed.get('reward_groups') != args.steps or closed.get('candidate_simulation_steps') != args.steps*160):
+                raise RuntimeError('Incomplete segment episode boundary')
         if state_digest(model.state_dict()) != initial_model_hash:
             raise RuntimeError('Frozen generator/V3 state changed')
         if source_hashes() != report['source_sha256']:
             raise RuntimeError('Source changed during acceptance run')
+        if getattr(online, 'collected', None):
+            raise RuntimeError('Cannot checkpoint an unconsumed rollout')
         evidence = learning_evidence(report['events'])
         if (evidence['actual_optimizer_steps'] != learner.version - initial_policy_version or
                 learner.attempts - initial_attempts != args.steps or
@@ -315,8 +401,13 @@ def main():
             raise RuntimeError('Optimizer/attempt accounting mismatch')
         checkpoint = output.with_suffix('.online.pt')
         with checkpoint.open('xb') as stream:
-            torch.save(dict(kind='DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING',
+            torch.save(dict(kind=('FORMAL_ONLINE_TRAINING_CHECKPOINT' if formal_training else
+                                 'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING'),
+                formal_training=formal_training, online_update_timing=update_timing,
                 reward_contract=report['worker']['reward_contract'],
+                simulator_backend=cfg.get('fixed_backend') if args.fixed_segment else 'reference',
+                candidate_simulation_steps=(initial_attempts+args.steps)*20*(8 if args.fixed_segment else 1),
+                dynamics_contract=dynamics_contract, ego_controller=ego_controller,
                 source_sha256=report['source_sha256'],
                 parameterization=parameterization, initialization=learner.provenance(),
                 learner=learner.state_dict()), stream)
@@ -348,13 +439,22 @@ def main():
             online_selector_trainable=True, online_selector_changed=initial_selector_hash != online.last_selector_hash,
             residual_changed=initial_selector_hash != online.last_selector_hash,
             initialization_provenance=learner.provenance(),
-            policy_version=learner.version, step0_v3_parity=(True if initial_policy_version == 0 else None), next_step_waited_for_update=True,
+            policy_version=learner.version, step0_v3_parity=(True if initial_policy_version == 0 else None), next_step_waited_for_update=(update_timing == "per_step"),
+            next_step_waited_for_feedback=True, updates_at_rollout_boundary=(update_timing == "after_rollout8"),
             generated_steps=args.steps, candidate_groups=args.steps, candidate_branches=args.steps*20,
-            warmup_frames=13, history_frames=4, next_observation_checks=args.steps-1,
-            learner_checkpoint=dict(path=str(checkpoint), sha256=sha256_file(checkpoint), disposable=True),
+            warmup_frames=warmup_steps, history_frames=4, next_observation_checks=args.steps-1,
+            worker_episode_closed=bool(closed.get('episode_closed')) if args.fixed_segment else True,
+            worker_process_resident=bool(args.fixed_segment),
+            candidate_simulation_steps=args.steps*20*(8 if args.fixed_segment else 1),
+            branch_render_calls=closed.get('branch_render_calls', 0),
+            branch_model_calls=closed.get('branch_model_calls', 0),
+            learner_checkpoint=dict(path=str(checkpoint), sha256=sha256_file(checkpoint),
+                                    disposable=not formal_training,
+                                    formal_training=formal_training),
             idm_fallbacks=closed['idm_fallbacks'], reaction='R',
             policy_version_initial=initial_policy_version,
             resident_reuse=resident_reuse)
+        episode_complete = True
     except BaseException as error:
         if args.resident:
             _RESIDENT_MODEL = _RESIDENT_LEARNER = _RESIDENT_CONFIG = None
@@ -367,14 +467,17 @@ def main():
         output.write_text(json.dumps(report, indent=2, allow_nan=False)+'\n')
         print(json.dumps(dict(status=report['status'], report=str(output))), flush=True)
         if live is not None: live.close()
-        if child is not None and child.poll() is None:
+        if fixed_client is not None and not (episode_complete and args.resident):
+            close_fixed_runtime(abort=not episode_complete)
+            fixed_client.close(abort=not episode_complete)
+        if fixed_client is None and child is not None and child.poll() is None:
             child.terminate()
             try: child.wait(timeout=20)
             except subprocess.TimeoutExpired:
                 child.kill(); child.wait()
         for resource in (left, right):
             if resource is not None: resource.close()
-        if images is not None: images.close()
+        if images is not None and fixed_client is None: images.close()
     return 0 if report['status'] in ('PASS_STRICT_ONLINE_SELECTOR_ONLY_PROBE',
                                      'PASS_STRICT_ONLINE_THROUGHPUT_PROBE') else 2
 

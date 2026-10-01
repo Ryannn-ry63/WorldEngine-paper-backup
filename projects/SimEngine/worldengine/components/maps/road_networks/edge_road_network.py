@@ -48,6 +48,10 @@ class EdgeRoadNetwork(BaseRoadNetwork):
 
     # find the closest lane to position.
     def get_closest_lane_index(self, position, return_all=False):
+        from worldengine.online.geometry_cache import cached_query
+        cached = cached_query(self, position, return_all)
+        if cached is not None:
+            return cached
         index_distance_mapping = []
         for lane_index, lane in self.graph.items():
             index_distance_mapping.append((lane.lane.distance(position), lane_index, lane.lane))

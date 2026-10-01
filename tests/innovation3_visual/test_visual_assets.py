@@ -22,6 +22,27 @@ class VisualAssetTest(unittest.TestCase):
             self.assertEqual(checked_root, root.resolve())
             self.assertEqual(checked_asset, asset.resolve())
 
+    def test_uses_audited_explicit_asset_path(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            scene_id = 'scene-a'
+            asset = root / scene_id / 'background' / (scene_id + '.ckpt')
+            asset.parent.mkdir(parents=True)
+            asset.write_bytes(b'public-checkpoint')
+            import hashlib
+            digest = hashlib.sha256(asset.read_bytes()).hexdigest()
+            cfg = {
+                'asset_root': '/stale/owned/asset/root',
+                'visual_scene_id': scene_id,
+                'visual_asset_path': str(asset),
+                'visual_asset_sha256': digest,
+            }
+            scenes = {scene_id: {'metadata': {}}}
+            selected, checked_root, checked_asset = visual_asset(cfg, scenes)
+            self.assertEqual(selected, scene_id)
+            self.assertEqual(checked_root, root.resolve())
+            self.assertEqual(checked_asset, asset.resolve())
+
     def test_does_not_substitute_missing_asset(self):
         with tempfile.TemporaryDirectory() as directory:
             cfg = {'asset_root': directory, 'visual_scene_id': 'scene-a'}

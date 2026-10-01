@@ -130,6 +130,17 @@ class LiveLearning:
 
 def learning_evidence(events):
     groups = [e for e in events if e.get('kind') == 'online_update']
+    if groups and groups[0].get('update_timing') == 'after_rollout8':
+        records = [u for e in groups for u in e['optimizer_updates']]
+        updates = sum(u['optimized'] for u in records)
+        changed = any(u['optimized'] and u['same_context_logit_change_after_update'] > 0 for u in records)
+        consumed = any(e['version_before'] > 0 and e['current_vs_frozen_probability_max_abs'] > 0 for e in groups)
+        return dict(actual_optimizer_steps=updates, update_attempts=len(records),
+            groups_with_signal=updates, groups_without_signal=len(records)-updates,
+            local_groups_with_signal=sum(u['local_group_signal'] for u in records),
+            globally_optimized_groups=updates, update_changed_logits=changed,
+            next_action_used_updated_policy=consumed,
+            closed_loop_learning_verified=bool(updates and changed and consumed))
     updates = sum(e['optimized'] for e in groups)
     changed = any(e['optimized'] and e['same_context_logit_change_after_update'] > 0
                   for e in groups)

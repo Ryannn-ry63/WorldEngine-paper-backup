@@ -388,3 +388,8 @@ We acknowledge all the open-source contributors for the following projects to ma
 ## DiffusionDrive selector post-training
 
 See [V2/V3 contribution and reproducibility guide](docs/selector_v2_v3/README.md) for the standard selector-only post-training implementation and full evaluation protocol.
+
+
+## Online selector continuation
+
+See [the online training guide](docs/online/README.md) for the B protocol, protected p6 release and audited p8 continuation.

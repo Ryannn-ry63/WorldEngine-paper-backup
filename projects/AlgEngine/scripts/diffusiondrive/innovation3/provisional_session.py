@@ -53,7 +53,7 @@ def contract(settings, manifest, rows, episodes, seed, workers, sources):
                 formal_ready=False, used_for_formal_training=False)
 
 
-def verify_episode(report, row, index, version, previous_hash, spec):
+def verify_episode(report, row, index, version, previous_hash, spec, seed_index=None):
     if report.get('status') not in ('PASS_STRICT_ONLINE_THROUGHPUT_PROBE',
                                    'INCOMPLETE_ONLINE_THROUGHPUT_EVIDENCE'):
         raise ValueError('Episode execution failed')
@@ -71,18 +71,33 @@ def verify_episode(report, row, index, version, previous_hash, spec):
     if (worker.get('source', {}).get('sha256') != row['scene_sha256'] or
             worker.get('asset', {}).get('sha256') != row['asset_sha256']):
         raise ValueError('Scene/asset provenance mismatch')
+    namespace = index if seed_index is None else seed_index
     seeds = dict(training_seed=spec['seed'],
-                 candidate_seed=(row['candidate_seed'] + index*1000003) % 2**31,
-                 scene_seed=(row['scene_seed'] + index*1000003) % 2**31,
-                 action_seed=(row['candidate_seed'] + index*1000003 + 17) % 2**31)
+                 candidate_seed=(row['candidate_seed'] + namespace*1000003) % 2**31,
+                 scene_seed=(row['scene_seed'] + namespace*1000003) % 2**31,
+                 action_seed=(row['candidate_seed'] + namespace*1000003 + 17) % 2**31)
     if report.get('seed_namespaces') != seeds:
         raise ValueError('Episode RNG namespace mismatch')
     for key in ('frozen_generator_and_original_selector_unchanged', 'frozen_reference_unchanged',
-                'online_selector_trainable', 'next_step_waited_for_update'):
+                'online_selector_trainable'):
         if report.get(key) is not True: raise ValueError('Missing evidence: '+key)
+    timing = spec.get('online_update_timing', 'per_step')
+    if report.get('online_update_timing', 'per_step') != timing:
+        raise ValueError('Update timing mismatch')
+    if timing == 'per_step' and report.get('next_step_waited_for_update') is not True:
+        raise ValueError('Step update evidence missing')
+    if timing == 'after_rollout8' and (report.get('next_step_waited_for_feedback') is not True or
+            report.get('updates_at_rollout_boundary') is not True):
+        raise ValueError('Rollout update evidence missing')
+    from .fixed_protocol import SUPPORTED_CONTRACTS
+    fixed = spec.get('reward_contract') in SUPPORTED_CONTRACTS
+    worker_ok = (report.get('worker_episode_closed') is True and
+                 report.get('worker_process_resident') is True and
+                 report.get('candidate_simulation_steps') == 1280) if fixed else (
+                 report.get('worker_exit', {}).get('alive') is False and
+                 report.get('worker_exit', {}).get('returncode') == 0)
     if (report.get('candidate_branches') != 160 or report.get('candidate_groups') != 8 or
-            report.get('idm_fallbacks') != 0 or report.get('worker_exit', {}).get('alive') is not False or
-            report.get('worker_exit', {}).get('returncode') != 0):
+            report.get('idm_fallbacks') != 0 or not worker_ok):
         raise ValueError('Branch completeness or cleanup failure')
     if (report.get('policy_version_initial') != version or report.get('update_attempts_initial') != index*8
             or report.get('update_attempts') != 8 or report.get('cumulative_update_attempts') != (index+1)*8):
@@ -93,18 +108,38 @@ def verify_episode(report, row, index, version, previous_hash, spec):
     token = ledger.start_episode(row['scene_id'], seeds['scene_seed'])
     updates = [e for e in report['events'] if e['kind']=='online_update']
     if len(updates) != 8: raise ValueError('Expected eight decisions')
+    if timing == 'after_rollout8':
+        if any(e['version_before'] != version for e in updates) or any(
+                e['optimizer_updates'] or e['version_after'] != version or
+                e['online_selector_hash_before'] != e['online_selector_hash_after'] for e in updates[:7]):
+            raise ValueError('Actor must stay fixed throughout collection')
+        records = updates[-1]['optimizer_updates']
+        if len(records) != 8 or [u['collection_index'] for u in records] != list(range(8)):
+            raise ValueError('Must consume each collected group once in chronological order')
+        if any(u['context_hash'] != e['context_hash'] for u,e in zip(records, updates)):
+            raise ValueError('Optimizer used a different collected context')
+        for u in records:
+            ledger.record_decision(token, u['version_before'], u['version_after'], u['optimized'])
     for event in updates:
-        ledger.record_decision(token, event['version_before'], event['version_after'], event['optimized'])
+        if timing == 'per_step':
+            ledger.record_decision(token, event['version_before'], event['version_after'], event['optimized'])
         feedback = event['branch_feedback']
-        for key in ('canonical_restored', 'selected_parity', 'selected_reward_parity', 'selected_history_parity'):
-            if feedback.get(key) is not True: raise ValueError('Branch parity failed: '+key)
+        if fixed:
+            from .fixed_protocol import validate
+            validate(event['observation_identity'], event['selected'], event['candidate_hash'],
+                     event['main_receipt'], feedback, True, expected_contract=spec['reward_contract'])
+        else:
+            for key in ('canonical_restored', 'selected_parity', 'selected_reward_parity', 'selected_history_parity'):
+                if feedback.get(key) is not True: raise ValueError('Branch parity failed: '+key)
         if len(feedback.get('rewards', [])) != 20: raise ValueError('Missing rewards')
     ledger.close_episode(8)
     if (report['policy_version'] != ledger.policy_version or report['actual_optimizer_steps'] != ledger.policy_version-version
             or report['cumulative_optimizer_steps'] != ledger.policy_version):
         raise ValueError('Optimizer counter mismatch')
     checkpoint = report['learner_checkpoint']
-    if checkpoint.get('disposable') is not True or sha256_file(checkpoint['path']) != checkpoint['sha256']:
+    expected_disposable = not bool(spec.get('formal_training', False))
+    if (checkpoint.get('disposable') is not expected_disposable or
+            sha256_file(checkpoint['path']) != checkpoint['sha256']):
         raise ValueError('Checkpoint checksum/disposable mismatch')
     return dict(episode=index, scene=row['scene_id'], policy_version=ledger.policy_version,
                 attempts=ledger.attempts, learner_hash=report['learner_state_hash_final'],

@@ -36,14 +36,22 @@ _worker_failures = None
 
 
 def runtime_evidence():
-    """Only explicit numeric-runtime settings; never dump the ambient environment."""
+    """Record numeric settings and every on-disk source used by this runtime.
+
+    ``git ls-files`` omitted newly added, uncommitted integration modules from
+    receipts. The acceptance contract runs from a worktree, so hash the
+    relevant Python trees directly and include untracked files as well.
+    """
     import scipy
     from threadpoolctl import threadpool_info
     code = Path(__file__).resolve().parents[5]
-    tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=code).decode().split('\0')
-    sources = {name: sha256_file(code/name) for name in tracked
-               if name and (name.startswith('projects/SimEngine/worldengine/') or
-                            name.startswith('projects/AlgEngine/scripts/diffusiondrive/innovation3'))}
+    roots = (code / 'projects/SimEngine/worldengine',
+             code / 'projects/AlgEngine/scripts/diffusiondrive/innovation3')
+    sources = {}
+    for root in roots:
+        for path in sorted(root.rglob('*.py')):
+            name = str(path.relative_to(code))
+            sources[name] = sha256_file(path)
     cpu = Path('/proc/cpuinfo')
     model = next((line.split(':', 1)[1].strip() for line in cpu.read_text().splitlines()
                   if line.startswith('model name')), None) if cpu.exists() else None

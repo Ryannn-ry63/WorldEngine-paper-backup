@@ -10,11 +10,13 @@ import traceback
 import numpy as np
 from .paths import checked_path, sha256_file
 from .visual_assets import visual_asset
+from .scene_payload import single_scene_mapping
 from .transport import Channel, digest
 from .live_audit import LiveStepGate
 from .image_transport import ImageBuffer, metadata_to_wire
 from .snapshot_probe import IDMFailures, runtime_evidence, save_parity_failure
 from worldengine.online.headless import HeadlessSimulator, diagnostic_candidates
+from worldengine.online.execution import DEFAULT_EGO_CONTROLLER
 from worldengine.online.observations import CanonicalObserver
 from worldengine.online.actions import to_world_actions
 from worldengine.online.state import SnapshotParityError
@@ -64,10 +66,8 @@ def main():
             scene_id = cfg.get('visual_scene_id')
             if not scene_id:
                 raise ValueError('visual_scene_path requires visual_scene_id')
-            scene = loaded.get(scene_id) if isinstance(loaded, dict) else loaded
-            if not isinstance(scene, dict):
-                raise ValueError('Single-scene pickle did not contain a scene mapping')
-            scenes = {scene_id: scene}
+            scenes = single_scene_mapping(loaded, scene_id)
+            scene = scenes[scene_id]
         else:
             scenes = loaded
             scene_id, _, _ = visual_asset(cfg, scenes)
@@ -76,7 +76,8 @@ def main():
         del scenes, loaded
         failure = IDMFailures(); logging.getLogger().addHandler(failure)
         warmup_steps = 13 if args.reward_adapter else 3
-        sim = HeadlessSimulator(scene_id, scene, 'R', args.steps+warmup_steps+1, args.seed)
+        sim = HeadlessSimulator(scene_id, scene, 'R', args.steps+warmup_steps+1, args.seed,
+                                ego_controller=cfg.get('online_ego_controller', DEFAULT_EGO_CONTROLLER))
         observer = CanonicalObserver(sim, asset_root)
         reward_session = None
         reward_contract = None
@@ -103,14 +104,16 @@ def main():
                           reward_adapter=bool(args.reward_adapter),
                           online_updates=bool(args.online_updates),
                           reward_contract=reward_contract, map=map_evidence, reaction='R',
-                          dynamics_contract='online_signed_accel_steering_rate_substeps_v3',
+                          dynamics_contract=sim.dynamics_contract,
+                          ego_controller=sim.engine.global_config.ego_controller,
                           branch_execution=('parallel_persistent_full20_workers_%d' % args.branch_workers
                                             if args.branch_workers else 'serial_full20'),
                           branch_workers=args.branch_workers,
                           branch_pool_startup_seconds=(branch_pool.startup_seconds if branch_pool else 0.),
                           branch_worker_receipts=(branch_pool.worker_receipts if branch_pool else []),
                           dynamics_config_hash=sim.snapshot().config_hash,
-                          warmup_contract=('map_live_pose_tangent_v2' if args.reward_adapter else 'diagnostic_v1'),
+                          warmup_contract=('map_live_pose_tangent_velocity_v3' if args.reward_adapter
+                                           else 'diagnostic_complete_velocity_v2'),
                           warmup_transitions=warmup_steps,
                           source=dict(path=str(source), bytes=source.stat().st_size, sha256=sha256_file(source)),
                           combined_scenario_source=dict(

@@ -1,0 +1,57 @@
+{
+  "status": "PASS_LOCAL_PREPARATION_GPU_RUN_PENDING",
+  "cpu_tests": 45,
+  "scorer_tests": 6,
+  "actual_checkpoint_states_verified": 24,
+  "real_parent_ledgers_imported_and_resumed": 3,
+  "p6_formal_evaluations_exact_coverage_revalidated": 16,
+  "curve_regression_rows": 904,
+  "numeric_parity": {
+    "status": "PASS_DEPLOYED_B_S2_VS_CLEAN_NUMERICS",
+    "logits_max_abs_error": 0,
+    "loss_and_gradient_exact_equal": true,
+    "full_state_after_update_exact_equal": true,
+    "CPU_resume_next_action_and_update_exact_equal": true,
+    "reward_fixture": "actual_B_s2_p6_final_rank0_group0",
+    "GPU_parity": "pending_first_H100_round"
+  },
+  "entry_test": {
+    "status": "PASS",
+    "first_round_then_resume": true,
+    "idempotent_completed_training": true,
+    "eval_jobs": [
+      {
+        "dataset": "development",
+        "mode": "cl_R",
+        "count": 83
+      },
+      {
+        "dataset": "development",
+        "mode": "cl_NR",
+        "count": 83
+      },
+      {
+        "dataset": "formal",
+        "mode": "cl_R",
+        "count": 288
+      },
+      {
+        "dataset": "formal",
+        "mode": "cl_NR",
+        "count": 288
+      },
+      {
+        "dataset": "formal",
+        "mode": "ol_rare",
+        "count": 288
+      },
+      {
+        "dataset": "formal",
+        "mode": "ol_navtest",
+        "count": 12146
+      }
+    ]
+  },
+  "gpu_test": "First continuation round is mandatory on 8 H100; not executed on the local RTX4090",
+  "existing_best_preserved": "B_s2_p6"
+}

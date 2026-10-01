@@ -7,7 +7,7 @@ from worldengine.components.agents.policy.pdm_planner.abstract_pdm_planner impor
 from worldengine.components.agents.policy.pdm_planner.observation.pdm_occupancy_map import PDMDrivableMap
 from worldengine.components.agents.policy.pdm_planner.utils.pdm_path import PDMPath
 from .reward import RewardHistory, H1Reward, capture_reward_frame, ego_state
-from worldengine.common.dataclasses import Trajectory
+from .actions import centered_pose_action
 
 
 class RouteGeometry(AbstractPDMPlanner):
@@ -90,7 +90,7 @@ class RewardSession:
             headings[0] = float(ego.current_heading)
         if not np.isfinite(xy).all() or not np.isfinite(headings).all():
             raise ValueError('Non-finite map warmup trajectory')
-        return Trajectory(xy, headings=headings)
+        return centered_pose_action(xy, headings)
 
     def warmup(self, action):
         self.sim.step(action)

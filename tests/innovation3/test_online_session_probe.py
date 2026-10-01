@@ -10,7 +10,9 @@ class SessionSettingsTest(unittest.TestCase):
     def test_episode_settings_keep_assignment_and_advance_rng_namespace(self):
         base = {'scenario_root': '/scenarios', 'online_candidate_seed': 9}
         row = dict(scene_id='scene-a', scene_path='/scenes/a.pkl',
-                   candidate_seed=11, scene_seed=17)
+                   candidate_seed=11, scene_seed=17,
+                   asset_path='/public/assets/scene-a/background/scene-a.ckpt',
+                   asset_sha256='a' * 64)
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'episode.json'
             _episode_settings(base, row, path, 2)
@@ -18,6 +20,8 @@ class SessionSettingsTest(unittest.TestCase):
         stride = 1000003
         self.assertEqual(cfg['visual_scene_id'], 'scene-a')
         self.assertEqual(cfg['visual_scene_path'], '/scenes/a.pkl')
+        self.assertEqual(cfg['visual_asset_path'], '/public/assets/scene-a/background/scene-a.ckpt')
+        self.assertEqual(cfg['visual_asset_sha256'], 'a' * 64)
         self.assertEqual(cfg['online_candidate_seed'], 11 + 2 * stride)
         self.assertEqual(cfg['online_scene_seed'], 17 + 2 * stride)
         self.assertEqual(cfg['online_action_seed'], 11 + 2 * stride + 17)

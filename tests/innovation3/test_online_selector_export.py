@@ -48,6 +48,7 @@ class ExportTest(unittest.TestCase):
             with torch.no_grad(): expected = learner.current_logits(base, x)
             checkpoint_path = root / 'learner.pt'
             torch.save(dict(kind='DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING',
+                            reward_contract=dict(name='fixed_candidate_4s_logplay_pdm_expert_v2'),
                             learner=learner.state_dict()), checkpoint_path)
             output = root / 'exported.pt'
             manifest = root / 'export_manifest.json'
@@ -62,6 +63,7 @@ class ExportTest(unittest.TestCase):
             self.assertEqual(exported['online_export']['parameterization'],
                              V3_INITIALIZED_SELECTOR_FINETUNE)
             self.assertTrue(exported['online_export']['disposable'])
+            self.assertEqual(exported['online_export']['reward_contract'], 'fixed_candidate_4s_logplay_pdm_expert_v2')
             self.assertEqual(set(exported), {
                 'schema_version', 'method', 'ablation', 'temperature', 'learning_rate',
                 'kl_weight', 'train_seed', 'epoch', 'scene_selector_config',

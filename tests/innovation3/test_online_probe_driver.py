@@ -34,7 +34,8 @@ class WorkerDouble:
         self.index = 0
         self.queue = [dict(kind='ready', reward_adapter=True, online_updates=True,
             warmup_transitions=13, reward_contract=dict(name='causal_h1_pdm_components_v1'),
-            scene='fixture', runtime={})]
+            scene='fixture', runtime={}, ego_controller='log_play_controller',
+            dynamics_contract='upstream_log_play_h1_v1')]
         self.all_ties, self.stale_ack = all_ties, stale_ack
         self.append_observation()
 
@@ -117,9 +118,11 @@ class DriverTest(unittest.TestCase):
                                'param_groups': [{'params': [3]}]}}
         self.assertEqual(digest_state(state), digest_state(copy.deepcopy(state)))
 
-    def run_driver(self, all_ties=False, stale_ack=False, throughput=False, extra_cfg=None, wrong_scene=False, session_mode=None, second_ties=False, resident_change=None):
+    def run_driver(self, all_ties=False, stale_ack=False, throughput=False, extra_cfg=None, wrong_scene=False, session_mode=None, second_ties=False, resident_change=None, wrong_contract=False):
         torch.set_num_threads(1); torch.manual_seed(9)
         worker = WorkerDouble(all_ties, stale_ack)
+        if wrong_contract:
+            worker.queue[0]['dynamics_contract'] = 'online_signed_accel_steering_rate_substeps_v3'
         frozen = FrozenDouble()
         live_module = ModuleType('innovation3.live_inputs')
         live_module.LiveInputs = lambda cfg: SimpleNamespace(
@@ -164,6 +167,10 @@ class DriverTest(unittest.TestCase):
                 stack.enter_context(patch.object(torch.cuda, 'get_device_properties',
                                                 return_value=SimpleNamespace(total_memory=0)))
                 stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
+                if wrong_contract:
+                    with self.assertRaisesRegex(RuntimeError, 'Worker online/reward/warmup contract mismatch'):
+                        online_probe.main()
+                    return json.loads(output.read_text())
                 if wrong_scene:
                     with self.assertRaisesRegex(RuntimeError,'explicitly assigned scene'):
                         online_probe.main()
@@ -233,6 +240,11 @@ class DriverTest(unittest.TestCase):
         report = self.run_driver(throughput=True, extra_cfg=dict(visual_scene_id='fixture',
             online_scene_seed=123, online_candidate_seed=456, online_action_seed=789))
         self.assertEqual(report['seed_namespaces'], dict(training_seed=0,scene_seed=123,candidate_seed=456,action_seed=789))
+
+    def test_wrong_worker_execution_fails_before_first_action(self):
+        report = self.run_driver(wrong_contract=True)
+        self.assertEqual(report['events'], [])
+        self.assertEqual(report['status'], 'FAIL_STRICT_ONLINE_SELECTOR_ONLY')
 
     def test_wrong_worker_scene_fails_before_first_action(self):
         report = self.run_driver(extra_cfg=dict(visual_scene_id='another'),wrong_scene=True)

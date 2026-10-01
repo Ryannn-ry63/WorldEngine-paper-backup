@@ -25,6 +25,11 @@ V3_INITIALIZED_SELECTOR_FINETUNE = "v3_initialized_selector_finetune"
 PARAMETERIZATIONS = frozenset((FROZEN_V3_PLUS_ZERO_RESIDUAL,
                                V3_INITIALIZED_SELECTOR_FINETUNE))
 
+# H100 inference/no-grad and autograd Transformer kernels can differ by a few
+# ulps. Keep the audit strict while allowing that documented numerical noise.
+LOGIT_DRIFT_ATOL = 5e-5
+LOGIT_DRIFT_RTOL = 1e-4
+
 
 def _state_fingerprint(state):
     """Stable tensor fingerprint used for checkpoint provenance and CPU fixtures."""
@@ -181,8 +186,10 @@ class OnlineV3Learner:
         # PyTorch 2.0 eval/no_grad and autograd Transformer kernels can differ
         # numerically. Actions must use the exact frozen-V3 inference path.
         drift = float((behavior_logits - logits.detach()).abs().max())
-        if not torch.allclose(behavior_logits, logits.detach(), atol=1e-5, rtol=1e-4):
-            raise RuntimeError("Training/inference selector logits diverged: " + str(drift))
+        if not torch.allclose(behavior_logits, logits.detach(), atol=LOGIT_DRIFT_ATOL, rtol=LOGIT_DRIFT_RTOL):
+            raise RuntimeError("Training/inference selector logits diverged: " + str(drift) +
+                               " (atol=" + str(LOGIT_DRIFT_ATOL) + ", rtol=" +
+                               str(LOGIT_DRIFT_RTOL) + ")")
         self.logit_drift = drift
         probabilities = behavior_logits.softmax(-1)
         selected = int(torch.multinomial(probabilities, 1, generator=self.rng).item())

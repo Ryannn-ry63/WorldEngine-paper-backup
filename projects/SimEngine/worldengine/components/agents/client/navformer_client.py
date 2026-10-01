@@ -66,6 +66,12 @@ class NAVFormerClient(BaseClient):
         self.seq_index = []
         self.data_folder = Path(self.config["planner_client_folder"])
         self._traj_info = self.agent.object_track
+        self._diagnostic_interval = float(os.environ.get('WORLDENGINE_DIAGNOSTIC_REPLAN_INTERVAL', '.5'))
+        if self._diagnostic_interval not in (.5, 1.):
+            raise ValueError('Invalid diagnostic replan interval')
+        self._record_plans = os.environ.get('WORLDENGINE_RECORD_EXECUTED_PLANS') == '1'
+        from worldengine.online.plan_diagnostics import PlanLatch
+        self._plan_latch = PlanLatch(int(self._diagnostic_interval/.5))
 
     def get_trajectory(self, step: int):
         # for history frames, return log replay trajectory
@@ -154,12 +160,27 @@ class NAVFormerClient(BaseClient):
             local_angular_velocities, local_angular_velocities[-1]
         )
 
-        return Trajectory(
+        proposal = Trajectory(
             waypoints=waypoints[::5],
             velocities=local_velocities[::5],
             headings=local_heading[::5],
             angular_velocities=local_angular_velocities[::5],
         )
+        if self._record_plans or self._diagnostic_interval != .5:
+            executed, diagnostic = self._plan_latch.apply(proposal, current_scene['id'], step)
+            if self._record_plans:
+                import json
+                folder = Path(self.config['planner_data_path']).parent/'executed_plans'
+                folder.mkdir(parents=True, exist_ok=True)
+                record = dict(scene=current_scene['id'], step=step,
+                    actual_rear_pose=[*map(float,self.agent.rear_vehicle.current_position[:2]),float(self.agent.current_heading)],
+                    proposed_world_waypoints=proposal.waypoints.tolist(),
+                    executed_world_waypoints=executed.waypoints.tolist(),
+                    executed_world_headings=executed.headings.tolist(), **diagnostic)
+                target = folder/(current_scene['id']+'_%03d.json'%step)
+                temp = target.with_suffix('.tmp');temp.write_text(json.dumps(record,allow_nan=False)+'\n');temp.replace(target)
+            return executed
+        return proposal
 
     def process_frame(self, frame_data, step: int):
         frame_data = self._postprocess_frame_data(frame_data)

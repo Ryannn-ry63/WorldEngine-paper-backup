@@ -77,7 +77,7 @@ class ParallelBranchPool:
     """Results are returned in candidate order; any failure invalidates the pool."""
     def __init__(self, scene_id, scene, reaction='R', max_steps=8, seed=0,
                  static_bundle=None, offset=None, actor_types=None, workers=2, timeout=180.,
-                 global_config=None):
+                 global_config=None, _worker_target=None):
         if type(workers) is not int or not 1 <= workers <= 20:
             raise ValueError('workers must be 1..20')
         if static_bundle is None or offset is None or actor_types is None:
@@ -95,7 +95,7 @@ class ParallelBranchPool:
         try:
             for worker in range(workers):
                 parent, child = ctx.Pipe()
-                process = ctx.Process(target=_worker_main,
+                process = ctx.Process(target=_worker_target or _worker_main,
                     args=(child, scene_id, scene, reaction, max_steps, seed,
                           static_bundle, np.asarray(offset, dtype=float), actor_types, global_config),
                     name='worldengine-branch-%02d' % worker)
