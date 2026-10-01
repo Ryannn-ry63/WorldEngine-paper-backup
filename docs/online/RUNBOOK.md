@@ -28,3 +28,9 @@ python /inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-selector
 正常中断后重跑同一命令，从最后原子提交轮恢复。任务被强杀时，目录锁可能留下 `*.lock.mkdir/owner.json`；检查记录的 host/pid 与调度任务，确认已结束后再人工清理锁。不要只凭本机 PID 或经过时间抢其他节点的锁。全流程严格校验冻结源码，改算法需新 campaign，不可修改进行中的源码来继续 resume。
 
 B seed 2 历史 p6 记录训练墙钟约 8.13 小时；按 37/113 个 DDP rounds 粗估本次新增训练约 2.7 小时/seed，初始化、机器负载和评测另计。这个估计不是已测得的 p8 时间。
+
+## GPU 启动诊断（2026-10-01 修订）
+
+如果启动预检失败，先用原来的 GPU 任务配置运行 `runs/B_p8_20261001/check_h100.sh`。该脚本只检查硬件、导入与磁盘，不开始训练、不加载 optimizer、不写训练 checkpoint。每次检查记录在 campaign 的 `preflight/<host>_<timestamp>_<id>.json`。
+
+预检分别报告 CUDA 可用性、可见卡数、每张卡型号、selector 数值容差和模块实际路径；仍要求每节点 8 张 H100。不能根据旧版只有 `AssertionError` 的日志判断是哪一项失败，也不能把本地 4090 的诊断当作远端任务硬件。`check-gpu` 是对应的 CLI action；通过后再提交原来的三个 pipeline 命令。

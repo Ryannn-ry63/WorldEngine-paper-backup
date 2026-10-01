@@ -53,14 +53,10 @@ def command(argv, env):
 
 
 def gpu_preflight(campaign, cfg, env):
-    command([cfg['algengine_python'], '-c',
-        'import torch; from pathlib import Path; import os; '
-        'from innovation3 import ddp_online_session, online_probe, learner, fixed_learning; '
-        'assert torch.cuda.device_count()==8; '
-        'assert all("H100" in torch.cuda.get_device_name(i) for i in range(8)); '
-        'assert learner.LOGIT_DRIFT_ATOL==5e-5 and fixed_learning.LOGIT_DRIFT_ATOL==5e-5; '
-        'assert Path(os.environ["WORLDENGINE_ROOT"]) in Path(learner.__file__).parents; '
-        'print("PASS_8_H100_AND_CLEAN_ALG_IMPORTS")'], env)
+    report = Path(campaign['run_root']) / 'preflight' / (
+        socket.gethostname() + '_' + str(time.time_ns()) + '_' + uuid.uuid4().hex[:8] + '.json')
+    command([cfg['algengine_python'], Path(__file__).with_name('gpu_preflight.py'),
+             '--report', report], env)
     command([cfg['simengine_python'], '-c',
         'from innovation3 import fixed_worker; from worldengine.online import scorer_parity; '
         'print("PASS_SIM_IMPORTS", fixed_worker.__file__)'], env)
@@ -232,7 +228,7 @@ def report(campaign, cfg, env, seed):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action', choices=('check', 'dry-run', 'train', 'eval', 'report', 'pipeline', 'verify'))
+    p.add_argument('action', choices=('check', 'dry-run', 'train', 'eval', 'report', 'pipeline', 'verify', 'check-gpu'))
     p.add_argument('--campaign', type=Path, required=True)
     p.add_argument('--seed', type=int, choices=(0,1,2), required=True)
     p.add_argument('--devices', default='0,1,2,3,4,5,6,7')
@@ -254,6 +250,9 @@ def main():
     runroot=Path(campaign['run_root'])
     with directory_lock(runroot / 'nodes' / (socket.gethostname()+'.lock')):
         with directory_lock(runroot / ('B_s%d' % a.seed) / 'pipeline.lock'):
+            if a.action == 'check-gpu':
+                gpu_preflight(campaign,cfg,env)
+                return
             if a.action in ('train','eval','pipeline'):
                 gpu_preflight(campaign,cfg,env)
             if a.action in ('train','pipeline'):
