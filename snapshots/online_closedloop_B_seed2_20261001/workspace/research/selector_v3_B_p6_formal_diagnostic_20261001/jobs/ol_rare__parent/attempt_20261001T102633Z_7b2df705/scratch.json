@@ -1,0 +1,11 @@
+{
+  "host": "job-601e310f-00ce-4dd2-b3a0-1f97da4b5bd5-worker-0",
+  "metrics_and_plans_archived": true,
+  "path": "/tmp/worldengine_B_p6_formal/ol_rare__parent_43ca242925e94e068d5d804dd2ac9df8",
+  "transient_directories": [
+    "distributed_collect",
+    "frames",
+    "merged_ann_files",
+    "sensor_blobs"
+  ]
+}

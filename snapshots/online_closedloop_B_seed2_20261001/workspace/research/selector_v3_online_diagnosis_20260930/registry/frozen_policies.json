@@ -1,0 +1,14 @@
+{
+  "online64": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_simreward_v2_20260930/registry/reward_v2_seed0_20260930T053704Z_3664064.eval64/online64.pth",
+    "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_simreward_v2_20260930/registry/reward_v2_seed0_20260930T053704Z_3664064.eval64/online64_selector.pt",
+    "selector_sha256": "cd868904bce332095c45fbcc952da139aa4100a73fed81f2abd6a1a970cb1cba",
+    "sha256": "78e6ce4617428e92c85ba7cc169b6a3e22125330c73373de8c51fedbd6f5a77e"
+  },
+  "parent": {
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_simreward_v2_20260930/registry/reward_v2_seed0_20260930T053704Z_3664064.eval64/parent.pth",
+    "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/grpo_selector_v3_rare_original_v1/models/rare_tuned/seed0/train/epoch_64_scene_selector.pt",
+    "selector_sha256": "aed5e36f1ccb0df96b703a901b54f48c41dcf1967cc86d63519eb4da37519eb2",
+    "sha256": "b0cf34d201e0e2f490bcba1dab9cf55d735f5d67baaaf2cd758e3da9b613e31e"
+  }
+}

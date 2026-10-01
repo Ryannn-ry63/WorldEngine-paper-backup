@@ -1,0 +1,77 @@
+{
+  "audit_time": "2026-10-01T09:18:42Z",
+  "accepted_evaluations": 32,
+  "missing_development": [],
+  "gates": {
+    "A": {
+      "status": "FAIL",
+      "failures": [
+        {
+          "mode": "R",
+          "metric": "NC",
+          "delta": -0.010040160642570281,
+          "threshold": -0.005
+        },
+        {
+          "mode": "R",
+          "metric": "DAC",
+          "delta": -0.03614457831325301,
+          "threshold": -0.005
+        },
+        {
+          "mode": "R",
+          "metric": "TTC",
+          "delta": -0.012048192771084336,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "NC",
+          "delta": -0.006024096385542168,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "DAC",
+          "delta": -0.04819277108433735,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "TTC",
+          "delta": -0.020080321285140562,
+          "threshold": -0.005
+        }
+      ]
+    },
+    "B": {
+      "status": "FAIL",
+      "failures": [
+        {
+          "mode": "R",
+          "metric": "DAC",
+          "delta": -0.0321285140562249,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "DAC",
+          "delta": -0.024096385542168676,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "TTC",
+          "delta": -0.008032128514056222,
+          "threshold": -0.005
+        }
+      ]
+    }
+  },
+  "training_groups": 43392,
+  "all_zero_groups": 3028,
+  "all_zero_root_unsafe_groups": 1666,
+  "map_case_traces": 48,
+  "matched_DAC_loss_traces": 80,
+  "matched_DAC_loss_smaller_switching": 56
+}

@@ -1,0 +1,28 @@
+{
+  "job": {
+    "checkpoints": [
+      3,
+      6
+    ],
+    "id": "train_B_s2",
+    "kind": "train",
+    "method": "B",
+    "passes": 6,
+    "seed": 2,
+    "update_timing": "after_rollout8"
+  },
+  "completed_before": 808,
+  "remaining_episodes": 96,
+  "remaining_rounds": 12,
+  "recent_median_round_seconds": 251.08758073905483,
+  "last_round_checkpoint_hashes_passed": 8,
+  "last_round_report_hashes_passed": 8,
+  "overlay_identical_to_h100_completed_A_s2_B_s1": true,
+  "syntax_passed": true,
+  "original_hotfix_manifest_unchanged": true,
+  "full_preflight_passed": true,
+  "preflight_exit_code": 0,
+  "actual_hotfix_import_verified": true,
+  "preflight_log": "logs/train_B_s2_20261001T023216Z_1620897.log",
+  "training_started": false
+}

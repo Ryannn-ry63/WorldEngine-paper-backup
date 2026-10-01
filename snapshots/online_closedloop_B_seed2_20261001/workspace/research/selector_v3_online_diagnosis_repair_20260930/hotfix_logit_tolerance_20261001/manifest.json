@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "purpose": "inference_autograd_numeric_audit_tolerance_only",
+  "original_atol": 1e-05,
+  "atol": 5e-05,
+  "rtol": 0.0001,
+  "training_formula_changed": false,
+  "files": {
+    "resume_train_h100.py": "1f236c06e13ec29627a6d57898462c41348b46e37aeeb96e645e0c43d2087fa8",
+    "start_hotfix_job_h100.sh": "803ef127b235b82f2949a039826ea5c95f7b55d80a20550badaed976a083c376",
+    "overlay/innovation3_runtime.py": "f4c169ffa165cc0187f2655ad1a6d6fbb1d6e6e62518e5271f909a06de43571b",
+    "overlay/innovation3/fixed_learning.py": "c39ce55f2873f296181a4615d5fc38cd649d106029c4b79db383ca148fa4d543",
+    "overlay/innovation3/learner.py": "cb98ee28bab9b0fbd9f0bee9191e3853d722bbf051474bd5b5fdd56ccf149a98",
+    "overlay/innovation3/__init__.py": "f8b552a149d189dc26557f7cfbf158dadb45c1bc62a839f7688f0828aec36fcf"
+  }
+}

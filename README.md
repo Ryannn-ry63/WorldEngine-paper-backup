@@ -1,6 +1,8 @@
 # WorldEngine selector paper — private recovery checkpoint
 
-2026-09-18 的研究备份：V3 → P1/MID → prefeedback D1–D4 → A–F 补充实验，以及项目迁移后的自有环境入口。
+最新检查点：**2026-10-01 在线闭环 B seed 2 p6**。见 [当前状态](docs/STATUS_20261001_B_SEED2.md) 和 [版本入口及四表结果](snapshots/online_closedloop_B_seed2_20261001/README.md)。包含冻结源码、恢复补丁、训练端点与全部三种子四表指标；R/NR 总分提升与 DAC 下降同时如实保留。
+
+2026-09-18 的研究备份继续保留：V3 → P1/MID → prefeedback D1–D4 → A–F 补充实验，以及项目迁移后的自有环境入口。
 
 先读 [当前状态](docs/STATUS_20260918.md)、[恢复说明](docs/RECOVERY.md) 和 [同步上游与未来PR](docs/UPSTREAM_WORKFLOW.md)。这是一份可追溯的研究备份，尚不是最终论文开源版。
 
@@ -12,7 +14,7 @@
 - `evidence/`：历史汇总、逐场景指标、冻结输入/契约、训练端点报告和迁移验收证据。
 - `docs/`：当前状态、论文路线、恢复与上游协作说明。
 
-旧文档保留原日期与当时的判断；当前进度以 `docs/STATUS_20260918.md` 为准。JSON里的 RUNNING 是历史快照，不能证明任务现在还在运行。
+旧文档保留原日期与当时的判断；当前进度以 `docs/STATUS_20261001_B_SEED2.md` 为准。`snapshots/` 保存后续独立研究版本。JSON里的 RUNNING 是历史快照，不能证明任务现在还在运行。
 
 ## 两种用途
 

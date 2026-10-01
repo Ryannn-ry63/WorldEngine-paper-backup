@@ -1,0 +1,884 @@
+[
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_parent_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 23.103611045198328,
+    "mean_speed_frames3_10_mps": 6.601031727199522
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s0_p6_R",
+    "first_DAC_frame_3_to_10": 7,
+    "stored_first_NC_DAC": 7.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 33.80636454606514,
+    "mean_speed_frames3_10_mps": 9.658961298875754
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s1_p6_R",
+    "first_DAC_frame_3_to_10": 7,
+    "stored_first_NC_DAC": 7.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 34.4919589783465,
+    "mean_speed_frames3_10_mps": 9.854845422384715
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s2_p6_R",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 27.658107108799257,
+    "mean_speed_frames3_10_mps": 7.902316316799788
+  },
+  {
+    "scene": "2021.10.01.17.52.06_veh-28_00098_00211-c2033e312633578d",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_parent_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      332297.17236013233,
+      4690392.094314672
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 26.737685453515716,
+    "mean_speed_frames3_10_mps": 7.63933870100449
+  },
+  {
+    "scene": "2021.10.01.17.52.06_veh-28_00098_00211-c2033e312633578d",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s0_p6_R",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      332297.17236013233,
+      4690392.094314672
+    ],
+    "offroad_frames": [
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 30.446890168927265,
+    "mean_speed_frames3_10_mps": 8.69911147683636
+  },
+  {
+    "scene": "2021.10.01.17.52.06_veh-28_00098_00211-c2033e312633578d",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s1_p6_R",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      332297.17236013233,
+      4690392.094314672
+    ],
+    "offroad_frames": [
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 29.6515239917432,
+    "mean_speed_frames3_10_mps": 8.471863997640915
+  },
+  {
+    "scene": "2021.10.01.17.52.06_veh-28_00098_00211-c2033e312633578d",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s2_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      332297.17236013233,
+      4690392.094314672
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 27.99632498084837,
+    "mean_speed_frames3_10_mps": 7.998949994528106
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_00038_00414-2e7e98a0ead15fbf",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_parent_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      331299.6726134282,
+      4689715.5299023045
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 9.230532767253836,
+    "mean_speed_frames3_10_mps": 2.637295076358239
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_00038_00414-2e7e98a0ead15fbf",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s0_p6_R",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331299.6726134282,
+      4689715.5299023045
+    ],
+    "offroad_frames": [
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 18.711253777641872,
+    "mean_speed_frames3_10_mps": 5.346072507897678
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_00038_00414-2e7e98a0ead15fbf",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s1_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      331299.6726134282,
+      4689715.5299023045
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 14.676562417046668,
+    "mean_speed_frames3_10_mps": 4.193303547727619
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_00038_00414-2e7e98a0ead15fbf",
+    "mode": "R",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s2_p6_R",
+    "first_DAC_frame_3_to_10": 9,
+    "stored_first_NC_DAC": 9.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331299.6726134282,
+      4689715.5299023045
+    ],
+    "offroad_frames": [
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 19.742560055174415,
+    "mean_speed_frames3_10_mps": 5.640731444335548
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-37d47dbb2f9f5119",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_parent_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664186.5006555138,
+      3996282.304822429
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 6.6063119634417244,
+    "mean_speed_frames3_10_mps": 1.8875177038404927
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-37d47dbb2f9f5119",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s0_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664186.5006555138,
+      3996282.304822429
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 13.311087461227302,
+    "mean_speed_frames3_10_mps": 3.8031678460649436
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-37d47dbb2f9f5119",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s1_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664186.5006555138,
+      3996282.304822429
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 13.311087461227302,
+    "mean_speed_frames3_10_mps": 3.8031678460649436
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-37d47dbb2f9f5119",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s2_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664186.5006555138,
+      3996282.304822429
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 13.311087461227302,
+    "mean_speed_frames3_10_mps": 3.8031678460649436
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-0a5c5e4bd7b55078",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_parent_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664562.2281981686,
+      3997844.472127437
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 5.044843709125006,
+    "mean_speed_frames3_10_mps": 1.4413839168928588
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-0a5c5e4bd7b55078",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s0_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664562.2281981686,
+      3997844.472127437
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 8.027051937315388,
+    "mean_speed_frames3_10_mps": 2.2934434106615393
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-0a5c5e4bd7b55078",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s1_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664562.2281981686,
+      3997844.472127437
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 8.645917970875487,
+    "mean_speed_frames3_10_mps": 2.4702622773929965
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-0a5c5e4bd7b55078",
+    "mode": "R",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s2_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664562.2281981686,
+      3997844.472127437
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 10.86466518206559,
+    "mean_speed_frames3_10_mps": 3.10419005201874
+  },
+  {
+    "scene": "2021.06.07.17.46.49_veh-35_02607_03120-4fbc6352545a5c53",
+    "mode": "R",
+    "category": "near_unchanged_safe",
+    "job": "dev_parent_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664648.4728103004,
+      3999252.8445156333
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 2.6392363142666184,
+    "mean_speed_frames3_10_mps": 0.754067518361891
+  },
+  {
+    "scene": "2021.06.07.17.46.49_veh-35_02607_03120-4fbc6352545a5c53",
+    "mode": "R",
+    "category": "near_unchanged_safe",
+    "job": "dev_train_A_s0_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664648.4728103004,
+      3999252.8445156333
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 2.3743150762317526,
+    "mean_speed_frames3_10_mps": 0.678375736066215
+  },
+  {
+    "scene": "2021.06.07.17.46.49_veh-35_02607_03120-4fbc6352545a5c53",
+    "mode": "R",
+    "category": "near_unchanged_safe",
+    "job": "dev_train_A_s1_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664648.4728103004,
+      3999252.8445156333
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 2.6392363142666184,
+    "mean_speed_frames3_10_mps": 0.754067518361891
+  },
+  {
+    "scene": "2021.06.07.17.46.49_veh-35_02607_03120-4fbc6352545a5c53",
+    "mode": "R",
+    "category": "near_unchanged_safe",
+    "job": "dev_train_A_s2_p6_R",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664648.4728103004,
+      3999252.8445156333
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 2.3743150762317526,
+    "mean_speed_frames3_10_mps": 0.678375736066215
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_parent_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 22.982764523480615,
+    "mean_speed_frames3_10_mps": 6.56650414956589
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s0_p6_NR",
+    "first_DAC_frame_3_to_10": 7,
+    "stored_first_NC_DAC": 7.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 33.79753319819549,
+    "mean_speed_frames3_10_mps": 9.656438056627282
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s1_p6_NR",
+    "first_DAC_frame_3_to_10": 7,
+    "stored_first_NC_DAC": 7.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 33.79753319819549,
+    "mean_speed_frames3_10_mps": 9.656438056627282
+  },
+  {
+    "scene": "2021.09.15.14.27.22_veh-39_01491_01763-a0ef149f9390542e",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s2_p6_NR",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      331060.3065608173,
+      4690355.738136498
+    ],
+    "offroad_frames": [
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 27.656698665055014,
+    "mean_speed_frames3_10_mps": 7.901913904301432
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_00016_01515-3c1b2912226b5a9a",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_parent_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664313.7469511629,
+      3996289.3956804858
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 10.450582983193714,
+    "mean_speed_frames3_10_mps": 2.985880852341061
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_00016_01515-3c1b2912226b5a9a",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s0_p6_NR",
+    "first_DAC_frame_3_to_10": 6,
+    "stored_first_NC_DAC": 6.0,
+    "DAC": 0.0,
+    "global_offset": [
+      664313.7469511629,
+      3996289.3956804858
+    ],
+    "offroad_frames": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 22.68142785581168,
+    "mean_speed_frames3_10_mps": 6.480407958803338
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_00016_01515-3c1b2912226b5a9a",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s1_p6_NR",
+    "first_DAC_frame_3_to_10": 6,
+    "stored_first_NC_DAC": 6.0,
+    "DAC": 0.0,
+    "global_offset": [
+      664313.7469511629,
+      3996289.3956804858
+    ],
+    "offroad_frames": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 19.714446255141144,
+    "mean_speed_frames3_10_mps": 5.632698930040327
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_00016_01515-3c1b2912226b5a9a",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s2_p6_NR",
+    "first_DAC_frame_3_to_10": 6,
+    "stored_first_NC_DAC": 6.0,
+    "DAC": 0.0,
+    "global_offset": [
+      664313.7469511629,
+      3996289.3956804858
+    ],
+    "offroad_frames": [
+      6,
+      7,
+      8
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 16.923874255992782,
+    "mean_speed_frames3_10_mps": 4.8353926445693665
+  },
+  {
+    "scene": "2021.06.09.14.03.17_veh-12_00859_00931-199004ef5fbf5fde",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_parent_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664183.3593049638,
+      3996282.3298658254
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 4.961393515685774,
+    "mean_speed_frames3_10_mps": 1.4175410044816499
+  },
+  {
+    "scene": "2021.06.09.14.03.17_veh-12_00859_00931-199004ef5fbf5fde",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s0_p6_NR",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      664183.3593049638,
+      3996282.3298658254
+    ],
+    "offroad_frames": [
+      8
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 14.690727853021372,
+    "mean_speed_frames3_10_mps": 4.197350815148964
+  },
+  {
+    "scene": "2021.06.09.14.03.17_veh-12_00859_00931-199004ef5fbf5fde",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s1_p6_NR",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      664183.3593049638,
+      3996282.3298658254
+    ],
+    "offroad_frames": [
+      8,
+      9
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 14.341103938376385,
+    "mean_speed_frames3_10_mps": 4.097458268107538
+  },
+  {
+    "scene": "2021.06.09.14.03.17_veh-12_00859_00931-199004ef5fbf5fde",
+    "mode": "NR",
+    "category": "repeated_DAC_loss",
+    "job": "dev_train_A_s2_p6_NR",
+    "first_DAC_frame_3_to_10": 8,
+    "stored_first_NC_DAC": 8.0,
+    "DAC": 0.0,
+    "global_offset": [
+      664183.3593049638,
+      3996282.3298658254
+    ],
+    "offroad_frames": [
+      8
+    ],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 14.690727853021372,
+    "mean_speed_frames3_10_mps": 4.197350815148964
+  },
+  {
+    "scene": "2021.06.14.11.44.56_veh-35_03389_04017-d774369f312f57ee",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_parent_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664431.2723579666,
+      3997434.330780436
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 17.2844410075836,
+    "mean_speed_frames3_10_mps": 4.938411716452457
+  },
+  {
+    "scene": "2021.06.14.11.44.56_veh-35_03389_04017-d774369f312f57ee",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s0_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664431.2723579666,
+      3997434.330780436
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 26.165952295142745,
+    "mean_speed_frames3_10_mps": 7.4759863700407845
+  },
+  {
+    "scene": "2021.06.14.11.44.56_veh-35_03389_04017-d774369f312f57ee",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s1_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664431.2723579666,
+      3997434.330780436
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 26.173439379255033,
+    "mean_speed_frames3_10_mps": 7.478125536930009
+  },
+  {
+    "scene": "2021.06.14.11.44.56_veh-35_03389_04017-d774369f312f57ee",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s2_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664431.2723579666,
+      3997434.330780436
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 26.450379162981804,
+    "mean_speed_frames3_10_mps": 7.557251189423373
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-f47f529868f65c65",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_parent_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664240.9597480876,
+      3996248.4570102766
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 4.155323653302011,
+    "mean_speed_frames3_10_mps": 1.1872353295148603
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-f47f529868f65c65",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s0_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664240.9597480876,
+      3996248.4570102766
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 17.879664342761604,
+    "mean_speed_frames3_10_mps": 5.108475526503315
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-f47f529868f65c65",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s1_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664240.9597480876,
+      3996248.4570102766
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 17.879664342761604,
+    "mean_speed_frames3_10_mps": 5.108475526503315
+  },
+  {
+    "scene": "2021.07.16.16.27.22_veh-26_02282_03814-f47f529868f65c65",
+    "mode": "NR",
+    "category": "safe_progress_gain",
+    "job": "dev_train_A_s2_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664240.9597480876,
+      3996248.4570102766
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 18.061210988836734,
+    "mean_speed_frames3_10_mps": 5.160345996810496
+  },
+  {
+    "scene": "2021.06.07.18.53.26_veh-26_00005_00427-1d05dbff3a245c6b",
+    "mode": "NR",
+    "category": "near_unchanged_safe",
+    "job": "dev_parent_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664464.4104006483,
+      3996288.8016204005
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 31.722105660304496,
+    "mean_speed_frames3_10_mps": 9.063458760086998
+  },
+  {
+    "scene": "2021.06.07.18.53.26_veh-26_00005_00427-1d05dbff3a245c6b",
+    "mode": "NR",
+    "category": "near_unchanged_safe",
+    "job": "dev_train_A_s0_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664464.4104006483,
+      3996288.8016204005
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 32.161966088272806,
+    "mean_speed_frames3_10_mps": 9.189133168077944
+  },
+  {
+    "scene": "2021.06.07.18.53.26_veh-26_00005_00427-1d05dbff3a245c6b",
+    "mode": "NR",
+    "category": "near_unchanged_safe",
+    "job": "dev_train_A_s1_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664464.4104006483,
+      3996288.8016204005
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 31.226368237715032,
+    "mean_speed_frames3_10_mps": 8.92181949649001
+  },
+  {
+    "scene": "2021.06.07.18.53.26_veh-26_00005_00427-1d05dbff3a245c6b",
+    "mode": "NR",
+    "category": "near_unchanged_safe",
+    "job": "dev_train_A_s2_p6_NR",
+    "first_DAC_frame_3_to_10": null,
+    "stored_first_NC_DAC": null,
+    "DAC": 1.0,
+    "global_offset": [
+      664464.4104006483,
+      3996288.8016204005
+    ],
+    "offroad_frames": [],
+    "logged_expert_offroad_frames": [],
+    "actual_distance_frames3_10_m": 30.417273610823525,
+    "mean_speed_frames3_10_mps": 8.690649603092435
+  }
+]

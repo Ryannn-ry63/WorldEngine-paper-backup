@@ -1,0 +1,7 @@
+{
+  "reason": "Stop marker absence is healthy; exclude campaign control paths from required inputs",
+  "old_run_sha256": "1f3a1d38c3a294ef0855b898db5b320fd3e5599d2d78670a4b3aa07d7cf5508d",
+  "new_run_sha256": "cd9ff9a7014a263590b3b02dbcbb03e67df8636be2ff5112f74870d16f65e447",
+  "tests": "4 preflight regression tests; hardware subprocess mocked",
+  "models_and_eval_protocol_unchanged": true
+}

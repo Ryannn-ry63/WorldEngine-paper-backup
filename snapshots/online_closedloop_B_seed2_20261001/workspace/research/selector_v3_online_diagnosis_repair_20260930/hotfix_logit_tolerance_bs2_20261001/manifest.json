@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "purpose": "inference_autograd_numeric_audit_tolerance_only",
+  "original_atol": 1e-05,
+  "atol": 5e-05,
+  "rtol": 0.0001,
+  "training_formula_changed": false,
+  "files": {
+    "resume_train_h100.py": "0f497d356512125430add6b68a67e68588c4b83ef0f5d68c118ef685b084baa7",
+    "start_hotfix_job_h100.sh": "4f2f5cd6c169c148288ff75e31df8eb9aa0123c03c27b5d01007db07fd30dce0",
+    "overlay/innovation3_runtime.py": "f4c169ffa165cc0187f2655ad1a6d6fbb1d6e6e62518e5271f909a06de43571b",
+    "overlay/innovation3/fixed_learning.py": "c39ce55f2873f296181a4615d5fc38cd649d106029c4b79db383ca148fa4d543",
+    "overlay/innovation3/learner.py": "cb98ee28bab9b0fbd9f0bee9191e3853d722bbf051474bd5b5fdd56ccf149a98",
+    "overlay/innovation3/__init__.py": "f8b552a149d189dc26557f7cfbf158dadb45c1bc62a839f7688f0828aec36fcf"
+  },
+  "parent_manifest": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/hotfix_logit_tolerance_20261001/manifest.json",
+  "parent_manifest_sha256": "db32988d495353d16108781a3f50bdceac7b13a994f12e19cd6b5c07b25ed3a5",
+  "job": "train_B_s2"
+}

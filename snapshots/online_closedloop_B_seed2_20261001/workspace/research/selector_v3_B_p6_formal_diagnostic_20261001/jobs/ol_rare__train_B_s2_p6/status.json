@@ -1,0 +1,21 @@
+{
+  "attempt": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__train_B_s2_p6/attempt_20261001T103339Z_1170a1f5",
+  "devices": "0,1,2,3,4,5,6,7",
+  "finished_unix": 1790850961.259602,
+  "host": "job-601e310f-00ce-4dd2-b3a0-1f97da4b5bd5-worker-0",
+  "job": {
+    "dataset": "formal",
+    "id": "ol_rare__train_B_s2_p6",
+    "interval_seconds": 0.5,
+    "kind": "evaluation",
+    "mode": "ol_rare",
+    "policy": "train_B_s2_p6",
+    "record_plans": true
+  },
+  "manifest_sha256": "999472c83501a47ca33c5977b2779f5bfb30ffb4833182f7a33c1668d4dd8995",
+  "pid": 38,
+  "result": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__train_B_s2_p6/attempt_20261001T103339Z_1170a1f5/result.json",
+  "result_sha256": "cf80e827d758a6d72770bfbfcc648fec719c5bca607b599bd8ca4eb136d23d33",
+  "started_unix": 1790850819.2432873,
+  "status": "COMPLETE"
+}

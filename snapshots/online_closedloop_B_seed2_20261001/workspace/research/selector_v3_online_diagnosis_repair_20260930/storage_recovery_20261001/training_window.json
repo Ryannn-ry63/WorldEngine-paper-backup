@@ -1,0 +1,78 @@
+{
+  "already_used_training_seconds": 26720.66689090361,
+  "boundary_before": {
+    "completed": 824,
+    "final_round_state": {
+      "optimizer": "cd8949fe0862a94a6e626938a05000aa8d27f214f08cc38664d790f9664c48dc",
+      "reference": "9fa797a51752cc9eaa1b0f083409b0d7e46e59efa5d594dda27467d599a2020e",
+      "selector": "0cc5c49f7dcc78e269bce792f78e1da9d664c795b4fd4cb6942f6e6bb3b2e9b5"
+    },
+    "last_checkpoints": [
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank0_ae34566dfc6045e6b885ced8310457f6/report.online.pt",
+        "sha256": "112d18ce4727a91339fafcbecc9eb9a5dff78e5487f90f515faa4f55f427ea0d"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank1_a3438a4cc6f74a018c2a23812ed4645d/report.online.pt",
+        "sha256": "2f69827e93a6c3f14252b7ed8dd871d2c65c1c6facca5a7b3f9b80a3ed989c7d"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank2_d9a3f5b311c5433f9c47d402d7aa0d62/report.online.pt",
+        "sha256": "5e8a5267e42ebc9864971c591cf5c27eca5cb94968f17e3d8d1539e69629f988"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank3_fa098480d319426d9ab657be44621eb2/report.online.pt",
+        "sha256": "d3690a6f2c23da95e36d7c923bb4e8e5c6506ce8c582ac590b4c986ef2608da6"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank4_563277b904cc4c0c9e11c5314cb9c95d/report.online.pt",
+        "sha256": "c071c0c9cc9d58ae82cd94fe5662f96b5afea8f577f7348f2fc7ad401942988c"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank5_0734a4e1dcfe4451926d2f42027255f5/report.online.pt",
+        "sha256": "2a3d8e81142f0e4ddf4182b1134d9b3c1a6f184a4c4c0b62661b0914baf33e5b"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank6_098c47b5367645cc85728fc0a90b09d3/report.online.pt",
+        "sha256": "f9ee0f1992c5af7ca7223b51a53b884f2a7c4d1b072d2e24d82ca47e20a39cec"
+      },
+      {
+        "disposable": true,
+        "formal_training": false,
+        "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round102_rank7_dcd57103f3dc4a25bb567748ffaf4fb4/report.online.pt",
+        "sha256": "6e5d151c3d133357f291be4b13225a298127bc3d9dbf7c870677021a789cca01"
+      }
+    ],
+    "progress_sha256": "33a60b821c4c72eaa264d16ac32bc38c8d62a918ac81499923c4a9f87fec5562",
+    "remaining_episodes": 80,
+    "status": "PASS_COMMITTED_BOUNDARY",
+    "target": 904,
+    "training_wall_seconds": 26720.66689090361
+  },
+  "cumulative_training_cap_seconds": 43200,
+  "deadline_unix": 1790850617.2549953,
+  "original_clock": {
+    "deadline_unix": 1790830853.242452,
+    "started_unix": 1790766053.242452,
+    "wall_seconds": 64800
+  },
+  "original_clock_sha256": "2d759c97a89c847f859de8206ade5c4bccbd78060ed1cf01c6282a8d27b4659c",
+  "recovery_manifest_sha256": "f4d5f06d821cff435ce93466c01ccd4af3f145aed7607c5e8eebc29c05eb4826",
+  "scope": "train_B_s2_infrastructure_recovery_only",
+  "started_unix": 1790833537.9218862,
+  "wall_seconds": 17079.33310909639
+}

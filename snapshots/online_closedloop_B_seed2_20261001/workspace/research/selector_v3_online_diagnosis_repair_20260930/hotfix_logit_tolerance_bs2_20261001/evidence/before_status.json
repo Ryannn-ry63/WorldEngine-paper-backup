@@ -1,0 +1,25 @@
+{
+  "attempt": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/attempt_20260930T164010Z_1e12adec",
+  "devices": "0,1,2,3,4,5,6,7",
+  "error": "RuntimeError('Child failure: [1]')",
+  "experiment_sha256": "bc821c9f89a77b88536ab291d6ec963a0133ecb82f0ab1fefdb69ace966fde41",
+  "finished_unix": 1790807111.6447046,
+  "host": "job-2a20b768-1e87-4080-9d88-6c9bd25c40fa-worker-0",
+  "job": {
+    "checkpoints": [
+      3,
+      6
+    ],
+    "id": "train_B_s2",
+    "kind": "train",
+    "method": "B",
+    "passes": 6,
+    "seed": 2,
+    "update_timing": "after_rollout8"
+  },
+  "pid": 37,
+  "repair_manifest_sha256": "d66476e1beffc585446aa3af5d68fe5fafb4e66c975a86679d81b4bb2a00bb02",
+  "started_unix": 1790786410.947616,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/repair_run.py\", line 276, in run\n    elif job['kind']=='train':result=training_job(job,attempt,devices,deadline)\n  File \"/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/repair_run.py\", line 175, in training_job\n    run_processes([(argv,CODE,env)],folder,deadline,live_single=True)\n  File \"/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/repair_run.py\", line 70, in run_processes\n    if any(x is not None and x!=0 for x in codes):raise RuntimeError('Child failure: '+repr(codes))\nRuntimeError: Child failure: [1]\n"
+}

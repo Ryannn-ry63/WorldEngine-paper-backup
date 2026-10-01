@@ -1,0 +1,11 @@
+{
+  "host": "job-fb7309cb-317a-49b3-b4d5-4299c2ec3c77-worker-0",
+  "metrics_and_plans_archived": true,
+  "path": "/tmp/worldengine_B_p6_formal/cl_R__train_B_s0_p6_72927cb86d9a4dc6ba0092c0ba41caca",
+  "transient_directories": [
+    "distributed_collect",
+    "frames",
+    "merged_ann_files",
+    "sensor_blobs"
+  ]
+}

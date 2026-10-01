@@ -1,0 +1,13 @@
+[
+  {
+    "argv": [
+      "bash",
+      "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/handoff/fulltable_v2_e2e_dist_eval_navtest_failures.sh",
+      "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/development/frozen_eval_config.py",
+      "/tmp/worldengine_B_p6_formal/ol_rare__train_B_s0_p6_70f6bdbf494f40c99420739cac005172/evaluation_inputs/checkpoint.pth",
+      "8"
+    ],
+    "cwd": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/code/projects/AlgEngine",
+    "log": "openloop.log"
+  }
+]

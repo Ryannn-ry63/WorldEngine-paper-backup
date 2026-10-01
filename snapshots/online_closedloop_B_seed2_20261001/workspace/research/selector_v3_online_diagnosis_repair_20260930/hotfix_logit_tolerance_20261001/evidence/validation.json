@@ -1,0 +1,20 @@
+{
+  "learner_tests": 21,
+  "learner_tests_passed": true,
+  "fixed_learning_tests": 2,
+  "fixed_learning_tests_passed": true,
+  "patched_module_path_verified": true,
+  "committed_checkpoint_hash_checks_passed": 16,
+  "resume_contracts": [
+    "train_A_s2:192/904:seed2:per_step",
+    "train_B_s1:192/904:seed1:after_rollout8"
+  ],
+  "h100_training_started": false,
+  "full_preflight_log": "logs/train_B_s1_20260930T172232Z_2815313.log",
+  "launcher_construction_tests": 2,
+  "launcher_construction_tests_passed": true,
+  "delayed_rollout8_with_numeric_drift_passed": true,
+  "full_preflight_exit_code": 0,
+  "full_preflight_passed": true,
+  "actual_overlay_import_assertion_passed": true
+}

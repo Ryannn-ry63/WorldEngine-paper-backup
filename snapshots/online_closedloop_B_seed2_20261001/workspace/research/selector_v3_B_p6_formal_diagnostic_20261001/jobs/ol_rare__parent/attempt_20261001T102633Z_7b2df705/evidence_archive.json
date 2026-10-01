@@ -1,0 +1,375 @@
+{
+  "files": [
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation/commands.json",
+      "sha256": "548a6db89c1bfa42cc852f29f28f90a4c39358feacbd988c8c1caa447325dc3e",
+      "size": 692
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation/process_status.json",
+      "sha256": "be11bafb364bc181abb79d33093dbe90d30c87114dba2a8b6f45c7434daf3f36",
+      "size": 149
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation/openloop.log",
+      "sha256": "19346aa580eebe73d88b2b03df505bf34b05aa686ea7a3d2e622a1b4ef83db8b",
+      "size": 90595
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation/work/inference_results.pkl",
+      "sha256": "a36bf5677644ca95b4de029bce36dcc1347fd89836ef6888f6bb00991fb18af2",
+      "size": 283298
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation/work/logs/eval.20261001T102639_394",
+      "sha256": "010e58b75b6a9b7d9101358658e600eb651a841d9ca45ee5d071866653aff630",
+      "size": 87919
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026.csv",
+      "sha256": "f77101c071f31458dfad8d1b8545cc518209cba82ca3f91a3e502ba3bdeb48a9",
+      "size": 17521
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_navsim_submission.pkl",
+      "sha256": "949d4bc552a61bb10f9aeb9599618b1fcf5a4f4f8dc88e4edc5aaec9a8f66d20",
+      "size": 47655
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/pdm_scores_merged.csv",
+      "sha256": "e21fcc0dc8b707fe44fbc419e4df3f76ef87624195531cc729503cda2c0d2c13",
+      "size": 20865
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/metadata/metric_cache.csv",
+      "sha256": "c86aeb68cd3fcc262ae3dc846348dc0f192c05d1882f3c71dd8bcc0d3d30f406",
+      "size": 45802
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/0/cache/metadata/metric_cache.csv",
+      "sha256": "a29f014fb8f962a3b50e46db9bb5f802f3fb64dfca97cdd033d4cbc4a6607cdb",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/1/cache/metadata/metric_cache.csv",
+      "sha256": "2003ee96fb6bd736c73e3d1c68be7de07314ebdafb0044a88d6c5b69590f07f7",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/2/cache/metadata/metric_cache.csv",
+      "sha256": "f381fadae503b956ae0bb15f1edb0ddbed5f75a99cbd88423f3eff190350dc18",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/3/cache/metadata/metric_cache.csv",
+      "sha256": "f3bdc9cbc5edbf948f2372f8bcbb399fb242161370ec1b035d87bb3e42002548",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/4/cache/metadata/metric_cache.csv",
+      "sha256": "2c7fe96958f6e5b4ed4f42552b4ee764119fea23a4eb674ffd12c9fa7afe74e2",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/5/cache/metadata/metric_cache.csv",
+      "sha256": "ad6b182e056b5c341ea872fe3342b340ec613458a2f1239a1b56c73a6f0ee8a6",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/6/cache/metadata/metric_cache.csv",
+      "sha256": "9ddfe4cd3211ce12d88ad01f17fbae253f295c5698b394762166fc4981712b8f",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/metric_cache_index/shards/7/cache/metadata/metric_cache.csv",
+      "sha256": "8681563553c097fbacb8fa89d02a0145dc32821a280c9f2710897e632552aa1a",
+      "size": 5734
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/stdout.log",
+      "sha256": "3abe515088f03cc280656902039686ceb59d743824745a60f597b8560838ce1e",
+      "size": 1857
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/output/run_pdm_score_from_submission.log",
+      "sha256": "11769e98f5be713fee50ecec856d996c476d19e5f7e0bc66f03595cd3c11d8a3",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/output/log.txt",
+      "sha256": "a5c27c3cdaa59009efea82dd8cc571b3772727489c03d456ce5db846febbe9b7",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/output/2026.10.01.10.28.35.csv",
+      "sha256": "474e9bbe1f01902c9325f59d387e810cc31501707dd60c38dabc0eaac2e648f1",
+      "size": 2979
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/output/code/hydra/config.yaml",
+      "sha256": "a2a4dec9e1b0021d4eb1de70b3dd5dc563e5518abdbe173d16700d9aeb584e14",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/output/code/hydra/hydra.yaml",
+      "sha256": "6560a5b4825ac48305a9f26920b3cbfe0835a78e5daf685e968891fca07cc031",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/0/output/code/hydra/overrides.yaml",
+      "sha256": "1458f70f2b6d9b40a212c3ed564dec4dc07fd8508fe487dc512f5eed4e85df39",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/stdout.log",
+      "sha256": "9ea302f991bc07c7f4164500f84e26eab03495e9b4edad9bdf5d5c963c4580b1",
+      "size": 1787
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/output/run_pdm_score_from_submission.log",
+      "sha256": "b3d75029ed6015fce03a8ee4d932eeefeb9a8c3c129f54d3608ebfdfb050c1a2",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/output/log.txt",
+      "sha256": "917d8b599995c17eaf85ee8163776f4d712bf61e33a8648e992816d954d287f5",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/output/2026.10.01.10.28.35.csv",
+      "sha256": "399e8bb32b17e2ac90fdd275c681a1c95f892e9dacc5d3fc9a2ea6dc1dae51a2",
+      "size": 2938
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/output/code/hydra/config.yaml",
+      "sha256": "784dbfe65948186323f5fc974175ce2bca2b73b1c94cba3b2e3ca8fbb39a2047",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/output/code/hydra/hydra.yaml",
+      "sha256": "ebf62497ad080ea8d31ed708cc25aef0594cc150f11679cd12176920e0f153fc",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/1/output/code/hydra/overrides.yaml",
+      "sha256": "3b1c55bdeaca6a1fcc12b9d846c70b482a118fe3cfb997b9a21bf112628f60a9",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/stdout.log",
+      "sha256": "3911a98dd435ccf38813c12b3ae989708a3b3d5d5b37eee703932aac913ea579",
+      "size": 1787
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/output/run_pdm_score_from_submission.log",
+      "sha256": "5c8aee70e6f0e79a442efca987dd848114d0f8d7a2edd1ea7106f8befff76689",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/output/log.txt",
+      "sha256": "56e6e898f20029e6c4d34f99c0a565d65bf91d311dc58fe49a7c3946ed27c4e0",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/output/2026.10.01.10.28.35.csv",
+      "sha256": "c9bf7c8aeb74eea5f44ffbb5f1f75d873597363cc8a726bb1ed0e2b2bee134b5",
+      "size": 2841
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/output/code/hydra/config.yaml",
+      "sha256": "af550d65edce0973ff8487376f508a60a4ad688e4efd8c8d2d9efe420a2fe1b5",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/output/code/hydra/hydra.yaml",
+      "sha256": "737f84ca1ea446c79e198aec9ca3b1bcec43ba97dbf4690457c18f84372919a8",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/2/output/code/hydra/overrides.yaml",
+      "sha256": "f6db2e1737eb69faf67de930236eec39b2437661e7dee6a0b4b78c83a5bfda22",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/stdout.log",
+      "sha256": "0ba84bfd72f312190e0acbdd5f6e54650675cdd3567af7d36a8e5f5b162c2384",
+      "size": 1787
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/output/run_pdm_score_from_submission.log",
+      "sha256": "daeacf46b42acd4309af178ecefe2a91f371c08253581026f08017795733eb7c",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/output/log.txt",
+      "sha256": "2e0e03fe868948a70dca26881c9c5782e63c187501aae58bb9e03daa95b36ab8",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/output/2026.10.01.10.28.35.csv",
+      "sha256": "5153a35f896c2bb2b3dd9de16c1d6e2954cb099c75661954d54f9b9903f12eb4",
+      "size": 2861
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/output/code/hydra/config.yaml",
+      "sha256": "bef5075797cd138ccf51d5b075efd527bba24a1816b7b4dc7125462359932066",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/output/code/hydra/hydra.yaml",
+      "sha256": "237c2fa8c684d539f589f59072c3758a2a76b7a4f949e7ff72754564cee9514c",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/3/output/code/hydra/overrides.yaml",
+      "sha256": "5bd32e13933bcf9f09cf472f7d8b0a4ac10600ffce7c706870b281c90b61dc0e",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/stdout.log",
+      "sha256": "67fa997aa6fa795a751e8be49e7a15315d30fe9a674493c01f60818450da45ff",
+      "size": 1857
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/output/run_pdm_score_from_submission.log",
+      "sha256": "c83c94afbb16711e9e8ac38515c9d1e4a79805f1346a20f5699795c030e00e64",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/output/log.txt",
+      "sha256": "7bbddc6dd5e6a1971bd8b7390f71cd358bac442bbcf53f2facc77f78f330b22b",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/output/2026.10.01.10.28.35.csv",
+      "sha256": "80248c494637996bf13cb0f1f21d14204df3723d74df1a88938af78e46d6c919",
+      "size": 2998
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/output/code/hydra/config.yaml",
+      "sha256": "326597f75550f525bfe14c6ad8d3ac8cfc1639b87c84d19f5afc69447158c507",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/output/code/hydra/hydra.yaml",
+      "sha256": "2d3ced57850ff36b3a54ae2b59c652421b0ddb4f9646c4e9d681f41d525cee69",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/4/output/code/hydra/overrides.yaml",
+      "sha256": "b29c8b4dd9214363f0dd9e021b9333b2ee664e7ca1f8d4874510f50f561c46f1",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/stdout.log",
+      "sha256": "973b6e2da4ad8560b8a04de0dec1616fea32d25bafb26c1388560b3297059cec",
+      "size": 1855
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/output/run_pdm_score_from_submission.log",
+      "sha256": "9008042f8f542db2b9cf6f576d6b5c028d37548e75809e38249ce9fbf5b4e35e",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/output/log.txt",
+      "sha256": "3e48dbfb05a147a3de7bbd41cb8a86c593e96bf72f76a6a3228264efb0ab37cf",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/output/2026.10.01.10.28.36.csv",
+      "sha256": "540d8bd4fcac654c44023ec11876037c17179bd7bedf45989202c8c6c278578f",
+      "size": 2817
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/output/code/hydra/config.yaml",
+      "sha256": "39caa209f8a6265f25413e874cfe9bf309e36406824a5d3a15a56a5ae0145915",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/output/code/hydra/hydra.yaml",
+      "sha256": "a79f70bce31d2fc58443761ee6faa49f44a94e8a474755ca9d03fda16a7eed48",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/5/output/code/hydra/overrides.yaml",
+      "sha256": "eda0cf7e7f4b9f184b47d3208df5623095f5255ef944ccb082ffaf72dd0f9ff2",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/stdout.log",
+      "sha256": "ffda27b2dffabfb006ed6c7b6e60359643f19f625e36235585662de9576476c6",
+      "size": 1787
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/output/run_pdm_score_from_submission.log",
+      "sha256": "0674ebd38c03cceee0dc3b0e07c0ed8bf7f3062f217e2ba33ca613a3b3fe22e2",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/output/log.txt",
+      "sha256": "f89cb82017bce8a4e30c447bb84fe0238d46d6053d54034dcd9aef2bf69f0e3d",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/output/2026.10.01.10.28.35.csv",
+      "sha256": "3a52502448ab8d4ce20e451e5ea42073bc8825a7beee63eff55206ff009500f4",
+      "size": 2955
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/output/code/hydra/config.yaml",
+      "sha256": "03f408c28663150714af2d482637a68b6e1dae12061f20601370d5fd0b7a5e57",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/output/code/hydra/hydra.yaml",
+      "sha256": "89a918df437843916ac7f9e2280bfec9780d07832cf84e1721351c045bf71d18",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/6/output/code/hydra/overrides.yaml",
+      "sha256": "8a4b80867e29662123f1a3432d9ddf8945fe6723447a6691d8818d09b5d6e24f",
+      "size": 581
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/stdout.log",
+      "sha256": "33373e5d763144795fcd59ff8a6fd33995d1811db7d77b3979b7bc3fd7342312",
+      "size": 1787
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/output/run_pdm_score_from_submission.log",
+      "sha256": "ee7d3f8b88d94c31b1b7bd9d08701e4e5aa7b2ccb48ef0ac3a1c0706bd945179",
+      "size": 65
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/output/log.txt",
+      "sha256": "393fedbd44146ca7c26638cd8067b3aa82140b702c0df7ef8791e4072953b61b",
+      "size": 237
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/output/2026.10.01.10.28.35.csv",
+      "sha256": "a1fd69113b65282c9bac0d89be4a8fcb9d53dde35598b181e528652569d2fb6d",
+      "size": 2917
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/output/code/hydra/config.yaml",
+      "sha256": "bdd8c8f88b147f27434934cc656ebb0818a2ed839cf15a18d64668965e6dfde5",
+      "size": 287523
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/output/code/hydra/hydra.yaml",
+      "sha256": "b19de2645c1e2e613f6a164a3627aa15be53e18c79180e818a8df9c475e0317a",
+      "size": 5061
+    },
+    {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/jobs/ol_rare__parent/attempt_20261001T102633Z_7b2df705/evaluation_inputs/test/Thu_Oct__1_10_28_10_2026_official_pdms/shards/7/output/code/hydra/overrides.yaml",
+      "sha256": "e3c7d7c2a78f68a8c63297993d33b24f1133ee0dd98bb19285682ceeabf96e59",
+      "size": 581
+    }
+  ],
+  "omitted": [
+    "distributed_collect",
+    "frames",
+    "merged_ann_files",
+    "sensor_blobs"
+  ]
+}

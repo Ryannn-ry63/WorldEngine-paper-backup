@@ -1,0 +1,11 @@
+{
+  "host": "job-03b781c4-4368-4aff-9993-8568ce6e7f63-worker-0",
+  "metrics_and_plans_archived": true,
+  "path": "/tmp/worldengine_B_p6_formal/ol_navtest__train_B_s1_p6_b646767acd93446d8a6e4eb6c6caaa9e",
+  "transient_directories": [
+    "distributed_collect",
+    "frames",
+    "merged_ann_files",
+    "sensor_blobs"
+  ]
+}

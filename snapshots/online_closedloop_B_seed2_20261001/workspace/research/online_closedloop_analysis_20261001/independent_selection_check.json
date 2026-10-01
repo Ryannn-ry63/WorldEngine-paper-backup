@@ -1,0 +1,84 @@
+{
+  "scope": "independent analysis only; does not write registry selection",
+  "methods": {
+    "A": {
+      "status": "FAIL",
+      "failures": [
+        {
+          "mode": "R",
+          "metric": "NC",
+          "delta": -0.010040160642570281,
+          "threshold": -0.005
+        },
+        {
+          "mode": "R",
+          "metric": "DAC",
+          "delta": -0.03614457831325301,
+          "threshold": -0.005
+        },
+        {
+          "mode": "R",
+          "metric": "TTC",
+          "delta": -0.012048192771084336,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "NC",
+          "delta": -0.006024096385542168,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "DAC",
+          "delta": -0.04819277108433735,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "TTC",
+          "delta": -0.020080321285140562,
+          "threshold": -0.005
+        }
+      ]
+    },
+    "B": {
+      "status": "FAIL",
+      "failures": [
+        {
+          "mode": "R",
+          "metric": "DAC",
+          "delta": -0.0321285140562249,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "DAC",
+          "delta": -0.024096385542168676,
+          "threshold": -0.005
+        },
+        {
+          "mode": "NR",
+          "metric": "TTC",
+          "delta": -0.008032128514056222,
+          "threshold": -0.005
+        }
+      ]
+    }
+  },
+  "registered_selection": {
+    "budget_passes": 6,
+    "rule": {
+      "NR_score_min_delta": -0.005,
+      "R_score_min_delta": 0.005,
+      "budget_passes": 6,
+      "fallback_is_final": false,
+      "fallback_passes": 3,
+      "safety_component_min_delta": -0.005,
+      "tie_break": "A",
+      "training_seeds": 3
+    },
+    "status": "NO_METHOD_QUALIFIED"
+  },
+  "registered_selection_sha256": "3597c30059447c10f938e766ee0a5eed275c1f9f57fbe58d983aabd3b03f825b"
+}

@@ -1,0 +1,10 @@
+{
+  "checkpoint": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank0_3c42e4ca27ee48268fa8abf7a58bfa2a/report.online.pt",
+  "checkpoint_sha256": "38b49150fac44fb73c4634a9c69d0686ae644e65c2a05343746f1ce00ecbf461",
+  "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.coverage6.json",
+  "marker_sha256": "f335d3521f83f1c61661e8445b4a7ca385ed20747e43600537b370bae22bc479",
+  "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s1_p6/attempt_1790834004006764884/checkpoint.pth",
+  "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s1_p6/attempt_1790834004006764884/selector.pt",
+  "selector_sha256": "d86c6fced0cf3287aed7577182568265c30d2c966b5cdf444eb46147966950f8",
+  "sha256": "beacdbe5c07a4aef1b3cd4c3a2e12d8084838687e1baf095a4b39145b403b976"
+}

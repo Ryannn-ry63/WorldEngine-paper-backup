@@ -1,0 +1,52 @@
+{
+  "algengine_python": "/inspire/hdd/global_user/wangcaojun-240208020180/miniconda3/envs/algengine/bin/python",
+  "simengine_python": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/environments/simengine/bin/python",
+  "data_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/local_data/views/autodriving_20260919",
+  "baseline": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/models/diffusiondrive/epoch_100.pth",
+  "navsim_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/dependencies/legacy_sources_20260918/navsim_v1",
+  "nuplan_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/dependencies/legacy_sources_20260918/nuplan-devkit",
+  "metric_cache_train": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/exp/metric_cache_trainval",
+  "metric_cache_eval": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/exp/metric_cache_navtest",
+  "test_images": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/local_data/raw_subsets/navtest_images_20260919/sensor_blobs",
+  "train_images": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/innovation3/sensor_blobs",
+  "anchors": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/code/kmeans_navsim_traj_20.npy",
+  "mmcv_extension": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/artifacts/toolchains/mmcv_sm89_sm90_v1/mmcv/_ext.so",
+  "gsplat_extension": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/artifacts/toolchains/gsplat_sm89_sm90_v1/gsplat/csrc.so",
+  "extra_python_paths": [
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/DiffusionDrive",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/dependencies/legacy_sources_20260918/mmcv"
+  ],
+  "omp_threads": 4,
+  "selector_state": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/grpo_selector_v3_rare_original_v1/models/rare_tuned/seed0/train/epoch_64_scene_selector.pt",
+  "scenario_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/innovation3/scenarios",
+  "asset_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine-owned/innovation3/navtrain/assets",
+  "map_root": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/local_data/views/autodriving_20260919/raw/nuplan/dataset/maps",
+  "expected_sha256": {
+    "baseline": "1c450bad0cf62ab9110a8101d2ff6c96984541bd975ddea598ddb2add086a514",
+    "selector_state": "aed5e36f1ccb0df96b703a901b54f48c41dcf1967cc86d63519eb4da37519eb2",
+    "anchors": "2d341e525d7882ee5e916c67d37bea571e4c793cf801f0fff3eff59d38b20d98"
+  },
+  "visual_scene_id": "2021.06.09.11.54.15_veh-12_00015_00259-c0a1b812e095547d",
+  "online_parameterization": "v3_initialized_selector_finetune",
+  "online_method": "offline_v3_rarelog_parent_reactive_pdm_expert_v2",
+  "online_reference_contract": "frozen_b_plus_rarelog_v3_parent_for_kl_only",
+  "online_selector_contract": "b_plus_current_online_selector",
+  "formal_ready": false,
+  "experiment_variant": "reactive_actual_state_pdm_expert_v2",
+  "parent_selector": {
+    "family": "v3_rare_original_rare_tuned",
+    "train_seed": 0,
+    "epoch": 64,
+    "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/grpo_selector_v3_rare_original_v1/models/rare_tuned/seed0/train/epoch_64_scene_selector.pt",
+    "sha256": "aed5e36f1ccb0df96b703a901b54f48c41dcf1967cc86d63519eb4da37519eb2",
+    "selection_note": "best formal observed rarelog/rare-original replica; selected before online continuation",
+    "compute_note": "secondary tuned parent; 4x offline training compute versus rare_frozen/paired_common"
+  },
+  "continuation_data_contract": "formal_public_pool_20260927_v1",
+  "online_mainline_note": "Main high-score online continuation from the registered best V3 rarelog parent. The public pool is the continuation data contract; this run is not a new rarelog offline training run.",
+  "fixed_reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+  "fixed_backend": "cached",
+  "fixed_full_audit_every": 32,
+  "campaign_stop_file": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/correctness_failure.json",
+  "campaign_deadline_file": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/campaign_clock.json"
+}

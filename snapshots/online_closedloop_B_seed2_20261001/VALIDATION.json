@@ -1,0 +1,11 @@
+{
+  "verified_utc": "2026-10-01T12:37:04.653361+00:00",
+  "source_files_hash_verified": 994,
+  "formal_jobs_exact_coverage_verified": 16,
+  "python_syntax_files": 622,
+  "preflight_regression_tests": 4,
+  "hardware_tests_rerun": false,
+  "source_files_byte_preserved": true,
+  "whitespace_note": "Archived historical source/CSV retain original trailing whitespace and CRLF to preserve recorded SHA256; new release documentation passes git diff --check.",
+  "external_weights_and_data_included": false
+}

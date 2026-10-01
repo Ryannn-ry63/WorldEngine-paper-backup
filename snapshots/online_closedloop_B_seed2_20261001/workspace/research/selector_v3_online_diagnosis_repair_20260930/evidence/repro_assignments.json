@@ -1,0 +1,21 @@
+[
+  {
+    "asset_config": "/inspire/hdd/project/autodriving/public/worldengine/data/nuplan/WE_processed/navtrain_50pct_collision/configs/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8.yaml",
+    "asset_files_sha256": {
+      "/inspire/hdd/project/autodriving/public/worldengine/data/nuplan/WE_processed/navtrain_50pct_collision/assets/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8/background/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8.ckpt": "f9c3f0dd34c1e80277eb1f11f8fdbda43c7f99634524c30e2a4f317611b53575",
+      "/inspire/hdd/project/autodriving/public/worldengine/data/nuplan/WE_processed/navtrain_50pct_collision/assets/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8/road_height_map/road_height_map.npy": "17f9761d3ffa3c4511826ef1136672fd8f523a766e67d1f89a63bfe31b440ab0",
+      "/inspire/hdd/project/autodriving/public/worldengine/data/nuplan/WE_processed/navtrain_50pct_collision/assets/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8/road_height_map/sim2.json": "7417f23734fe9841d77f5d72340f53b14be36eccdf462b90e7af3e157edaba19"
+    },
+    "asset_path": "/inspire/hdd/project/autodriving/public/worldengine/data/nuplan/WE_processed/navtrain_50pct_collision/assets/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8/background/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8.ckpt",
+    "asset_sha256": "f9c3f0dd34c1e80277eb1f11f8fdbda43c7f99634524c30e2a4f317611b53575",
+    "candidate_seed": 20012,
+    "map": "us-nv-las-vegas-strip",
+    "origin_log": "2021.06.07.17.46.49_veh-35",
+    "prior_engineering_exposure": false,
+    "scene_id": "2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8",
+    "scene_path": "/inspire/hdd/project/autodriving/public/worldengine/data/original_scenarios_WE/navtrain_50pct_collision/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8.pkl",
+    "scene_seed": 10012,
+    "scene_sha256": "6a236ed9275c651ed985c4647c4120e6f641a136dc9732a523cfe442a1f49a3c",
+    "split": "development"
+  }
+]

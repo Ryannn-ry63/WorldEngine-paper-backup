@@ -1,0 +1,33 @@
+{
+  "scope": "old parent/online64; headless roots; common frozen-parent continuation; not A/B p6",
+  "roots": 48,
+  "continuations": 144,
+  "no_safe_roots": 3,
+  "all_zero_roots": 3,
+  "aligned_parity_max": 0.0,
+  "parity_candidates": 960,
+  "legacy_comfort_differences": 479,
+  "legacy_vs_actual_dynamics_argmax_changed_roots": 3,
+  "mean_training_minus_legacy_reward": -0.019965277777777776,
+  "oracle_strict_fixed_advantage_roots": 28,
+  "oracle_strict_reversal_roots": 6,
+  "oracle_minus_parent_fixed_mean": 0.13535133207001035,
+  "oracle_minus_parent_replanned_mean": -0.027913511322023844,
+  "by_choice": {
+    "parent": {
+      "fixed_mean": 0.7411088954246958,
+      "replanned_mean": 0.7056166034066687,
+      "delta_mean": -0.035492292018027255
+    },
+    "online64": {
+      "fixed_mean": 0.737476743418128,
+      "replanned_mean": 0.7097552336309746,
+      "delta_mean": -0.0277215097871534
+    },
+    "oracle": {
+      "fixed_mean": 0.8764602274947061,
+      "replanned_mean": 0.6777030920846449,
+      "delta_mean": -0.19875713541006146
+    }
+  }
+}

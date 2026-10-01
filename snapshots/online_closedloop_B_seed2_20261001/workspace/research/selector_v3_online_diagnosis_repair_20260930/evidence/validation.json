@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "diagnostic": "same_initial_snapshot_replay_passed",
+  "checkpoint_resume_audit": "six_jobs_passed_original_boundary_verification",
+  "evidence_sha256": {
+    "evidence/snapshot_replay/summary.json": "0f4731173371552319e2e25be04dc699506529306d87cafff47e4d1bda058eec",
+    "evidence/resume_audit.json": "a781dfa237b56fb8d6000532aabfa15353d8e150066a0d4da7a9399d075da2fc",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8/report.json": "7bbce451b4f10305be96a2cbfc903f4084b37bef23e31c047085c25d47bf9e85",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8_root4_parent/report.json": "0cf5d448e12e4d48e781b06dca2aec39ebc6ac74af614a3a2b66d59509218f58",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8_root4_oracle/report.json": "f274c0813ca2cc80eb767f7e0dc993dbb80a403920589dca488d1de07080ce9a",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8_root4_online64/report.json": "876bda2b36f63b551096b493ff30c9d6268963eeb0aa691459f3c649bc897554",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8_root0_oracle/report.json": "cc10bb12e486ad9932313d422156b60507ca7405af43565d5f9fa0865fc265fa",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8_root0_parent/report.json": "78d9c6af871ba12a8d4c0a34c6575dc179bfe73970e1094e19a37b95a0d5d0ec",
+    "evidence/snapshot_replay/2021.06.07.17.46.49_veh-35_02607_03120-383ac6dccfc35fb8_root0_online64/report.json": "13fe60c8e7bc6508314bb50ac2437b33f9d98a6246c74fc2e862ad8c3c953724"
+  },
+  "local_replay_reports": 7,
+  "regression_tests_passed": 9,
+  "training_preflight": "PASS_FIXED_ALG_AND_SIM_IMPORTS_AND_MANIFEST"
+}

@@ -1,0 +1,239 @@
+# Innovation 3: live selector updates
+
+> **2026-09-26 superseding execution update:** the online default now matches upstream evaluation (`log_play_controller`). See [ego execution](ego_execution.md). Earlier LQR/bicycle gates below are historical evidence, not acceptance of this new protocol. H1 reward and formal-training readiness are unchanged.
+
+The paper-facing experiment contract is maintained in the workspace handoff:
+[`20260926_ONLINE_PAPER_EXPERIMENT_PLAN.md`](../../../handoff/20260926_ONLINE_PAPER_EXPERIMENT_PLAN.md).
+The 2026-09-26 public-scene discovery is recorded in [`20260926_PUBLIC_SCENE_DISCOVERY_AND_AUDIT_CORRECTION.md`](../../../handoff/20260926_PUBLIC_SCENE_DISCOVERY_AND_AUDIT_CORRECTION.md). The existing `formal_scene_audit_20260926_v1.json` and 16/2/2 manifest are provisional: they do not include the full D/certification/navtest/public-source reconciliation and must not be used for long formal training.
+The current eight-scene manifest remains an engineering gate only; formal
+training requires an audited origin-log-disjoint train/dev/holdout manifest.
+The public candidate ledger is preliminary. Use the handoff's single-scene
+visual probe before any migration; it is an engineering asset/renderer check,
+not a training or paper result.
+
+
+The initialized-selector continuation mode is documented in
+[selector_finetune.md](selector_finetune.md). Its CPU tests and registered-weight
+synthetic smoke pass; its H100 acceptance is still pending. Historical H100
+results (including resident parent sessions) used the legacy residual mode.
+[online_learning.md](online_learning.md) describes that historical integration.
+The descriptions below retain their historical scope where explicitly marked.
+
+This branch starts from the clean standard V3 contribution and preserves the
+upstream Git history. Memory rendering and deterministic actor RNG are opt-in; existing evaluation
+keeps its file-based behavior and upstream RNG defaults. A map namedtuple also
+exports its declared class name so trusted snapshots can be pickled across spawn.
+
+## Implemented and bounded validation
+
+- `innovation3.paths`: checks configured paths and every symlink hop, rejecting
+  unavailable old project mounts. Hashes are streamed, not loaded into memory.
+- `innovation3.protocol`: strict full20 step identities, canonical transition,
+  branch parity receipt, update ordering, and stale-feedback rejection.
+- `innovation3.learner`: explicit legacy residual and initialized-selector modes,
+  existing exact-group loss, one update per feedback, and optimizer/RNG state.
+- `RenderManager.get_observations(persist=False, cache=False)`: in-memory images
+  without calling DataManager or retaining all rendered frames. Defaults unchanged.
+- `worldengine.online`: a persistent CPU dynamics adapter using real SimEngine
+  agents, LQR/bicycle ego control, log-play traffic (NR), or IDM traffic (R).
+  It captures controller/navigation/history/spawn/RNG state; the static scene/map
+  bundle stays in memory and dynamic snapshots reference its objects by identity.
+  Static arrays are read-only and full static-state audits reject branch mutation.
+- `innovation3.snapshot_probe`: full20 H1 transition checks, reverse candidate
+  ordering, and replay in a separate persistent **spawn** worker. Candidate inputs
+  are explicit current-state-only diagnostic trajectories, not model predictions.
+- `innovation3.preflight` / `innovation3.smoke`: explicit reports distinguishing
+  path/CUDA checks and synthetic learner validation from real closed-loop results.
+
+The historical second-version protocol freezes the **trained V3** and adds a new
+online correction: `current_logits = frozen_V3_logits + online_residual`.
+It remains available for reproducing existing reports. The paper-facing protocol
+uses `online_parameterization=v3_initialized_selector_finetune`: it initializes the
+trainable selector from the complete offline V3 selector and continues training
+that same selector, while retaining a frozen V3 copy only as the KL/reference
+policy. It does not add the offline V3 logits a second time.
+In both protocols the epoch-100 generator, perception stack and original base
+logits remain frozen. Initial logits and probabilities exactly reproduce V3;
+online categorical sampling is distinct from evaluation argmax.
+In PyTorch 2.0, action selection uses the no-grad eval path; a separate autograd
+forward records numerical differences (atol 1e-5, rtol 1e-4 guard). No-signal groups
+skip AdamW entirely and record an unchanged policy version.
+
+Learner checkpoint schema 2 explicitly records `frozen_v3_plus_zero_residual`.
+The new continuation protocol uses schema 3 and records
+`v3_initialized_selector_finetune`. Checkpoints from either parameterization are
+rejected by the other. Schema 3 also validates the offline file SHA, initial
+weight fingerprint, full constructor config, frozen reference, optimizer and RNG
+before mutating the live learner. Historical schema-1 checkpoints from the earlier direct
+V3-finetuning prototype remain historical evidence, not resumable artifacts.
+
+## Commands
+
+From this repository's root, set `SETTINGS` to a private absolute runtime JSON and
+`REPORT` to a new file outside the code repository. The JSON extends the selector
+runtime with `scenario_root`, `asset_root`, `map_root`, `selector_state`, and
+`expected_sha256` for baseline, selector_state and anchors.
+
+```bash
+python3 projects/AlgEngine/scripts/diffusiondrive/innovation3_runtime.py \
+  --settings "$SETTINGS" --output "$REPORT" --devices 0 preflight
+```
+
+For the learner-only CUDA smoke, use another fresh `REPORT` and replace `preflight`
+with `learner-smoke`. It loads registered V3 weights, performs eight synthetic
+updates, then validates a serialized optimizer/RNG restoration with a ninth
+update. It does not save a deployable trained model. Use `--devices 0,1,2,3,4,5,6,7`
+for an eight-device **preflight only**; this does not claim DDP was tested.
+
+To export a completed disposable initialized-selector probe checkpoint for a
+controlled deployment audit, use fresh paths outside the code tree:
+
+```bash
+PYTHONPATH=projects/AlgEngine/scripts/diffusiondrive python -m innovation3.export_online_selector_v3 \
+  --checkpoint "$ONLINE_CHECKPOINT" \
+  --offline-selector "$SETTINGS_SELECTOR_STATE" \
+  --output "$EXPORTED_SELECTOR" \
+  --manifest "$EXPORT_REPORT"
+```
+
+The exporter accepts schema-3 `v3_initialized_selector_finetune` checkpoints
+only, verifies the offline selector SHA and frozen reference fingerprint, and
+keeps `formal_ready=false`, `used_for_formal_training=false`, and `disposable=true`.
+
+For the CPU-only dynamics gate (GPUs can remain occupied):
+
+```bash
+python3 projects/AlgEngine/scripts/diffusiondrive/innovation3_runtime.py \
+  --settings "$SETTINGS" --output "$REPORT" --scene-count 2 --steps 8 snapshot-probe
+```
+
+This deterministically selects the first two sorted scenes from the registered
+`scenario_root/original/navtrain_failures_per1/all_scenarios.pkl`, without filtering
+by rollout success or reward. Both NR/R are tested. Reports and incremental event
+logs are saved outside code; existing report names are refused. Source provenance
+does not establish log-disjointness or image/asset coverage. These diagnostics
+must not be used as online training samples or a performance evaluation.
+
+Existing regression tests, in the configured AlgEngine environment with this
+repository's SimEngine and owned dependencies on PYTHONPATH:
+
+```bash
+python -m pytest tests/selector_v2_v3 tests/innovation3 \
+  --ignore=tests/innovation3/test_headless_snapshot.py
+```
+
+Actual dynamics tests run in the configured **SimEngine** environment, with the
+same explicit source paths used by the runtime launcher:
+
+```bash
+python -m unittest discover -s tests/innovation3 -p test_headless_snapshot.py -v
+```
+
+The dynamics fixtures check actual IDM response to ego interventions, delayed
+actor spawning, NR/R despawn semantics, hidden state and RNG restoration, candidate
+immutability, static-map corruption, and canonical recovery after a branch fails.
+Snapshot payloads are trusted local pickles, not an untrusted network format.
+
+## Not yet implemented or certified
+
+The formal manifest builder (`innovation3.build_formal_manifest`) and full-pool
+DDP session runner are now present,
+but they fail closed until a completed `PASS_FORMAL_SCENE_AUDIT` receipt is
+provided. The following older acceptance notes apply to the legacy mode; see
+selector_finetune.md for the current continuation-mode gates. Remaining
+production work:
+
+1. Verify log-disjoint scene/image/map/asset coverage; directory existence is not coverage.
+   Then build the formal manifest with `innovation3.build_formal_manifest` and
+   pass it with `--split train` to `ddp-online-session-gate`.
+2. The bounded H100 learner integration is now accepted with the live
+   preprocessing, bounded shared-memory transport and separate reward history.
+   Production-like throughput and complete renderer/simulator/learner recovery
+   remain unverified; the dynamics snapshot guard still rejects unadapted
+   managers.
+3. Keep the versioned H1 reward window/reference contract fixed while measuring
+   signal sufficiency across the training-source manifest.
+4. One real learning episode and synthetic DDP/scene-boundary recovery are
+   accepted. Run the real production-like throughput pilot, then validate
+   real-feedback multi-rank DDP and synchronized recovery.
+   Export and inference must record which parameterization was used. The new
+   continuation mode exports one online-finetuned V3 selector; the historical
+   residual mode retains its separate frozen reference and correction state.
+5. Test longer branches and controls after strict H1 validation. A value/TD head is
+   optional if long-term feedback is insufficient, and must be a separate condition.
+
+Existing SimEngine metrics are not an off-the-shelf future-free H1 reward:
+MetricManager caches expert future, while comfort uses temporal filtering and TTC
+uses a horizon. Preserve the official full evaluator and build/audit the online
+reward separately; never silently label a short-horizon approximation official PDMS.
+The standard evaluation launcher uses `log_play_controller` (perfect tracking).
+The physical-controller condition must use `two_stage_controller` with
+`kinematic_bicycle` for both main and branch, paired with a matching V3 baseline.
+Keep the existing 29-column evaluator unchanged and report the physical-controller
+comparison as an additional controlled evaluation.
+
+SimEngine has a process-global engine singleton. Multiple live engines cannot be
+constructed in one process; branch workers require spawn-based process isolation.
+Never fork a process after creating its CUDA rendering context.
+
+## Dynamics gate boundaries and throughput
+
+The canonical execution in `snapshot-probe` is headless. It executes the selected
+action first, evaluates all 20 branches from the pre-action snapshot, verifies
+selected-branch state equality, and restores the canonical post-action state.
+There is no reward, generator forward, optimizer update, or DDP in this probe.
+The branch loop is a serial correctness reference; the extra spawned process
+tests serialization, not parallel throughput. Reported group timings include
+strict dynamic hashes and full static-state audits. They must not be presented
+as training throughput or multiplied by GPU count to estimate scaling.
+
+The upstream bicycle model integrates position from current velocity before
+updating speed and steering. Consequently H1 positions can coincide across
+candidates even when next velocities/steering differ. Reward distinguishability
+requires separate validation; passing snapshot parity does not prove H1 is a
+sufficient learning signal. Preserve the official dynamics for paired controls.
+
+The simulator retains upstream traffic route priors and actor validity schedules.
+This is distinct from allowing an online reward or selector to read logged ego
+future; that information boundary remains to be implemented and audited.
+
+
+## Investigating a parity failure
+
+A target-instance rerun can fail even after a local probe passed. A local PASS
+must not override that failure or be interpreted as evidence that it is fixed.
+Keep the failed report and rerun using a new report name on the failing instance.
+The probe now records CPU, numeric library versions/thread pools, selected runtime
+settings, Git HEAD, and SHA256 of the relevant source files.
+
+On a state parity failure the strict gate still stops immediately. Alongside the
+report, `<report-stem>.failure/` stores the static scene/map bundle, pre-action
+snapshot, canonical and branch snapshots, and selected action. `diagnosis.json`
+records component hashes, the first differing hash events, and artifact checksums.
+These trusted local pickles are private debugging evidence, never training data.
+They are written only on failure. A one-ULP fault-injection test verifies that
+small numerical mismatches are still rejected, the canonical state is restored,
+and saved pre-action/action evidence can reproduce the unmodified execution.
+
+This adds diagnostics; it does not establish the cause of any previously observed
+failure. Do not loosen tolerances, silently normalize the canonical execution, or
+advance training until the failing target-instance behavior is explained and a
+correction is verified there.
+
+### Visual probe asset configuration
+
+`asset_root` must directly contain `<asset_id>/background/<asset_id>.ckpt`.
+For a WE_processed layout, use its `navtrain/assets` directory for this training-source
+probe. `visual_scene_id` optionally pins a scene in the registered
+`original/navtrain_failures_per1/all_scenarios.pkl`; absent that setting, the first
+sorted scene is retained. Missing assets fail explicitly, without switching scenes
+or borrowing another asset from the same log. Audit and record the exact scene/asset
+pair before GPU execution. Asset availability alone is not a training-set coverage
+or log-disjointness certification. Existing headless probes keep their original scene selection.
+
+### Causal H1 reward acceptance
+
+After the visual bridge, use the CPU-only `reward-probe` gate described in
+[h1_reward.md](h1_reward.md). It reuses PDM components with explicitly versioned
+causal windows/reference, independently checks canonical/full20 reward and history
+parity, and reports no-signal groups. It is not a visual learner or formal PDMS.

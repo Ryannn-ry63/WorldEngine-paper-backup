@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/experiment.json": "bc821c9f89a77b88536ab291d6ec963a0133ecb82f0ab1fefdb69ace966fde41",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/runtime.json": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/scene_manifest.json": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/hotfix_logit_tolerance_bs2_20261001/manifest.json": "76c0437924e652251f98476a350ec1b17decc41d19531935b9de16dad29223eb",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/repair_manifest.json": "d66476e1beffc585446aa3af5d68fe5fafb4e66c975a86679d81b4bb2a00bb02"
+  },
+  "eval_lock": "atomic_mkdir_no_automatic_steal",
+  "eval_output": "local_scratch_then_verified_evidence_copy",
+  "files": {
+    "recover.py": "7bdb28b696fddf46a1ac291f7d4b5025c3371f4a282733662b0a7cf2617d59cc",
+    "start_recovery_h100.sh": "9a2a798a4e27b415f89db0fdfa001684512447390c8e3ee18ea0020d39c3bd6f"
+  },
+  "method_changed": false,
+  "purpose": "disk_quota_and_duplicate_eval_infrastructure_recovery",
+  "schema": 1,
+  "training_cumulative_wall_seconds": 43200,
+  "training_episode_target": 904
+}

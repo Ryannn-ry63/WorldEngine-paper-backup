@@ -1,0 +1,45 @@
+{
+  "checked_algengine_and_simengine_imports": true,
+  "checked_evaluation_queue": true,
+  "commands": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/handoff/H100_COMMANDS.md",
+  "development_evaluation_complete": false,
+  "formal_tables_complete": false,
+  "gpu_training_started": false,
+  "implementation": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/handoff/IMPLEMENTATION.md",
+  "local_tests": {
+    "nccl_h100_verified": false,
+    "passed": 59,
+    "real_ddp_backend": "Gloo",
+    "real_ddp_ranks": 2
+  },
+  "original_source_files_unchanged": 657,
+  "performance_improvement_verified": false,
+  "real_h100_jobs_started": false,
+  "real_map_cpu": {
+    "elapsed_seconds": 597.0288941897452,
+    "gpu_used": false,
+    "independent_serial_all20": true,
+    "legacy_aligned_score_max_abs": 0.0,
+    "output": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/local_cpu_parity_final",
+    "report": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/local_cpu_parity_final/report.json",
+    "report_sha256": "7993224b74fc728ea81f3190201874cfc7d0a14c6cdd2849dc661d7331c6ae0c",
+    "reverse_order_all20": true,
+    "scored_traces": 40,
+    "serial_parallel_end_state_hashes_equal": true,
+    "serial_parallel_first_state_hashes_equal": true,
+    "serial_parallel_rewards_equal": true,
+    "status": "PASS_CPU_FIXED_SEGMENT_PARITY"
+  },
+  "registered_jobs": 63,
+  "source_sha256_matches_registration": true,
+  "static_candidates": {
+    "development": 83,
+    "development_logs": 12,
+    "protected_holdout_logs": 5,
+    "train": 150,
+    "train_logs": 25
+  },
+  "status": "IMPLEMENTED_LOCAL_VALIDATION_PASSED_H100_PENDING",
+  "technical_scene_admission_complete": false,
+  "updated_utc": "2026-09-30T10:34:05.993824Z"
+}

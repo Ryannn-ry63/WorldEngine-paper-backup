@@ -1,0 +1,14 @@
+{
+  "archived_stop": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/evidence/pre_recovery/correctness_failure.json",
+  "archived_stop_sha256": "89df858dc520b571656e2b23d2c228d0b7f59c803aa86d24cace694ed10df84a",
+  "deadline_extended": false,
+  "original_experiment": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930",
+  "original_sources_unchanged": true,
+  "released_unix": 1790785494.8314989,
+  "repair_manifest_sha256": "d66476e1beffc585446aa3af5d68fe5fafb4e66c975a86679d81b4bb2a00bb02",
+  "required_before_train": "repaired roots48 COMPLETE on H100",
+  "resume_audit_sha256": "a781dfa237b56fb8d6000532aabfa15353d8e150066a0d4da7a9399d075da2fc",
+  "status": "RELEASED_AFTER_VALIDATED_DIAGNOSTIC_REPAIR",
+  "training_checkpoints_unchanged": true,
+  "validation_sha256": "154cd0cefc639196e30d9bae95ae076d6f9c6c68318142a13fbc7232920f2379"
+}

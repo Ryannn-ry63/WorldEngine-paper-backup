@@ -1,0 +1,385 @@
+{
+  "aggregate": [
+    {
+      "metrics": {
+        "comfort": {
+          "B_mean": 100.0,
+          "B_seed_sd": 0.0,
+          "delta": 0.0,
+          "parent": 100.0
+        },
+        "drivable_area_compliance": {
+          "B_mean": 90.625,
+          "B_seed_sd": 1.2519275262027671,
+          "delta": -6.944444444444443,
+          "parent": 97.56944444444444
+        },
+        "ego_progress": {
+          "B_mean": 67.90961689814814,
+          "B_seed_sd": 0.8878112263643306,
+          "delta": 10.87375925925926,
+          "parent": 57.035857638888885
+        },
+        "no_at_fault_collisions": {
+          "B_mean": 96.41203703703704,
+          "B_seed_sd": 0.2004688434686237,
+          "delta": 1.9675925925925952,
+          "parent": 94.44444444444444
+        },
+        "score": {
+          "B_mean": 77.68803703703703,
+          "B_seed_sd": 1.1608551168487786,
+          "delta": 0.9138495370370379,
+          "parent": 76.7741875
+        },
+        "time_to_collision_within_bound": {
+          "B_mean": 92.36111111111111,
+          "B_seed_sd": 0.6014065304058711,
+          "delta": -0.6944444444444429,
+          "parent": 93.05555555555556
+        }
+      },
+      "mode": "cl_R",
+      "seeds": 3
+    },
+    {
+      "metrics": {
+        "comfort": {
+          "B_mean": 100.0,
+          "B_seed_sd": 0.0,
+          "delta": 0.0,
+          "parent": 100.0
+        },
+        "drivable_area_compliance": {
+          "B_mean": 92.3611111111111,
+          "B_seed_sd": 1.2028130608117258,
+          "delta": -5.208333333333343,
+          "parent": 97.56944444444444
+        },
+        "ego_progress": {
+          "B_mean": 67.68077777777778,
+          "B_seed_sd": 1.6013570790836738,
+          "delta": 8.636902777777777,
+          "parent": 59.043875
+        },
+        "no_at_fault_collisions": {
+          "B_mean": 95.48611111111111,
+          "B_seed_sd": 0.34722222222222854,
+          "delta": 0.0,
+          "parent": 95.48611111111111
+        },
+        "score": {
+          "B_mean": 77.70841087962962,
+          "B_seed_sd": 1.900945196399074,
+          "delta": 0.06862962962962627,
+          "parent": 77.63978125
+        },
+        "time_to_collision_within_bound": {
+          "B_mean": 91.31944444444444,
+          "B_seed_sd": 1.2028130608117258,
+          "delta": -1.0416666666666714,
+          "parent": 92.36111111111111
+        }
+      },
+      "mode": "cl_NR",
+      "seeds": 3
+    },
+    {
+      "metrics": {
+        "comfort": {
+          "B_mean": 99.88425925925927,
+          "B_seed_sd": 0.2004688434686155,
+          "delta": -0.11574074074073337,
+          "parent": 100.0
+        },
+        "drivable_area_compliance": {
+          "B_mean": 85.30092592592592,
+          "B_seed_sd": 0.2004688434686155,
+          "delta": -3.9351851851851904,
+          "parent": 89.23611111111111
+        },
+        "ego_progress": {
+          "B_mean": 58.89212565510858,
+          "B_seed_sd": 1.300168659902718,
+          "delta": 1.3813039563979999,
+          "parent": 57.51082169871058
+        },
+        "no_at_fault_collisions": {
+          "B_mean": 90.7986111111111,
+          "B_seed_sd": 0.6259637631013906,
+          "delta": -1.2152777777777857,
+          "parent": 92.01388888888889
+        },
+        "score": {
+          "B_mean": 65.75783647744002,
+          "B_seed_sd": 0.8828430100591009,
+          "delta": -2.2591646800642167,
+          "parent": 68.01700115750424
+        },
+        "time_to_collision_within_bound": {
+          "B_mean": 81.71296296296296,
+          "B_seed_sd": 0.7228006942590655,
+          "delta": -1.9675925925925952,
+          "parent": 83.68055555555556
+        }
+      },
+      "mode": "ol_rare",
+      "seeds": 3
+    },
+    {
+      "metrics": {
+        "comfort": {
+          "B_mean": 99.80789285910313,
+          "B_seed_sd": 0.09068945409659247,
+          "delta": -0.07684285635875199,
+          "parent": 99.88473571546189
+        },
+        "drivable_area_compliance": {
+          "B_mean": 96.46248421977057,
+          "B_seed_sd": 0.12763615955029475,
+          "delta": -1.1416652944728014,
+          "parent": 97.60414951424337
+        },
+        "ego_progress": {
+          "B_mean": 81.27612852582607,
+          "B_seed_sd": 0.5305443776166624,
+          "delta": 1.4050483974464498,
+          "parent": 79.87108012837962
+        },
+        "no_at_fault_collisions": {
+          "B_mean": 96.4720895768154,
+          "B_seed_sd": 0.5069917443879757,
+          "delta": -1.5190186069487908,
+          "parent": 97.9911081837642
+        },
+        "score": {
+          "B_mean": 85.54234993517531,
+          "B_seed_sd": 0.774816861392779,
+          "delta": -2.0002747371082847,
+          "parent": 87.5426246722836
+        },
+        "time_to_collision_within_bound": {
+          "B_mean": 90.16960316153465,
+          "B_seed_sd": 1.0460978214568435,
+          "delta": -4.198913222460078,
+          "parent": 94.36851638399473
+        }
+      },
+      "mode": "ol_navtest",
+      "seeds": 3
+    }
+  ],
+  "complete": 16,
+  "metric_scale": 100,
+  "rows": [
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 97.56944444444444,
+      "ego_progress": 57.035857638888885,
+      "job": "cl_R__parent",
+      "mode": "cl_R",
+      "no_at_fault_collisions": 94.44444444444444,
+      "policy": "parent",
+      "score": 76.7741875,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 93.05555555555556
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 97.56944444444444,
+      "ego_progress": 59.043875,
+      "job": "cl_NR__parent",
+      "mode": "cl_NR",
+      "no_at_fault_collisions": 95.48611111111111,
+      "policy": "parent",
+      "score": 77.63978125,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 92.36111111111111
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 89.23611111111111,
+      "ego_progress": 57.51082169871058,
+      "job": "ol_rare__parent",
+      "mode": "ol_rare",
+      "no_at_fault_collisions": 92.01388888888889,
+      "policy": "parent",
+      "score": 68.01700115750424,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 83.68055555555556
+    },
+    {
+      "comfort": 99.88473571546189,
+      "count": 12146,
+      "drivable_area_compliance": 97.60414951424337,
+      "ego_progress": 79.87108012837962,
+      "job": "ol_navtest__parent",
+      "mode": "ol_navtest",
+      "no_at_fault_collisions": 97.9911081837642,
+      "policy": "parent",
+      "score": 87.5426246722836,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 94.36851638399473
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 90.27777777777779,
+      "ego_progress": 67.90223263888889,
+      "job": "cl_R__train_B_s0_p6",
+      "mode": "cl_R",
+      "no_at_fault_collisions": 96.52777777777779,
+      "policy": "train_B_s0_p6",
+      "score": 77.19307986111112,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 91.66666666666666
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 91.66666666666666,
+      "ego_progress": 67.22935416666667,
+      "job": "cl_NR__train_B_s0_p6",
+      "mode": "cl_NR",
+      "no_at_fault_collisions": 95.13888888888889,
+      "policy": "train_B_s0_p6",
+      "score": 76.768,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 90.625
+    },
+    {
+      "comfort": 99.65277777777779,
+      "count": 288,
+      "drivable_area_compliance": 85.41666666666666,
+      "ego_progress": 59.35729243264106,
+      "job": "ol_rare__train_B_s0_p6",
+      "mode": "ol_rare",
+      "no_at_fault_collisions": 90.97222222222221,
+      "policy": "train_B_s0_p6",
+      "score": 66.42780703211896,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 82.29166666666666
+    },
+    {
+      "comfort": 99.90120204182446,
+      "count": 12146,
+      "drivable_area_compliance": 96.36917503704923,
+      "ego_progress": 81.24154924605713,
+      "job": "ol_navtest__train_B_s0_p6",
+      "mode": "ol_navtest",
+      "no_at_fault_collisions": 96.3403589659147,
+      "policy": "train_B_s0_p6",
+      "score": 85.37926156394231,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 89.90614193973325
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 89.58333333333334,
+      "ego_progress": 67.02552083333333,
+      "job": "cl_R__train_B_s1_p6",
+      "mode": "cl_R",
+      "no_at_fault_collisions": 96.18055555555556,
+      "policy": "train_B_s1_p6",
+      "score": 76.85669791666668,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 92.70833333333334
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 91.66666666666666,
+      "ego_progress": 66.35358680555555,
+      "job": "cl_NR__train_B_s1_p6",
+      "mode": "cl_NR",
+      "no_at_fault_collisions": 95.48611111111111,
+      "policy": "train_B_s1_p6",
+      "score": 76.46096875,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 90.625
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 85.06944444444444,
+      "ego_progress": 57.42335722922076,
+      "job": "ol_rare__train_B_s1_p6",
+      "mode": "ol_rare",
+      "no_at_fault_collisions": 90.10416666666666,
+      "policy": "train_B_s1_p6",
+      "score": 64.75744427775332,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 80.90277777777779
+    },
+    {
+      "comfort": 99.72007245183599,
+      "count": 12146,
+      "drivable_area_compliance": 96.4103408529557,
+      "ego_progress": 80.76371962722034,
+      "job": "ol_navtest__train_B_s1_p6",
+      "mode": "ol_navtest",
+      "no_at_fault_collisions": 96.0439650913881,
+      "policy": "train_B_s1_p6",
+      "score": 84.86205896403217,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 89.28042153795488
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 92.01388888888889,
+      "ego_progress": 68.80109722222223,
+      "job": "cl_R__train_B_s2_p6",
+      "mode": "cl_R",
+      "no_at_fault_collisions": 96.52777777777779,
+      "policy": "train_B_s2_p6",
+      "score": 79.01433333333333,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 92.70833333333334
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 93.75,
+      "ego_progress": 69.45939236111111,
+      "job": "cl_NR__train_B_s2_p6",
+      "mode": "cl_NR",
+      "no_at_fault_collisions": 95.83333333333334,
+      "policy": "train_B_s2_p6",
+      "score": 79.89626388888888,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 92.70833333333334
+    },
+    {
+      "comfort": 100.0,
+      "count": 288,
+      "drivable_area_compliance": 85.41666666666666,
+      "ego_progress": 59.89572730346391,
+      "job": "ol_rare__train_B_s2_p6",
+      "mode": "ol_rare",
+      "no_at_fault_collisions": 91.31944444444444,
+      "policy": "train_B_s2_p6",
+      "score": 66.08825812244777,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 81.94444444444444
+    },
+    {
+      "comfort": 99.80240408364894,
+      "count": 12146,
+      "drivable_area_compliance": 96.60793676930678,
+      "ego_progress": 81.82311670420073,
+      "job": "ol_navtest__train_B_s2_p6",
+      "mode": "ol_navtest",
+      "no_at_fault_collisions": 97.03194467314343,
+      "policy": "train_B_s2_p6",
+      "score": 86.38572927755145,
+      "status": "COMPLETE",
+      "time_to_collision_within_bound": 91.32224600691585
+    }
+  ],
+  "scope": "diagnostic_formal_fixed_B_p6_not_selection"
+}

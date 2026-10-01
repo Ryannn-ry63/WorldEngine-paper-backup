@@ -1,0 +1,67 @@
+{
+  "scope": "diagnostic_formal_fixed_B_p6_not_selection",
+  "created": "2026-10-01",
+  "policies": {
+    "parent": {
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_simreward_v2_20260930/registry/reward_v2_seed0_20260930T053704Z_3664064.eval64/parent.pth",
+      "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/experiments/diffusiondrive/grpo_selector_v3_rare_original_v1/models/rare_tuned/seed0/train/epoch_64_scene_selector.pt",
+      "selector_sha256": "aed5e36f1ccb0df96b703a901b54f48c41dcf1967cc86d63519eb4da37519eb2",
+      "sha256": "b0cf34d201e0e2f490bcba1dab9cf55d735f5d67baaaf2cd758e3da9b613e31e"
+    },
+    "train_B_s0_p6": {
+      "checkpoint": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank0_7c62399904bd4f78bb6fb49e9131ff33/report.online.pt",
+      "checkpoint_sha256": "31b5a03b9f7c5eb60dae024a3affdab39dc465e4c88ae6503f708ae3fa849c7b",
+      "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.coverage6.json",
+      "marker_sha256": "bd2cde9348e927d4bfc90fe3548f4a9741e837bd11bb5b930d7984f8c5ee422d",
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s0_p6/attempt_1790833945771457741/checkpoint.pth",
+      "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s0_p6/attempt_1790833945771457741/selector.pt",
+      "selector_sha256": "a7e0c4c74d869e9d66475561ac7f1ab8ffe1f5457bc9a8fab008a84f36004b72",
+      "sha256": "78338c9d4ab2d2b26fdeeca87cd265bb4a320540799b2bf79f269e53624b41b4"
+    },
+    "train_B_s1_p6": {
+      "checkpoint": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank0_3c42e4ca27ee48268fa8abf7a58bfa2a/report.online.pt",
+      "checkpoint_sha256": "38b49150fac44fb73c4634a9c69d0686ae644e65c2a05343746f1ce00ecbf461",
+      "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.coverage6.json",
+      "marker_sha256": "f335d3521f83f1c61661e8445b4a7ca385ed20747e43600537b370bae22bc479",
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s1_p6/attempt_1790834004006764884/checkpoint.pth",
+      "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s1_p6/attempt_1790834004006764884/selector.pt",
+      "selector_sha256": "d86c6fced0cf3287aed7577182568265c30d2c966b5cdf444eb46147966950f8",
+      "sha256": "beacdbe5c07a4aef1b3cd4c3a2e12d8084838687e1baf095a4b39145b403b976"
+    },
+    "train_B_s2_p6": {
+      "checkpoint": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank0_6aac05d849ed48c19cd5128f67c8c26a/report.online.pt",
+      "checkpoint_sha256": "f8bc8a0aed701d96d2a143283508b4c2e9c0a1e9669b5881d812dc015e9856f7",
+      "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.coverage6.json",
+      "marker_sha256": "95abe18e3313c3cfc3c09d44be3520c1d8f4080a42997cb0b14755512052c8e4",
+      "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s2_p6/attempt_1790844720370493481/checkpoint.pth",
+      "selector": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s2_p6/attempt_1790844720370493481/selector.pt",
+      "selector_sha256": "e0192f334a403b8c9084996e96b2c70779cf8b34d62132c060ff42498f183b84",
+      "sha256": "bc08878d78580530c9d492b8499ff8af14cdc09c5433ab3506f426f2dac49e55"
+    }
+  },
+  "files": {
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/run.py": "cd9ff9a7014a263590b3b02dbcbb03e67df8636be2ff5112f74870d16f65e447",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_B_p6_formal_diagnostic_20261001/start_h100.sh": "db5edc6d538fc040ed2fd29cebcc54e0b3bca9bd7b270d8e186bb86273bd079f",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/runtime.json": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/fulltable_data_contract.json": "c3f469527c3d56878c376b8dcc64315c964bf7fda24c0c9c6a04cd1227d4cbad",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/development/prepared.json": "3d2ece9e2e715ac1ea9b014f1b4105bc9087decd7537af65a9c97e2e3f02fc72",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/development/frozen_eval_config.py": "0171c4a0613c7915359466d0b1971549897fe4643df5999ab90512d7ec72b9a7",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/frozen_policies.json": "44c806fade86f7477e710e000dad95b21dc5b86fa8fae4b4fc09c0176f13c0a4",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s0_p6/prepared.json": "dbecf0648d2741792ee0fde7d105af842bcebb75ff0d586aa3bd5bb86f77bc1b",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s1_p6/prepared.json": "62a214c76389bfa581485edbbb5cec66e97aa4a17d6d93bf4c20ce43fc2f02da",
+    "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/policies/train_B_s2_p6/prepared.json": "d9fe5006346cbbfbc70200dad9fa6384ce14d02f7cfbf7e0a5064b6aa6a6018d"
+  },
+  "expected_counts": {
+    "ol_navtest": 12146,
+    "ol_rare": 288,
+    "cl_R": 288,
+    "cl_NR": 288
+  },
+  "eval_seed": 0,
+  "interval_seconds": 0.5,
+  "all_B_seeds_reported": true,
+  "original_selection_status": "NO_METHOD_QUALIFIED",
+  "original_selection_sha256": "3597c30059447c10f938e766ee0a5eed275c1f9f57fbe58d983aabd3b03f825b",
+  "original_experiment_sha256": "bc821c9f89a77b88536ab291d6ec963a0133ecb82f0ab1fefdb69ace966fde41",
+  "job_timeout_seconds": 86400
+}

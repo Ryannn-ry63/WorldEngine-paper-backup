@@ -1,0 +1,9 @@
+{
+  "cumulative_training_cap_seconds": 43200,
+  "deadline_unix": 1790850617.2549953,
+  "original_wall_seconds": 64800,
+  "recovery_reason": "disk_quota_interruption",
+  "recovery_window": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_repair_20260930/storage_recovery_20261001/training_window.json",
+  "started_unix": 1790766053.242452,
+  "wall_seconds": 84564.01254343987
+}

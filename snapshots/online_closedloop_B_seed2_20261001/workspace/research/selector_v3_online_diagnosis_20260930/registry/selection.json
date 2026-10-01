@@ -1,0 +1,14 @@
+{
+  "budget_passes": 6,
+  "rule": {
+    "NR_score_min_delta": -0.005,
+    "R_score_min_delta": 0.005,
+    "budget_passes": 6,
+    "fallback_is_final": false,
+    "fallback_passes": 3,
+    "safety_component_min_delta": -0.005,
+    "tie_break": "A",
+    "training_seeds": 3
+  },
+  "status": "NO_METHOD_QUALIFIED"
+}

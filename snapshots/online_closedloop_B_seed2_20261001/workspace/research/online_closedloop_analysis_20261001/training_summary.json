@@ -1,0 +1,1262 @@
+[
+  {
+    "job": "train_A_s0",
+    "method": "A",
+    "seed": 0,
+    "local_signal_groups": 6717,
+    "rank_optimizer_steps": 7232,
+    "candidate_branches": 144640,
+    "candidate_simulation_steps": 1157120,
+    "root_violation_disagreement": 0,
+    "reports": 904,
+    "global_optimizer_steps": 904,
+    "unique_scenes": 150,
+    "min_visits": 6,
+    "max_visits": 7,
+    "committed_round_max_sum_seconds": 28429.132170812227,
+    "registered_training_wall_seconds": 28630.720064081717,
+    "resumed_segments": 1,
+    "local_groups": 7232,
+    "source_variants": {
+      "db877b8aea7560b3be46b7fbbd7110e0479dbee735185b564366708a1ee8bebe": 904
+    },
+    "markers": [
+      {
+        "passes": 3,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.coverage3.json",
+        "sha256": "8bb9dc4480bee0042df650c14892624481f4a89502d23d9ec5b66777518ed56b",
+        "completed": 456,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank0_6be8a7fe690848188d87aec9e2a9252a/report.online.pt",
+            "sha256": "87f630beee436e31984e054b6005d88e98d857a5227a0f19fae72d80eb8a8961",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank1_cd5630993a494d4688f3dbe51657df31/report.online.pt",
+            "sha256": "19d309879ec90a65667ac0ef2b77bc99b5dab0da572adc0c4106ee5ebea1bfbf",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank2_9dd544afb7a2404191f5fc721ea80946/report.online.pt",
+            "sha256": "8a3479584b8213bb35b91abbb4f63b44481259ed416e4c25bee673eb149fefa3",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank3_78348f5d0cad40e09ca252691eb6294b/report.online.pt",
+            "sha256": "65ccb2528f6bdd47489cbfaf5ab7fe06f49f54c67b31ebd3ec8adac0432c08b2",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank4_889c781d3af74de684a1af5d053c6c96/report.online.pt",
+            "sha256": "3c13697aedefb4059337f45669033f549c1354f0e8cd354aa9996686ecdd632b",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank5_7bca2b95b08f4d4b851f19adb4c0900f/report.online.pt",
+            "sha256": "3a754e89f238415ea5d373d6428fcb9b986f3df6a357e19f52556000b3975ba6",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank6_61891ab3839d4e79ac361746c845ddaa/report.online.pt",
+            "sha256": "b2397e45558d968bb466e63a597b207cde6e739f64edebcf332cb097660b06bf",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round056_rank7_3421788b3db540a8839d255e5ef64ab5/report.online.pt",
+            "sha256": "54d20a26ff3ec981cdb3d6f3d8783d54a4ad1b24adb0cb389ec85d38c4c24483",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      },
+      {
+        "passes": 6,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.coverage6.json",
+        "sha256": "3de1811f18de32ca932c7ba77456ee72a5084eacd12a8f6ff8d5ed0bbc13901e",
+        "completed": 904,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank0_63b199e607794d29993a4a5057004a5b/report.online.pt",
+            "sha256": "1aebe212c6e7991bdb51cdd64790ef5c46a5db853a1b9706b9d406aefb665eeb",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank1_8203b86804ce4a9a9d826845ecb6e198/report.online.pt",
+            "sha256": "3bd1278219b7d9c885c16133f98b78d1e08a77185c17871a688f981dede83f1e",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank2_858e95c41fd740a38dedc03e1fea2ff3/report.online.pt",
+            "sha256": "b80bdfae78718b721590154e8cac588e9dca01d77a21eba4d6e1dad56ee8250a",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank3_cd942ab449f0450f827e2627060c4bcc/report.online.pt",
+            "sha256": "be9848bfc75e7bd62b2e87dc43d65857007d6c829a5b72b6227c47aa6188e88b",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank4_f06123a7b0d74e84947c5c045d650b06/report.online.pt",
+            "sha256": "9fa1d711c04e6877e70f3a33e208d7e09f4521bebea063b5c5da12240e272bff",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank5_c97d78fc369a4fb4ac3d1ed2f8f8f417/report.online.pt",
+            "sha256": "baebbd517f0d03a150a1f38d34f476dadbb83607e963248a6113d6d3f2d0f611",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank6_e9d0c49ff83247a4a66491511d76d4d1/report.online.pt",
+            "sha256": "2dd6182aafeb08ec55d6aacc35f1e223d0d29ce7252e336a3833c9b8ee610692",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s0/training.attempts/round112_rank7_c9f63113345b4f558614085437ced700/report.online.pt",
+            "sha256": "14960865552da9852ae23db3ca8a73f6e779c37da1a4c1e07811ad2ee3950225",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "schema": 2,
+      "episodes": 904,
+      "world_size": 8,
+      "steps": 8,
+      "seed": 0,
+      "branch_workers": 4,
+      "settings_sha256": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+      "manifest_sha256": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+      "parameterization": "v3_initialized_selector_finetune",
+      "reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+      "ego_controller": "log_play_controller",
+      "dynamics_contract": "upstream_log_play_h1_v1",
+      "schedule": "seeded_cyclic_global_episode_v2",
+      "online_update_timing": "per_step",
+      "formal_manifest": false,
+      "split": "train",
+      "formal_training": false,
+      "fixed_segment": true,
+      "simulator_backend": "cached",
+      "full_audit_every": 32,
+      "wall_budget_seconds": 43200.0,
+      "scoring_frequency": "all8"
+    },
+    "profile_mean_seconds": {
+      "decision_wall_seconds": 29.280238008591677,
+      "observation_copy_seconds": 2.160604624494469,
+      "input_prepare_seconds": 1.120673235780282,
+      "forward_seconds": 0.684615356929895,
+      "action_to_main_seconds": 2.9617711657228982,
+      "branch_feedback_seconds": 11.352553514507466,
+      "learner_update_seconds": 10.97465883259873,
+      "update_ack_seconds": 0.003726151961559734
+    },
+    "selected_reward": 0.6909328725066112,
+    "argmax_reward": 0.6909795634225646,
+    "reference_argmax_reward": 0.6670935487305842,
+    "oracle_reward": 0.8284824031096782,
+    "argmax_oracle_gap": 0.13750283968711358,
+    "reference_oracle_gap": 0.16138885437909406,
+    "same_candidates_argmax_gain": 0.023886014691980487,
+    "expected_reward": 0.6908144590574431,
+    "reference_expected_reward": 0.6670911109252706,
+    "entropy": 0.14353166621943242,
+    "reference_entropy": 0.13762513757074687,
+    "max_probability": 0.9415619119474318,
+    "top2_logit_margin": 11.527842375536375,
+    "behavior_kl_to_reference": 7.327363848443839,
+    "safe_candidate_fraction": 0.40179756637168146,
+    "no_safe_candidates": 0.078125,
+    "all_zero": 0.0712112831858407,
+    "root_unsafe": 0.04701327433628318,
+    "argmax_unsafe_with_safe_available": 0.12016039823008849,
+    "sampled_unsafe_with_safe_available": 0.12057522123893805,
+    "reference_unsafe_with_safe_available": 0.12389380530973451,
+    "argmax_changed_from_reference": 0.43279867256637167,
+    "raw_EP_selected": 0.7539195528952584,
+    "gated_EP_selected": 0.6182509784374409,
+    "local_signal": 0.9287887168141593,
+    "update_kl": 6.892753341620867,
+    "policy_loss": -1.1713822947373866,
+    "selected_DAC": 0.9123340707964602,
+    "selected_NC": 0.8884126106194691,
+    "selected_TTC": 0.8503871681415929,
+    "selected_comfort": 0.8643528761061947,
+    "candidate_comfort_mean": 0.541060564159292,
+    "behavior_version": 451.5,
+    "update_version_before": 451.5,
+    "selected_DAC_first_seconds": 2.454258675078864,
+    "selected_NC_first_seconds": 1.7147129186602872,
+    "selected_TTC_first_seconds": 1.1256931608133087,
+    "zero_groups_root_unsafe": 292,
+    "no_safe_groups_root_safe": 225,
+    "update_drift_max": 2.2411346435546875e-05
+  },
+  {
+    "job": "train_A_s1",
+    "method": "A",
+    "seed": 1,
+    "local_signal_groups": 6718,
+    "rank_optimizer_steps": 7232,
+    "candidate_branches": 144640,
+    "candidate_simulation_steps": 1157120,
+    "root_violation_disagreement": 0,
+    "reports": 904,
+    "global_optimizer_steps": 904,
+    "unique_scenes": 150,
+    "min_visits": 6,
+    "max_visits": 7,
+    "committed_round_max_sum_seconds": 28004.268257634714,
+    "registered_training_wall_seconds": 28199.96479382459,
+    "resumed_segments": 1,
+    "local_groups": 7232,
+    "source_variants": {
+      "db877b8aea7560b3be46b7fbbd7110e0479dbee735185b564366708a1ee8bebe": 904
+    },
+    "markers": [
+      {
+        "passes": 3,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.coverage3.json",
+        "sha256": "834b324f78c36eb8bdebb0e05b0491a547e9d8ba7da2751170e5d03fd55b16bd",
+        "completed": 456,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank0_e01c41cab6f34ab2bf04c9dbd94d1e8e/report.online.pt",
+            "sha256": "40e53100852e44689bfdfed8a8c72229526bfb5b6db9d3855e731b762d38f956",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank1_4890f14f90ac4197baccf37cb4c25424/report.online.pt",
+            "sha256": "b199b46dadec0ffddd0314c45d844eea47c2e8ba86091a8caee32f30fe6aaa73",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank2_fe9a512d1878411db41216b23d8138f5/report.online.pt",
+            "sha256": "15df0e808517c81c561b5eb63391d7607f2441e9aa954d707b3156abfca6e98a",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank3_a5c9656bea434d958b1dd377ccd35976/report.online.pt",
+            "sha256": "932da0ee16878e4fb7236d2b62d836a12082a71e97423b954e82066b4f154c37",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank4_c3acc2f947f14b54b1102829b7d0e5b9/report.online.pt",
+            "sha256": "dda8043e551378bd0835d45154f7c23f4a72ec5c47bfe80a5c2a51fcb9f18729",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank5_6c1429d279964e9782e41963e160edbe/report.online.pt",
+            "sha256": "9e7c3bbb7b914576e699f6d7622a7ad8c743c5e31bd7aee4f4378c94a9880927",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank6_38ca1c5b1a8546f9a9b0fcd202535597/report.online.pt",
+            "sha256": "774867833367cdeb2f807af4ed46ffc5e7985afd014df2eb7754b9d0709dbf76",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round056_rank7_18394dbf943e4717ad21c0c1c22a7c72/report.online.pt",
+            "sha256": "4f15a4d46c77a62e94ef9fd930950d5b853eaf7824e643a4265b0c80ce131ca0",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      },
+      {
+        "passes": 6,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.coverage6.json",
+        "sha256": "da8c055a72a28c02fa282f7e155ec1b0749dc000ac56a01a203282e516647107",
+        "completed": 904,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank0_9a617f0e034f467a99559a5e83cd14e7/report.online.pt",
+            "sha256": "c8dc829a92645bf50e99e771fb875fd4734af84cf73ee1550ea0df4546db12bf",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank1_9ff7a68d4d7e4beab7636ee6e78a1cf9/report.online.pt",
+            "sha256": "def17d96c95c7177cb6096467fc3b4e8604f38a233ac45ae46147f41e5d6b984",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank2_46eb5ec5f05d46a18ad68b2d8490a1a6/report.online.pt",
+            "sha256": "27690f45e68dab81807f233529e67f1bc9f9128fa827f432ec534a14453af335",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank3_082058157ce14fed89941c8a0584566a/report.online.pt",
+            "sha256": "6c967206ca94d627d99e65492a2b672d3c43656a2a4b7074cf7a3a23ab69f8be",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank4_ba315da41aa24a2cb2dd1103c078c6b3/report.online.pt",
+            "sha256": "e388029acf968c608052e07dc017d2f56eed57a77880dc2a3134f0a015c2ee27",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank5_fb513c1b7dfe4047bb86a44d04cbc55e/report.online.pt",
+            "sha256": "71ff77c21de4a8e99487989f41786ecbe556eff1e94c1b718e084940ae338626",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank6_342d74a9b10e417297349fb544a66d65/report.online.pt",
+            "sha256": "a29b105ceb160e33daeee8f61900fb3b31ec32ae87b725e380abbf8ee61f6c8b",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s1/training.attempts/round112_rank7_ca8018ff55cd470fa1bdbf260808ba41/report.online.pt",
+            "sha256": "b19a2862dc157fa61f8746c81336ebeb2153929897162359f2064f768609fef2",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "schema": 2,
+      "episodes": 904,
+      "world_size": 8,
+      "steps": 8,
+      "seed": 1,
+      "branch_workers": 4,
+      "settings_sha256": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+      "manifest_sha256": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+      "parameterization": "v3_initialized_selector_finetune",
+      "reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+      "ego_controller": "log_play_controller",
+      "dynamics_contract": "upstream_log_play_h1_v1",
+      "schedule": "seeded_cyclic_global_episode_v2",
+      "online_update_timing": "per_step",
+      "formal_manifest": false,
+      "split": "train",
+      "formal_training": false,
+      "fixed_segment": true,
+      "simulator_backend": "cached",
+      "full_audit_every": 32,
+      "wall_budget_seconds": 43200.0,
+      "scoring_frequency": "all8"
+    },
+    "profile_mean_seconds": {
+      "decision_wall_seconds": 28.84797771358656,
+      "observation_copy_seconds": 2.1645063967152933,
+      "input_prepare_seconds": 1.1366293402891317,
+      "forward_seconds": 0.6841798308528761,
+      "action_to_main_seconds": 2.9723267799217368,
+      "branch_feedback_seconds": 11.409110686839602,
+      "learner_update_seconds": 10.455797172822594,
+      "update_ack_seconds": 0.0037873416223727875
+    },
+    "selected_reward": 0.704630189530159,
+    "argmax_reward": 0.705430149768232,
+    "reference_argmax_reward": 0.6828951792750889,
+    "oracle_reward": 0.8332135596851696,
+    "argmax_oracle_gap": 0.12778340991693762,
+    "reference_oracle_gap": 0.1503183804100807,
+    "same_candidates_argmax_gain": 0.022534970493143052,
+    "expected_reward": 0.7044271736820067,
+    "reference_expected_reward": 0.6821394640455278,
+    "entropy": 0.14245110336988487,
+    "reference_entropy": 0.13468782416322614,
+    "max_probability": 0.9419882296897735,
+    "top2_logit_margin": 10.93440758205324,
+    "behavior_kl_to_reference": 7.939796803438859,
+    "safe_candidate_fraction": 0.407335453539823,
+    "no_safe_candidates": 0.07867809734513274,
+    "all_zero": 0.07107300884955753,
+    "root_unsafe": 0.04480088495575221,
+    "argmax_unsafe_with_safe_available": 0.11158738938053098,
+    "sampled_unsafe_with_safe_available": 0.1122787610619469,
+    "reference_unsafe_with_safe_available": 0.11476769911504425,
+    "argmax_changed_from_reference": 0.45782632743362833,
+    "raw_EP_selected": 0.7644916613701518,
+    "gated_EP_selected": 0.6352719864942543,
+    "local_signal": 0.9289269911504425,
+    "update_kl": 7.450173624720705,
+    "policy_loss": -1.1926686381861935,
+    "selected_DAC": 0.9110896017699115,
+    "selected_NC": 0.8978152654867256,
+    "selected_TTC": 0.8651825221238938,
+    "selected_comfort": 0.8725110619469026,
+    "candidate_comfort_mean": 0.5506775442477876,
+    "behavior_version": 451.5,
+    "update_version_before": 451.5,
+    "selected_DAC_first_seconds": 2.5248833592534994,
+    "selected_NC_first_seconds": 1.709362808842653,
+    "selected_TTC_first_seconds": 1.0697435897435899,
+    "zero_groups_root_unsafe": 276,
+    "no_safe_groups_root_safe": 245,
+    "update_drift_max": 2.09808349609375e-05
+  },
+  {
+    "job": "train_A_s2",
+    "method": "A",
+    "seed": 2,
+    "local_signal_groups": 6721,
+    "rank_optimizer_steps": 7232,
+    "candidate_branches": 144640,
+    "candidate_simulation_steps": 1157120,
+    "root_violation_disagreement": 0,
+    "reports": 904,
+    "global_optimizer_steps": 904,
+    "unique_scenes": 150,
+    "min_visits": 6,
+    "max_visits": 7,
+    "committed_round_max_sum_seconds": 28800.927304535406,
+    "registered_training_wall_seconds": 29090.780767509015,
+    "resumed_segments": 2,
+    "local_groups": 7232,
+    "source_variants": {
+      "db877b8aea7560b3be46b7fbbd7110e0479dbee735185b564366708a1ee8bebe": 904
+    },
+    "markers": [
+      {
+        "passes": 3,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.coverage3.json",
+        "sha256": "47c406eea70782b802040ee24d25f1492339aa56878aebc2322e037bd4d34d97",
+        "completed": 456,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank0_2f59969869af4a2d967043ca1d18fa6a/report.online.pt",
+            "sha256": "a998aa612ff4290d8990c639b388fe5918a01d52b38a24a7ff0e1f0b15e085b6",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank1_3ae59fa9b54d4f36b015c8bfc6726365/report.online.pt",
+            "sha256": "840b798e764a3b3f9508a1c5f394154818148a5fa6707f4615a8a12e04b45c34",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank2_26109db0c9c14ec991864d490dd331d9/report.online.pt",
+            "sha256": "ec312db7e722691d3bf9f00bb240d27080d9368a261cd50ca9fe9096fa0c0252",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank3_ab77619f3bef4d0ba2fd75bb1a74198d/report.online.pt",
+            "sha256": "befe7ec690de68b3bd372d017782b2457c7127a794f3340696394ce75e178c4c",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank4_b82947a191334535a86e7f40d58e0d77/report.online.pt",
+            "sha256": "97ac4d607420d242f6eed09dcdbd55c71d8a9727b8344313b8a94033f1856476",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank5_efae01bd01cd4d1cabd4341949df3b90/report.online.pt",
+            "sha256": "e2114a23e67a2ee44fbbd638f56dbe4659c33f8f92d63442a1c11e81aa28bf75",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank6_826167b4683f437296768b87db11a31b/report.online.pt",
+            "sha256": "3a385e813ad41e3e87e285a6a2bb8069b1fac697a5c36fa398d6e1f4f78b2f38",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round056_rank7_44bb6bc12f9b4e8eaab50748c2fdfb0c/report.online.pt",
+            "sha256": "c22ec676da318597a8e725c13d88ad49f92f47d96a1d2fa24f0fbfdb613dc93d",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      },
+      {
+        "passes": 6,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.coverage6.json",
+        "sha256": "b6b351f6a3e6c22e9724330292280e65006032983797960d6c59313f2b2cb325",
+        "completed": 904,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank0_6bc4e2243d1548be9f4a58323b1293bb/report.online.pt",
+            "sha256": "381196ab4ae053710d38e30336662c08038c0c10c67b2b495839a75dcf4dcc2c",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank1_fecfcafce6ac480fb4419f2d70aac594/report.online.pt",
+            "sha256": "a86166734c16ae133b0f8535b8d4e1f54baee1d506ff912ccb21cfb302485c90",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank2_024f6886bd2245a7a933316aa7e90306/report.online.pt",
+            "sha256": "5d5ede4f663834d085b565f922463cadbb7317842c6c170edd81ed3c16954c88",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank3_d10d03700c35492b80cc4ce58a501b6e/report.online.pt",
+            "sha256": "5cd447c50b15be1e19c1785f6a59ba6d4405a31eaf55dd630451afa6251dd0d8",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank4_38fa518d298e44d5881dffbb32b6e373/report.online.pt",
+            "sha256": "7532f20788e87f1965b5f8239842848f5b0bdd2c0566b27a48d27f690c67c8c4",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank5_acf4364117e144018178358eb3c71560/report.online.pt",
+            "sha256": "0840167e4c069de8b7947cc289fbacb5bfb2a1e2e053729f7cf445321f4bcad9",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank6_77b232c039b049e28e5ca6e066661faa/report.online.pt",
+            "sha256": "75dc1261bc0323ea10d507ea9350276c2f75f17f2bedb05a88398c2a55c055cb",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_A_s2/training.attempts/round112_rank7_33d70da1896045c8bc2095775a9907b3/report.online.pt",
+            "sha256": "cdb73fa42d08c76069231e64703c172c64bd64c67026e704b6c44778be4fadd6",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "schema": 2,
+      "episodes": 904,
+      "world_size": 8,
+      "steps": 8,
+      "seed": 2,
+      "branch_workers": 4,
+      "settings_sha256": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+      "manifest_sha256": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+      "parameterization": "v3_initialized_selector_finetune",
+      "reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+      "ego_controller": "log_play_controller",
+      "dynamics_contract": "upstream_log_play_h1_v1",
+      "schedule": "seeded_cyclic_global_episode_v2",
+      "online_update_timing": "per_step",
+      "formal_manifest": false,
+      "split": "train",
+      "formal_training": false,
+      "fixed_segment": true,
+      "simulator_backend": "cached",
+      "full_audit_every": 32,
+      "wall_budget_seconds": 43200.0,
+      "scoring_frequency": "all8"
+    },
+    "profile_mean_seconds": {
+      "decision_wall_seconds": 29.68938807299267,
+      "observation_copy_seconds": 2.176493394262583,
+      "input_prepare_seconds": 1.1698168341876383,
+      "forward_seconds": 0.6873537068239768,
+      "action_to_main_seconds": 3.0117057094498065,
+      "branch_feedback_seconds": 11.406739259554618,
+      "learner_update_seconds": 11.211569078121267,
+      "update_ack_seconds": 0.0038901456937223454
+    },
+    "selected_reward": 0.7056351857742066,
+    "argmax_reward": 0.7057706672988694,
+    "reference_argmax_reward": 0.6819300197513616,
+    "oracle_reward": 0.8327089942700252,
+    "argmax_oracle_gap": 0.12693832697115587,
+    "reference_oracle_gap": 0.15077897451866373,
+    "same_candidates_argmax_gain": 0.02384064754750785,
+    "expected_reward": 0.706178100470125,
+    "reference_expected_reward": 0.68194839411121,
+    "entropy": 0.1469951942935068,
+    "reference_entropy": 0.13564799194277397,
+    "max_probability": 0.9398825988235299,
+    "top2_logit_margin": 11.506263880726708,
+    "behavior_kl_to_reference": 6.996100703600365,
+    "safe_candidate_fraction": 0.40861449115044246,
+    "no_safe_candidates": 0.07729535398230089,
+    "all_zero": 0.07065818584070796,
+    "root_unsafe": 0.046460176991150445,
+    "argmax_unsafe_with_safe_available": 0.1084070796460177,
+    "sampled_unsafe_with_safe_available": 0.10854535398230089,
+    "reference_unsafe_with_safe_available": 0.11255530973451328,
+    "argmax_changed_from_reference": 0.42519358407079644,
+    "raw_EP_selected": 0.7661067950700505,
+    "gated_EP_selected": 0.6393975503488886,
+    "local_signal": 0.9293418141592921,
+    "update_kl": 6.584397250185455,
+    "policy_loss": -1.2031440111526197,
+    "selected_DAC": 0.9146847345132744,
+    "selected_NC": 0.8969856194690266,
+    "selected_TTC": 0.8560564159292036,
+    "selected_comfort": 0.8614491150442478,
+    "candidate_comfort_mean": 0.5453194137168141,
+    "behavior_version": 451.5,
+    "update_version_before": 451.5,
+    "selected_DAC_first_seconds": 2.488654781199352,
+    "selected_NC_first_seconds": 1.5349740932642486,
+    "selected_TTC_first_seconds": 1.0734870317002883,
+    "zero_groups_root_unsafe": 288,
+    "no_safe_groups_root_safe": 223,
+    "update_drift_max": 2.47955322265625e-05
+  },
+  {
+    "job": "train_B_s0",
+    "method": "B",
+    "seed": 0,
+    "local_signal_groups": 6713,
+    "rank_optimizer_steps": 7232,
+    "candidate_branches": 144640,
+    "candidate_simulation_steps": 1157120,
+    "root_violation_disagreement": 0,
+    "reports": 904,
+    "global_optimizer_steps": 904,
+    "unique_scenes": 150,
+    "min_visits": 6,
+    "max_visits": 7,
+    "committed_round_max_sum_seconds": 26168.656518946867,
+    "registered_training_wall_seconds": 26367.665155053604,
+    "resumed_segments": 1,
+    "local_groups": 7232,
+    "source_variants": {
+      "db877b8aea7560b3be46b7fbbd7110e0479dbee735185b564366708a1ee8bebe": 904
+    },
+    "markers": [
+      {
+        "passes": 3,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.coverage3.json",
+        "sha256": "d9b6ef864909bf844f50450d5bd2c68744b675d66bda0506c62dc52615fedc2a",
+        "completed": 456,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank0_f04d69e95cd84b599c8a210163c2c5e5/report.online.pt",
+            "sha256": "03c1715dc70f064ffda26fc3e709cf19ff44589f1d6529075d7d1bfdf864927d",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank1_d97fa499681b4aafad7d06cd8ac70efc/report.online.pt",
+            "sha256": "0629621773f4c3e52d86d78cb78ef2b132ea2b0dc3e9af3a4bbb841a868f54df",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank2_4387b2fd0af6484f814d1d964be5af91/report.online.pt",
+            "sha256": "6636e8893e35f8c575aa29a65455dee8ee6de94a325128fd45966f197e1e21d1",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank3_77461ac663b749b09574311775dc42f6/report.online.pt",
+            "sha256": "77d1f213c03ea42e552780438a68275eb81033d3a298f2212fe92f4c49ac20e3",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank4_9b24534c5b18477791edebc7853ebfb6/report.online.pt",
+            "sha256": "0fa217989ff1a7efbcfefc409c6dcb75cf1cbe8a9f5e2f1baf2b34f6f584d068",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank5_852feeb749b94795bbf3be04094f11d8/report.online.pt",
+            "sha256": "a5c1ac2373619cd7ffcf38af4cbd6ff953c82a11bbf78ee8a1edb59f29d6e138",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank6_3eb01aef321b4b0f823abfa7fd01f4da/report.online.pt",
+            "sha256": "eb3bd0f6572cea2d47a3f942a0856e8a2fbcdb64660667d2ed8e91be02cfefe6",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round056_rank7_b7d466edd58f4f9ba55fb4693a3ebfd0/report.online.pt",
+            "sha256": "83c1d96af1b9ed3c7a494e9234c99995beddbbac7dac39f7d35c813743924eaf",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      },
+      {
+        "passes": 6,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.coverage6.json",
+        "sha256": "bd2cde9348e927d4bfc90fe3548f4a9741e837bd11bb5b930d7984f8c5ee422d",
+        "completed": 904,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank0_7c62399904bd4f78bb6fb49e9131ff33/report.online.pt",
+            "sha256": "31b5a03b9f7c5eb60dae024a3affdab39dc465e4c88ae6503f708ae3fa849c7b",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank1_eefbc103bf844cd99ea8c32e1c697983/report.online.pt",
+            "sha256": "60fbaccabdface5e9e74371dbb0fb88c03ebe29b129b706ca788defe7b8fde3d",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank2_90958948ed72430c80e4e1e96bd42f75/report.online.pt",
+            "sha256": "141e6e45310d75ed6614ebc911934db9f1e427b36dd7f5f947236710e83bc9a7",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank3_cf9f1b0f59084f838fe83cab5450ae2a/report.online.pt",
+            "sha256": "5fb10e2fe8a37a7355a6ac7dc75d6ee7031a7630f00f795df87398e7977ae8d5",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank4_8ac5cbdf873b4be6a77defc9ff4b325a/report.online.pt",
+            "sha256": "5c2a0ceead1ed12483348ca9fe2a40113917332c4f8dff880639594494583a80",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank5_c9225c720b914092901045ad384001bf/report.online.pt",
+            "sha256": "d6f084c6e0c4ec92613fb2087f9a289089428698c8e44595c973e7444ab54311",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank6_b4e53c62c59c47d7bef8039c93b0fb6c/report.online.pt",
+            "sha256": "915833c9ac94e057c119b34bbab238e3debe1bc6581cb9ed5ebc233511162643",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s0/training.attempts/round112_rank7_c6f13f350cc141228db5c2e04d0154fd/report.online.pt",
+            "sha256": "dd9473d08a9c9f414ccfcd26eeb7b610cc2a526030483b71ef07bf6c37a51506",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "schema": 2,
+      "episodes": 904,
+      "world_size": 8,
+      "steps": 8,
+      "seed": 0,
+      "branch_workers": 4,
+      "settings_sha256": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+      "manifest_sha256": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+      "parameterization": "v3_initialized_selector_finetune",
+      "reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+      "ego_controller": "log_play_controller",
+      "dynamics_contract": "upstream_log_play_h1_v1",
+      "schedule": "seeded_cyclic_global_episode_v2",
+      "online_update_timing": "after_rollout8",
+      "formal_manifest": false,
+      "split": "train",
+      "formal_training": false,
+      "fixed_segment": true,
+      "simulator_backend": "cached",
+      "full_audit_every": 32,
+      "wall_budget_seconds": 43200.0,
+      "scoring_frequency": "all8"
+    },
+    "profile_mean_seconds": {
+      "decision_wall_seconds": 26.91442578837431,
+      "observation_copy_seconds": 1.9815347337119744,
+      "input_prepare_seconds": 1.0946857948286781,
+      "forward_seconds": 0.6789077928831582,
+      "action_to_main_seconds": 2.7524771257632743,
+      "branch_feedback_seconds": 10.402927474524198,
+      "learner_update_seconds": 9.980406996596791,
+      "update_ack_seconds": 0.003217312577986726
+    },
+    "selected_reward": 0.6888708355830302,
+    "argmax_reward": 0.6900952500982724,
+    "reference_argmax_reward": 0.6630127308545524,
+    "oracle_reward": 0.824939046765282,
+    "argmax_oracle_gap": 0.1348437966670094,
+    "reference_oracle_gap": 0.1619263159107296,
+    "same_candidates_argmax_gain": 0.027082519243720207,
+    "expected_reward": 0.6888599597509031,
+    "reference_expected_reward": 0.6632458484910521,
+    "entropy": 0.1562100232332276,
+    "reference_entropy": 0.13563634039437328,
+    "max_probability": 0.9353689097766393,
+    "top2_logit_margin": 11.51911217528107,
+    "behavior_kl_to_reference": 7.323292291582286,
+    "safe_candidate_fraction": 0.39992394911504425,
+    "no_safe_candidates": 0.07881637168141593,
+    "all_zero": 0.07176438053097345,
+    "root_unsafe": 0.04466261061946902,
+    "argmax_unsafe_with_safe_available": 0.11545907079646017,
+    "sampled_unsafe_with_safe_available": 0.11642699115044247,
+    "reference_unsafe_with_safe_available": 0.12859513274336284,
+    "argmax_changed_from_reference": 0.42464048672566373,
+    "raw_EP_selected": 0.7422418880820849,
+    "gated_EP_selected": 0.6107992272635351,
+    "local_signal": 0.9282356194690266,
+    "update_kl": 7.026845157549195,
+    "policy_loss": -1.1859982372691702,
+    "selected_DAC": 0.9128871681415929,
+    "selected_NC": 0.8909015486725663,
+    "selected_TTC": 0.8509402654867256,
+    "selected_comfort": 0.8658738938053098,
+    "candidate_comfort_mean": 0.5388689159292035,
+    "behavior_version": 448.0,
+    "update_version_before": 451.5,
+    "selected_DAC_first_seconds": 2.425396825396825,
+    "selected_NC_first_seconds": 1.699877750611247,
+    "selected_TTC_first_seconds": 1.1192022263450836,
+    "zero_groups_root_unsafe": 276,
+    "no_safe_groups_root_safe": 247,
+    "update_drift_max": 2.6226043701171875e-05
+  },
+  {
+    "job": "train_B_s1",
+    "method": "B",
+    "seed": 1,
+    "local_signal_groups": 6742,
+    "rank_optimizer_steps": 7232,
+    "candidate_branches": 144640,
+    "candidate_simulation_steps": 1157120,
+    "root_violation_disagreement": 0,
+    "reports": 904,
+    "global_optimizer_steps": 904,
+    "unique_scenes": 150,
+    "min_visits": 6,
+    "max_visits": 7,
+    "committed_round_max_sum_seconds": 22193.59698162577,
+    "registered_training_wall_seconds": 22475.31787466444,
+    "resumed_segments": 2,
+    "local_groups": 7232,
+    "source_variants": {
+      "db877b8aea7560b3be46b7fbbd7110e0479dbee735185b564366708a1ee8bebe": 904
+    },
+    "markers": [
+      {
+        "passes": 3,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.coverage3.json",
+        "sha256": "62fd0328e2bf250cd567011c8e1701c9263403f8c7adf8375e5beb0d554d65cd",
+        "completed": 456,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank0_808d0a8e79404101816a0844c8b007e7/report.online.pt",
+            "sha256": "aa1c38e17a6ec729a7085c1b82c0a258b8b66d04bd3f78f87bd0d513e255e2f2",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank1_ba63c936646d4e18ae5cc102c529f586/report.online.pt",
+            "sha256": "c6e4d1b6c9706ec5c09990a4da13e96a7d63be28847a16836c67b0837fe26138",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank2_3ec4d90b9a0d4429b482561bb8157665/report.online.pt",
+            "sha256": "fcd03485f4b6e7c0ecb82dab67c847678288da4912e87f9000ab1736ba230507",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank3_b0ad2fccc8fb4387827d12fd7cad07b4/report.online.pt",
+            "sha256": "3e40a355acec11ed5ef1e2fc8d72e59da6e06933b1157071b793eca093829a3a",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank4_7f34e113514d4bc3ac8494aa4aa94f1f/report.online.pt",
+            "sha256": "8e018c7540ff6ed0425b2bdffb1947a8b3650adf2e27afcbc6b50cd88f7b3b5d",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank5_2fa7669f4ceb4f16b56fa7222df7ce9e/report.online.pt",
+            "sha256": "cade15cce007d5f9d974e050a95a52ba73d699e13370f07453fdc18435b5677a",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank6_0faec2bb373243838094aca1e0cfded1/report.online.pt",
+            "sha256": "d54338c3b179a63241cc17bb8dae718c53b64dcc0d450a5ab77d61f77ea86995",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round056_rank7_2b4833e401054ab8a32f1b0d6a19eace/report.online.pt",
+            "sha256": "96b502322cc1203f66165348e9e40ba2190e3c148cc2fc30491fb314ea928f98",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      },
+      {
+        "passes": 6,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.coverage6.json",
+        "sha256": "f335d3521f83f1c61661e8445b4a7ca385ed20747e43600537b370bae22bc479",
+        "completed": 904,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank0_3c42e4ca27ee48268fa8abf7a58bfa2a/report.online.pt",
+            "sha256": "38b49150fac44fb73c4634a9c69d0686ae644e65c2a05343746f1ce00ecbf461",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank1_1349f09238244375909e08aa500dd717/report.online.pt",
+            "sha256": "253056e4ccae3b364127b56fc09b0fe6a2fc16281e84dea19395f62cba444bad",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank2_627a100679ee4e68af96f2f029b1713f/report.online.pt",
+            "sha256": "83f3f993c28c279c4a5d96b267b0e92ff41900a3c87ff6c4a50ac81552fba92d",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank3_5f3ac494689b486abdce19190c95c013/report.online.pt",
+            "sha256": "43a2d63e030f263adf86156c8f1c4adbe0519d2425a4d6d49bb9bdd24055759d",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank4_ccf91e1d047547cab7e5bd0109da92a7/report.online.pt",
+            "sha256": "412d5d2753a9e65ec14cf88b2c1d814837cd56003b76b69843bdda21b8ce343e",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank5_aafc29a4925f4019b880563f33c1eb6a/report.online.pt",
+            "sha256": "617782d92844aa69befa05594f0a57eab4c9ca8a7e7bd2920f283d0fb8b45104",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank6_75e5bf5de790496789a5519703e944c6/report.online.pt",
+            "sha256": "4e7e34678a28f600603e844d1aaea48b4dc126ef6117ee0aabfa01ce331af9ea",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s1/training.attempts/round112_rank7_966cdc470d564907927a004e96366071/report.online.pt",
+            "sha256": "013c3d68f21e30147c934cf66e5274f7d142a74ce8d01958d2a4047cca4bac6c",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "schema": 2,
+      "episodes": 904,
+      "world_size": 8,
+      "steps": 8,
+      "seed": 1,
+      "branch_workers": 4,
+      "settings_sha256": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+      "manifest_sha256": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+      "parameterization": "v3_initialized_selector_finetune",
+      "reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+      "ego_controller": "log_play_controller",
+      "dynamics_contract": "upstream_log_play_h1_v1",
+      "schedule": "seeded_cyclic_global_episode_v2",
+      "online_update_timing": "after_rollout8",
+      "formal_manifest": false,
+      "split": "train",
+      "formal_training": false,
+      "fixed_segment": true,
+      "simulator_backend": "cached",
+      "full_audit_every": 32,
+      "wall_budget_seconds": 43200.0,
+      "scoring_frequency": "all8"
+    },
+    "profile_mean_seconds": {
+      "decision_wall_seconds": 22.74846548721792,
+      "observation_copy_seconds": 1.6939878071771295,
+      "input_prepare_seconds": 0.9905261087775167,
+      "forward_seconds": 0.6672257266638552,
+      "action_to_main_seconds": 2.3465295483300608,
+      "branch_feedback_seconds": 8.902332469329647,
+      "learner_update_seconds": 8.126594083300471,
+      "update_ack_seconds": 0.002994167237278761
+    },
+    "selected_reward": 0.7031654304855643,
+    "argmax_reward": 0.7036230815856991,
+    "reference_argmax_reward": 0.6800052608049763,
+    "oracle_reward": 0.8344187647926592,
+    "argmax_oracle_gap": 0.13079568320696028,
+    "reference_oracle_gap": 0.15441350398768303,
+    "same_candidates_argmax_gain": 0.023617820780722776,
+    "expected_reward": 0.7039297351960194,
+    "reference_expected_reward": 0.6792867721171619,
+    "entropy": 0.15088293139100334,
+    "reference_entropy": 0.13435904261450063,
+    "max_probability": 0.9389346986143661,
+    "top2_logit_margin": 10.506194473236008,
+    "behavior_kl_to_reference": 7.856223946832994,
+    "safe_candidate_fraction": 0.4099280973451328,
+    "no_safe_candidates": 0.07508296460176991,
+    "all_zero": 0.06775442477876106,
+    "root_unsafe": 0.043694690265486724,
+    "argmax_unsafe_with_safe_available": 0.11836283185840708,
+    "sampled_unsafe_with_safe_available": 0.11836283185840708,
+    "reference_unsafe_with_safe_available": 0.12334070796460177,
+    "argmax_changed_from_reference": 0.4599004424778761,
+    "raw_EP_selected": 0.765497702712819,
+    "gated_EP_selected": 0.6327303351860346,
+    "local_signal": 0.932245575221239,
+    "update_kl": 7.486565934735493,
+    "policy_loss": -1.1836187025121068,
+    "selected_DAC": 0.9178650442477876,
+    "selected_NC": 0.8881360619469026,
+    "selected_TTC": 0.8574391592920354,
+    "selected_comfort": 0.8671183628318584,
+    "candidate_comfort_mean": 0.5472552544247787,
+    "behavior_version": 448.0,
+    "update_version_before": 451.5,
+    "selected_DAC_first_seconds": 2.579124579124579,
+    "selected_NC_first_seconds": 1.714200477326969,
+    "selected_TTC_first_seconds": 1.0717749757516974,
+    "zero_groups_root_unsafe": 268,
+    "no_safe_groups_root_safe": 227,
+    "update_drift_max": 2.288818359375e-05
+  },
+  {
+    "job": "train_B_s2",
+    "method": "B",
+    "seed": 2,
+    "local_signal_groups": 6753,
+    "rank_optimizer_steps": 7232,
+    "candidate_branches": 144640,
+    "candidate_simulation_steps": 1157120,
+    "root_violation_disagreement": 0,
+    "reports": 904,
+    "global_optimizer_steps": 904,
+    "unique_scenes": 150,
+    "min_visits": 6,
+    "max_visits": 7,
+    "committed_round_max_sum_seconds": 28772.43499942147,
+    "registered_training_wall_seconds": 29257.825653837528,
+    "resumed_segments": 3,
+    "local_groups": 7232,
+    "source_variants": {
+      "db877b8aea7560b3be46b7fbbd7110e0479dbee735185b564366708a1ee8bebe": 904
+    },
+    "markers": [
+      {
+        "passes": 3,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.coverage3.json",
+        "sha256": "e791f14251c7aef853a1b76b8f5adb6fcbade05aef997f77d3b183fe2b534857",
+        "completed": 456,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank0_e9f16bc239d1490bb2c0054969c052d2/report.online.pt",
+            "sha256": "24f0616bacb12b652342376613b5a86d24f8e3797e3d3b298ff8e42d8cce6c80",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank1_3ab05459a3ae4f8fa30331c64e51bde7/report.online.pt",
+            "sha256": "a8d73d444e7f08f149ab10c3a79c114086b729ba710e2189e192d02afd80ee45",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank2_b00d01e8a6ba4f84adefc050662631b9/report.online.pt",
+            "sha256": "5dc54064aa0cf33410a18318cc9d4a3a24ef172bbec73836a433b71882935d4e",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank3_0256e0fdd9164a8c959972cada8329d5/report.online.pt",
+            "sha256": "ad7f3275c9ca5fc3b2f75cc33097ecce1560690e310b35dbf3a2ef6da0d9d030",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank4_e4ca229f5c994908be35a9c120ab9c06/report.online.pt",
+            "sha256": "c57bbf7f09ae2efe1f8497ea022e47a804cd3a6f033dc908c6618a1e8868aab0",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank5_53c21e2b6ec74a1e827123fa8c256927/report.online.pt",
+            "sha256": "84f01c7a2f7302b384cebdaa412791d560f62d69d9a3337dd616cbdc4300ac27",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank6_9363f898501541c48f85f5de54842563/report.online.pt",
+            "sha256": "575847a4fc1e28f589b212593a353aefe12f65b923d10adec23e851dd4d141fd",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round056_rank7_2723976c1ba445c2a3699b647ad90374/report.online.pt",
+            "sha256": "65297f779ec83ff718bd8478c8d8bec82663367a0ad6f279cba4c12ce01e3755",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      },
+      {
+        "passes": 6,
+        "marker": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.coverage6.json",
+        "sha256": "95abe18e3313c3cfc3c09d44be3520c1d8f4080a42997cb0b14755512052c8e4",
+        "completed": 904,
+        "checkpoints": [
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank0_6aac05d849ed48c19cd5128f67c8c26a/report.online.pt",
+            "sha256": "f8bc8a0aed701d96d2a143283508b4c2e9c0a1e9669b5881d812dc015e9856f7",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank1_a7d699bbc248482aa5b35752d7ab482e/report.online.pt",
+            "sha256": "2a1ad0d15f45b496ad3ea9770824360767d26e39d259a2bc86513b3355b683da",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank2_f35d5dd04ff94be9b045b2b94335ef8a/report.online.pt",
+            "sha256": "b32bab113430d59d2893c4b862b06290f7f6b5adb5c8144d791b7e41713f892f",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank3_4b85de207d23411591b6f4ffc04b91fe/report.online.pt",
+            "sha256": "d205d418a79a084436a3027e28716ea1cc2693626c678c9191571a71e085fbba",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank4_c605e17f58994950b23e260ff1f3aba0/report.online.pt",
+            "sha256": "42a029a937890a69c32a3045bcf35b87e6a3ea03b7c3780dd5934c3bb4ad1a7c",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank5_8028456a620e4dc983f027f3699c5035/report.online.pt",
+            "sha256": "28adb86d1833e262c17fea1c7be185f8b59e05702edc956f51bfd5bff1068225",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank6_307c609249974167b6589ef5d3005515/report.online.pt",
+            "sha256": "029669e971c2c9e1dd05003b0ea1e0ca37fa621d63f2988f000356bb5cea7f3a",
+            "disposable": true,
+            "formal_training": false
+          },
+          {
+            "path": "/inspire/hdd/global_user/wangcaojun-240208020180/nry/WorldEngine/research/selector_v3_online_diagnosis_20260930/registry/jobs/train_B_s2/training.attempts/round112_rank7_68e0574f19fb48149729e3e90c0211a4/report.online.pt",
+            "sha256": "4d4d735443a658de659f84218b48cc3c9ea310c887105f009c80c88abbc58d37",
+            "disposable": true,
+            "formal_training": false
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "schema": 2,
+      "episodes": 904,
+      "world_size": 8,
+      "steps": 8,
+      "seed": 2,
+      "branch_workers": 4,
+      "settings_sha256": "f9b2184bf217706f3faf88f5faf1ccd9ad5a831e361d9be0bdc17dc29e192c51",
+      "manifest_sha256": "9b4495637e38ecca6fe963fca467d0e845e28cfcae02f9354cb306dc24c31b75",
+      "parameterization": "v3_initialized_selector_finetune",
+      "reward_contract": "fixed_candidate_4s_logplay_pdm_expert_v2",
+      "ego_controller": "log_play_controller",
+      "dynamics_contract": "upstream_log_play_h1_v1",
+      "schedule": "seeded_cyclic_global_episode_v2",
+      "online_update_timing": "after_rollout8",
+      "formal_manifest": false,
+      "split": "train",
+      "formal_training": false,
+      "fixed_segment": true,
+      "simulator_backend": "cached",
+      "full_audit_every": 32,
+      "wall_budget_seconds": 43200.0,
+      "scoring_frequency": "all8"
+    },
+    "profile_mean_seconds": {
+      "decision_wall_seconds": 29.592116863487416,
+      "observation_copy_seconds": 2.164202874160813,
+      "input_prepare_seconds": 1.1775684416601215,
+      "forward_seconds": 0.6904330415937501,
+      "action_to_main_seconds": 3.006897180679203,
+      "branch_feedback_seconds": 11.481042216799365,
+      "learner_update_seconds": 11.046672134449391,
+      "update_ack_seconds": 0.003504252011753318
+    },
+    "selected_reward": 0.7096661249941655,
+    "argmax_reward": 0.7103463495089184,
+    "reference_argmax_reward": 0.6872244462925073,
+    "oracle_reward": 0.8345393448369266,
+    "argmax_oracle_gap": 0.12419299532800826,
+    "reference_oracle_gap": 0.14731489854441943,
+    "same_candidates_argmax_gain": 0.02312190321641115,
+    "expected_reward": 0.7093333962061771,
+    "reference_expected_reward": 0.6871522180492974,
+    "entropy": 0.1341942915520141,
+    "reference_entropy": 0.1348408133037593,
+    "max_probability": 0.944969422221019,
+    "top2_logit_margin": 11.70401433045539,
+    "behavior_kl_to_reference": 5.9608771327443275,
+    "safe_candidate_fraction": 0.40358130530973446,
+    "no_safe_candidates": 0.07314712389380532,
+    "all_zero": 0.06623340707964602,
+    "root_unsafe": 0.04341814159292035,
+    "argmax_unsafe_with_safe_available": 0.10287610619469026,
+    "sampled_unsafe_with_safe_available": 0.10301438053097345,
+    "reference_unsafe_with_safe_available": 0.11006637168141593,
+    "argmax_changed_from_reference": 0.4011338495575221,
+    "raw_EP_selected": 0.7539228239198374,
+    "gated_EP_selected": 0.6355092388137918,
+    "local_signal": 0.933766592920354,
+    "update_kl": 5.752637262021016,
+    "policy_loss": -1.2329870370197094,
+    "selected_DAC": 0.9175884955752213,
+    "selected_NC": 0.903691924778761,
+    "selected_TTC": 0.864629424778761,
+    "selected_comfort": 0.8589601769911505,
+    "candidate_comfort_mean": 0.5344095685840707,
+    "behavior_version": 448.0,
+    "update_version_before": 451.5,
+    "selected_DAC_first_seconds": 2.464765100671141,
+    "selected_NC_first_seconds": 1.6968232044198894,
+    "selected_TTC_first_seconds": 1.1230847803881512,
+    "zero_groups_root_unsafe": 266,
+    "no_safe_groups_root_safe": 215,
+    "update_drift_max": 2.86102294921875e-05
+  }
+]

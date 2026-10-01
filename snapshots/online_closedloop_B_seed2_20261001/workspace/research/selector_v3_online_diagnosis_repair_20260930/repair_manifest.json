@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "purpose": "validated_diagnostic_replay_and_resume",
+  "original_experiment": "selector_v3_online_diagnosis_20260930",
+  "files": {
+    "diagnostic_probe.py": "b0da54f59da05a53fa2706e08a846d581d1156616b2c8a7f3216fe586b1fcb27",
+    "repair_worker.py": "5f924d826eff9e629f1ca3bc30539cbec3671bf9ea7c7629f492a87457277bf4",
+    "repair_client.py": "f02824b680d20b4400e9220379c2ae6d18a6b69bcab52eba66c9a9b6dbe0c318",
+    "repair_run.py": "2d271b3cd55822f906f83ba871469891f726fd515d7b4b4b0c3e1bdf8bcaeac4",
+    "repair_queue.py": "04b97adb27c946311e912389462dafda4e994f89a51301f18e4055ce5425c942",
+    "release_recovery.py": "0ab7533d6c206cd6159601c7cb6fe6ff7e6bec867ec960b248703b4291db2da1",
+    "start_job_h100.sh": "6d8cf9dfe805ed4cbe3587d7d3cd033bcafa332d474293e96c14134a1560f71c",
+    "start_eval_worker_h100.sh": "8e530b239d6ebd41dda91265c196ad77132f1740ef8c1eca72d16d4394f14758",
+    "repair_contract.py": "5a8af85fc7580c4c815b81d71e8f1e1fd1a147f7ba59a221a763aa46745cfb8f"
+  }
+}
