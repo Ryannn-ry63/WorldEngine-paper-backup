@@ -1,5 +1,17 @@
 # Innovation 3: live selector updates
 
+> **2026-09-26 superseding execution update:** the online default now matches upstream evaluation (`log_play_controller`). See [ego execution](ego_execution.md). Earlier LQR/bicycle gates below are historical evidence, not acceptance of this new protocol. H1 reward and formal-training readiness are unchanged.
+
+The paper-facing experiment contract is maintained in the workspace handoff:
+[`20260926_ONLINE_PAPER_EXPERIMENT_PLAN.md`](../../../handoff/20260926_ONLINE_PAPER_EXPERIMENT_PLAN.md).
+The 2026-09-26 public-scene discovery is recorded in [`20260926_PUBLIC_SCENE_DISCOVERY_AND_AUDIT_CORRECTION.md`](../../../handoff/20260926_PUBLIC_SCENE_DISCOVERY_AND_AUDIT_CORRECTION.md). The existing `formal_scene_audit_20260926_v1.json` and 16/2/2 manifest are provisional: they do not include the full D/certification/navtest/public-source reconciliation and must not be used for long formal training.
+The current eight-scene manifest remains an engineering gate only; formal
+training requires an audited origin-log-disjoint train/dev/holdout manifest.
+The public candidate ledger is preliminary. Use the handoff's single-scene
+visual probe before any migration; it is an engineering asset/renderer check,
+not a training or paper result.
+
+
 The initialized-selector continuation mode is documented in
 [selector_finetune.md](selector_finetune.md). Its CPU tests and registered-weight
 synthetic smoke pass; its H100 acceptance is still pending. Historical H100
@@ -124,11 +136,16 @@ Snapshot payloads are trusted local pickles, not an untrusted network format.
 
 ## Not yet implemented or certified
 
-There is intentionally no production training command yet. The following older
-acceptance notes apply to the legacy mode; see selector_finetune.md for the current
-continuation-mode gates. Remaining production work:
+The formal manifest builder (`innovation3.build_formal_manifest`) and full-pool
+DDP session runner are now present,
+but they fail closed until a completed `PASS_FORMAL_SCENE_AUDIT` receipt is
+provided. The following older acceptance notes apply to the legacy mode; see
+selector_finetune.md for the current continuation-mode gates. Remaining
+production work:
 
 1. Verify log-disjoint scene/image/map/asset coverage; directory existence is not coverage.
+   Then build the formal manifest with `innovation3.build_formal_manifest` and
+   pass it with `--split train` to `ddp-online-session-gate`.
 2. The bounded H100 learner integration is now accepted with the live
    preprocessing, bounded shared-memory transport and separate reward history.
    Production-like throughput and complete renderer/simulator/learner recovery

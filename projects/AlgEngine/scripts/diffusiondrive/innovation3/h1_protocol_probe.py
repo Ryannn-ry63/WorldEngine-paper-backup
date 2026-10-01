@@ -25,6 +25,7 @@ from .diagnostic_signal import CONTRACT
 from .learner import (FROZEN_V3_PLUS_ZERO_RESIDUAL, PARAMETERIZATIONS,
                       OnlineV3Learner)
 from .paths import checked_path, sha256_file
+from .v3_checkpoint_contract import is_registered_v3_selector_payload
 from .protocol import Action, Feedback, StepGate, StepIdentity
 from .transport import Channel, digest
 
@@ -91,7 +92,7 @@ def run(args, report, progress):
     if checkpoint_sha != cfg['expected_sha256']['selector_state']:
         raise ValueError('Registered V3 SHA256 mismatch')
     payload = torch.load(selector, map_location='cpu')
-    if payload.get('schema_version') != 3 or payload.get('method') != 'scene_conditioned_exact_group_grpo':
+    if not is_registered_v3_selector_payload(payload):
         raise ValueError('Expected standard trained V3 checkpoint')
     model = SceneConditionedTrajectorySetSelector(**payload['scene_selector_config']).float().eval()
     model.load_state_dict(payload['scene_selector_state'], strict=True)

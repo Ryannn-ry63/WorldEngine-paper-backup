@@ -1,4 +1,4 @@
-"""Bounded single-GPU live full20/H1 learning acceptance, never formal training."""
+"""Bounded single-GPU live full20/H1 episode used by pilots or formal runs."""
 import argparse
 import json
 import os
@@ -15,10 +15,13 @@ from .candidate_inputs import from_export
 from .image_transport import ImageBuffer, metadata_from_wire
 from .learner import (FROZEN_V3_PLUS_ZERO_RESIDUAL, OnlineV3Learner,
                       PARAMETERIZATIONS)
+from .v3_checkpoint_contract import is_registered_v3_selector_payload
 from .live_audit import LiveWindow
 from .live_learning import LiveLearning, learning_evidence, state_digest
 from .paths import checked_path, sha256_file
 from .transport import Channel
+from worldengine.online.execution import (DEFAULT_EGO_CONTROLLER, execution_contract,
+                                          validate_resume_execution)
 
 
 _RESIDENT_MODEL = None
@@ -34,6 +37,10 @@ def source_hashes():
     paths += list((code/'projects/SimEngine/worldengine/online').glob('*.py'))
     paths += [code/name for name in (
         'projects/SimEngine/worldengine/manager/data_manager.py',
+        'projects/SimEngine/worldengine/components/agents/controller/log_play_controller.py',
+        'projects/SimEngine/worldengine/components/agents/ego_agent.py',
+        'projects/SimEngine/worldengine/components/agents/client/navformer_client.py',
+        'projects/SimEngine/worldengine/components/agents/vehicle_model/vehicle_utils.py',
         'projects/SimEngine/worldengine/components/agents/controller/tracker/lqr_tracker.py',
         'projects/SimEngine/worldengine/components/agents/controller/two_stage_controller.py',
         'projects/SimEngine/worldengine/components/agents/controller/motion_model/kinematic_bicycle.py',
@@ -72,6 +79,9 @@ def main():
     if any(output.with_suffix(s).exists() for s in ('.json', '.worker.log', '.online.pt', '.failure')):
         raise FileExistsError('Use a fresh output basename: ' + str(output))
     cfg = json.loads(checked_path(args.settings).read_text())
+    formal_training = bool(cfg.get('formal_training', False))
+    ego_controller = cfg.get('online_ego_controller', DEFAULT_EGO_CONTROLLER)
+    dynamics_contract = execution_contract(ego_controller)
     parameterization = cfg.get('online_parameterization', FROZEN_V3_PLUS_ZERO_RESIDUAL)
     if parameterization not in PARAMETERIZATIONS:
         raise ValueError('Unknown online_parameterization: ' + str(parameterization))
@@ -82,7 +92,7 @@ def main():
         if expected_selector_sha and sha256_file(selector_path) != expected_selector_sha:
             raise ValueError('Registered V3 selector SHA256 mismatch before learner construction')
         payload = torch.load(selector_path, map_location='cpu')
-        if payload.get('schema_version') != 3 or payload.get('method') != 'scene_conditioned_exact_group_grpo':
+        if not is_registered_v3_selector_payload(payload):
             raise ValueError('Unexpected offline V3 selector provenance')
         initialization_source = dict(kind='offline_selector_file', path=str(selector_path),
             sha256=expected_selector_sha, payload_schema=payload.get('schema_version'),
@@ -101,7 +111,9 @@ def main():
         causal_reward_contract='causal_h1_pdm_components_v1',
         official_pdm_reward=False, online_update=False, real_closed_loop=False,
         formal_ready=False, full_resume_verified=False, ddp_verified=False,
-        parameterization=parameterization, used_for_formal_training=False,
+        parameterization=parameterization, formal_training=formal_training,
+        used_for_formal_training=formal_training,
+        ego_controller=ego_controller, dynamics_contract=dynamics_contract,
         selection='categorical_T1_private_learner_rng',
         branch_execution=(('parallel_persistent_full20_workers_%d' % args.branch_workers)
                            if args.branch_workers else
@@ -122,7 +134,8 @@ def main():
         global _RESIDENT_MODEL, _RESIDENT_LEARNER, _RESIDENT_PARAMETERIZATION, _RESIDENT_SOURCE_SHA256, _RESIDENT_CONFIG
         # Episode-specific inputs may change; model/input contracts may not.
         resident_config = {k: v for k, v in cfg.items() if k not in (
-            'visual_scene_id', 'visual_scene_path', 'online_candidate_seed',
+            'visual_scene_id', 'visual_scene_path', 'visual_asset_path',
+            'visual_asset_sha256', 'online_candidate_seed',
             'online_scene_seed', 'online_action_seed')}
         resident_reuse = bool(args.resident and _RESIDENT_MODEL is not None)
         if resident_reuse and (_RESIDENT_PARAMETERIZATION != parameterization or
@@ -157,10 +170,16 @@ def main():
         if args.resume:
             resume = checked_path(args.resume)
             payload = torch.load(resume, map_location='cpu')
-            if payload.get('kind') != 'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING':
+            expected_kinds = {'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING',
+                              'FORMAL_ONLINE_TRAINING_CHECKPOINT'}
+            if payload.get('kind') not in expected_kinds or \
+                    bool(payload.get('formal_training', False)) != formal_training:
                 raise ValueError('Unexpected online learner checkpoint kind')
             if payload.get('parameterization', payload.get('learner', {}).get('parameterization')) != parameterization:
                 raise ValueError('Resume checkpoint parameterization mismatch')
+            validate_resume_execution(payload, dynamics_contract)
+            if payload.get('source_sha256') != report['source_sha256']:
+                raise ValueError('Resume source changed; use a fresh run')
             if payload['learner'].get('version') != args.policy_version:
                 raise ValueError('Resume checkpoint/version mismatch')
             learner.load_state_dict(payload['learner'])
@@ -199,7 +218,9 @@ def main():
             ready = channel.receive()
             if (ready.get('kind') != 'ready' or not ready.get('reward_adapter') or
                     not ready.get('online_updates') or ready.get('warmup_transitions') != 13 or
-                    ready.get('reward_contract', {}).get('name') != report['causal_reward_contract']):
+                    ready.get('reward_contract', {}).get('name') != report['causal_reward_contract'] or
+                    ready.get('dynamics_contract') != dynamics_contract or
+                    ready.get('ego_controller') != ego_controller):
                 raise RuntimeError('Worker online/reward/warmup contract mismatch')
             if cfg.get('visual_scene_id') and ready.get('scene') != cfg['visual_scene_id']:
                 raise RuntimeError('Worker did not use the explicitly assigned scene')
@@ -315,8 +336,11 @@ def main():
             raise RuntimeError('Optimizer/attempt accounting mismatch')
         checkpoint = output.with_suffix('.online.pt')
         with checkpoint.open('xb') as stream:
-            torch.save(dict(kind='DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING',
+            torch.save(dict(kind=('FORMAL_ONLINE_TRAINING_CHECKPOINT' if formal_training else
+                                 'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING'),
+                formal_training=formal_training,
                 reward_contract=report['worker']['reward_contract'],
+                dynamics_contract=dynamics_contract, ego_controller=ego_controller,
                 source_sha256=report['source_sha256'],
                 parameterization=parameterization, initialization=learner.provenance(),
                 learner=learner.state_dict()), stream)
@@ -351,7 +375,9 @@ def main():
             policy_version=learner.version, step0_v3_parity=(True if initial_policy_version == 0 else None), next_step_waited_for_update=True,
             generated_steps=args.steps, candidate_groups=args.steps, candidate_branches=args.steps*20,
             warmup_frames=13, history_frames=4, next_observation_checks=args.steps-1,
-            learner_checkpoint=dict(path=str(checkpoint), sha256=sha256_file(checkpoint), disposable=True),
+            learner_checkpoint=dict(path=str(checkpoint), sha256=sha256_file(checkpoint),
+                                    disposable=not formal_training,
+                                    formal_training=formal_training),
             idm_fallbacks=closed['idm_fallbacks'], reaction='R',
             policy_version_initial=initial_policy_version,
             resident_reuse=resident_reuse)

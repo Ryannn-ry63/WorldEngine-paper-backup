@@ -16,9 +16,12 @@ from worldengine.manager.scenario_manager import ScenarioManager
 from worldengine.common.dataclasses import Trajectory
 from .state import SnapshotCodec
 from .numerics import check_numeric_runtime
+from .execution import DEFAULT_EGO_CONTROLLER, execution_contract
+from .actions import centered_pose_action
 
 
-def dynamics_config(reaction, max_steps):
+def dynamics_config(reaction, max_steps, ego_controller=DEFAULT_EGO_CONTROLLER):
+    execution_contract(ego_controller)
     if reaction not in ('NR', 'R') or max_steps < 1:
         raise ValueError('Use NR or R and a positive max_steps')
     path = Path(__file__).resolve().parents[1] / 'configs/default_runner.yaml'
@@ -28,8 +31,9 @@ def dynamics_config(reaction, max_steps):
     for key in list(cfg):
         if key in ('hydra', 'defaults') or '${' in str(cfg[key]):
             del cfg[key]
-    cfg.update(max_step=max_steps, decision_repeat=1, online_deterministic_rng=True, online_corrected_bicycle=True,
-               ego_policy='env_input_policy', ego_controller='two_stage_controller',
+    cfg.update(max_step=max_steps, decision_repeat=1, online_deterministic_rng=True,
+               online_corrected_bicycle=(ego_controller == 'two_stage_controller'),
+               ego_policy='env_input_policy', ego_controller=ego_controller,
                ego_navigation='trajectory_navigation', ego_client='base_client',
                agent_policy='idm_policy' if reaction == 'R' else 'trajectory_policy',
                agent_navigation='idm_navigation' if reaction == 'R' else 'trajectory_navigation',
@@ -41,7 +45,8 @@ def dynamics_config(reaction, max_steps):
 
 
 class HeadlessSimulator:
-    def __init__(self, scene_id, scene, reaction='R', max_steps=8, seed=0, global_config=None):
+    def __init__(self, scene_id, scene, reaction='R', max_steps=8, seed=0, global_config=None,
+                 ego_controller=DEFAULT_EGO_CONTROLLER):
         check_numeric_runtime()
         if engine_utils.engine_initialized():
             raise RuntimeError('Use spawn processes: one SimEngine per process')
@@ -55,7 +60,8 @@ class HeadlessSimulator:
         # CanonicalObserver adds asset_folder_path and renderer metadata to it;
         # a fresh dynamics_config omits these and fails strict config_hash parity.
         cfg = (OmegaConf.create(OmegaConf.to_container(global_config, resolve=False))
-               if global_config is not None else dynamics_config(reaction, max_steps))
+               if global_config is not None else dynamics_config(reaction, max_steps, ego_controller))
+        self.dynamics_contract = execution_contract(cfg.ego_controller)
         engine_utils.initialize_global_config(cfg)
         self.engine = engine_utils.initialize_engine(cfg)
         try:
@@ -89,6 +95,12 @@ class HeadlessSimulator:
             raise ValueError('Trajectory must have at least 3 XY waypoints')
         if headings.shape != (len(points),) or not np.isfinite(points).all() or not np.isfinite(headings).all():
             raise ValueError('Invalid trajectory headings/coordinates')
+        if self.engine.global_config.ego_controller == 'log_play_controller':
+            for name, shape in (('velocities', points.shape),
+                                ('angular_velocities', (len(points),))):
+                values = np.asarray(getattr(action, name), dtype=float)
+                if values.shape != shape or not np.isfinite(values).all():
+                    raise ValueError('Ideal tracking requires finite trajectory ' + name)
         # The upstream controller may mutate list-valued trajectories. Protect
         # the candidate bank and ensure branch ordering cannot modify actions.
         self.engine.before_step(copy.deepcopy(action))
@@ -140,7 +152,7 @@ class HeadlessSimulator:
 def diagnostic_candidates(sim):
     """20 current-state-only analytic probes; NOT DiffusionDrive predictions.
 
-    This fixture exercises the real LQR + bicycle with distinct speed/curvature
+    This fixture exercises the configured controller with distinct speed/curvature
     requests. It does not read the logged ego future or create training data.
     """
     ego = sim.engine.agent_manager.ego_agent
@@ -156,5 +168,5 @@ def diagnostic_candidates(sim):
             y = bend * x ** 2
             points = np.column_stack([x, y]) @ rotation.T + origin
             headings = theta + np.arctan2(2 * bend * x, np.ones_like(x))
-            actions.append(Trajectory(points, headings=headings))
+            actions.append(centered_pose_action(points, headings))
     return actions

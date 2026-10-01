@@ -123,6 +123,11 @@ def main():
         cfg.update(visual_scene_id=row['scene_id'], online_candidate_seed=row['candidate_seed'],
                    online_scene_seed=row['scene_seed'], online_action_seed=args.seed + rank,
                    visual_scene_path=row['scene_path'])
+        if row.get('asset_path'):
+            # Formal rows carry the audited absolute checkpoint path.  Pass it
+            # through instead of reconstructing it under the owned asset root.
+            cfg.update(visual_asset_path=row['asset_path'],
+                       visual_asset_sha256=row['asset_sha256'])
         settings = output.with_name(output.stem + '.rank' + str(rank) + '.settings.json')
         settings.parent.mkdir(parents=True, exist_ok=True)
         with settings.open('x') as stream:

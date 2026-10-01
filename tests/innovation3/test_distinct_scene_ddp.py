@@ -10,6 +10,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'projects/AlgEngine/scripts/diffusiondrive'))
 from innovation3.scene_manifest import load_assignments, origin_log, validate_scene_reports
+from innovation3.build_formal_manifest import build as build_formal_manifest
 
 
 def _hash(path):
@@ -58,6 +59,44 @@ class ManifestTest(unittest.TestCase):
             self.assertEqual(len(load_assignments(p, c, 2)[1]), 2)
             c.write_text(c.read_text() + ' ')
             with self.assertRaisesRegex(ValueError, 'settings SHA'): load_assignments(p, c, 2)
+
+    def test_formal_manifest_requires_audit_and_returns_requested_split(self):
+        with tempfile.TemporaryDirectory() as d:
+            p, c, m = self.fixture(Path(d))
+            cfg = json.loads(c.read_text())
+            cfg['online_parameterization'] = 'v3_initialized_selector_finetune'
+            c.write_text(json.dumps(cfg))
+            for row in m['scenes']:
+                row['split'] = 'train'
+                row['asset_path'] = str(Path(c).parent / 'assets' / row['scene_id'] /
+                                        'background' / (row['scene_id'] + '.ckpt'))
+            m.update(schema=2, purpose='online_formal_train_dev_holdout', formal_ready=True,
+                     used_for_formal_training=True, parameterization='v3_initialized_selector_finetune',
+                     settings_sha256=_hash(c), split_policy='origin_log_80_10_10_v1',
+                     audit=dict(complete=True, version='fixture-v1',
+                                exposed_origin_logs=['2021.06.09.12.00.00_veh-99']))
+            p.write_text(json.dumps(m))
+            loaded, rows = load_assignments(p, c, 2, split='train')
+            self.assertEqual(loaded['purpose'], 'online_formal_train_dev_holdout')
+            self.assertEqual([r['scene_id'] for r in rows], [r['scene_id'] for r in m['scenes']])
+            with self.assertRaisesRegex(ValueError, 'requires --split'):
+                load_assignments(p, c, 2)
+
+    def test_formal_manifest_builder_refuses_preliminary_receipt(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            settings = root / 'settings.json'
+            source = root / 'scenarios/original/navtrain_failures_per1/all_scenarios.pkl'
+            source.parent.mkdir(parents=True); source.write_bytes(b'source')
+            settings.write_text(json.dumps(dict(
+                scenario_root=str(root / 'scenarios'),
+                asset_root=str(root / 'assets'),
+                online_parameterization='v3_initialized_selector_finetune')))
+            audit = root / 'audit.json'
+            audit.write_text(json.dumps(dict(status='PRELIMINARY_CANDIDATES_NOT_TRAINING_MANIFEST',
+                                             formal_ready=False, scenes=[])))
+            with self.assertRaisesRegex(ValueError, 'PASS_FORMAL_SCENE_AUDIT'):
+                build_formal_manifest(audit, settings, root / 'formal.json', 1)
 
     def test_same_original_log_different_clips_rejected(self):
         self.assertEqual(origin_log('2021.06.09.11.54.15_veh-12_00015_00259'),

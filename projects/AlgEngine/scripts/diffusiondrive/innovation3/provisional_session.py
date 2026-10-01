@@ -53,7 +53,7 @@ def contract(settings, manifest, rows, episodes, seed, workers, sources):
                 formal_ready=False, used_for_formal_training=False)
 
 
-def verify_episode(report, row, index, version, previous_hash, spec):
+def verify_episode(report, row, index, version, previous_hash, spec, seed_index=None):
     if report.get('status') not in ('PASS_STRICT_ONLINE_THROUGHPUT_PROBE',
                                    'INCOMPLETE_ONLINE_THROUGHPUT_EVIDENCE'):
         raise ValueError('Episode execution failed')
@@ -71,10 +71,11 @@ def verify_episode(report, row, index, version, previous_hash, spec):
     if (worker.get('source', {}).get('sha256') != row['scene_sha256'] or
             worker.get('asset', {}).get('sha256') != row['asset_sha256']):
         raise ValueError('Scene/asset provenance mismatch')
+    namespace = index if seed_index is None else seed_index
     seeds = dict(training_seed=spec['seed'],
-                 candidate_seed=(row['candidate_seed'] + index*1000003) % 2**31,
-                 scene_seed=(row['scene_seed'] + index*1000003) % 2**31,
-                 action_seed=(row['candidate_seed'] + index*1000003 + 17) % 2**31)
+                 candidate_seed=(row['candidate_seed'] + namespace*1000003) % 2**31,
+                 scene_seed=(row['scene_seed'] + namespace*1000003) % 2**31,
+                 action_seed=(row['candidate_seed'] + namespace*1000003 + 17) % 2**31)
     if report.get('seed_namespaces') != seeds:
         raise ValueError('Episode RNG namespace mismatch')
     for key in ('frozen_generator_and_original_selector_unchanged', 'frozen_reference_unchanged',
@@ -104,7 +105,9 @@ def verify_episode(report, row, index, version, previous_hash, spec):
             or report['cumulative_optimizer_steps'] != ledger.policy_version):
         raise ValueError('Optimizer counter mismatch')
     checkpoint = report['learner_checkpoint']
-    if checkpoint.get('disposable') is not True or sha256_file(checkpoint['path']) != checkpoint['sha256']:
+    expected_disposable = not bool(spec.get('formal_training', False))
+    if (checkpoint.get('disposable') is not expected_disposable or
+            sha256_file(checkpoint['path']) != checkpoint['sha256']):
         raise ValueError('Checkpoint checksum/disposable mismatch')
     return dict(episode=index, scene=row['scene_id'], policy_version=ledger.policy_version,
                 attempts=ledger.attempts, learner_hash=report['learner_state_hash_final'],

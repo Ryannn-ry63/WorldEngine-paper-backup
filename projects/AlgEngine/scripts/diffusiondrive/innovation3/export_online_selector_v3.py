@@ -18,6 +18,7 @@ import torch
 from grpo_selector_v3_cached_common import SceneConditionedTrajectorySetSelector
 from .learner import V3_INITIALIZED_SELECTOR_FINETUNE, OnlineV3Learner
 from .paths import checked_path, sha256_file
+from .v3_checkpoint_contract import is_registered_v3_selector_payload
 
 
 state_fingerprint = OnlineV3Learner.state_fingerprint
@@ -44,15 +45,19 @@ def main():
     if output.exists() or manifest.exists():
         raise FileExistsError('Use fresh export and manifest paths')
     payload = torch.load(checkpoint, map_location='cpu')
-    if payload.get('kind') != 'DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING':
+    if payload.get('kind') not in ('DISPOSABLE_STRICT_ONLINE_PROBE_NOT_FORMAL_TRAINING',
+                                   'FORMAL_ONLINE_TRAINING_CHECKPOINT'):
         raise ValueError('Unexpected online checkpoint kind')
+    formal_training = bool(payload.get('formal_training', False))
+    if formal_training != (payload.get('kind') == 'FORMAL_ONLINE_TRAINING_CHECKPOINT'):
+        raise ValueError('Online checkpoint formal-training marker mismatch')
     learner_state = payload.get('learner')
     if not isinstance(learner_state, dict) or learner_state.get('schema_version') != 3:
         raise ValueError('Export requires schema3 initialized-selector checkpoint')
     if learner_state.get('parameterization') != V3_INITIALIZED_SELECTOR_FINETUNE:
         raise ValueError('Export refuses legacy residual parameterization')
     offline_payload = torch.load(offline, map_location='cpu')
-    if offline_payload.get('schema_version') != 3 or offline_payload.get('method') != 'scene_conditioned_exact_group_grpo':
+    if not is_registered_v3_selector_payload(offline_payload):
         raise ValueError('Unexpected offline V3 selector payload')
     offline_state = offline_payload.get('scene_selector_state')
     if not isinstance(offline_state, dict) or not offline_state:
@@ -99,9 +104,10 @@ def main():
             selector_state_sha256=state_fingerprint(selector_state),
             policy_version=learner_state.get('version'),
             attempts=learner_state.get('attempts'),
-            disposable=True,
+            formal_training=formal_training,
+            disposable=not formal_training,
             formal_ready=False,
-            used_for_formal_training=False,
+            used_for_formal_training=formal_training,
         ),
     )
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -120,7 +126,8 @@ def main():
         deploy_contract='SceneConditionedTrajectorySetSelector_single_selector_state',
         frozen_reference_not_exported=True,
         avoids_legacy_residual_double_add=True,
-        disposable=True, formal_ready=False, used_for_formal_training=False,
+        formal_training=formal_training, disposable=not formal_training,
+        formal_ready=False, used_for_formal_training=formal_training,
     )
     manifest.parent.mkdir(parents=True, exist_ok=True)
     with manifest.open('x') as stream:

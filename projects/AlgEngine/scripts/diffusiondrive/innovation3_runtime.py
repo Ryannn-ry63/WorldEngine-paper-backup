@@ -22,17 +22,25 @@ def main():
                         help='continuous online-session episodes')
     parser.add_argument('--session-mode', choices=('rebuild', 'resident'), default='rebuild',
                         help='online session resource lifecycle')
-    parser.add_argument('stage', choices=['preflight', 'learner-smoke', 'snapshot-probe', 'h1-protocol-probe', 'visual-probe', 'live-reward-probe', 'online-probe', 'online-throughput-probe', 'online-session-probe', 'ddp-h1-probe', 'ddp-online-throughput-probe', 'reward-probe'])
+    parser.add_argument('--resume', action='store_true', help='resume a completed episode boundary when supported')
+    parser.add_argument('--split', choices=('train', 'dev', 'holdout'),
+                        help='formal manifest split; the training runner accepts train only')
+    parser.add_argument('stage', choices=['preflight', 'learner-smoke', 'snapshot-probe', 'h1-protocol-probe', 'visual-probe', 'live-reward-probe', 'online-probe', 'online-throughput-probe', 'online-session-probe', 'ddp-h1-probe', 'ddp-online-throughput-probe', 'ddp-online-session-gate', 'reward-probe'])
+    parser.add_argument('--stop-after-rounds', type=int, help='DDP session: stop at a committed round')
     args = parser.parse_args()
+    if (args.resume or args.stop_after_rounds is not None) and args.stage != 'ddp-online-session-gate':
+        parser.error('resume/stop-after-rounds require ddp-online-session-gate')
     if args.steps is None:
         args.steps = 2 if args.stage in ('h1-protocol-probe', 'ddp-h1-probe') else (1 if args.stage in ('visual-probe', 'live-reward-probe') else 8)
     if not 0 <= args.branch_workers <= 20:
         parser.error('--branch-workers must be in [0, 20]')
     if args.branch_workers and args.stage not in ('online-probe', 'online-throughput-probe',
-                                                   'online-session-probe', 'ddp-online-throughput-probe'):
+                                                   'online-session-probe', 'ddp-online-throughput-probe', 'ddp-online-session-gate'):
         parser.error('--branch-workers is only supported by online throughput stages')
-    if args.scene_manifest and args.stage not in ('ddp-online-throughput-probe', 'online-session-probe'):
+    if args.scene_manifest and args.stage not in ('ddp-online-throughput-probe', 'ddp-online-session-gate', 'online-session-probe'):
         parser.error('--scene-manifest is only supported for real DDP throughput')
+    if args.split and args.stage != 'ddp-online-session-gate':
+        parser.error('--split is only supported for formal DDP session training')
     cfg, env = environment(args.settings, args.devices)
     env['PYTHONDONTWRITEBYTECODE'] = '1'
     modules = {'preflight': 'innovation3.preflight', 'learner-smoke': 'innovation3.smoke',
@@ -44,6 +52,7 @@ def main():
     modules['online-throughput-probe'] = 'innovation3.online_probe'
     modules['online-session-probe'] = 'innovation3.online_session_probe'
     modules['ddp-online-throughput-probe'] = 'innovation3.ddp_online_probe'
+    modules['ddp-online-session-gate'] = 'innovation3.ddp_online_session'
     modules['ddp-h1-probe'] = 'innovation3.ddp_h1_probe'
     modules['reward-probe'] = 'innovation3.reward_probe'
     python = cfg['simengine_python' if args.stage in ('snapshot-probe', 'reward-probe') else 'algengine_python']
@@ -101,6 +110,28 @@ def main():
                    '--seed', str(args.seed)]
         if args.branch_workers:
             command += ['--branch-workers', str(args.branch_workers)]
+    elif args.stage == 'ddp-online-session-gate':
+        count = len(args.devices.split(','))
+        if count < 2:
+            parser.error('DDP online session gate requires at least two explicit GPU IDs')
+        if not args.scene_manifest:
+            parser.error('DDP online session gate requires --scene-manifest')
+        if args.episodes < 1:
+            parser.error('DDP online session gate requires positive --episodes')
+        env.update(OPENBLAS_CORETYPE='Prescott', OMP_NUM_THREADS='1',
+                   OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')
+        command = [python, '-m', 'torch.distributed.run', '--standalone',
+                   '--nproc_per_node', str(count), '-m', modules[args.stage],
+                   '--settings', str(args.settings.absolute()),
+                   '--output', str(args.output.absolute()), '--episodes', str(args.episodes),
+                   '--steps', str(args.steps), '--seed', str(args.seed)]
+        command += ['--branch-workers', str(args.branch_workers)]
+        if args.split:
+            command += ['--split', args.split]
+        if args.resume:
+            command.append('--resume')
+        if args.stop_after_rounds is not None:
+            command += ['--stop-after-rounds', str(args.stop_after_rounds)]
     elif args.stage == 'reward-probe':
         env.update(CUDA_VISIBLE_DEVICES='', OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
                    MKL_NUM_THREADS='1', OPENBLAS_CORETYPE='Prescott')
@@ -120,7 +151,7 @@ def main():
     if args.scene_manifest:
         from innovation3.scene_manifest import load_assignments
         manifest, _ = load_assignments(args.scene_manifest, args.settings,
-                                       max(2, len(args.devices.split(','))))
+                                       max(2, len(args.devices.split(','))), split=args.split)
         if args.steps != manifest['steps']:
             parser.error('Steps differ from the explicit scene manifest')
         command += ['--scene-manifest', str(args.scene_manifest.absolute())]

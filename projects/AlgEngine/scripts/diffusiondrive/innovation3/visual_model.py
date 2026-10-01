@@ -7,6 +7,7 @@ from mmcv.runner import wrap_fp16_model
 from mmcv.utils import import_modules_from_strings
 from mmdet3d.models import build_model
 from .paths import checked_path, sha256_file
+from .v3_checkpoint_contract import is_registered_v3_selector_payload
 
 
 def configuration(cfg, seed):
@@ -36,7 +37,7 @@ def load_frozen(config, cfg, device_id=None):
         if sha256_file(cfg[key]) != cfg['expected_sha256'][key]:
             raise ValueError('Registered checkpoint/input SHA mismatch: ' + key)
     payload = torch.load(cfg['selector_state'], map_location='cpu')
-    if payload.get('schema_version') != 3 or payload.get('method') != 'scene_conditioned_exact_group_grpo':
+    if not is_registered_v3_selector_payload(payload):
         raise ValueError('Unexpected V3 checkpoint contract')
     config.model.planning_head.scene_selector = payload['scene_selector_config']
     model = build_model(config.model, test_cfg=config.get('test_cfg'))
