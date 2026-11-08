@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "case": 24,
+      "source_metadata_sha256_verified": true,
+      "timestamps_and_speeds_match": true,
+      "both_models_pass_R_NC_DAC_TTC_comfort": true,
+      "initial_states_match": true
+    },
+    {
+      "case": 25,
+      "source_metadata_sha256_verified": true,
+      "timestamps_and_speeds_match": true,
+      "both_models_pass_R_NC_DAC_TTC_comfort": true,
+      "initial_states_match": true
+    },
+    {
+      "case": 26,
+      "source_metadata_sha256_verified": true,
+      "timestamps_and_speeds_match": true,
+      "both_models_pass_R_NC_DAC_TTC_comfort": true,
+      "initial_states_match": true
+    },
+    {
+      "case": 27,
+      "source_metadata_sha256_verified": true,
+      "timestamps_and_speeds_match": true,
+      "both_models_pass_R_NC_DAC_TTC_comfort": true,
+      "initial_states_match": true
+    },
+    {
+      "case": 28,
+      "source_metadata_sha256_verified": true,
+      "timestamps_and_speeds_match": true,
+      "both_models_pass_R_NC_DAC_TTC_comfort": true,
+      "initial_states_match": true
+    },
+    {
+      "case": 29,
+      "source_metadata_sha256_verified": true,
+      "timestamps_and_speeds_match": true,
+      "both_models_pass_R_NC_DAC_TTC_comfort": true,
+      "initial_states_match": true
+    }
+  ]
+}

@@ -1,0 +1,3930 @@
+{
+  "status": "PRELIMINARY_FOR_USER_SELECTION",
+  "reference_cases": [
+    22,
+    23
+  ],
+  "cases": [
+    {
+      "scene": "2021.06.03.13.55.17_veh-35_02866_03582-afa8102c20685ec5",
+      "mode": "R",
+      "previously_shown": false,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.05618,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.60674,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.08337,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.61807,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.82519,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.92716,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.4428,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.76783,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.06.03.13.55.17_veh-35_02866_03582-afa8102c20685ec5.pkl",
+          "sha256": "fa1490b9546841ee218f3457eaa14372462b33dd3eb2b7cdeb11d54d00a88113"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.06.03.13.55.17_veh-35_02866_03582-afa8102c20685ec5.pkl",
+          "sha256": "6852b6a5a7229366dbead7f2119b39f2f271eb9e8c2fd410fc25aceea198a34d"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            2.272165471814989,
+            1.6087636116934676,
+            0.6622535522081044,
+            0.11430310264663075,
+            0.4537327040598824,
+            0.6626632567174771,
+            0.5100819298675127,
+            0.13731442847673084,
+            0.7572462514035508
+          ],
+          "vmax": 2.272165471814989,
+          "v_initial": 2.272165471814989,
+          "v_end": 0.7572462514035508,
+          "distance_m": 2.75393336537007,
+          "heading_change_deg": -0.06489878076935662,
+          "max_positive_dv_dt": 1.23986364585364
+        },
+        "SARA": {
+          "speed_mps": [
+            2.272165471814989,
+            1.6996741336968495,
+            0.9360386170780799,
+            0.8900322321243247,
+            1.3178168397919816,
+            2.1991313625466256,
+            3.8729421282272445,
+            6.339162568476947,
+            7.347690557703056
+          ],
+          "vmax": 7.347690557703056,
+          "v_initial": 2.272165471814989,
+          "v_end": 7.347690557703056,
+          "distance_m": 10.75219936017627,
+          "heading_change_deg": -1.6509035907299243,
+          "max_positive_dv_dt": 4.9324408804994055
+        }
+      },
+      "common_arclength_m": 2.75393336537007,
+      "max_equal_arclength_separation_m": 2.021559549244692,
+      "map": "us-nv-las-vegas-strip",
+      "command": 1,
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 1.5557246614171267,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.457032204478502,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.457032204478502,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.5143846681288824,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.5143846681288824,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.5479286484070174,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.5479286484070174,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.5557246614171267,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.5557246614171267,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.5531919217517072,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.5531919217517072,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.518953312749758,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.518953312749758,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.4840310579445994,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.4840310579445994,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.4608339055196649,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.4608339055196649,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.4340352242493724,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.4340352242493724,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 1.5506094344792232,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.457032204478502,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.457032204478502,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.5234133673613466,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.5234133673613466,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.5506094344792232,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.5506094344792232,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.3219094373054405,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 1.3219094373054405,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.5451443692064855,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 0.5451443692064855,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.5121180972008524,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 0.5121180972008524,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.331225065566869,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 0.331225065566869,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.09034504126324147,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 0.09034504126324147,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.3561614680816358,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63347",
+                  "group": "65606",
+                  "heading_error_deg": 0.3561614680816358,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "number": 24,
+      "title_zh": "低速起步后继续推进",
+      "title_en": "Forward progress after a slow start",
+      "note": "最接近㉒、㉓。初始就是低速状态，Base 在前几步减速后一直低速，SARA 先减速、随后重新推进。画面里前方仍有较开阔的直行空间。SARA 后半段加速比较明显，先作为候选看。"
+    },
+    {
+      "scene": "2021.09.29.19.02.14_veh-28_00540_00917-b8d2227c06a351e4",
+      "mode": "R",
+      "previously_shown": false,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.05196,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.60498,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.09731,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.62388,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.29.19.02.14_veh-28_00540_00917-b8d2227c06a351e4.pkl",
+          "sha256": "2eb689fa8ccddf33f768e0d0cb629d61dfab1d6dc7e2cb5293ee51baf3763f69"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.29.19.02.14_veh-28_00540_00917-b8d2227c06a351e4.pkl",
+          "sha256": "e3128a387eff0478fb760ec8e6027eae0bb8e50eba8b00177f8421e6566dbc6c"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            1.6847381799834205,
+            1.1643706422818472,
+            0.46439456963782055,
+            0.21738377582275875,
+            0.47954387688182476,
+            0.43719589844553436,
+            0.30215447114751837,
+            0.1509760585097308,
+            0.3785797166027859
+          ],
+          "vmax": 1.6847381799834205,
+          "v_initial": 1.6847381799834205,
+          "v_end": 0.3785797166027859,
+          "distance_m": 2.019400616486803,
+          "heading_change_deg": -0.0549812527390543,
+          "max_positive_dv_dt": 0.524320202118132
+        },
+        "SARA": {
+          "speed_mps": [
+            1.6847381799834205,
+            1.540480983474262,
+            1.6318397597775274,
+            2.0735502333324467,
+            2.742091074732907,
+            3.901957874773504,
+            5.807000946426402,
+            7.221621382706706,
+            8.701258027989324
+          ],
+          "vmax": 8.701258027989324,
+          "v_initial": 1.6847381799834205,
+          "v_end": 8.701258027989324,
+          "distance_m": 14.361527909720046,
+          "heading_change_deg": -1.7137130335315336,
+          "max_positive_dv_dt": 3.810086143305795
+        }
+      },
+      "common_arclength_m": 2.0194006164868035,
+      "max_equal_arclength_separation_m": 1.6018070039340861,
+      "map": "us-ma-boston",
+      "command": 1,
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 1.1459480848754748,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.1459480848754748,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 1.1459480848754748,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.9256522229777491,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.9256522229777491,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.7978141279333871,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.7978141279333871,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.785606685295422,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.785606685295422,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.8556291716796856,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.8556291716796856,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.9291130406623835,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.9291130406623835,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.005837627293201,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 1.005837627293201,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.0562618233896706,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 1.0562618233896706,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.0735424959717226,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 1.0735424959717226,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 1.1459480848754748,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.1459480848754748,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 1.1459480848754748,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.8504739573469254,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.8504739573469254,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.6316580675759886,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.6316580675759886,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.5035618276013363,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.5035618276013363,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.10114164885441548,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.2339090422585005,
+                  "body_overlap": 0.8919285835966883,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52704",
+                  "group": "50972",
+                  "heading_error_deg": 0.13181910991815307,
+                  "body_overlap": 0.10807141652927685,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52044",
+                  "group": "49941",
+                  "heading_error_deg": 0.10114164885441548,
+                  "body_overlap": 0.10807141652927685,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.15500702008151232,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.5093180448412734,
+                  "body_overlap": 0.5827033553638022,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52704",
+                  "group": "50972",
+                  "heading_error_deg": 0.4649919817349681,
+                  "body_overlap": 0.4172966447118502,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52044",
+                  "group": "49941",
+                  "heading_error_deg": 0.15500702008151232,
+                  "body_overlap": 0.4172966447118502,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.06632088674408307,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47060",
+                  "group": "48817",
+                  "heading_error_deg": 0.9970223130798983,
+                  "body_overlap": 0.12896865980441263,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52704",
+                  "group": "50972",
+                  "heading_error_deg": 1.471219635702072,
+                  "body_overlap": 0.8669182163377828,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52044",
+                  "group": "49941",
+                  "heading_error_deg": 0.06632088674408307,
+                  "body_overlap": 0.8710313403330441,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.22417387650613124,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52704",
+                  "group": "50972",
+                  "heading_error_deg": 17.766227625107923,
+                  "body_overlap": 0.7968348539583484,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52044",
+                  "group": "49941",
+                  "heading_error_deg": 0.22417387650613124,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.8885710875178794,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52704",
+                  "group": "50972",
+                  "heading_error_deg": 34.79566850388602,
+                  "body_overlap": 0.16018745480112548,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52044",
+                  "group": "49941",
+                  "heading_error_deg": 0.8885710875178794,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52724",
+                  "group": "49634",
+                  "heading_error_deg": 116.29973754509145,
+                  "body_overlap": 0.06778627924794633,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "number": 25,
+      "title_zh": "低速车流中恢复行驶",
+      "title_en": "Moving off in traffic",
+      "note": "也是低速起步场景。Base 基本留在路口前，SARA 开始持续直行，通过更多路口区域。R / NR 的 EP 都达到 100，适合与㉒、㉓一起挑。"
+    },
+    {
+      "scene": "2021.09.29.18.19.40_veh-28_00844_01218-12f2dccfb88957f9",
+      "mode": "R",
+      "previously_shown": false,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.47222,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.78009,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.47641,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.78184,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.29.18.19.40_veh-28_00844_01218-12f2dccfb88957f9.pkl",
+          "sha256": "a23cba94c33d5aa8d6a76fa371132d0f3fa04b8e5d954108a8a2a371fd14ed19"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.29.18.19.40_veh-28_00844_01218-12f2dccfb88957f9.pkl",
+          "sha256": "8f0f4ad446d43ac1cdf9f5c3d41b889d1d8d894b3c62751f4857c56640b7caf4"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            7.592593995311531,
+            6.3140111702413275,
+            4.2022306273082055,
+            1.418811007764085,
+            0.44046628653640274,
+            0.2920287655453173,
+            0.4510632726810126,
+            0.28457876386125164,
+            0.11193584189915486
+          ],
+          "vmax": 7.592593995311531,
+          "v_initial": 7.592593995311531,
+          "v_end": 0.11193584189915486,
+          "distance_m": 8.366388434931906,
+          "heading_change_deg": -0.018591010424935783,
+          "max_positive_dv_dt": 0.31806901427139056
+        },
+        "SARA": {
+          "speed_mps": [
+            7.592593995311531,
+            6.921254223210663,
+            6.37733620531095,
+            5.664257032808418,
+            4.927885052188239,
+            4.3462043613615355,
+            4.232463410371829,
+            3.673581951498652,
+            2.499772823485714
+          ],
+          "vmax": 7.592593995311531,
+          "v_initial": 7.592593995311531,
+          "v_end": 2.499772823485714,
+          "distance_m": 20.739734193633723,
+          "heading_change_deg": 1.8396207928538795,
+          "max_positive_dv_dt": 0.0
+        }
+      },
+      "common_arclength_m": 8.366388434931904,
+      "max_equal_arclength_separation_m": 0.9126993822561388,
+      "map": "us-ma-boston",
+      "command": 1,
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 0.1746211915887498,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.12763450449145436,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.12763450449145436,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.1722672324370956,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.1722672324370956,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.1740984465716171,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.1740984465716171,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.17419446259255875,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.17419446259255875,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.1746211915887498,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.1746211915887498,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.170506055886117,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.170506055886117,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.12671878278576282,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.12671878278576282,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.11938528169208819,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.11938528169208819,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.10904348224658506,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.10904348224658506,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999322409,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999322409,
+          "max_best_heading_error_deg": 3.030879050497067,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.12763450449145436,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.12763450449145436,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.4774785201272623,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 0.4774785201272623,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.4339446020384845,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 1.4339446020384845,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.4927096168376803,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 1.4927096168376803,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.4025049268855194,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 1.4025049268855194,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.2704775485003126,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 1.2704775485003126,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.030879050497067,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 3.030879050497067,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999379607,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999379607,
+              "best_heading_error_deg": 2.582357640686424,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 2.992446584707977,
+                  "body_overlap": 0.8390769273796931,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52956",
+                  "group": "50968",
+                  "heading_error_deg": 2.967569738705751,
+                  "body_overlap": 0.16092307255826765,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52974",
+                  "group": "50883",
+                  "heading_error_deg": 2.992603743793359,
+                  "body_overlap": 0.16092307255826765,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52823",
+                  "group": "50239",
+                  "heading_error_deg": 2.582357640686424,
+                  "body_overlap": 0.16092307255826765,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.9999999999322409,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999322409,
+              "best_heading_error_deg": 1.557166843556732,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48529",
+                  "group": "49401",
+                  "heading_error_deg": 1.967255301285316,
+                  "body_overlap": 0.5575157494419792,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52956",
+                  "group": "50968",
+                  "heading_error_deg": 1.942378941576059,
+                  "body_overlap": 0.4424842504902617,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52974",
+                  "group": "50883",
+                  "heading_error_deg": 1.9674129466636676,
+                  "body_overlap": 0.4424842504902617,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52823",
+                  "group": "50239",
+                  "heading_error_deg": 1.557166843556732,
+                  "body_overlap": 0.4424842504902617,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "number": 26,
+      "title_zh": "直行减速后继续推进",
+      "title_en": "Continuing after slowing down",
+      "note": "两边都减速，但 Base 接近停住，SARA 仍向路口推进。它体现的是减速过程中保留推进，而不是持续加速；末速约 2.50 m/s。"
+    },
+    {
+      "scene": "2021.09.29.19.02.14_veh-28_00964_01689-6ae2bcc5c2c050e4",
+      "mode": "R",
+      "previously_shown": false,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.47393,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.7808,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.50785,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.79494,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.95709,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.98212,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.81614,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.92339,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.29.19.02.14_veh-28_00964_01689-6ae2bcc5c2c050e4.pkl",
+          "sha256": "0c9097acb13d5634375ae254bed8f1ff327a057392818eea0f026df0c497dabc"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.29.19.02.14_veh-28_00964_01689-6ae2bcc5c2c050e4.pkl",
+          "sha256": "1df0733cd6213ffbe3b32c0a66cb89508b4ff32d9293ac547f0b27f9fa281fc2"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            6.913172803642382,
+            6.400201605785411,
+            5.8033486397601335,
+            4.691930533643485,
+            2.902683150671758,
+            0.6550712399636037,
+            0.2147373229876952,
+            0.5354465953020906,
+            0.5188363038078632
+          ],
+          "vmax": 6.913172803642382,
+          "v_initial": 6.913172803642382,
+          "v_end": 0.5188363038078632,
+          "distance_m": 12.325991921387999,
+          "heading_change_deg": 1.2092951652971096,
+          "max_positive_dv_dt": 0.6414185446287908
+        },
+        "SARA": {
+          "speed_mps": [
+            6.913172803642382,
+            6.490193066640142,
+            6.145486780405595,
+            5.787170669270399,
+            5.56322600571391,
+            5.465994971894612,
+            5.496679853070899,
+            5.4498321727562535,
+            5.495168844931158
+          ],
+          "vmax": 6.913172803642382,
+          "v_initial": 6.913172803642382,
+          "v_end": 5.495168844931158,
+          "distance_m": 23.222792518678954,
+          "heading_change_deg": 2.186448460757871,
+          "max_positive_dv_dt": 0.09067334434980978
+        }
+      },
+      "common_arclength_m": 12.325991921387999,
+      "max_equal_arclength_separation_m": 0.7240084983237611,
+      "map": "us-ma-boston",
+      "command": 1,
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 1.202980115987136,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.8198956756043653,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 0.8198956756043653,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 45.88216863898293,
+                  "body_overlap": 0.3244001810170389,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 37.81952684864339,
+                  "body_overlap": 0.02056092876401982,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.0341736650738613,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.0341736650738613,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 36.650030426106724,
+                  "body_overlap": 0.8778498420271849,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 26.336182665786158,
+                  "body_overlap": 0.3859193004103116,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.8595877584273334,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 0.8595877584273334,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 26.02934038725769,
+                  "body_overlap": 0.5632752871523818,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 13.420779511882037,
+                  "body_overlap": 0.8465781704593303,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.5419613483070193,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 0.5419613483070193,
+                  "body_overlap": 0.28296238457162065,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 0.722209022967689,
+                  "body_overlap": 0.7170376153911913,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 14.864004156638012,
+                  "body_overlap": 0.15874986876908967,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 0.9329152706774984,
+                  "body_overlap": 0.7027601612636479,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.1629882411016421,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.4363202958806806,
+                  "body_overlap": 0.0014169345373527694,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.1629882411016421,
+                  "body_overlap": 0.6664628242467047,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.1949311399082394,
+                  "body_overlap": 0.33212024121698763,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 5.309328149697055,
+                  "body_overlap": 0.029532005670451476,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 1.1699946239703953,
+                  "body_overlap": 0.33212024121698763,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.202980115987136,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.496356424715376,
+                  "body_overlap": 0.00939391529842724,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.202980115987136,
+                  "body_overlap": 0.8120174513154711,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.2418293902517552,
+                  "body_overlap": 0.17858863336851297,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 1.4961695047267771,
+                  "body_overlap": 0.011670014020414926,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 1.2300312597585739,
+                  "body_overlap": 0.17858863336851297,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.172461012976455,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.4692897840894645,
+                  "body_overlap": 0.006798668796286726,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.172461012976455,
+                  "body_overlap": 0.8268250181823377,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.2147627496258437,
+                  "body_overlap": 0.1663763130326799,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 1.1198306119669983,
+                  "body_overlap": 0.009656758847317131,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 1.2029646191326626,
+                  "body_overlap": 0.1663763130326799,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.1720418368156362,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.4595703306852804,
+                  "body_overlap": 0.008572987157691569,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.1720418368156362,
+                  "body_overlap": 0.7930792783000001,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.2050432962216597,
+                  "body_overlap": 0.19834773448799572,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 1.918933265667267,
+                  "body_overlap": 0.013752067056218608,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 1.1932451657284784,
+                  "body_overlap": 0.19834773448799572,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.163130710244413,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.4423727781340072,
+                  "body_overlap": 0.007547777222988342,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.163130710244413,
+                  "body_overlap": 0.7559937698176108,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.1878457436703864,
+                  "body_overlap": 0.23645845296877538,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 2.8612838343439466,
+                  "body_overlap": 0.018265438258566042,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 1.1760476131772053,
+                  "body_overlap": 0.23645845296877538,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999567314258727,
+          "max_best_heading_error_deg": 1.890618929284872,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.8198956756043653,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 0.8198956756043653,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 45.88216863898293,
+                  "body_overlap": 0.3244001810170389,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 37.81952684864339,
+                  "body_overlap": 0.02056092876401982,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.0455377237452466,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.0455377237452466,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 36.638245477456756,
+                  "body_overlap": 0.8776589030921146,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 26.33049869691232,
+                  "body_overlap": 0.38316923292891525,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.2980119772922745,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.2980119772922745,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 25.556518629164906,
+                  "body_overlap": 0.5729671852294076,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 12.963505453903807,
+                  "body_overlap": 0.8381031693223491,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999567314258777,
+              "best_heading_error_deg": 0.7392499262917048,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.4062147630202947,
+                  "body_overlap": 0.008912090975638063,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.1328827082412563,
+                  "body_overlap": 0.32480951338647374,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.291135523302488,
+                  "body_overlap": 0.658839298835925,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "53231",
+                  "group": "51034",
+                  "heading_error_deg": 0.6968949090004383,
+                  "body_overlap": 0.009946668039090575,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 12.95292828025938,
+                  "body_overlap": 0.15693300696282214,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 0.7392499262917048,
+                  "body_overlap": 0.6385990082711568,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999567314258727,
+              "best_heading_error_deg": 1.150263768254779,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.465298634084622,
+                  "body_overlap": 0.03746679982149191,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.150263768254779,
+                  "body_overlap": 0.8519887965658293,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52621",
+                  "group": "51034",
+                  "heading_error_deg": 1.2107715996210011,
+                  "body_overlap": 0.10566339689889755,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53231",
+                  "group": "51034",
+                  "heading_error_deg": 0.474419344509644,
+                  "body_overlap": 0.004939806784244024,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48589",
+                  "group": "50826",
+                  "heading_error_deg": 0.18695294637559462,
+                  "body_overlap": 0.011911067323220491,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48590",
+                  "group": "50826",
+                  "heading_error_deg": 1.1989734691278198,
+                  "body_overlap": 0.10550272070155653,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.1089821887515974,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 0.7294308414888527,
+                  "body_overlap": 0.06614962865193855,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.1089821887515974,
+                  "body_overlap": 0.9338503713169705,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.7222403543307345,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 1.7222403543307345,
+                  "body_overlap": 0.10510465808497463,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.8850080561841203,
+                  "body_overlap": 0.8948953419131334,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.8409578893736132,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 1.8409578893736132,
+                  "body_overlap": 0.14530434427745015,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.848489636722943,
+                  "body_overlap": 0.8546956557445036,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.890618929284872,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51214",
+                  "group": "49535",
+                  "heading_error_deg": 2.038862707254478,
+                  "body_overlap": 0.1769640015547071,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "51773",
+                  "group": "49535",
+                  "heading_error_deg": 1.890618929284872,
+                  "body_overlap": 0.8230359984068745,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "number": 27,
+      "title_zh": "沿车流保持直行推进",
+      "title_en": "Continuing with through traffic",
+      "note": "直行车流场景，SARA 减速后速度稳定在约 5.5 m/s，Base 则继续降到接近停住。相比㉔、㉕，加速差异较小，持续推进的差别更清楚。"
+    },
+    {
+      "scene": "2021.09.29.14.44.26_veh-28_01331_01485-7da863f64a5f5e90",
+      "mode": "R",
+      "previously_shown": false,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.37662,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.74026,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.37124,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.73802,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.71492,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.88122,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.70678,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.87783,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.29.14.44.26_veh-28_01331_01485-7da863f64a5f5e90.pkl",
+          "sha256": "7cc268107161c958713c4ec16db61d1cdcee29d0e0ab65ac2fc0bc775b9157aa"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.29.14.44.26_veh-28_01331_01485-7da863f64a5f5e90.pkl",
+          "sha256": "0f7d01be0ea5113a946d28ee5bd9446a33356324d46be5dccf27141cbfa6ed7f"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            7.815449144129578,
+            6.676548492119103,
+            5.392269365737784,
+            3.9058596092870608,
+            1.9753592488585694,
+            0.22389982866964853,
+            0.22513437143580906,
+            0.32139204661929344,
+            0.270401692992048
+          ],
+          "vmax": 7.815449144129578,
+          "v_initial": 7.815449144129578,
+          "v_end": 0.270401692992048,
+          "distance_m": 11.274544640634613,
+          "heading_change_deg": 10.646496219721246,
+          "max_positive_dv_dt": 0.19251535036696876
+        },
+        "SARA": {
+          "speed_mps": [
+            7.815449144129578,
+            6.676548492119103,
+            4.516906825598471,
+            3.9867029938630854,
+            3.384765307738896,
+            3.892666592289451,
+            4.9652040689967105,
+            6.32369154473468,
+            6.310441594421493
+          ],
+          "vmax": 7.815449144129578,
+          "v_initial": 7.815449144129578,
+          "v_end": 6.310441594421493,
+          "distance_m": 20.363188859105556,
+          "heading_change_deg": 5.836253992205786,
+          "max_positive_dv_dt": 2.7169749514759385
+        }
+      },
+      "common_arclength_m": 11.274544640634613,
+      "max_equal_arclength_separation_m": 0.5632370805826445,
+      "map": "us-ma-boston",
+      "command": 0,
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999999997,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999997,
+          "max_best_heading_error_deg": 8.76005776428601,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.043586010004909484,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51277",
+                  "group": "49197",
+                  "heading_error_deg": 1.2049933135901085,
+                  "body_overlap": 0.8448077245177869,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 5.127715750582741,
+                  "body_overlap": 0.040286840681711504,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 4.464475894050563,
+                  "body_overlap": 0.040286840681711504,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47384",
+                  "group": "49871",
+                  "heading_error_deg": 1.1819191328609626,
+                  "body_overlap": 0.11490543520894228,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52587",
+                  "group": "50198",
+                  "heading_error_deg": 0.043586010004909484,
+                  "body_overlap": 0.11490543520894228,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.467865520134877,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51277",
+                  "group": "49197",
+                  "heading_error_deg": 3.975419786500383,
+                  "body_overlap": 0.2789045645707755,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 12.338421784598827,
+                  "body_overlap": 0.721095435676737,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 2.467865520134877,
+                  "body_overlap": 0.721095435676737,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 61.42951952149941,
+                  "body_overlap": 0.008431260882980995,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 0.9999999999999997,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999997,
+              "best_heading_error_deg": 1.2242881447345977,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 42.39562869793418,
+                  "body_overlap": 0.004320862179186549,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 27.528632235044217,
+                  "body_overlap": 0.9999999999999997,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 1.2242881447345977,
+                  "body_overlap": 0.9999999999999997,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 58.423027327062954,
+                  "body_overlap": 0.5040880198898396,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 5.073091732703153,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 37.84664559321944,
+                  "body_overlap": 0.28816348913210055,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 38.018950957842506,
+                  "body_overlap": 0.9999999999999999,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 5.073091732703153,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 60.77000699801733,
+                  "body_overlap": 0.9607163219102787,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 7.848049503203094,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 35.42042632420384,
+                  "body_overlap": 0.5736408033384579,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 43.50874938529098,
+                  "body_overlap": 1.0000000000000002,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 7.848049503203094,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 62.4248042075854,
+                  "body_overlap": 1.0000000000000002,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 8.703555868074233,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 34.6218421308243,
+                  "body_overlap": 0.6704413745984391,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 44.98572184603119,
+                  "body_overlap": 0.9999999999999999,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 8.703555868074233,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 62.85896424098084,
+                  "body_overlap": 0.9999999999999999,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 8.76005776428601,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 34.55776236672404,
+                  "body_overlap": 0.6720727777169925,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 45.14694242736756,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 8.76005776428601,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 62.92332627122248,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 8.510093559146357,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 34.7222747446851,
+                  "body_overlap": 0.6449160296226892,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 44.71568806235496,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 8.510093559146357,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 62.78776072586411,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 8.237238672040057,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 34.992027252753985,
+                  "body_overlap": 0.615159817832858,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 44.2273635332586,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 8.237238672040057,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 62.651831615221454,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 1.0,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 1.0,
+          "max_best_heading_error_deg": 20.149379231785762,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.043586010004909484,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51277",
+                  "group": "49197",
+                  "heading_error_deg": 1.2049933135901085,
+                  "body_overlap": 0.8448077245177869,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 5.127715750582741,
+                  "body_overlap": 0.040286840681711504,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 4.464475894050563,
+                  "body_overlap": 0.040286840681711504,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47384",
+                  "group": "49871",
+                  "heading_error_deg": 1.1819191328609626,
+                  "body_overlap": 0.11490543520894228,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52587",
+                  "group": "50198",
+                  "heading_error_deg": 0.043586010004909484,
+                  "body_overlap": 0.11490543520894228,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.467865520134877,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51277",
+                  "group": "49197",
+                  "heading_error_deg": 3.975419786500383,
+                  "body_overlap": 0.2789045645707755,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 12.338421784598827,
+                  "body_overlap": 0.721095435676737,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 2.467865520134877,
+                  "body_overlap": 0.721095435676737,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 61.42951952149941,
+                  "body_overlap": 0.008431260882980995,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 2.8585996778603744,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 44.46777049854729,
+                  "body_overlap": 0.00373218839692914,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 28.702682172700285,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 2.8585996778603744,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 60.03424703721613,
+                  "body_overlap": 0.48666316156863915,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 8.024672276079365,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 42.38193033269451,
+                  "body_overlap": 0.24992790227029557,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 39.71132150390514,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 8.024672276079365,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 63.78554614414655,
+                  "body_overlap": 0.9006844623708387,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 11.40661809196966,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 39.70637257522437,
+                  "body_overlap": 0.5986006699390011,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 46.20481297899791,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 11.40661809196966,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 65.6466263589122,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 14.481257468004367,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 35.67624126636274,
+                  "body_overlap": 0.9259088043334152,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 51.5611878533127,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 14.481257468004367,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 67.03080488210395,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 16.383351783857016,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 29.539667287472096,
+                  "body_overlap": 1.0000000000000002,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 54.81701904369226,
+                  "body_overlap": 1.0000000000000002,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 16.383351783857016,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 66.91664670994487,
+                  "body_overlap": 0.9975011603321811,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 20.149379231785762,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 26.43799854640662,
+                  "body_overlap": 1.0,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 62.306427391668564,
+                  "body_overlap": 0.693874707039946,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 20.149379231785762,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 71.0998275745967,
+                  "body_overlap": 0.5679832317581901,
+                  "route": false,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 7.505493951199622,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "51732",
+                  "group": "49266",
+                  "heading_error_deg": 7.505493951199622,
+                  "body_overlap": 0.18477308776519594,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47799",
+                  "group": "50571",
+                  "heading_error_deg": 20.82542464494485,
+                  "body_overlap": 0.8152269121226449,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52510",
+                  "group": "50566",
+                  "heading_error_deg": 67.11793362995714,
+                  "body_overlap": 0.10217305518953357,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47278",
+                  "group": "50789",
+                  "heading_error_deg": 19.5473339563376,
+                  "body_overlap": 0.8152269121226449,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47249",
+                  "group": "50752",
+                  "heading_error_deg": 73.72290754981132,
+                  "body_overlap": 0.01862127881670028,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "number": 28,
+      "title_zh": "接近路口时持续推进",
+      "title_en": "Maintaining progress on approach",
+      "note": "接近路口时，SARA 减速后恢复推进，Base 减速后接近停住。周围交通较少，是较简洁的备选。"
+    },
+    {
+      "scene": "2021.06.28.20.24.43_veh-38_03385_04952-dac84d4f931e54ab",
+      "mode": "R",
+      "previously_shown": false,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.42964,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.76235,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.4793,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.78304,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.97435,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.98931,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.74459,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.89358,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.06.28.20.24.43_veh-38_03385_04952-dac84d4f931e54ab.pkl",
+          "sha256": "c6c76d978c2259e9dc993bc1b7ee5633e115c41ddbd2f07b3634235975b2890b"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.06.28.20.24.43_veh-38_03385_04952-dac84d4f931e54ab.pkl",
+          "sha256": "a2cd2469dc36070d90a103c9d6f9907350919a3e85eb7a370314011e15e6edbc"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            8.134919878780975,
+            7.14209680211322,
+            5.294407631860471,
+            2.5823284227641627,
+            0.952918495619775,
+            0.15275438264046748,
+            0.464140952157402,
+            0.28511268041955784,
+            0.06903517338772744
+          ],
+          "vmax": 8.134919878780975,
+          "v_initial": 8.134919878780975,
+          "v_end": 0.06903517338772744,
+          "distance_m": 10.344072745888184,
+          "heading_change_deg": 1.2122079089318625,
+          "max_positive_dv_dt": 0.622773139033869
+        },
+        "SARA": {
+          "speed_mps": [
+            8.134919878780975,
+            7.382102399824237,
+            6.851205665618322,
+            5.96401087956111,
+            5.619824921854626,
+            5.0086644973872785,
+            4.291742719327283,
+            3.7128877778793905,
+            2.98663272431837
+          ],
+          "vmax": 8.134919878780975,
+          "v_initial": 8.134919878780975,
+          "v_end": 2.98663272431837,
+          "distance_m": 21.773588852678927,
+          "heading_change_deg": 8.942371843336868,
+          "max_positive_dv_dt": 0.0
+        }
+      },
+      "common_arclength_m": 10.344072745888186,
+      "max_equal_arclength_separation_m": 0.9567521067652669,
+      "map": "us-nv-las-vegas-strip",
+      "command": 1,
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999999997,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999997,
+          "max_best_heading_error_deg": 7.656158182464338,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 7.656158182464338,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 7.656158182464338,
+                  "body_overlap": 0.4543767765230623,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 7.694720292923499,
+                  "body_overlap": 0.5456232234820236,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 6.968809987395781,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.968809987395781,
+                  "body_overlap": 0.24202396942110033,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 7.007371989969994,
+                  "body_overlap": 0.75797603055355,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 6.640126083644157,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.726417290546602,
+                  "body_overlap": 0.09153170196067995,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.640126083644157,
+                  "body_overlap": 0.9084682980419463,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 6.477286408683597,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.591100904423409,
+                  "body_overlap": 0.02919639588584575,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.477286408683597,
+                  "body_overlap": 0.9708036041386867,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9999999999999997,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999997,
+              "best_heading_error_deg": 6.301418497984432,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.415233089256657,
+                  "body_overlap": 0.014981300806783043,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.301418497984432,
+                  "body_overlap": 0.9850186991911781,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 6.3033609192968,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.417175570499607,
+                  "body_overlap": 0.010688305820756158,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.3033609192968,
+                  "body_overlap": 0.989311694186808,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 6.312715994582653,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.426530597763066,
+                  "body_overlap": 0.012835687851792356,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.312715994582653,
+                  "body_overlap": 0.9871643121410344,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 6.3253633438893635,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.439177923359848,
+                  "body_overlap": 0.014161875129782722,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.3253633438893635,
+                  "body_overlap": 0.985838124910615,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 6.330135717842184,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 6.443950285416542,
+                  "body_overlap": 0.015334482424923563,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 6.330135717842184,
+                  "body_overlap": 0.9846655175706952,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 7.656158182464338,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 7.656158182464338,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 7.656158182464338,
+                  "body_overlap": 0.4543767765230623,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 7.694720292923499,
+                  "body_overlap": 0.5456232234820236,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 4.562008020466065,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 4.562008020466065,
+                  "body_overlap": 0.2935601540672147,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 4.600570071492669,
+                  "body_overlap": 0.7064398459068857,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.1884422593819308,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 1.291028932843065,
+                  "body_overlap": 0.27989799317702985,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 1.1884422593819308,
+                  "body_overlap": 0.7201020068136978,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.11765286565941302,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 0.11765286565941302,
+                  "body_overlap": 0.29135617719521484,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 0.23146742076136503,
+                  "body_overlap": 0.7086438228338855,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.6149805325648207,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 0.6149805325648207,
+                  "body_overlap": 0.31353521391245615,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 0.728795243151776,
+                  "body_overlap": 0.6864647860625731,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.8167728849558011,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 0.8167728849558011,
+                  "body_overlap": 0.33849396920426295,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 0.9305875480788555,
+                  "body_overlap": 0.6615060307863816,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.770150753695839,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 1.770150753695839,
+                  "body_overlap": 0.3662320901613058,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 1.8839653331322401,
+                  "body_overlap": 0.6337679098307849,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.251425224933595,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 1.251425224933595,
+                  "body_overlap": 0.3946741956714897,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 1.365239589416419,
+                  "body_overlap": 0.605325804315768,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.2862135059056141,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "63255",
+                  "group": "65622",
+                  "heading_error_deg": 1.2862135059056141,
+                  "body_overlap": 0.41081660082685817,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "63253",
+                  "group": "65622",
+                  "heading_error_deg": 1.4000281328662196,
+                  "body_overlap": 0.5891833991435149,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "number": 29,
+      "title_zh": "车辆前行时避免停滞",
+      "title_en": "Advancing with surrounding traffic",
+      "note": "周围有车辆继续前行，SARA 减速但仍保持推进，Base 较早接近停止。是否有必要继续减速仍需结合前车关系看图判断。"
+    }
+  ]
+}
