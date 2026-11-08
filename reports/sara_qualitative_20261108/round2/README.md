@@ -4,7 +4,7 @@
 
 对应论文主表的 **NavTrain50 Base vs SARA online rare-log，seed 0，epoch 2**。与第一批五例不重复。
 
-**优先看 ⑥减速右转 + ⑦低速左转；若希望覆盖交互安全，可用⑧跟车避碰替换其中一个。⑨、⑩作为备选。**
+**本批此前推荐已撤回，保留作历史候选。请看[第三批新候选](../round3/README.md)。**
 
 [返回第一批](../README.md) · [总览 PDF](five_cases_overview.pdf) · [下载本批材料](sara_five_more_cases.zip) · [数据核验](verification.json)
 

@@ -8,7 +8,7 @@ import analyze as a
 
 def main():
     results=a.read_results()
-    for folder in [HERE.parent,HERE.parent/'round2']:
+    for folder in [HERE.parent,HERE.parent/'round2',HERE.parent/'round3']:
         selected=json.loads((folder/'selected_cases.json').read_text())
         for r in selected['cases']:
             frames=a.extract_scene(results,r['scene']); layers=a.vector_map(frames)

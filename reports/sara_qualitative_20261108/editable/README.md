@@ -1,6 +1,8 @@
-# 可编辑的 SARA 论文绘图包（案例 01–10）
+# 可编辑的 SARA 论文绘图包（案例 01–15）
 
-图是用 **Python + Matplotlib** 绘制的。这个目录包含独立绘图脚本、样式配置、十个案例的地图与闭环轨迹数据，以及 PDF / SVG / PNG 输出。在自己电脑上重画只需 NumPy 和 Matplotlib，不需要训练 checkpoint、原始 nuPlan 地图、仿真器或服务器路径。
+图是用 **Python + Matplotlib** 绘制的。这个目录包含独立绘图脚本、样式配置、十五个案例的地图与闭环轨迹数据，以及 PDF / SVG / PNG 输出。在自己电脑上重画只需 NumPy 和 Matplotlib，不需要训练 checkpoint、原始 nuPlan 地图、仿真器或服务器路径。
+
+**更新：新增[第三批 11–15](../round3/README.md)。原②、③存在对向车道重叠，⑥、⑦未通过更严格的位置检查；旧图保留为历史材料。**
 
 [下载完整可编辑包](sara_editable_figures.zip) · [返回案例浏览](../README.md)
 
@@ -10,13 +12,13 @@
 
 ```bash
 python -m pip install -r requirements.txt
-python plot_cases.py --cases 6 7
+python plot_cases.py --cases 11 12
 ```
 
-默认输出到 `figures/`，每个案例同时生成 PDF、SVG、PNG。省略 `--cases` 会重画全部十例。
+默认输出到 `figures/`，每个案例同时生成 PDF、SVG、PNG。省略 `--cases` 会重画全部十五例。
 
 ```bash
-python plot_cases.py --cases 6 7 8 --formats pdf svg --output paper_figures
+python plot_cases.py --cases 11 12 13 --formats pdf svg --output paper_figures
 ```
 
 `data/` 是从已核验的真实闭环记录导出的数据，不是从 PNG 反向提取或手工重画的轨迹。包含每 0.5 秒的位姿、速度、车辆轮廓、地图形状、R/NR 指标和来源哈希；绘图统一用 R 模式。JSON 可直接阅读。
@@ -75,6 +77,6 @@ Base / SARA 使用相同裁剪范围和等比例坐标。地图之外的任意�
 
 每例覆盖完整四秒评测片段，而非整段驾驶日志；0.5 秒一个采样点。灰色车辆默认表示起点和末帧，不表示所有中间位置。两边初始状态一致，后续 reactive 交通分别演化。调整画面不应改变轨迹坐标、速度和评测数值。
 
-案例②仅在 R 模式体现优势；⑨有推进效率下降的代价；⑩只展示越界前收停，未证明之后能恢复正常行驶。论文图注应保留相关限定。优先推荐⑥、⑦，交互安全可选⑧。
+案例②仅在 R 模式体现优势；⑨有推进效率下降的代价；⑩只展示越界前收停，未证明之后能恢复正常行驶。论文图注应保留相关限定。当前优先看新候选⑪、⑫，①保留作跟车避碰参考；②–⑩的此前推荐已撤回。
 
 `export_inputs.py` 是服务器端导出记录，依赖原研究目录的 `analyze.py` 及完整数据。**本地使用只运行 `plot_cases.py` 即可**；无需运行导出脚本。

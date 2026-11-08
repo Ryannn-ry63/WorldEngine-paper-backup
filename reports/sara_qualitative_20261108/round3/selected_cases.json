@@ -1,0 +1,3032 @@
+{
+  "selection": "Post-hoc qualitative illustrations, not an independent evaluation set.",
+  "base_model_sha256": "c541de3d44479cd824ed3131ff7d2e57249b6657c7ba26973cd35064e9914f87",
+  "sara_model_sha256": "e74bc53e4e332d3d37e378d3c0893cde071f085da8557d75871a56a7961e6bd4",
+  "results_sources": {
+    "Base": {
+      "R": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/base/evaluation/closed_R/accepted.json",
+      "NR": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/base/evaluation/closed_NR/accepted.json"
+    },
+    "SARA": {
+      "R": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/online_rarelog_s0_b16_e2/evaluation/closed_R/accepted.json",
+      "NR": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/online_rarelog_s0_b16_e2/evaluation/closed_NR/accepted.json"
+    }
+  },
+  "cases": [
+    {
+      "scene": "2021.10.06.08.16.17_veh-52_00181_00574-18492b6ce9905b13",
+      "delta": 0.25793999999999995,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.38095,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.74206,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.38025,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.74177,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.10.06.08.16.17_veh-52_00181_00574-18492b6ce9905b13.pkl",
+          "sha256": "4eecee6a2048e71ddf304628a45a6f149387298cac27fde35a390319ef6f0e53"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.10.06.08.16.17_veh-52_00181_00574-18492b6ce9905b13.pkl",
+          "sha256": "2cde4f50f55e5b7d7ec67db1969ef940fd8dcfc7ba5f2c166b32c76b3f6a9064"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            4.154533496012113,
+            3.8807638607235533,
+            3.4622624852770505,
+            2.7249747986810284,
+            1.5051473450747668,
+            0.1122039183659541,
+            0.27970508931304,
+            0.4176592160934428,
+            0.2318658993879518
+          ],
+          "vmax": 4.154533496012113,
+          "v_end": 0.2318658993879518,
+          "v_initial": 4.154533496012113,
+          "max_positive_dv_dt": 0.3350023418941718,
+          "max_abs_dv_dt": 2.7858868534176255,
+          "distance_m": 6.91004797124583,
+          "heading_change_deg": 17.33670318816371,
+          "final_speed_mps": 0.2318658993879518
+        },
+        "SARA": {
+          "speed_mps": [
+            4.154533496012113,
+            4.671969819352826,
+            5.37900415218912,
+            6.058513182739387,
+            6.525249241593369,
+            6.777612256390221,
+            6.713619801050043,
+            6.350320724204001,
+            6.4832873842977605
+          ],
+          "vmax": 6.777612256390221,
+          "v_end": 6.4832873842977605,
+          "v_initial": 4.154533496012113,
+          "max_positive_dv_dt": 1.4140686656725876,
+          "max_abs_dv_dt": 1.4140686656725876,
+          "distance_m": 23.1828775462878,
+          "heading_change_deg": 34.216291070266074,
+          "final_speed_mps": 6.4832873842977605
+        }
+      },
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9999999999977232,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999977232,
+          "max_best_heading_error_deg": 5.2365199174846415,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.4591022727355805,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 25.910438893957668,
+                  "body_overlap": 0.7790653830351993,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 4.4591022727355805,
+                  "body_overlap": 0.8931127443859491,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 4.75488912140356,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.247426768972617,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 62.83554801745876,
+                  "body_overlap": 0.10524913731513327,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 33.44919596711055,
+                  "body_overlap": 0.39452604143000103,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 5.875931355982563,
+                  "body_overlap": 0.6929939243653112,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 4.247426768972617,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.681840658888862,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 53.231481626662486,
+                  "body_overlap": 0.4125681513439708,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 40.48025080827502,
+                  "body_overlap": 0.10712590708265307,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 7.118646958403466,
+                  "body_overlap": 0.45158285843091694,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 3.681840658888862,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 5.2365199174846415,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 24.46354265425291,
+                  "body_overlap": 0.0035894045955789542,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 46.30768195042668,
+                  "body_overlap": 0.6903801745963155,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 44.47960992513988,
+                  "body_overlap": 0.0023955237519051,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 5.557611989901408,
+                  "body_overlap": 0.2525659550684339,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 5.2365199174846415,
+                  "body_overlap": 0.9964105954158091,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.014453138337992,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 24.566108263295583,
+                  "body_overlap": 0.09578140792862144,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 44.31566859955355,
+                  "body_overlap": 0.7812821681849936,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 2.014453138337992,
+                  "body_overlap": 0.17166875187535185,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 8.711407584730718,
+                  "body_overlap": 0.9035471889397295,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9999999999977232,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999977232,
+              "best_heading_error_deg": 0.7094910308823728,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 22.547932925715717,
+                  "body_overlap": 0.001166643248004572,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 24.558064611645246,
+                  "body_overlap": 0.15875996732518421,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49321",
+                  "group": "51314",
+                  "heading_error_deg": 40.210709504418546,
+                  "body_overlap": 0.0015879408263991624,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 43.49672161867579,
+                  "body_overlap": 0.7662620999870363,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 0.7094910308823728,
+                  "body_overlap": 0.1493196606353625,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 9.919783467537888,
+                  "body_overlap": 0.8368952968838651,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.9999999999985509,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999985509,
+              "best_heading_error_deg": 0.7881357520150307,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 22.56682728335281,
+                  "body_overlap": 0.0006810089680422416,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 24.576958969282337,
+                  "body_overlap": 0.1526047596492878,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49321",
+                  "group": "51314",
+                  "heading_error_deg": 40.31424537346084,
+                  "body_overlap": 0.0016951494454458768,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 43.600467801430185,
+                  "body_overlap": 0.7694008661613686,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 0.7881357520150307,
+                  "body_overlap": 0.15308975077405643,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 9.831448156983019,
+                  "body_overlap": 0.8433150827192812,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0000000000008546,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000008546,
+              "best_heading_error_deg": 1.1652568696304748,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 24.598638713414534,
+                  "body_overlap": 0.13620295192620704,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49321",
+                  "group": "51314",
+                  "heading_error_deg": 40.47635696519092,
+                  "body_overlap": 0.0008636367128966941,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 43.80072267292161,
+                  "body_overlap": 0.7729894855172245,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 1.1652568696304748,
+                  "body_overlap": 0.1535983695712327,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 9.532596182642536,
+                  "body_overlap": 0.8615023226652285,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.620151018133201,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 24.677276062040956,
+                  "body_overlap": 0.11031963301503578,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49321",
+                  "group": "51314",
+                  "heading_error_deg": 40.792458871647774,
+                  "body_overlap": 3.453245681564596e-05,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 44.199008296992545,
+                  "body_overlap": 0.7797596186207524,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 1.620151018133201,
+                  "body_overlap": 0.16463831725786673,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 9.125817101408577,
+                  "body_overlap": 0.8884008106313863,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 15.00985050328159,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.4591022727355805,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 25.910438893957668,
+                  "body_overlap": 0.7790653830351993,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 4.4591022727355805,
+                  "body_overlap": 0.8931127443859491,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 4.75488912140356,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 5.106086153075049,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 62.466417420239615,
+                  "body_overlap": 0.1507656802210966,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 33.45697225053802,
+                  "body_overlap": 0.34606737875832955,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 5.106086153075049,
+                  "body_overlap": 0.6657809419203763,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 5.123539994646027,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.397895686175088,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 49.32220091329772,
+                  "body_overlap": 0.5751175916834875,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53507",
+                  "group": "51574",
+                  "heading_error_deg": 42.8811545026952,
+                  "body_overlap": 0.03340106922275207,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 6.384212835776394,
+                  "body_overlap": 0.35442927503402494,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 4.397895686175088,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 7.433622694242263,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 17.56589877987834,
+                  "body_overlap": 0.002477903639301074,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 19.576030465807868,
+                  "body_overlap": 0.3287275043824866,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 36.479468394972415,
+                  "body_overlap": 0.654172768128511,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52976",
+                  "group": "51385",
+                  "heading_error_deg": 3.1696498429653417,
+                  "body_overlap": 0.06439959648784715,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 7.433622694242263,
+                  "body_overlap": 0.6687945920233345,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 15.00985050328159,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 12.999718817352065,
+                  "body_overlap": 0.08566991814864908,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 15.00985050328159,
+                  "body_overlap": 0.8380510275037794,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "49322",
+                  "group": "51314",
+                  "heading_error_deg": 23.097910145789363,
+                  "body_overlap": 0.07627905438366993,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "53686",
+                  "group": "51385",
+                  "heading_error_deg": 12.963521519123793,
+                  "body_overlap": 0.07627905438366993,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 9.619288723043983,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 9.619288723043983,
+                  "body_overlap": 0.3022700132671234,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 11.629420694794607,
+                  "body_overlap": 0.6977299867337746,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 8.806138540374613,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 8.806138540374613,
+                  "body_overlap": 0.5341752664456386,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 9.715967654539554,
+                  "body_overlap": 0.46582473355286735,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 8.38986571730867,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 8.38986571730867,
+                  "body_overlap": 0.7303859432114638,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 9.122975155260871,
+                  "body_overlap": 0.2696140567908581,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 9.163748578530067,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48813",
+                  "group": "50406",
+                  "heading_error_deg": 9.163748578530067,
+                  "body_overlap": 0.9040288211375952,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "lane",
+                  "id": "48814",
+                  "group": "50406",
+                  "heading_error_deg": 9.74680039039711,
+                  "body_overlap": 0.0959711788627413,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "previous_case": null,
+      "preview": 2,
+      "number": 11,
+      "title_zh": "分隔岛旁持续左转",
+      "title_en": "Continuing through a left turn",
+      "artifacts": {
+        "figure": "case_11.png",
+        "animation": "case_11.gif",
+        "camera": "case_11_camera.jpg",
+        "trajectory": "case_11_trajectory.json"
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/18492b6ce9905b13/CAM_F0/6f11385828525f35-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/18492b6ce9905b13/CAM_F0/c7cb3766a1f75a2d-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/18492b6ce9905b13/CAM_F0/72515a834a375538-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/18492b6ce9905b13/CAM_F0/6f11385828525f35-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/18492b6ce9905b13/CAM_F0/c7cb3766a1f75a2d-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/18492b6ce9905b13/CAM_F0/72515a834a375538-000.jpg"
+      ]
+    },
+    {
+      "scene": "2021.08.30.16.16.44_veh-40_00779_01088-75f5cc1f425c501d",
+      "delta": 1.0,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.08.30.16.16.44_veh-40_00779_01088-75f5cc1f425c501d.pkl",
+          "sha256": "6bc7071be26c1da332afc5ebcf69f1c390b9596ce734422548118a09538bf6e5"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.08.30.16.16.44_veh-40_00779_01088-75f5cc1f425c501d.pkl",
+          "sha256": "b843da3275e57c7f63273b3ff6ef664430c156e053c024f1ec0af25f78b15a04"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            6.468039191129011,
+            6.624908907637019,
+            6.919803263036023,
+            7.262607685475559,
+            7.337496780526491,
+            7.123289360423413,
+            6.69691605796077,
+            5.632837601439778,
+            3.6374741967623856
+          ],
+          "vmax": 7.337496780526491,
+          "v_end": 3.6374741967623856,
+          "v_initial": 6.468039191129011,
+          "max_positive_dv_dt": 0.6856088448790718,
+          "max_abs_dv_dt": 3.9907268093547854,
+          "distance_m": 26.09731368596233,
+          "heading_change_deg": 4.740035986193467,
+          "final_speed_mps": 3.6374741967623856
+        },
+        "SARA": {
+          "speed_mps": [
+            6.468039191129011,
+            6.778250097522175,
+            7.122371911927297,
+            7.365579522207702,
+            7.6102265493271695,
+            7.596802310500911,
+            7.381243835370088,
+            6.552609525457774,
+            5.919977686026479
+          ],
+          "vmax": 7.6102265493271695,
+          "v_end": 5.919977686026479,
+          "v_initial": 6.468039191129011,
+          "max_positive_dv_dt": 0.6882436288102429,
+          "max_abs_dv_dt": 1.6572686198246291,
+          "distance_m": 27.954969620375255,
+          "heading_change_deg": 5.049940236746225,
+          "final_speed_mps": 5.919977686026479
+        }
+      },
+      "category": "road",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.8849586196266384,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.8801326362988026,
+          "max_best_heading_error_deg": 7.884603772773291,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 7.884603772773291,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 8.134934843127562,
+                  "body_overlap": 0.37783364003965425,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 7.884603772773291,
+                  "body_overlap": 0.6221663599649505,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 6.831912272149922,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 7.082243357352652,
+                  "body_overlap": 0.20772038847561508,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 6.831912272149922,
+                  "body_overlap": 0.7922796115413012,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 5.733078919336895,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 5.983409978753139,
+                  "body_overlap": 0.06732062646654827,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 5.733078919336895,
+                  "body_overlap": 0.9326793734743356,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.607602898187703,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 4.857933979601756,
+                  "body_overlap": 0.0027452162287284823,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 4.607602898187703,
+                  "body_overlap": 0.9972547837768022,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.8454680735596987,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 3.8454680735596987,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.6715759363942224,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 3.6715759363942224,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.9911525104054437,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9911525104054437,
+              "best_heading_error_deg": 3.2932645183465024,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 3.2932645183465024,
+                  "body_overlap": 0.9911525104054437,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9427935360725618,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9427935360725618,
+              "best_heading_error_deg": 3.397994596970012,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 3.397994596970012,
+                  "body_overlap": 0.9427935360725618,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.8849586196266384,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.8801326362988026,
+              "best_heading_error_deg": 2.9322090895506823,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 3.5567719280492542,
+                  "body_overlap": 0.7510320023091194,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52255",
+                  "group": "50823",
+                  "heading_error_deg": 2.9322090895506823,
+                  "body_overlap": 0.13392661735533434,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47931",
+                  "group": "50455",
+                  "heading_error_deg": 3.593643717309438,
+                  "body_overlap": 0.12910063402639746,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 1.0,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 1.0,
+          "max_best_heading_error_deg": 7.884603772773291,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 7.884603772773291,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 8.134934843127562,
+                  "body_overlap": 0.37783364003965425,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 7.884603772773291,
+                  "body_overlap": 0.6221663599649505,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 5.569680204457903,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 5.8200112894043565,
+                  "body_overlap": 0.21881303563193896,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 5.569680204457903,
+                  "body_overlap": 0.7811869643378507,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.0107408558645234,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 4.261071926218794,
+                  "body_overlap": 0.11273396095893491,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 4.0107408558645234,
+                  "body_overlap": 0.8872660390402797,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.9492120502542485,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 3.1995431280141755,
+                  "body_overlap": 0.03969134474869291,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 2.9492120502542485,
+                  "body_overlap": 0.9603086552121184,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 2.286157093541289,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47815",
+                  "group": "36353",
+                  "heading_error_deg": 2.3201641396758856,
+                  "body_overlap": 0.0040215446384697096,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 2.286157093541289,
+                  "body_overlap": 0.9959784553237963,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 2.1069222090059405,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 2.1069222090059405,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.9995493265160496,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 1.9995493265160496,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.7675210267989465,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 2.7675210267989465,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.77610608076586,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "47814",
+                  "group": "36353",
+                  "heading_error_deg": 3.3045401787327315,
+                  "body_overlap": 0.47660388896121014,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52255",
+                  "group": "50823",
+                  "heading_error_deg": 0.77610608076586,
+                  "body_overlap": 0.5233961111177938,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47931",
+                  "group": "50455",
+                  "heading_error_deg": 3.1387552947138566,
+                  "body_overlap": 0.5233961111177938,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "previous_case": null,
+      "preview": 7,
+      "number": 12,
+      "title_zh": "路口直行保持车道",
+      "title_en": "Keeping the through lane",
+      "artifacts": {
+        "figure": "case_12.png",
+        "animation": "case_12.gif",
+        "camera": "case_12_camera.jpg",
+        "trajectory": "case_12_trajectory.json"
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/75f5cc1f425c501d/CAM_F0/20333c802ae15c6a-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/75f5cc1f425c501d/CAM_F0/a808f7c48f585049-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/75f5cc1f425c501d/CAM_F0/da0afae837f057b9-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/75f5cc1f425c501d/CAM_F0/20333c802ae15c6a-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/75f5cc1f425c501d/CAM_F0/a808f7c48f585049-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/75f5cc1f425c501d/CAM_F0/da0afae837f057b9-000.jpg"
+      ]
+    },
+    {
+      "scene": "2021.09.29.19.02.14_veh-28_00964_01689-f23073987e7956e3",
+      "delta": 0.93828,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.85187,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.93828,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.21802,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.67417,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.29.19.02.14_veh-28_00964_01689-f23073987e7956e3.pkl",
+          "sha256": "1d842f2970bd27a2eca7a563be8062d3751d5bc7c77748e9eb69aa60d6fbf5f1"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.29.19.02.14_veh-28_00964_01689-f23073987e7956e3.pkl",
+          "sha256": "125ec3ad8bb8d716b9a8ab20ccafb2d40737347e159c31d695e88e765ff90b4d"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            3.213133509625629,
+            4.279137673786507,
+            5.788027610716993,
+            6.90493105776881,
+            7.581346878772482,
+            7.956451734730825,
+            7.9532742270956716,
+            6.681277793107466,
+            4.8729920381934235
+          ],
+          "vmax": 7.956451734730825,
+          "v_end": 4.8729920381934235,
+          "v_initial": 3.213133509625629,
+          "max_positive_dv_dt": 3.017779873860972,
+          "max_abs_dv_dt": 3.616571509828084,
+          "distance_m": 25.17665717212347,
+          "heading_change_deg": -37.804772645380375,
+          "final_speed_mps": 4.8729920381934235
+        },
+        "SARA": {
+          "speed_mps": [
+            3.213133509625629,
+            2.6679689981384187,
+            2.4773134683816047,
+            2.0938230524202965,
+            2.6268199693198984,
+            3.33391395591288,
+            4.333902692941303,
+            5.254116993862046,
+            5.420507790786515
+          ],
+          "vmax": 5.420507790786515,
+          "v_end": 5.420507790786515,
+          "v_initial": 3.213133509625629,
+          "max_positive_dv_dt": 1.9999774740568457,
+          "max_abs_dv_dt": 1.9999774740568457,
+          "distance_m": 13.413363478813574,
+          "heading_change_deg": -6.15737704691632,
+          "final_speed_mps": 5.420507790786515
+        }
+      },
+      "category": "road",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.8395501515342204,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.8395501515342204,
+          "max_best_heading_error_deg": 34.99198009093649,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 0.9999999999999997,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999997,
+              "best_heading_error_deg": 0.5496374347891337,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 0.5496374347891337,
+                  "body_overlap": 0.9999999999999997,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.18701205812052007,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 0.18701205812052007,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.984209989823957,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 4.984209989823957,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 0.9301523852447325,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9301523852447325,
+              "best_heading_error_deg": 7.01973338504231,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 7.01973338504231,
+                  "body_overlap": 0.9301523852447325,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.8672960843847519,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.8672960843847519,
+              "best_heading_error_deg": 2.79769624236944,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 7.4856617430552665,
+                  "body_overlap": 0.4505349632317768,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 2.79769624236944,
+                  "body_overlap": 0.4167611211325452,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9726144916860874,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9726144916860874,
+              "best_heading_error_deg": 18.85298062893703,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 18.85298062893703,
+                  "body_overlap": 0.9726144916860874,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.8604841187611801,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.8604841187611801,
+              "best_heading_error_deg": 29.74274439226374,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52786",
+                  "group": "50940",
+                  "heading_error_deg": 80.31453981292125,
+                  "body_overlap": 0.011321516487409363,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47168",
+                  "group": "51028",
+                  "heading_error_deg": 33.98909602106613,
+                  "body_overlap": 0.07894957161843402,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 29.74274439226374,
+                  "body_overlap": 0.7815345471427462,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.8395501515342204,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.8395501515342204,
+              "best_heading_error_deg": 29.789495608766632,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52786",
+                  "group": "50940",
+                  "heading_error_deg": 68.32766874052963,
+                  "body_overlap": 0.6328313397390313,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47168",
+                  "group": "51028",
+                  "heading_error_deg": 37.703814515925366,
+                  "body_overlap": 0.605880985870815,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 29.789495608766632,
+                  "body_overlap": 0.23366916566340545,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "52338",
+                  "group": "50940",
+                  "heading_error_deg": 68.49234183275317,
+                  "body_overlap": 0.009146054937207528,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.8785647182924378,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.8785647182924378,
+              "best_heading_error_deg": 34.99198009093649,
+              "matches": [
+                {
+                  "kind": "connector",
+                  "id": "52786",
+                  "group": "50940",
+                  "heading_error_deg": 56.61134808029274,
+                  "body_overlap": 0.4665276200608375,
+                  "route": false,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47168",
+                  "group": "51028",
+                  "heading_error_deg": 34.99198009093649,
+                  "body_overlap": 0.8752318071607739,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 28.20457094309663,
+                  "body_overlap": 0.0033329111316639085,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "48354",
+                  "group": "50318",
+                  "heading_error_deg": 68.50469340484624,
+                  "body_overlap": 0.41517414174769685,
+                  "route": false,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "52338",
+                  "group": "50940",
+                  "heading_error_deg": 56.92575908825722,
+                  "body_overlap": 0.5136129244733063,
+                  "route": false,
+                  "rear_axle_inside": false
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999997,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999997,
+          "max_best_heading_error_deg": 15.79735258053111,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 0.9999999999999997,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999997,
+              "best_heading_error_deg": 0.5496374347891337,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 0.5496374347891337,
+                  "body_overlap": 0.9999999999999997,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.6362391772640306,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 1.6362391772640306,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.612234647551626,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 1.612234647551626,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.3328788535043163,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 1.3328788535043163,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.9825974485715185,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 0.9825974485715185,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.7045017858492811,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 0.7045017858492811,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.2469295647985703,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 3.2469295647985703,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 4.171594633836853,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 4.171594633836853,
+                  "body_overlap": 0.5553805058743146,
+                  "route": true,
+                  "rear_axle_inside": true
+                },
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 5.246104662981706,
+                  "body_overlap": 0.4446194941677388,
+                  "route": true,
+                  "rear_axle_inside": false
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 15.79735258053111,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48621",
+                  "group": "49328",
+                  "heading_error_deg": 5.28247549018965,
+                  "body_overlap": 0.04391026367209215,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "connector",
+                  "id": "47169",
+                  "group": "51028",
+                  "heading_error_deg": 15.79735258053111,
+                  "body_overlap": 0.9560897363588537,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "previous_case": null,
+      "preview": 5,
+      "number": 13,
+      "title_zh": "右转入口控制转入位置",
+      "title_en": "Controlled right-turn approach",
+      "artifacts": {
+        "figure": "case_13.png",
+        "animation": "case_13.gif",
+        "camera": "case_13_camera.jpg",
+        "trajectory": "case_13_trajectory.json"
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/f23073987e7956e3/CAM_F0/94887a20c8ed5fad-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/f23073987e7956e3/CAM_F0/fb4e46c6c2a0507f-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/f23073987e7956e3/CAM_F0/d2fb8f39fb5d5096-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/f23073987e7956e3/CAM_F0/94887a20c8ed5fad-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/f23073987e7956e3/CAM_F0/fb4e46c6c2a0507f-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/f23073987e7956e3/CAM_F0/d2fb8f39fb5d5096-000.jpg"
+      ]
+    },
+    {
+      "scene": "2021.09.16.19.27.01_veh-45_00472_00711-f0b6499b393152be",
+      "delta": 0.93494,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.69108,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.87128,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.84385,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.93494,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.83472,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.93113,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.16.19.27.01_veh-45_00472_00711-f0b6499b393152be.pkl",
+          "sha256": "52d2924645dda0efbcb90a3eff5d9845fa4af931e6b1988f4fd9792c083b8c33"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.16.19.27.01_veh-45_00472_00711-f0b6499b393152be.pkl",
+          "sha256": "58c6d4ec5c503e0e3b979a40df226339d56b1d04b385b84b339d961b86c0a3cd"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            8.927023376432196,
+            8.547033890535891,
+            7.753308472619954,
+            6.59629423623462,
+            5.754945252438901,
+            4.871396561600344,
+            3.518923815720242,
+            1.4709028836912863,
+            0.03516316753841191
+          ],
+          "vmax": 8.927023376432196,
+          "v_end": 0.03516316753841191,
+          "v_initial": 8.927023376432196,
+          "max_positive_dv_dt": 0.0,
+          "max_abs_dv_dt": 4.096041864057911,
+          "distance_m": 21.37200711599302,
+          "heading_change_deg": -21.29758086289325,
+          "final_speed_mps": 0.03516316753841191
+        },
+        "SARA": {
+          "speed_mps": [
+            8.927023376432196,
+            8.317642077578336,
+            7.166096645115418,
+            5.999095633736777,
+            5.493960113095465,
+            5.222835432305001,
+            5.445531036068329,
+            5.764555645114188,
+            6.013908520078906
+          ],
+          "vmax": 8.927023376432196,
+          "v_end": 6.013908520078906,
+          "v_initial": 8.927023376432196,
+          "max_positive_dv_dt": 0.6380492180917194,
+          "max_abs_dv_dt": 2.334002022757282,
+          "distance_m": 24.91806969160205,
+          "heading_change_deg": -28.450244038919962,
+          "final_speed_mps": 6.013908520078906
+        }
+      },
+      "category": "road",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9920768027912561,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9920768027912561,
+          "max_best_heading_error_deg": 5.964879743092153,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 2.5055733053918585,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 2.5055733053918585,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 3.744691923807891,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 3.744691923807891,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.395509442174014,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 3.395509442174014,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 4.697520586846399,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 4.697520586846399,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9973083901616933,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9973083901616933,
+              "best_heading_error_deg": 5.964879743092153,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 5.964879743092153,
+                  "body_overlap": 0.9973083901616933,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9920768027912561,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9920768027912561,
+              "best_heading_error_deg": 3.5844495457424115,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 3.5844495457424115,
+                  "body_overlap": 0.9920768027912561,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.999384643800398,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.999384643800398,
+              "best_heading_error_deg": 0.17022124587459708,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 0.17022124587459708,
+                  "body_overlap": 0.999384643800398,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9999987571751169,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999987571751169,
+              "best_heading_error_deg": 0.2419039565589356,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 0.2419039565589356,
+                  "body_overlap": 0.9999987571751169,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.9996074031575642,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9996074031575642,
+              "best_heading_error_deg": 0.7475855745019225,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 0.7475855745019225,
+                  "body_overlap": 0.9996074031575642,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 3.762757466429915,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 2.5055733053918585,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 2.5055733053918585,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 2.5218797098305537,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 2.5218797098305537,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.714414215515638,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 1.714414215515638,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 2.8983779151089055,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 2.8983779151089055,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.9995524465388852,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 1.9995524465388852,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.5392193290743297,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 0.5392193290743297,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 3.7015881489906537,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18744",
+                  "group": "18997",
+                  "heading_error_deg": 3.123699898923819,
+                  "body_overlap": 0.0041365818135618545,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 3.7015881489906537,
+                  "body_overlap": 0.9958634181469089,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 3.762757466429915,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18744",
+                  "group": "18997",
+                  "heading_error_deg": 3.986254743405794,
+                  "body_overlap": 0.09001916781170582,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 3.762757466429915,
+                  "body_overlap": 0.9099808322466696,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.4477841929978796,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "18744",
+                  "group": "18997",
+                  "heading_error_deg": 1.6930828636587734,
+                  "body_overlap": 0.15352941349268795,
+                  "route": true,
+                  "rear_axle_inside": false
+                },
+                {
+                  "kind": "lane",
+                  "id": "18745",
+                  "group": "18997",
+                  "heading_error_deg": 1.4477841929978796,
+                  "body_overlap": 0.8464705865423529,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "previous_case": null,
+      "preview": 1,
+      "number": 14,
+      "title_zh": "右弯中减速后继续行驶",
+      "title_en": "Continuing around a right bend",
+      "artifacts": {
+        "figure": "case_14.png",
+        "animation": "case_14.gif",
+        "camera": "case_14_camera.jpg",
+        "trajectory": "case_14_trajectory.json"
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/f0b6499b393152be/CAM_F0/0e2369f1a46f5935-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/f0b6499b393152be/CAM_F0/2a11f56f0ab25283-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/f0b6499b393152be/CAM_F0/13aa910dcd705af4-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/f0b6499b393152be/CAM_F0/0e2369f1a46f5935-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/f0b6499b393152be/CAM_F0/2a11f56f0ab25283-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/f0b6499b393152be/CAM_F0/13aa910dcd705af4-000.jpg"
+      ]
+    },
+    {
+      "scene": "2021.10.06.08.16.17_veh-52_00922_01296-9b0a5826d2d357d8",
+      "delta": 0.20206999999999997,
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.51504,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.79793,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.51505,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.79794,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.10.06.08.16.17_veh-52_00922_01296-9b0a5826d2d357d8.pkl",
+          "sha256": "77c0485a43fa0643cddee139866c37cb74b2360ac6825bd8bafcbd70f0670ff1"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.10.06.08.16.17_veh-52_00922_01296-9b0a5826d2d357d8.pkl",
+          "sha256": "f13dcb7b4279470fcd8b09bd55304cffd049c15aec0aacecf6d759508f5fbdc8"
+        }
+      },
+      "motion": {
+        "Base": {
+          "speed_mps": [
+            6.5143304445213985,
+            6.29350382314166,
+            5.7336609327564005,
+            4.97087492028734,
+            3.5247923094572773,
+            1.607082333710773,
+            0.019337239339247376,
+            0.4333139798170071,
+            0.3849235281330933
+          ],
+          "vmax": 6.5143304445213985,
+          "v_end": 0.3849235281330933,
+          "v_initial": 6.5143304445213985,
+          "max_positive_dv_dt": 0.8279534809555195,
+          "max_abs_dv_dt": 3.8354199514930087,
+          "distance_m": 12.902851987862741,
+          "heading_change_deg": 13.443252634409326,
+          "final_speed_mps": 0.3849235281330933
+        },
+        "SARA": {
+          "speed_mps": [
+            6.5143304445213985,
+            6.767123865693941,
+            6.805732651607302,
+            7.226963349158989,
+            7.642491150557702,
+            8.078713624880487,
+            8.459394931264004,
+            8.707035667214262,
+            8.75452975546756
+          ],
+          "vmax": 8.75452975546756,
+          "v_end": 8.75452975546756,
+          "v_initial": 6.5143304445213985,
+          "max_positive_dv_dt": 0.8724449486455708,
+          "max_abs_dv_dt": 0.8724449486455708,
+          "distance_m": 30.369424959912365,
+          "heading_change_deg": 19.66638528483977,
+          "final_speed_mps": 8.75452975546756
+        }
+      },
+      "category": "progress",
+      "initial_ego_and_actors_match": true,
+      "direction_audit": {
+        "Base": {
+          "min_aligned_body_fraction": 0.9983463134799172,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9983463134799172,
+          "max_best_heading_error_deg": 2.79296057268325,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.79296057268325,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 2.79296057268325,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.9217261246053416,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.9217261246053416,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.9142515674193358,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 0.9142515674193358,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 0.24519719844448856,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 0.24519719844448856,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 0.9988820958628509,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9988820958628509,
+              "best_heading_error_deg": 0.10066186050517506,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 0.10066186050517506,
+                  "body_overlap": 0.9988820958628509,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 0.998789387761232,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.998789387761232,
+              "best_heading_error_deg": 1.1286741937923082,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.1286741937923082,
+                  "body_overlap": 0.998789387761232,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 0.9983463134799172,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9983463134799172,
+              "best_heading_error_deg": 1.4780201581608725,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.4780201581608725,
+                  "body_overlap": 0.9983463134799172,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 0.9988910664357374,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9988910664357374,
+              "best_heading_error_deg": 1.445524983905097,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.445524983905097,
+                  "body_overlap": 0.9988910664357374,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 0.9986547954098465,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9986547954098465,
+              "best_heading_error_deg": 1.203327784597869,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.203327784597869,
+                  "body_overlap": 0.9986547954098465,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        },
+        "SARA": {
+          "min_aligned_body_fraction": 0.9999999999999999,
+          "max_opposite_lane_body_fraction": 0.0,
+          "min_route_body_fraction": 0.9999999999999999,
+          "max_best_heading_error_deg": 2.79296057268325,
+          "samples": [
+            {
+              "t_s": 0.0,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.79296057268325,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 2.79296057268325,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 0.5,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.7814247107720513,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.7814247107720513,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.0,
+              "aligned_body_fraction": 0.9999999999999999,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 0.9999999999999999,
+              "best_heading_error_deg": 1.2028064591095853,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.2028064591095853,
+                  "body_overlap": 0.9999999999999999,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 1.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 0.8443403872618921,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 0.8443403872618921,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 0.9762942355008687,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 0.9762942355008687,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 2.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 2.3226161245186865,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 2.3226161245186865,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 2.197973126714714,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 2.197973126714714,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 3.5,
+              "aligned_body_fraction": 1.0000000000000002,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0000000000000002,
+              "best_heading_error_deg": 1.8301693549003444,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.8301693549003444,
+                  "body_overlap": 1.0000000000000002,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            },
+            {
+              "t_s": 4.0,
+              "aligned_body_fraction": 1.0,
+              "opposite_lane_body_fraction": 0.0,
+              "route_aligned_body_fraction": 1.0,
+              "best_heading_error_deg": 1.3890149400957292,
+              "matches": [
+                {
+                  "kind": "lane",
+                  "id": "48431",
+                  "group": "50076",
+                  "heading_error_deg": 1.3890149400957292,
+                  "body_overlap": 1.0,
+                  "route": true,
+                  "rear_axle_inside": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "previous_case": null,
+      "preview": 3,
+      "number": 15,
+      "title_zh": "缓弯道路保持正常推进",
+      "title_en": "Maintaining progress on a gentle bend",
+      "artifacts": {
+        "figure": "case_15.png",
+        "animation": "case_15.gif",
+        "camera": "case_15_camera.jpg",
+        "trajectory": "case_15_trajectory.json"
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/9b0a5826d2d357d8/CAM_F0/916053e318a95a1a-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/9b0a5826d2d357d8/CAM_F0/7e5998e8b101545f-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/9b0a5826d2d357d8/CAM_F0/589e73e63e855c89-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/9b0a5826d2d357d8/CAM_F0/916053e318a95a1a-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/9b0a5826d2d357d8/CAM_F0/7e5998e8b101545f-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/9b0a5826d2d357d8/CAM_F0/589e73e63e855c89-000.jpg"
+      ]
+    }
+  ]
+}
