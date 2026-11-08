@@ -1,5 +1,7 @@
 # SARA：新增五个较低速度的闭环案例（06–10）
 
+**[可编辑绘图包：Python 源码、完整绘图数据、PDF / SVG 矢量图](../editable/README.md)**
+
 对应论文主表的 **NavTrain50 Base vs SARA online rare-log，seed 0，epoch 2**。与第一批五例不重复。
 
 **优先看 ⑥减速右转 + ⑦低速左转；若希望覆盖交互安全，可用⑧跟车避碰替换其中一个。⑨、⑩作为备选。**
