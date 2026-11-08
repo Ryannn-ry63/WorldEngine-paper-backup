@@ -1,0 +1,40 @@
+{
+  "R": {
+    "n": 288,
+    "improved": 174,
+    "regressed": 68,
+    "metrics": {
+      "no_at_fault_collisions": {
+        "repaired": 15,
+        "new_failures": 3
+      },
+      "drivable_area_compliance": {
+        "repaired": 24,
+        "new_failures": 13
+      },
+      "time_to_collision_within_bound": {
+        "repaired": 15,
+        "new_failures": 1
+      }
+    }
+  },
+  "NR": {
+    "n": 288,
+    "improved": 170,
+    "regressed": 79,
+    "metrics": {
+      "no_at_fault_collisions": {
+        "repaired": 14,
+        "new_failures": 5
+      },
+      "drivable_area_compliance": {
+        "repaired": 23,
+        "new_failures": 15
+      },
+      "time_to_collision_within_bound": {
+        "repaired": 15,
+        "new_failures": 6
+      }
+    }
+  }
+}

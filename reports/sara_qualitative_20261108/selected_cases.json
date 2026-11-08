@@ -1,0 +1,427 @@
+{
+  "selection": "Post-hoc qualitative illustrations, not an independent evaluation set.",
+  "base_model_sha256": "c541de3d44479cd824ed3131ff7d2e57249b6657c7ba26973cd35064e9914f87",
+  "sara_model_sha256": "e74bc53e4e332d3d37e378d3c0893cde071f085da8557d75871a56a7961e6bd4",
+  "results_sources": {
+    "Base": {
+      "R": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/base/evaluation/closed_R/accepted.json",
+      "NR": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/base/evaluation/closed_NR/accepted.json"
+    },
+    "SARA": {
+      "R": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/online_rarelog_s0_b16_e2/evaluation/closed_R/accepted.json",
+      "NR": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/research/selector_paper_assets_seed0_20261018/rows/online_rarelog_s0_b16_e2/evaluation/closed_NR/accepted.json"
+    }
+  },
+  "cases": [
+    {
+      "preview": 1,
+      "scene": "2021.06.28.20.24.43_veh-38_03385_04952-1786ef7edac65502",
+      "category": "Collision repair",
+      "mode": "R",
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.06.28.20.24.43_veh-38_03385_04952-1786ef7edac65502.pkl",
+          "sha256": "c3d06a409a635f51d0b638690cbda5d0053349f84709638b6a8a2a045c1d7e57"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.06.28.20.24.43_veh-38_03385_04952-1786ef7edac65502.pkl",
+          "sha256": "151cd3fe75a12aa692d1352ede16d55e1ae724cbc52cb1b0f215d6a986726893"
+        }
+      },
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "initial_ego_and_actors_match": true,
+      "number": 1,
+      "title_zh": "跟车减速，避免碰撞",
+      "title_en": "Safe following",
+      "artifacts": {
+        "figure": "case_01.png",
+        "animation": "case_01.gif",
+        "camera": "case_01_camera.jpg",
+        "trajectory": "case_01_trajectory.json"
+      },
+      "motion": {
+        "Base": {
+          "distance_m": 16.227393109506288,
+          "final_speed_mps": 8.845322546976679
+        },
+        "SARA": {
+          "distance_m": 4.188123295437441,
+          "final_speed_mps": 0.29909115333345
+        }
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/1786ef7edac65502/CAM_F0/36a5a5e50dfd5a9e-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/1786ef7edac65502/CAM_F0/580030fc53065095-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/1786ef7edac65502/CAM_F0/8540c7a2a0595e7d-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/1786ef7edac65502/CAM_F0/36a5a5e50dfd5a9e-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/1786ef7edac65502/CAM_F0/580030fc53065095-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/1786ef7edac65502/CAM_F0/8540c7a2a0595e7d-000.jpg"
+      ]
+    },
+    {
+      "preview": 7,
+      "scene": "2021.09.16.19.27.01_veh-45_01749_03230-b02bf210eda55579",
+      "category": "Road compliance repair",
+      "mode": "R",
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.16.19.27.01_veh-45_01749_03230-b02bf210eda55579.pkl",
+          "sha256": "8489d532a90804bf60a892616bdb033b8fca215ae1f4b1868134f2d8edac8127"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.16.19.27.01_veh-45_01749_03230-b02bf210eda55579.pkl",
+          "sha256": "53522d81f251a25a83e85ab377f2be2ebf6ac020e5c9e862b3cab0dd66a674e7"
+        }
+      },
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "initial_ego_and_actors_match": true,
+      "number": 2,
+      "title_zh": "道路走向处纠偏（R 模式）",
+      "title_en": "Road alignment",
+      "artifacts": {
+        "figure": "case_02.png",
+        "animation": "case_02.gif",
+        "camera": "case_02_camera.jpg",
+        "trajectory": "case_02_trajectory.json"
+      },
+      "motion": {
+        "Base": {
+          "distance_m": 22.77960274726634,
+          "final_speed_mps": 7.698297321696468
+        },
+        "SARA": {
+          "distance_m": 19.929795523953484,
+          "final_speed_mps": 7.96661182603292
+        }
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/b02bf210eda55579/CAM_F0/c28e3ac4153b5ae1-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/b02bf210eda55579/CAM_F0/156470ec957956bc-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/b02bf210eda55579/CAM_F0/7fc8ee0ed8885303-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/b02bf210eda55579/CAM_F0/c28e3ac4153b5ae1-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/b02bf210eda55579/CAM_F0/156470ec957956bc-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/b02bf210eda55579/CAM_F0/7fc8ee0ed8885303-000.jpg"
+      ]
+    },
+    {
+      "preview": 8,
+      "scene": "2021.09.16.14.39.34_veh-42_00032_00186-cd9d029138325c2c",
+      "category": "Road compliance repair",
+      "mode": "R",
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.16.14.39.34_veh-42_00032_00186-cd9d029138325c2c.pkl",
+          "sha256": "b71e86566c4f28350b0adb9e553935773b5343d9e23618a3ead839d275426d83"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.16.14.39.34_veh-42_00032_00186-cd9d029138325c2c.pkl",
+          "sha256": "1f3c758c6c09e94f8d8720a21e942e59f6dca0d4b63e0481ceb978a2baa06158"
+        }
+      },
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.95629,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.98179,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.95629,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.98179,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "initial_ego_and_actors_match": true,
+      "number": 3,
+      "title_zh": "沿弯道继续行驶",
+      "title_en": "Following road curvature",
+      "artifacts": {
+        "figure": "case_03.png",
+        "animation": "case_03.gif",
+        "camera": "case_03_camera.jpg",
+        "trajectory": "case_03_trajectory.json"
+      },
+      "motion": {
+        "Base": {
+          "distance_m": 16.833409273091437,
+          "final_speed_mps": 0.21436161773763768
+        },
+        "SARA": {
+          "distance_m": 30.514406090681987,
+          "final_speed_mps": 6.659150432229929
+        }
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/cd9d029138325c2c/CAM_F0/8511cf34d166583f-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/cd9d029138325c2c/CAM_F0/d27836c5321a57e9-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/cd9d029138325c2c/CAM_F0/e8ba388cd0f35e32-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/cd9d029138325c2c/CAM_F0/8511cf34d166583f-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/cd9d029138325c2c/CAM_F0/d27836c5321a57e9-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/cd9d029138325c2c/CAM_F0/e8ba388cd0f35e32-000.jpg"
+      ]
+    },
+    {
+      "preview": 12,
+      "scene": "2021.09.16.13.53.10_veh-42_00860_01069-0802a51b0a1d512c",
+      "category": "Progress improvement",
+      "mode": "R",
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.09.16.13.53.10_veh-42_00860_01069-0802a51b0a1d512c.pkl",
+          "sha256": "1fcf5d7174cce90e52cbd4188a8cad5d9c2bc3eb2052e60a6ea51cfecde74b8c"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.09.16.13.53.10_veh-42_00860_01069-0802a51b0a1d512c.pkl",
+          "sha256": "39582f15425055fe18cb12467f04a271c09554fcbe1caa83e8186bce8ebdb27d"
+        }
+      },
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.1053,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.62721,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.09864,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.62443,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "initial_ego_and_actors_match": true,
+      "number": 4,
+      "title_zh": "路口右转推进",
+      "title_en": "Right-turn progress",
+      "artifacts": {
+        "figure": "case_04.png",
+        "animation": "case_04.gif",
+        "camera": "case_04_camera.jpg",
+        "trajectory": "case_04_trajectory.json"
+      },
+      "motion": {
+        "Base": {
+          "distance_m": 2.182610505853037,
+          "final_speed_mps": 1.7668701876835504
+        },
+        "SARA": {
+          "distance_m": 11.19576586348565,
+          "final_speed_mps": 4.166151709458178
+        }
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/0802a51b0a1d512c/CAM_F0/e12bc07c8c3658c9-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/0802a51b0a1d512c/CAM_F0/9ed2924f936b5e97-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/0802a51b0a1d512c/CAM_F0/73d1ca6427155b51-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/0802a51b0a1d512c/CAM_F0/e12bc07c8c3658c9-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/0802a51b0a1d512c/CAM_F0/9ed2924f936b5e97-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/0802a51b0a1d512c/CAM_F0/73d1ca6427155b51-000.jpg"
+      ]
+    },
+    {
+      "preview": 9,
+      "scene": "2021.08.30.16.16.44_veh-40_00779_01088-551cf39c34f75b25",
+      "category": "Progress improvement",
+      "mode": "R",
+      "metadata": {
+        "Base": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/meta_datas/2021.08.30.16.16.44_veh-40_00779_01088-551cf39c34f75b25.pkl",
+          "sha256": "f35371242856de1110bd2602e60721095a70984bb8ac52b92dcc66e00ae2cfcc"
+        },
+        "SARA": {
+          "path": "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/meta_datas/2021.08.30.16.16.44_veh-40_00779_01088-551cf39c34f75b25.pkl",
+          "sha256": "5436577039ab5d37ffc6546a5da65ca0320703fe69d66129f49116f39017b8d8"
+        }
+      },
+      "metrics": {
+        "Base": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.58333,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.58333,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "R": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "NR": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "initial_ego_and_actors_match": true,
+      "number": 5,
+      "title_zh": "解除低速停滞",
+      "title_en": "Recovery from low progress",
+      "artifacts": {
+        "figure": "case_05.png",
+        "animation": "case_05.gif",
+        "camera": "case_05_camera.jpg",
+        "trajectory": "case_05_trajectory.json"
+      },
+      "motion": {
+        "Base": {
+          "distance_m": 2.0013789509482796,
+          "final_speed_mps": 0.5393168519732809
+        },
+        "SARA": {
+          "distance_m": 22.064362532123987,
+          "final_speed_mps": 9.843176747628139
+        }
+      },
+      "camera_sources": [
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/551cf39c34f75b25/CAM_F0/c79c59eb02415a26-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/551cf39c34f75b25/CAM_F0/92e4fc484f5556f4-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_ab_scale_nodes8_perception50_20261010/evaluation/base/closed_R/attempt_525fbbf55826/simulation/WE_output/openscene_format/sensor_blobs/551cf39c34f75b25/CAM_F0/b442e80cf0965db8-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/551cf39c34f75b25/CAM_F0/c79c59eb02415a26-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/551cf39c34f75b25/CAM_F0/92e4fc484f5556f4-000.jpg",
+        "/inspire/hdd/global_user/wangcaojun-240208020180/WE_related/WorldEngine/experiments/selector_v3_online_rarelog_20261017_mapfix_v2_s0/evaluation/v3_online_rarelog_s0_epoch2/closed_R/attempt_00318811a8bb/simulation/WE_output/openscene_format/sensor_blobs/551cf39c34f75b25/CAM_F0/b442e80cf0965db8-000.jpg"
+      ]
+    }
+  ]
+}

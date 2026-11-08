@@ -1,0 +1,37 @@
+[
+  {
+    "case": 1,
+    "source_metadata_hashes": "PASS",
+    "nine_gif_frames": "PASS",
+    "four_second_recorded_window": "PASS",
+    "artifacts_exist": "PASS"
+  },
+  {
+    "case": 2,
+    "source_metadata_hashes": "PASS",
+    "nine_gif_frames": "PASS",
+    "four_second_recorded_window": "PASS",
+    "artifacts_exist": "PASS"
+  },
+  {
+    "case": 3,
+    "source_metadata_hashes": "PASS",
+    "nine_gif_frames": "PASS",
+    "four_second_recorded_window": "PASS",
+    "artifacts_exist": "PASS"
+  },
+  {
+    "case": 4,
+    "source_metadata_hashes": "PASS",
+    "nine_gif_frames": "PASS",
+    "four_second_recorded_window": "PASS",
+    "artifacts_exist": "PASS"
+  },
+  {
+    "case": 5,
+    "source_metadata_hashes": "PASS",
+    "nine_gif_frames": "PASS",
+    "four_second_recorded_window": "PASS",
+    "artifacts_exist": "PASS"
+  }
+]
