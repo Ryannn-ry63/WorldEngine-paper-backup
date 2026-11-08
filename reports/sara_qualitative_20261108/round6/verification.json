@@ -1,0 +1,7 @@
+{
+  "metadata_hashes_match": true,
+  "paired_initial_states_and_actors_match": true,
+  "nine_recorded_poses_with_0_5s_intervals": true,
+  "speed_arrays_match_screening": true,
+  "geometry_review": "see selected_previews.json; not official benchmark validation"
+}
