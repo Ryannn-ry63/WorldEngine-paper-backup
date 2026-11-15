@@ -1,0 +1,183 @@
+{
+  "status": "Qualitative candidates, post-hoc selection; not a new evaluation set.",
+  "metadata_sha256_rechecked": true,
+  "same_initial_actors_and_timestamps": true,
+  "all_recorded_displacements_nonnegative": true,
+  "SARA_no_recorded_actor_overlap": true,
+  "SARA_no_ordinary_opposite_lane_overlap": true,
+  "actor_identity_source": "anns.track_tokens; length checked against gt_boxes each frame. original_track_tokens is unfiltered and must not be indexed against filtered gt_boxes.",
+  "cases": [
+    {
+      "number": 40,
+      "file_stem": "case_40",
+      "mode": "NR",
+      "scene": "2021.09.29.18.19.40_veh-28_00438_00833-8671b777d49e5dea",
+      "title_zh": "右转车流中的冲突避让",
+      "models": {
+        "Base": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 2.1211533259336304,
+          "max_all_actor_overlap_m2": 7.23935014131369,
+          "target_clearance_2s_m": 0.4261419201295438,
+          "target_clearance_4s_m": 0.0,
+          "first_sampled_target_overlap_s": 2.5,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 0.31614668797390716,
+          "max_all_actor_overlap_m2": 0.0,
+          "target_clearance_2s_m": 4.75296516082396,
+          "target_clearance_4s_m": 11.59086284060817,
+          "first_sampled_target_overlap_s": null,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.42873,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.76197,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    },
+    {
+      "number": 40,
+      "file_stem": "case_40_R",
+      "mode": "R",
+      "scene": "2021.09.29.18.19.40_veh-28_00438_00833-8671b777d49e5dea",
+      "title_zh": "同一右转场景：反应式交通补充",
+      "models": {
+        "Base": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 2.133777514002572,
+          "max_all_actor_overlap_m2": 0.0,
+          "target_clearance_2s_m": 1.1114126458482916,
+          "target_clearance_4s_m": 0.43999674769452407,
+          "first_sampled_target_overlap_s": null,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.58333,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 0.27526247102250356,
+          "max_all_actor_overlap_m2": 0.0,
+          "target_clearance_2s_m": 1.5556256517557103,
+          "target_clearance_4s_m": 7.28134918688683,
+          "first_sampled_target_overlap_s": null,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.45601,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.77334,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    },
+    {
+      "number": 41,
+      "file_stem": "case_41",
+      "mode": "R",
+      "scene": "2021.06.03.13.55.17_veh-35_02866_03582-b0a7f01e57205fb4",
+      "title_zh": "路口排队时避免追撞",
+      "models": {
+        "Base": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 0.10019559337194746,
+          "max_all_actor_overlap_m2": 5.683007913455791,
+          "target_clearance_2s_m": 6.1508753145996575,
+          "target_clearance_4s_m": 0.0,
+          "first_sampled_target_overlap_s": 3.5,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 0.10019559337194746,
+          "max_all_actor_overlap_m2": 0.0,
+          "target_clearance_2s_m": 8.033093040722575,
+          "target_clearance_4s_m": 7.0608115991396625,
+          "first_sampled_target_overlap_s": null,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.89679,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.95699,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    },
+    {
+      "number": 42,
+      "file_stem": "case_42",
+      "mode": "R",
+      "scene": "2021.09.29.14.44.26_veh-28_00528_00992-9ab5654cfc9f5724",
+      "title_zh": "路口车流起步时保持间距",
+      "models": {
+        "Base": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 0.08257580538271067,
+          "max_all_actor_overlap_m2": 5.20037548569636,
+          "target_clearance_2s_m": 3.6936498242897438,
+          "target_clearance_4s_m": 0.0,
+          "first_sampled_target_overlap_s": 3.5,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "total_backward_m": 0.0,
+          "min_forward_step_m": 0.08257580538271067,
+          "max_all_actor_overlap_m2": 0.0,
+          "target_clearance_2s_m": 4.358265628487764,
+          "target_clearance_4s_m": 5.6890459232179555,
+          "first_sampled_target_overlap_s": null,
+          "opposite_lane_max_overlap_fraction": 0.0,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.88882,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.95368,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    }
+  ]
+}
