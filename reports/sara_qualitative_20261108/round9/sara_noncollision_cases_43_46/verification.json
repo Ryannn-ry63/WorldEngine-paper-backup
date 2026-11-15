@@ -1,0 +1,219 @@
+{
+  "scope": "Post-hoc qualitative candidates, not a new evaluation set. All statements limited to recorded 0–4 seconds at 0.5-second samples.",
+  "metadata_sha256_rechecked": true,
+  "same_initial_actors_and_timestamps": true,
+  "all_recorded_displacements_nonnegative": true,
+  "both_models_no_sampled_actor_overlap": true,
+  "both_models_no_ordinary_opposite_lane_body_overlap": true,
+  "geometry_warning": "Map alignment and route-ID diagnostics are auxiliary, not full traffic-rule or intent verification. Route group coverage can be zero with incomplete ID matching.",
+  "cases": [
+    {
+      "number": 43,
+      "mode": "R",
+      "scene": "2021.09.16.19.49.00_veh-42_00990_01609-029585f0509d52b0",
+      "title_zh": "左转出口处的推进差异",
+      "models": {
+        "Base": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 0.5503002129958889,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 14.76627828222354,
+          "speed_2s_mps": 4.833845898160747,
+          "speed_4s_mps": 0.9567711601316132,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.983727865615426,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.0,
+            "max_best_heading_error_deg": 12.803540003219029
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.6948,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.87283,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 2.0953897944698725,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 20.62841986526535,
+          "speed_2s_mps": 5.315511394374719,
+          "speed_4s_mps": 3.117294218916104,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.9266793076643056,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.0,
+            "max_best_heading_error_deg": 12.351307739634311
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.9664,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.986,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    },
+    {
+      "number": 44,
+      "mode": "R",
+      "scene": "2021.06.28.20.24.43_veh-38_03385_04952-d64a3964875f5b41",
+      "title_zh": "宽路口左转过程",
+      "models": {
+        "Base": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 1.6249651993184575,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 15.425735140392629,
+          "speed_2s_mps": 4.048252022638357,
+          "speed_4s_mps": 3.0815254692079503,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.984888083884409,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.984888083884409,
+            "max_best_heading_error_deg": 4.164501389002373
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.91865,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.96611,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 2.2037967568056405,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 21.674704894242737,
+          "speed_2s_mps": 5.9140234373885745,
+          "speed_4s_mps": 5.402584342831967,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.9999417780710073,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.9999417780710073,
+            "max_best_heading_error_deg": 4.925809334462212
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    },
+    {
+      "number": 45,
+      "mode": "R",
+      "scene": "2021.08.30.13.45.25_veh-40_00610_00771-e1886e081b945907",
+      "title_zh": "右转弯内的推进差异",
+      "models": {
+        "Base": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 1.200280463819957,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 14.452897598741192,
+          "speed_2s_mps": 2.163082282397064,
+          "speed_4s_mps": 3.4126722338252358,
+          "direction_audit": {
+            "min_aligned_body_fraction": 1.0,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 1.0,
+            "max_best_heading_error_deg": 13.407772236529201
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.64261,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.85109,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 1.7571858349004232,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 17.43172456002317,
+          "speed_2s_mps": 3.561637536947776,
+          "speed_4s_mps": 3.9019200949024646,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.9999999999999999,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.9999999999999999,
+            "max_best_heading_error_deg": 11.506649666605718
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.77239,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.90516,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    },
+    {
+      "number": 46,
+      "mode": "R",
+      "scene": "2021.09.29.14.44.26_veh-28_00528_00992-afd632f043e35a49",
+      "title_zh": "道路边缘附近的车道保持",
+      "models": {
+        "Base": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 0.40787022304465215,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 26.144038412623207,
+          "speed_2s_mps": 7.431634566308106,
+          "speed_4s_mps": 0.09933811630288253,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.9067847638736609,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.19883038705506945,
+            "max_best_heading_error_deg": 3.5473155240515366
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "min_forward_step_m": 3.5545007526527823,
+          "max_actor_overlap_m2": 0.0,
+          "distance_m": 33.400693439308654,
+          "speed_2s_mps": 7.633080317405779,
+          "speed_4s_mps": 7.559053533241503,
+          "direction_audit": {
+            "min_aligned_body_fraction": 0.9999999999999999,
+            "max_opposite_lane_body_fraction": 0.0,
+            "min_route_body_fraction": 0.19883038705506945,
+            "max_best_heading_error_deg": 3.266131264535798
+          },
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.81635,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.92348,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      }
+    }
+  ]
+}
