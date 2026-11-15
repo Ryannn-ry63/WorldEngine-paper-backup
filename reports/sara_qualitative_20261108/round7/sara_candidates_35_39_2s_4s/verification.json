@@ -1,0 +1,213 @@
+{
+  "source": "Formal paired R evaluation, original metadata SHA256 verified. Post-hoc qualitative selection.",
+  "every_recorded_step_forward_both_models": true,
+  "paired_initial_ego_and_actors_match": true,
+  "sampling_interval_s": 0.5,
+  "duration_s": 4,
+  "snapshot_times_s": [
+    2,
+    4
+  ],
+  "cases": [
+    {
+      "number": 35,
+      "token": "a18d2b32f8415373",
+      "title_zh": "右转入口继续推进",
+      "scene": "2021.09.16.19.27.01_veh-45_01749_03230-a18d2b32f8415373",
+      "Base": {
+        "distance_2_4_m": 0.4527951688837211,
+        "speed_2s_mps": 0.32375910735753616,
+        "speed_4s_mps": 0.5663761932014972,
+        "x_2s_m": 1.2687386874832445,
+        "x_4s_m": 1.7155768573767245,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 0.06632253647475095,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.27297,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.69707,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "SARA": {
+        "distance_2_4_m": 9.07554516943642,
+        "speed_2s_mps": 2.992402186030841,
+        "speed_4s_mps": 5.764141846164118,
+        "x_2s_m": 3.5185941009246777,
+        "x_4s_m": 11.447253702969636,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 0.7057776360453446,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 1.0,
+          "no_at_fault_collisions": 1.0,
+          "score": 1.0,
+          "time_to_collision_within_bound": 1.0
+        }
+      }
+    },
+    {
+      "number": 36,
+      "token": "c5b585ddf50d5f1f",
+      "title_zh": "弯道中持续行驶",
+      "scene": "2021.05.25.15.59.03_veh-30_04463_04606-c5b585ddf50d5f1f",
+      "Base": {
+        "distance_2_4_m": 3.346641493976482,
+        "speed_2s_mps": 4.134780897663765,
+        "speed_4s_mps": 0.2548008687189912,
+        "x_2s_m": 10.082503331884514,
+        "x_4s_m": 13.265682733021594,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 0.026149170071026632,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.68129,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.86721,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "SARA": {
+        "distance_2_4_m": 10.901784125022841,
+        "speed_2s_mps": 5.2760984204433194,
+        "speed_4s_mps": 5.92552292615179,
+        "x_2s_m": 10.8819827361241,
+        "x_4s_m": 20.713559155867966,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 2.6667832175126565,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 1.0,
+          "no_at_fault_collisions": 1.0,
+          "score": 1.0,
+          "time_to_collision_within_bound": 1.0
+        }
+      }
+    },
+    {
+      "number": 37,
+      "token": "bd9abb7104dc5408",
+      "title_zh": "直路行驶中的减速差异",
+      "scene": "2021.10.06.07.26.10_veh-52_00006_00398-bd9abb7104dc5408",
+      "Base": {
+        "distance_2_4_m": 3.807766490309445,
+        "speed_2s_mps": 4.945456820956003,
+        "speed_4s_mps": 0.19453357760562517,
+        "x_2s_m": 13.253071458953135,
+        "x_4s_m": 17.039613573483237,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 0.11725700483744042,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.58646,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.82769,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "SARA": {
+        "distance_2_4_m": 14.26662348009448,
+        "speed_2s_mps": 7.042709315701625,
+        "speed_4s_mps": 7.410996424333593,
+        "x_2s_m": 14.516327873903881,
+        "x_4s_m": 28.651036399143273,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 3.477186647732231,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.98844,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.99518,
+          "time_to_collision_within_bound": 1.0
+        }
+      }
+    },
+    {
+      "number": 38,
+      "token": "b031a0b55ab951f8",
+      "title_zh": "弯道边缘与推进差异",
+      "scene": "2021.09.16.14.39.34_veh-42_00297_00935-b031a0b55ab951f8",
+      "Base": {
+        "distance_2_4_m": 5.3461891227910545,
+        "speed_2s_mps": 4.848384990451718,
+        "speed_4s_mps": 0.19619196564109026,
+        "x_2s_m": 10.676881780853108,
+        "x_4s_m": 15.381373349700514,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 0.4142131735545998,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 0.0,
+          "ego_progress": 0.0,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.0,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "SARA": {
+        "distance_2_4_m": 10.741769087221188,
+        "speed_2s_mps": 4.284212888881418,
+        "speed_4s_mps": 7.04439154217685,
+        "x_2s_m": 9.726643105859116,
+        "x_4s_m": 18.806838921054513,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 2.1421214620733533,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.82594,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.92748,
+          "time_to_collision_within_bound": 1.0
+        }
+      }
+    },
+    {
+      "number": 39,
+      "token": "f9a9b5ee707e501e",
+      "title_zh": "有周边车辆的路口驶出",
+      "scene": "2021.09.16.17.40.09_veh-45_02539_02745-f9a9b5ee707e501e",
+      "Base": {
+        "distance_2_4_m": 1.8497055551248551,
+        "speed_2s_mps": 3.248944265736973,
+        "speed_4s_mps": 0.22422298546687272,
+        "x_2s_m": 10.898887987007866,
+        "x_4s_m": 12.619874602096699,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 0.012923201372623308,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.48374,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.78489,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "SARA": {
+        "distance_2_4_m": 16.187868145668187,
+        "speed_2s_mps": 6.583010406398666,
+        "speed_4s_mps": 9.570288808550586,
+        "x_2s_m": 12.085143459075548,
+        "x_4s_m": 27.02398382627661,
+        "total_backward_m": 0.0,
+        "min_forward_step_m": 2.915405202527153,
+        "metrics_R": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 1.0,
+          "no_at_fault_collisions": 1.0,
+          "score": 1.0,
+          "time_to_collision_within_bound": 1.0
+        }
+      }
+    }
+  ]
+}
