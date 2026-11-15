@@ -1,0 +1,199 @@
+{
+  "selection_order": [
+    46,
+    15,
+    17,
+    20,
+    27
+  ],
+  "original_metadata_sha256_rechecked": true,
+  "same_initial_actors_and_timestamps": true,
+  "no_trajectory_modification": true,
+  "cases": [
+    {
+      "number": 46,
+      "scene": "2021.09.29.14.44.26_veh-28_00528_00992-afd632f043e35a49",
+      "mode": "R",
+      "title_zh": "道路边缘车道保持",
+      "source_folder": "round9",
+      "models": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 26.144038412623207,
+          "min_forward_step_m": 0.40787022304465215,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "7ab1965877339fc3a69883dac676c5e2d54fa71acc11dc6356e6fbb8000be51e"
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 33.400693439308654,
+          "min_forward_step_m": 3.5545007526527823,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.81635,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.92348,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "28fdeec521df3df480b8ce78a69b75b9bfc79ce5e8de35e75626e41d09ee0223"
+        }
+      }
+    },
+    {
+      "number": 15,
+      "scene": "2021.10.06.08.16.17_veh-52_00922_01296-9b0a5826d2d357d8",
+      "mode": "R",
+      "title_zh": "缓弯道路保持推进",
+      "source_folder": "round3",
+      "models": {
+        "Base": {
+          "backward_m": 0.3210276217783411,
+          "distance_m": 12.902851987862741,
+          "min_forward_step_m": -0.23320746871536024,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.51504,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.79793,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "77c0485a43fa0643cddee139866c37cb74b2360ac6825bd8bafcbd70f0670ff1"
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 30.369424959912365,
+          "min_forward_step_m": 3.316366639825144,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "f13dcb7b4279470fcd8b09bd55304cffd049c15aec0aacecf6d759508f5fbdc8"
+        }
+      }
+    },
+    {
+      "number": 17,
+      "scene": "2021.09.16.15.12.03_veh-42_01037_01434-a8fb178e35d25d73",
+      "mode": "R",
+      "title_zh": "左转中减速后继续转入",
+      "source_folder": "round4",
+      "models": {
+        "Base": {
+          "backward_m": 0.29085571351485134,
+          "distance_m": 10.47501216582279,
+          "min_forward_step_m": -0.17640463796765138,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.48504,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.78543,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "4e070145fa8fda2ad2c2bd07ca2c87b3aca1ee680d45cba358b9ede1ee208a54"
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 15.304671320149767,
+          "min_forward_step_m": 1.5451430073067722,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.72599,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.88583,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "e57edffa0397f6483341c0645b0525194f7742a6b20ad9ae3d3a0cf39d8264ae"
+        }
+      }
+    },
+    {
+      "number": 20,
+      "scene": "2021.05.25.15.59.03_veh-30_03499_03671-00ff8eeb53cc598b",
+      "mode": "R",
+      "title_zh": "绕绿化岛右转",
+      "source_folder": "round4",
+      "models": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 8.694137986597191,
+          "min_forward_step_m": 0.12298717421830796,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.52185,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.80077,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "68e333412ff6a3f7177ef869bb7dcc65372ff07b1ad665f45b733a2874abb707"
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 14.113578795307072,
+          "min_forward_step_m": 1.4892667842106286,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.84889,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.93704,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "bb26823fb2f9aa66d1bbf51b0d7b9a221ac4da8f581170cda73909cec177c5bd"
+        }
+      }
+    },
+    {
+      "number": 27,
+      "scene": "2021.09.29.19.02.14_veh-28_00964_01689-6ae2bcc5c2c050e4",
+      "mode": "R",
+      "title_zh": "沿车流保持直行推进",
+      "source_folder": "round5",
+      "models": {
+        "Base": {
+          "backward_m": 0.3592784753310202,
+          "distance_m": 12.325991921388,
+          "min_forward_step_m": -0.1971580534600885,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.47393,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.7808,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "0c9097acb13d5634375ae254bed8f1ff327a057392818eea0f026df0c497dabc"
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 23.222792518678954,
+          "min_forward_step_m": 2.7042000275071594,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.95709,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.98212,
+            "time_to_collision_within_bound": 1.0
+          },
+          "metadata_sha256": "1df0733cd6213ffbe3b32c0a66cb89508b4ff32d9293ac547f0b27f9fa281fc2"
+        }
+      }
+    }
+  ]
+}
