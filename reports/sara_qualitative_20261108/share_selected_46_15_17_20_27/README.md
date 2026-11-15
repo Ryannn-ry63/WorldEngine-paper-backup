@@ -37,4 +37,3 @@
 ![27 对照](sara_selected_46_15_17_20_27/figures/case_27_2s_4s.png)
 
 [GIF](sara_selected_46_15_17_20_27/figures/case_27.gif) · [原先预览图](sara_selected_46_15_17_20_27/original_previews/case_27_original.png) · [前视画面](sara_selected_46_15_17_20_27/camera/case_27_camera.jpg) · [PDF](sara_selected_46_15_17_20_27/figures/case_27_2s_4s.pdf) · [SVG](sara_selected_46_15_17_20_27/figures/case_27_2s_4s.svg)
-
