@@ -1,0 +1,339 @@
+{
+  "same_checkpoint_as_seven_success_cases": true,
+  "metadata_sha256_rechecked": true,
+  "same_initial_states_actors_and_timestamps": true,
+  "excluded_same_recording_clips_as_seven_positive_cases": true,
+  "scope": "Recorded 0\u20134 seconds at 0.5-second samples; logged human reference is context, not a simulated counterfactual.",
+  "cases": [
+    {
+      "id": "F01",
+      "scene": "2021.09.16.14.39.34_veh-42_00032_00186-90314b74c92954d6",
+      "mode": "R",
+      "source_screen_number": 13,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 28.596288150940495,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.89513,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.9563,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 30.536445566696653,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.95617,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.98174,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F02",
+      "scene": "2021.09.16.19.12.04_veh-42_01438_01677-05f1a5cbc0905d8e",
+      "mode": "R",
+      "source_screen_number": 22,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 17.245274015846526,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 15.464077472265139,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.98388,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.99328,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F03",
+      "scene": "2021.10.06.08.16.17_veh-52_01949_02501-ffe92084016a5795",
+      "mode": "R",
+      "source_screen_number": 50,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 11.436339579018838,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.6546,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.85608,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 29.775530607505335,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 1.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F04",
+      "scene": "2021.09.29.14.44.26_veh-28_00238_00320-cfb755b8d37458ac",
+      "mode": "R",
+      "source_screen_number": 32,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 13.256879465499615,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.58333,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 17.236710517176515,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.8341,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.93087,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F05",
+      "scene": "2021.10.06.07.26.10_veh-52_01245_02064-289a58bd2ab6512b",
+      "mode": "R",
+      "source_screen_number": 40,
+      "checks": {
+        "Base": {
+          "backward_m": 0.6093410936445396,
+          "distance_m": 3.8026745507040203,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.29542,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.70642,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 10.6765977199233,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F06",
+      "scene": "2021.09.29.14.44.26_veh-28_00337_00504-9d9762d42ff5561d",
+      "mode": "R",
+      "source_screen_number": 33,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 19.41073242875254,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 22.036350555536863,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 0.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F07",
+      "scene": "2021.06.03.17.06.58_veh-35_02571_02742-8fb11d5808355072",
+      "mode": "R",
+      "source_screen_number": 3,
+      "checks": {
+        "Base": {
+          "backward_m": 0.35873867988046604,
+          "distance_m": 14.12297227185538,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 16.3003521578997,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F08",
+      "scene": "2021.09.16.19.49.00_veh-42_00990_01609-4abb45d9ee1a5c5c",
+      "mode": "R",
+      "source_screen_number": 30,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 11.595631537940342,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.2550710640308199,
+          "distance_m": 9.169908588595007,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.0,
+            "no_at_fault_collisions": 0.0,
+            "score": 0.0,
+            "time_to_collision_within_bound": 0.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F09",
+      "scene": "2021.09.16.19.12.04_veh-42_01088_01192-62eac0a6b7e05fbf",
+      "mode": "R",
+      "source_screen_number": 21,
+      "checks": {
+        "Base": {
+          "backward_m": 0.0,
+          "distance_m": 17.86873494372311,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.58333,
+            "time_to_collision_within_bound": 0.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.0,
+          "distance_m": 16.70180705909663,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 1.0,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.58333,
+            "time_to_collision_within_bound": 0.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    },
+    {
+      "id": "F10",
+      "scene": "2021.10.06.07.26.10_veh-52_00772_00917-a7d3076a7b7b58b2",
+      "mode": "R",
+      "source_screen_number": 51,
+      "checks": {
+        "Base": {
+          "backward_m": 0.5699636901311345,
+          "distance_m": 4.593290015216502,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.33538,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.72308,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "backward_m": 0.8493913843129333,
+          "distance_m": 3.4263508809903946,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.16736,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.65307,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_initial_error_m": 0.0
+    }
+  ]
+}

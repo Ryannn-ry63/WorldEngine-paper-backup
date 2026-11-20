@@ -1,0 +1,20 @@
+{
+  "source": "Same formal V3 online rare-log seed0 epoch2 as the seven success examples. R mode only.",
+  "official_R_scenarios": 288,
+  "official_SARA_failure_counts_not_disjoint": {
+    "NC_below_1": 9,
+    "DAC_below_1": 25,
+    "TTC_below_1": 16
+  },
+  "screened_candidate_pairs": 52,
+  "selected": 10,
+  "excluded_positive_recording_clips": [
+    "2021.05.25.15.59.03_veh-30_03499_03671",
+    "2021.06.03.13.55.17_veh-35_02866_03582",
+    "2021.09.16.15.12.03_veh-42_01037_01434",
+    "2021.09.29.14.44.26_veh-28_00528_00992",
+    "2021.09.29.19.02.14_veh-28_00964_01689",
+    "2021.10.06.08.16.17_veh-52_00922_01296"
+  ],
+  "selection_warning": "Post-hoc qualitative selection, not a prevalence estimate, controlled ablation, or causal attribution. Candidates include formally high-scoring semantic failures."
+}

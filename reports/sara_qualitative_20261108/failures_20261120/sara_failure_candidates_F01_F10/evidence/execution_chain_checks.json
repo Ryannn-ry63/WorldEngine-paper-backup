@@ -1,0 +1,142 @@
+{
+  "probes_are_synthetic_not_model_replay": true,
+  "exact_archived_code_hashes_verified": [
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/AlgEngine/closed_loop/post_processor.py",
+      "sha256": "515dba86aa48b83707708c0aa3ce40ad89d23ad1ae3ac99e07d491c205a57fa3"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/AlgEngine/mmdet3d_plugin/navformer/dense_heads/diffusion_grpo_online_planning_head.py",
+      "sha256": "75e000db3411ecd9371851b87feb66acf9cd16f278ef46bfdf10becf6607d792"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/AlgEngine/mmdet3d_plugin/navformer/dense_heads/diffusion_planning_head.py",
+      "sha256": "720c1807dcaa1323e291593c5dbfcf07961578b91b36717422a37e7bddbdc07c"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/AlgEngine/mmdet3d_plugin/navformer/detectors/navformer.py",
+      "sha256": "7930f3bd00fab2d211aec3af7c3fe8e0018b797ac25810401af75f12d60793d7"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/components/agents/base_agent.py",
+      "sha256": "18413655a55aeea5e235d9db9d9a7b2e05a4cf79fafea62e23b4f37dbb0c2dd9"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/components/agents/client/navformer_client.py",
+      "sha256": "8b24c7cf2449e5208b7535084c4ed5da76d1d853959ebf84dc2210c5f2741c57"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/components/agents/controller/log_play_controller.py",
+      "sha256": "e213b8db85197945c4bf0a6580387016c099c3326182099b778df156a2fa05af"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/components/agents/vehicle_model/vehicle_utils.py",
+      "sha256": "faac3e68ac4b6655e3c50b13ca1fd534f25fd55bb72c7ffc2d473e829439f532"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/manager/data_manager.py",
+      "sha256": "a57102fa25327cc02bd6f81fa861d9e1df139c91f2e12ad3aa25d1697bb06d24"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/manager/render_manager.py",
+      "sha256": "05582c6aeed3475f51b115680cf7327a1ff24079ebc7dfe5bd8a079aa8bebd68"
+    },
+    {
+      "file": "research/selector_v3_dac_campaign_20261002/code/projects/SimEngine/worldengine/render/mtgs/mtgs.py",
+      "sha256": "db6b3a639ab7fdd8f5f92045e1053033ec5c7a44bbe518971d38c72bb36a4051"
+    }
+  ],
+  "synthetic_geometry_checks": [
+    {
+      "input_first_x_m": 1.0,
+      "executed_first_local_xy_m": [
+        0.9999999999999936,
+        0.030000000000002913
+      ],
+      "max_abs_error_m": 6.439293542825908e-15
+    },
+    {
+      "input_first_x_m": 0.0,
+      "executed_first_local_xy_m": [
+        -5.627442956068762e-15,
+        0.03000000000000076
+      ],
+      "max_abs_error_m": 5.627442956068762e-15
+    },
+    {
+      "input_first_x_m": -0.3,
+      "executed_first_local_xy_m": [
+        -0.3000000000000029,
+        0.03000000000000083
+      ],
+      "max_abs_error_m": 2.886579864025407e-15
+    }
+  ],
+  "inferred_executed_first_points": [
+    {
+      "plan_time_s": 0.0,
+      "executed_time_s": 0.5,
+      "selected_index": 8,
+      "inferred_first_point_x_m": 0.9961200355309578,
+      "inferred_first_point_y_m": 0.0037982091203989654,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 0.5,
+      "executed_time_s": 1.0,
+      "selected_index": 8,
+      "inferred_first_point_x_m": 0.5977420806708154,
+      "inferred_first_point_y_m": 0.000722210595539341,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 1.0,
+      "executed_time_s": 1.5,
+      "selected_index": 8,
+      "inferred_first_point_x_m": 0.1313197466781957,
+      "inferred_first_point_y_m": 0.0028002771113230587,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 1.5,
+      "executed_time_s": 2.0,
+      "selected_index": 8,
+      "inferred_first_point_x_m": -0.11380221702125347,
+      "inferred_first_point_y_m": -0.008743928790880057,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 2.0,
+      "executed_time_s": 2.5,
+      "selected_index": 8,
+      "inferred_first_point_x_m": -0.2807258665251792,
+      "inferred_first_point_y_m": 0.011722170701159412,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 2.5,
+      "executed_time_s": 3.0,
+      "selected_index": 8,
+      "inferred_first_point_x_m": -0.33359813685539963,
+      "inferred_first_point_y_m": 0.004223670352170958,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 3.0,
+      "executed_time_s": 3.5,
+      "selected_index": 8,
+      "inferred_first_point_x_m": -0.2822798788105433,
+      "inferred_first_point_y_m": 0.007124065032087068,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    },
+    {
+      "plan_time_s": 3.5,
+      "executed_time_s": 4.0,
+      "selected_index": 2,
+      "inferred_first_point_x_m": 0.017240481187928113,
+      "inferred_first_point_y_m": -0.003594449796777874,
+      "basis": "Inverse of verified direct-execution geometry from recorded rear-axle poses; not a retained model tensor"
+    }
+  ],
+  "raw_full_candidate_tensors_available": false
+}

@@ -1,0 +1,114 @@
+{
+  "definition": "Nine recorded poses over 4 s in R mode. Signed displacements projected along midpoint heading; near-stop means observed speed magnitude <= 0.5 m/s. Material reverse means total negative signed displacement >= 0.2 m AND at least one backward step > 0.05 m. Descriptive thresholds, not official scores.",
+  "expected_rollouts": 576,
+  "summary": {
+    "Base": {
+      "all": {
+        "n": 280,
+        "material_reverse_n": 96,
+        "backward_distance_threshold_counts": {
+          "0.1": 123,
+          "0.2": 96,
+          "0.5": 40,
+          "1.0": 7
+        },
+        "no_step_backward_over_5cm_n": 151,
+        "reverse_after_first_near_stop_n": 129,
+        "median_backward_m": 0.0
+      },
+      "ever_speed_le_0_5": {
+        "n": 189,
+        "material_reverse_n": 96,
+        "backward_distance_threshold_counts": {
+          "0.1": 123,
+          "0.2": 96,
+          "0.5": 40,
+          "1.0": 7
+        },
+        "no_step_backward_over_5cm_n": 60,
+        "reverse_after_first_near_stop_n": 129,
+        "median_backward_m": 0.2158665922722497
+      },
+      "initial_speed_ge_1_then_speed_le_0_5": {
+        "n": 180,
+        "material_reverse_n": 94,
+        "backward_distance_threshold_counts": {
+          "0.1": 121,
+          "0.2": 94,
+          "0.5": 39,
+          "1.0": 6
+        },
+        "no_step_backward_over_5cm_n": 53,
+        "reverse_after_first_near_stop_n": 127,
+        "median_backward_m": 0.24108468478067252
+      },
+      "never_speed_le_0_5": {
+        "n": 91,
+        "material_reverse_n": 0,
+        "backward_distance_threshold_counts": {
+          "0.1": 0,
+          "0.2": 0,
+          "0.5": 0,
+          "1.0": 0
+        },
+        "no_step_backward_over_5cm_n": 91,
+        "reverse_after_first_near_stop_n": 0,
+        "median_backward_m": 0.0
+      }
+    },
+    "SARA": {
+      "all": {
+        "n": 280,
+        "material_reverse_n": 56,
+        "backward_distance_threshold_counts": {
+          "0.1": 66,
+          "0.2": 56,
+          "0.5": 28,
+          "1.0": 4
+        },
+        "no_step_backward_over_5cm_n": 210,
+        "reverse_after_first_near_stop_n": 70,
+        "median_backward_m": 0.0
+      },
+      "ever_speed_le_0_5": {
+        "n": 104,
+        "material_reverse_n": 56,
+        "backward_distance_threshold_counts": {
+          "0.1": 66,
+          "0.2": 56,
+          "0.5": 28,
+          "1.0": 4
+        },
+        "no_step_backward_over_5cm_n": 34,
+        "reverse_after_first_near_stop_n": 70,
+        "median_backward_m": 0.25933092065553565
+      },
+      "initial_speed_ge_1_then_speed_le_0_5": {
+        "n": 89,
+        "material_reverse_n": 55,
+        "backward_distance_threshold_counts": {
+          "0.1": 64,
+          "0.2": 55,
+          "0.5": 27,
+          "1.0": 3
+        },
+        "no_step_backward_over_5cm_n": 24,
+        "reverse_after_first_near_stop_n": 65,
+        "median_backward_m": 0.30987885392798364
+      },
+      "never_speed_le_0_5": {
+        "n": 176,
+        "material_reverse_n": 0,
+        "backward_distance_threshold_counts": {
+          "0.1": 0,
+          "0.2": 0,
+          "0.5": 0,
+          "1.0": 0
+        },
+        "no_step_backward_over_5cm_n": 176,
+        "reverse_after_first_near_stop_n": 0,
+        "median_backward_m": 0.0
+      }
+    }
+  }
+}
