@@ -1,0 +1,76 @@
+{
+  "new_scenes_not_previously_delivered_as_F_D_M_T_cases": true,
+  "metadata_sha256_verified": true,
+  "same_initial_states_and_timestamps": true,
+  "scope": "Insufficient steering during recorded 0–4s, not proof of eventual missed exit. Logged human path is a route-context reference, not optimal counterfactual.",
+  "cases": [
+    {
+      "id": "U01",
+      "scene": "2021.10.06.08.16.17_veh-52_00181_00574-2731fa425acf52f4",
+      "mode": "R",
+      "title_zh": "左转时车头几乎未转入",
+      "models": {
+        "Base": {
+          "distance_m": 4.288536585827058,
+          "heading_change_deg": 17.464158621859212,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.50564,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.79402,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "distance_m": 3.7033507580076455,
+          "heading_change_deg": 0.15575952417265185,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.3657,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.73571,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_heading_change_4s_deg": 68.48178048412888,
+      "equal_distance_heading_difference_deg": 17.476353126130682
+    },
+    {
+      "id": "U02",
+      "scene": "2021.09.16.13.53.10_veh-42_00077_00153-64f47c2f2c7754cb",
+      "mode": "R",
+      "title_zh": "右转时转向程度不足",
+      "models": {
+        "Base": {
+          "distance_m": 11.40843656847803,
+          "heading_change_deg": -39.55415162155336,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.69137,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.8714,
+            "time_to_collision_within_bound": 1.0
+          }
+        },
+        "SARA": {
+          "distance_m": 9.74293278471359,
+          "heading_change_deg": -21.988415021664956,
+          "metrics": {
+            "comfort": 1.0,
+            "drivable_area_compliance": 1.0,
+            "ego_progress": 0.63121,
+            "no_at_fault_collisions": 1.0,
+            "score": 0.84634,
+            "time_to_collision_within_bound": 1.0
+          }
+        }
+      },
+      "logged_reference_heading_change_4s_deg": -93.56762539411119,
+      "equal_distance_heading_difference_deg": -5.276636863928459
+    }
+  ]
+}
