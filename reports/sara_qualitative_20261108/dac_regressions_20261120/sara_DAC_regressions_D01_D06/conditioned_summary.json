@@ -1,0 +1,15 @@
+{
+  "condition": "Formal DAC Base=1, SARA=0; descriptive within this subset, not all-scene aggression or causality",
+  "statistics": {
+    "R": {
+      "formal_DAC_regressions": 13,
+      "SARA_greater_recorded_distance": 13,
+      "SARA_higher_speed_at_2s": 13
+    },
+    "NR": {
+      "formal_DAC_regressions": 15,
+      "SARA_greater_recorded_distance": 14,
+      "SARA_higher_speed_at_2s": 12
+    }
+  }
+}
