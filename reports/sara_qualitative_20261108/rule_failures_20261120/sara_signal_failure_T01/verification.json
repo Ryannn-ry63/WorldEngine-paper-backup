@@ -1,0 +1,344 @@
+{
+  "one_unique_scene_two_traffic_modes": true,
+  "metadata_hashes_rechecked": true,
+  "all_three_controls_red_from_0p5_to_4s_in_metadata_and_original_db": true,
+  "same_initial_states_and_actors": true,
+  "mapped_stop_area": true,
+  "boundary_note": "Drawn line is the downstream edge of the map stop polygon, not a manually inferred image stop line. Front crossing is interval-bounded by 0.5-second samples.",
+  "cases": [
+    {
+      "id": "T01-R",
+      "scene": "2021.09.29.18.19.40_veh-28_00844_01218-12f2dccfb88957f9",
+      "mode": "R",
+      "metrics": {
+        "Base": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.47222,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.78009,
+          "time_to_collision_within_bound": 1.0
+        },
+        "SARA": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 1.0,
+          "no_at_fault_collisions": 1.0,
+          "score": 1.0,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "signals_at_crossing_all_red": true,
+      "control_connectors": [
+        "52823",
+        "52956",
+        "52974"
+      ],
+      "stop_polygon_id": "48528",
+      "events": {
+        "Base": [
+          {
+            "t": 0.0,
+            "front_after_exit_m": -19.054791981354356,
+            "rear_after_exit_m": -23.106340379919857,
+            "all_known_controls_red": false,
+            "known_control_n": 0
+          },
+          {
+            "t": 0.5,
+            "front_after_exit_m": -15.55066865682602,
+            "rear_after_exit_m": -19.60310346633196,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.0,
+            "front_after_exit_m": -12.87741028284654,
+            "rear_after_exit_m": -16.92988140694797,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.5,
+            "front_after_exit_m": -11.623106950893998,
+            "rear_after_exit_m": -15.675579979084432,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.0,
+            "front_after_exit_m": -11.166876735165715,
+            "rear_after_exit_m": -15.219358223490417,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.5,
+            "front_after_exit_m": -11.145005866885185,
+            "rear_after_exit_m": -15.197405744343996,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.0,
+            "front_after_exit_m": -11.335387106984854,
+            "rear_after_exit_m": -15.386917294934392,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.5,
+            "front_after_exit_m": -11.508586357347667,
+            "rear_after_exit_m": -15.55997065640986,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 4.0,
+            "front_after_exit_m": -11.600549660157412,
+            "rear_after_exit_m": -15.651728114113212,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          }
+        ],
+        "SARA": [
+          {
+            "t": 0.0,
+            "front_after_exit_m": -19.054791981354356,
+            "rear_after_exit_m": -23.106340379919857,
+            "all_known_controls_red": false,
+            "known_control_n": 0
+          },
+          {
+            "t": 0.5,
+            "front_after_exit_m": -15.461567165330052,
+            "rear_after_exit_m": -19.519997564610094,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.0,
+            "front_after_exit_m": -12.146457048598677,
+            "rear_after_exit_m": -16.22292963368818,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.5,
+            "front_after_exit_m": -9.073227941989899,
+            "rear_after_exit_m": -13.150772041175514,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.0,
+            "front_after_exit_m": -6.417456744238734,
+            "rear_after_exit_m": -10.493354299105704,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.5,
+            "front_after_exit_m": -4.1044564712792635,
+            "rear_after_exit_m": -8.177925862371922,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.0,
+            "front_after_exit_m": -1.8348509347997606,
+            "rear_after_exit_m": -5.938913091085851,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.5,
+            "front_after_exit_m": 0.2673072023317218,
+            "rear_after_exit_m": -3.8361283210106194,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 4.0,
+            "front_after_exit_m": 1.7019928521476686,
+            "rear_after_exit_m": -2.3840467976406217,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          }
+        ]
+      },
+      "initial_lane": {
+        "lane_id": "48529",
+        "rear_axle_inside": true,
+        "heading_error_deg": 0.12763449661149656
+      }
+    },
+    {
+      "id": "T01-NR",
+      "scene": "2021.09.29.18.19.40_veh-28_00844_01218-12f2dccfb88957f9",
+      "mode": "NR",
+      "metrics": {
+        "Base": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 0.47641,
+          "no_at_fault_collisions": 1.0,
+          "score": 0.78184,
+          "time_to_collision_within_bound": 1.0
+        },
+        "SARA": {
+          "comfort": 1.0,
+          "drivable_area_compliance": 1.0,
+          "ego_progress": 1.0,
+          "no_at_fault_collisions": 1.0,
+          "score": 1.0,
+          "time_to_collision_within_bound": 1.0
+        }
+      },
+      "signals_at_crossing_all_red": true,
+      "control_connectors": [
+        "52823",
+        "52956",
+        "52974"
+      ],
+      "stop_polygon_id": "48528",
+      "events": {
+        "Base": [
+          {
+            "t": 0.0,
+            "front_after_exit_m": -19.054791981354356,
+            "rear_after_exit_m": -23.106340379919857,
+            "all_known_controls_red": false,
+            "known_control_n": 0
+          },
+          {
+            "t": 0.5,
+            "front_after_exit_m": -15.553648631554097,
+            "rear_after_exit_m": -19.60608886461705,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.0,
+            "front_after_exit_m": -12.872307088691741,
+            "rear_after_exit_m": -16.924739907030016,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.5,
+            "front_after_exit_m": -11.62315485207364,
+            "rear_after_exit_m": -15.675538427662104,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.0,
+            "front_after_exit_m": -11.154757180716842,
+            "rear_after_exit_m": -15.20716087333858,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.5,
+            "front_after_exit_m": -11.104658227413893,
+            "rear_after_exit_m": -15.156886924989522,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.0,
+            "front_after_exit_m": -11.278298079501837,
+            "rear_after_exit_m": -15.329687107354403,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.5,
+            "front_after_exit_m": -11.456277063582093,
+            "rear_after_exit_m": -15.50751251867041,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 4.0,
+            "front_after_exit_m": -11.534528993070126,
+            "rear_after_exit_m": -15.585563736502081,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          }
+        ],
+        "SARA": [
+          {
+            "t": 0.0,
+            "front_after_exit_m": -19.054791981354356,
+            "rear_after_exit_m": -23.106340379919857,
+            "all_known_controls_red": false,
+            "known_control_n": 0
+          },
+          {
+            "t": 0.5,
+            "front_after_exit_m": -15.464777876622975,
+            "rear_after_exit_m": -19.522968306671828,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.0,
+            "front_after_exit_m": -12.15490941843018,
+            "rear_after_exit_m": -16.2261982136406,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 1.5,
+            "front_after_exit_m": -9.051679833326489,
+            "rear_after_exit_m": -13.135441321879625,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.0,
+            "front_after_exit_m": -6.041767172049731,
+            "rear_after_exit_m": -10.137169730383903,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 2.5,
+            "front_after_exit_m": -3.2379431445151567,
+            "rear_after_exit_m": -7.342148777563125,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.0,
+            "front_after_exit_m": -0.6678692856803536,
+            "rear_after_exit_m": -4.7667583944275975,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 3.5,
+            "front_after_exit_m": 1.7874329551123083,
+            "rear_after_exit_m": -2.3306376300752163,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          },
+          {
+            "t": 4.0,
+            "front_after_exit_m": 3.5288928635418415,
+            "rear_after_exit_m": -0.5790636157616973,
+            "all_known_controls_red": true,
+            "known_control_n": 3
+          }
+        ]
+      },
+      "initial_lane": {
+        "lane_id": "48529",
+        "rear_axle_inside": true,
+        "heading_error_deg": 0.12763449661149656
+      }
+    }
+  ]
+}
